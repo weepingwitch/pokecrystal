@@ -17,10 +17,6 @@ GoldenrodPokecenter1FNurseScript:
 GoldenrodPokecenter1F_GSBallSceneLeft:
 	setval BATTLETOWERACTION_GSBALL
 	special BattleTowerAction
-	ifequal GS_BALL_AVAILABLE, .gsball
-	end
-
-.gsball
 	checkevent EVENT_GOT_GS_BALL_FROM_GOLDENROD_POKEMON_CENTER
 	iftrue .cancel
 	playsound SFX_EXIT_BUILDING
@@ -49,10 +45,6 @@ GoldenrodPokecenter1F_GSBallSceneLeft:
 GoldenrodPokecenter1F_GSBallSceneRight:
 	setval BATTLETOWERACTION_GSBALL
 	special BattleTowerAction
-	ifequal GS_BALL_AVAILABLE, .gsball
-	end
-
-.gsball
 	checkevent EVENT_GOT_GS_BALL_FROM_GOLDENROD_POKEMON_CENTER
 	iftrue .cancel
 	playsound SFX_EXIT_BUILDING
