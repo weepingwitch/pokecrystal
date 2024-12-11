@@ -633,7 +633,7 @@ _MartThanksText::
 	done
 
 _MartNoMoneyText::
-	text "You're poor.'
+	text "You're poor."
 	done
 
 _MartPackFullText::
