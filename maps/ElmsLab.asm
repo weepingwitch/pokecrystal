@@ -159,8 +159,8 @@ CyndaquilPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
-	pokepic EEVEE
-	cry EEVEE
+	pokepic MAREEP
+	cry MAREEP
 	waitbutton
 	closepokepic
 	opentext
@@ -172,12 +172,12 @@ CyndaquilPokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	;waitsfx
-	getmonname STRING_BUFFER_3, CYNDAQUIL
+	getmonname STRING_BUFFER_3, MAREEP
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke EEVEE, 5, BERRY
+	givepoke MAREEP, 5, BERRY
 	closetext
 	readvar VAR_FACING
 	ifequal RIGHT, ElmDirectionsScript
@@ -189,8 +189,8 @@ TotodilePokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
-	pokepic TOTODILE
-	cry TOTODILE
+	pokepic MARILL
+	cry MARILL
 	waitbutton
 	closepokepic
 	opentext
@@ -202,12 +202,12 @@ TotodilePokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	;waitsfx
-	getmonname STRING_BUFFER_3, TOTODILE
+	getmonname STRING_BUFFER_3, MARILL
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke TOTODILE, 5, BERRY
+	givepoke MARILL, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterTotodileMovement
 	sjump ElmDirectionsScript
@@ -217,8 +217,8 @@ ChikoritaPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
-	pokepic CHIKORITA
-	cry CHIKORITA
+	pokepic LARVITAR
+	cry LARVITAR
 	waitbutton
 	closepokepic
 	opentext
@@ -230,12 +230,12 @@ ChikoritaPokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	;waitsfx
-	getmonname STRING_BUFFER_3, CHIKORITA
+	getmonname STRING_BUFFER_3, LARVITAR
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke CHIKORITA, 5, BERRY
+	givepoke LARVITAR, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterChikoritaMovement
 	sjump ElmDirectionsScript
@@ -782,12 +782,12 @@ LabWhereGoingText:
 
 TakeCyndaquilText:
 	text "ELM: You'll take"
-	line "EEVEE?"
+	line "MAREEP?"
 	done
 
 TakeTotodileText:
 	text "ELM: Do you want"
-	line "TOTODILE?"
+	line "MARILL?"
 	done
 
 TakeChikoritaText:
