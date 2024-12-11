@@ -29,12 +29,8 @@ _NameRaterBetterNameText::
 	text "Hm… @"
 	text_ram wStringBuffer1
 	text "…"
-	line "That's a fairly"
-	cont "decent name."
-
-	para "But, how about a"
-	line "slightly better"
-	cont "nickname?"
+	line "That's a kinda"
+	cont "shitty name."
 
 	para "Want me to give it"
 	line "a better name?"
@@ -47,7 +43,7 @@ _NameRaterWhatNameText::
 	prompt
 
 _NameRaterFinishedText::
-	text "That's a better"
+	text "That's a worse"
 	line "name than before!"
 
 	para "Well done!"
@@ -77,13 +73,11 @@ _NameRaterEggText::
 	done
 
 _NameRaterSameNameText::
-	text "It might look the"
-	line "same as before,"
 
-	para "but this new name"
-	line "is much better!"
+	text "This new name"
+	line "kinda sucks!"
 
-	para "Well done!"
+	para "whatever!"
 	done
 
 _NameRaterNamedText::
@@ -338,8 +332,7 @@ _AlreadySurfingText::
 	prompt
 
 _AskSurfText::
-	text "The water is calm."
-	line "Want to SURF?"
+	text "Want to SURF?"
 	done
 
 _UseWaterfallText::
@@ -404,10 +397,8 @@ _MoveBoulderText::
 	prompt
 
 _AskStrengthText::
-	text "A #MON may be"
-	line "able to move this."
-
-	para "Want to use"
+	
+	text "Want to use"
 	line "STRENGTH?"
 	done
 
@@ -436,10 +427,8 @@ _MayPassWhirlpoolText::
 	done
 
 _AskWhirlpoolText::
-	text "A whirlpool is in"
-	line "the way."
-
-	para "Want to use"
+	
+	text "Want to use"
 	line "WHIRLPOOL?"
 	done
 
@@ -473,10 +462,8 @@ _MaySmashText::
 	done
 
 _AskRockSmashText::
-	text "This rock looks"
-	line "breakable."
 
-	para "Want to use ROCK"
+	text "Want to use ROCK"
 	line "SMASH?"
 	done
 
@@ -496,28 +483,18 @@ _UnusedNothingHereText::
 
 _CantGetOffBikeText::
 	text "You can't get off"
-	line "here!"
 	done
 
 _GotOnBikeText::
-	text "<PLAYER> got on the"
-	line "@"
-	text_ram wStringBuffer2
-	text "."
+	text "on the bike."
 	done
 
 _GotOffBikeText::
-	text "<PLAYER> got off"
-	line "the @"
-	text_ram wStringBuffer2
-	text "."
+	text "off the bike."
 	done
 
 _AskCutText::
-	text "This tree can be"
-	line "CUT!"
-
-	para "Want to use CUT?"
+	text "Want to use CUT?"
 	done
 
 _CanCutText::
@@ -526,7 +503,7 @@ _CanCutText::
 	done
 
 _FoundItemText::
-	text "<PLAYER> found"
+	text "<PLAYER> stole"
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
@@ -542,8 +519,8 @@ _WhitedOutText::
 	text "<PLAYER> is out of"
 	line "useable #MON!"
 
-	para "<PLAYER> whited"
-	line "out!"
+	para "<PLAYER> died."
+	line "rip"
 	done
 
 _ItemfinderItemNearbyText::
@@ -626,9 +603,7 @@ _ThrewAwayText::
 	prompt
 
 _OakThisIsntTheTimeText::
-	text "OAK: <PLAYER>!"
-	line "This isn't the"
-	cont "time to use that!"
+	text "nope lol"
 	prompt
 
 _YouDontHaveAMonText::
@@ -1412,9 +1387,7 @@ _ItemsTooImportantText::
 	prompt
 
 _ItemsOakWarningText::
-	text "OAK: <PLAYER>!"
-	line "This isn't the"
-	cont "time to use that!"
+	text "nope lol"
 	done
 
 _PokemonSwapItemText::

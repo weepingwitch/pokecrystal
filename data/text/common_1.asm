@@ -190,14 +190,12 @@ _OakTimeOversleptText::
 
 _OakTimeYikesText::
 	text "!"
-	line "Yikes! I over-"
-	cont "slept!"
+	line "Yikes!"
 	done
 
 _OakTimeSoDarkText::
 	text "!"
-	line "No wonder it's so"
-	cont "dark!"
+	line "Oof"
 	done
 
 _OakTimeWhatDayIsItText::
