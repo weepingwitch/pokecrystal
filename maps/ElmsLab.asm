@@ -59,12 +59,10 @@ ElmsLabWalkUpToElmScript:
 
 .ElmGetsEmail:
 	writetext ElmText_Accepted
-	promptbutton
-	writetext ElmText_ResearchAmbitions
 	waitbutton
 	closetext
 	playsound SFX_GLASS_TING
-	pause 30
+	pause 3
 	showemote EMOTE_SHOCK, ELMSLAB_ELM, 10
 	turnobject ELMSLAB_ELM, DOWN
 	opentext
@@ -161,8 +159,8 @@ CyndaquilPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
-	pokepic CYNDAQUIL
-	cry CYNDAQUIL
+	pokepic EEVEE
+	cry EEVEE
 	waitbutton
 	closepokepic
 	opentext
@@ -173,13 +171,13 @@ CyndaquilPokeBallScript:
 	setevent EVENT_GOT_CYNDAQUIL_FROM_ELM
 	writetext ChoseStarterText
 	promptbutton
-	waitsfx
+	;waitsfx
 	getmonname STRING_BUFFER_3, CYNDAQUIL
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
-	waitsfx
+	;waitsfx
 	promptbutton
-	givepoke CYNDAQUIL, 5, BERRY
+	givepoke EEVEE, 5, BERRY
 	closetext
 	readvar VAR_FACING
 	ifequal RIGHT, ElmDirectionsScript
@@ -203,11 +201,11 @@ TotodilePokeBallScript:
 	setevent EVENT_GOT_TOTODILE_FROM_ELM
 	writetext ChoseStarterText
 	promptbutton
-	waitsfx
+	;waitsfx
 	getmonname STRING_BUFFER_3, TOTODILE
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
-	waitsfx
+	;waitsfx
 	promptbutton
 	givepoke TOTODILE, 5, BERRY
 	closetext
@@ -231,11 +229,11 @@ ChikoritaPokeBallScript:
 	setevent EVENT_GOT_CHIKORITA_FROM_ELM
 	writetext ChoseStarterText
 	promptbutton
-	waitsfx
+	;waitsfx
 	getmonname STRING_BUFFER_3, CHIKORITA
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
-	waitsfx
+	;waitsfx
 	promptbutton
 	givepoke CHIKORITA, 5, BERRY
 	closetext
@@ -258,14 +256,9 @@ ElmDirectionsScript:
 	opentext
 	writetext GotElmsNumberText
 	playsound SFX_REGISTER_PHONE_NUMBER
-	waitsfx
 	waitbutton
 	closetext
 	turnobject ELMSLAB_ELM, LEFT
-	opentext
-	writetext ElmDirectionsText2
-	waitbutton
-	closetext
 	turnobject ELMSLAB_ELM, DOWN
 	opentext
 	writetext ElmDirectionsText3
@@ -474,6 +467,13 @@ AideScript_GivePotion:
 	opentext
 	writetext AideText_GiveYouPotion
 	promptbutton
+	givepoke SLOWPOKE, 5
+	givepoke ONIX, 5
+	givepoke SEADRA, 5
+	giveitem METAL_COAT
+	giveitem DRAGON_SCALE
+	giveitem KINGS_ROCK
+	giveitem UP_GRADE
 	verbosegiveitem POTION
 	writetext AideText_AlwaysBusy
 	waitbutton
@@ -731,116 +731,47 @@ ElmText_Intro:
 	line "you a favor."
 
 	para "I'm conducting new"
-	line "#MON research"
+	line "#MON research."
 
-	para "right now. I was"
-	line "wondering if you"
+	
+	para "I need you to do"
+	line "unpaid research."
 
-	para "could help me with"
-	line "it, <PLAY_G>."
-
-	para "You see…"
-
-	para "I'm writing a"
-	line "paper that I want"
-
-	para "to present at a"
-	line "conference."
-
-	para "But there are some"
-	line "things I don't"
-
-	para "quite understand"
-	line "yet."
-
-	para "So!"
-
-	para "I'd like you to"
-	line "raise a #MON"
-
-	para "that I recently"
-	line "caught."
+	para "no credit."
 	done
 
 ElmText_Accepted:
-	text "Thanks, <PLAY_G>!"
+	text "haha sucker"
 
-	para "You're a great"
-	line "help!"
 	done
 
 ElmText_Refused:
-	text "But… Please, I"
-	line "need your help!"
+	text "I'll tell your"
+	line "mom..."
 	done
 
-ElmText_ResearchAmbitions:
-	text "When I announce my"
-	line "findings, I'm sure"
 
-	para "we'll delve a bit"
-	line "deeper into the"
-
-	para "many mysteries of"
-	line "#MON."
-
-	para "You can count on"
-	line "it!"
-	done
 
 ElmText_GotAnEmail:
-	text "Oh, hey! I got an"
+	text "Oh shit I got an"
 	line "e-mail!"
 
 	para "<……><……><……>"
-	line "Hm… Uh-huh…"
+	line "oh it's spam"
 
-	para "Okay…"
+	para "anyway."
 	done
 
 ElmText_MissionFromMrPokemon:
 	text "Hey, listen."
 
-	para "I have an acquain-"
-	line "tance called MR."
-	cont "#MON."
-
-	para "He keeps finding"
-	line "weird things and"
-
-	para "raving about his"
-	line "discoveries."
-
-	para "Anyway, I just got"
-	line "an e-mail from him"
-
-	para "saying that this"
-	line "time it's real."
-
-	para "It is intriguing,"
-	line "but we're busy"
-
-	para "with our #MON"
-	line "research…"
-
-	para "Wait!"
-
-	para "I know!"
-
-	para "<PLAY_G>, can you"
-	line "go in our place?"
+	para "More child labor."
+	line "Visit my friend."
 	done
 
 ElmText_ChooseAPokemon:
 	text "I want you to"
-	line "raise one of the"
-
-	para "#MON contained"
-	line "in these BALLS."
-
-	para "You'll be that"
-	line "#MON's first"
-	cont "partner, <PLAY_G>!"
+	line "pet-sit."
 
 	para "Go on. Pick one!"
 	done
@@ -848,7 +779,7 @@ ElmText_ChooseAPokemon:
 ElmText_LetYourMonBattleIt:
 	text "If a wild #MON"
 	line "appears, let your"
-	cont "#MON battle it!"
+	cont "#MON kill it!"
 	done
 
 LabWhereGoingText:
@@ -858,34 +789,26 @@ LabWhereGoingText:
 
 TakeCyndaquilText:
 	text "ELM: You'll take"
-	line "CYNDAQUIL, the"
-	cont "fire #MON?"
+	line "EEVEE?"
 	done
 
 TakeTotodileText:
 	text "ELM: Do you want"
-	line "TOTODILE, the"
-	cont "water #MON?"
+	line "TOTODILE?"
 	done
 
 TakeChikoritaText:
 	text "ELM: So, you like"
-	line "CHIKORITA, the"
-	cont "grass #MON?"
+	line "CHIKORITA?"
 	done
 
 DidntChooseStarterText:
-	text "ELM: Think it over"
-	line "carefully."
-
-	para "Your partner is"
-	line "important."
+	text "ELM: lol ok"
 	done
 
 ChoseStarterText:
-	text "ELM: I think"
-	line "that's a great"
-	cont "#MON too!"
+	text "ELM: that one?"
+	line "huh."
 	done
 
 ReceivedStarterText:
@@ -896,35 +819,18 @@ ReceivedStarterText:
 	done
 
 ElmDirectionsText1:
-	text "MR.#MON lives a"
-	line "little bit beyond"
+	text "go visit my"
+	line "weird friend plz."
 
-	para "CHERRYGROVE, the"
+	para "he lives in the"
 	line "next city over."
 
-	para "It's almost a"
-	line "direct route"
+	para "call me if"
+	line "you get lost."
 
-	para "there, so you"
-	line "can't miss it."
 
-	para "But just in case,"
-	line "here's my phone"
-
-	para "number. Call me if"
-	line "anything comes up!"
 	done
 
-ElmDirectionsText2:
-	text "If your #MON is"
-	line "hurt, you should"
-
-	para "heal it with this"
-	line "machine."
-
-	para "Feel free to use"
-	line "it anytime."
-	done
 
 ElmDirectionsText3:
 	text "<PLAY_G>, I'm"

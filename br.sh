@@ -1,2 +1,3 @@
 make crystal11
-mgba -4d pokecrystal11.gbc
+cp pokecrystal11.gbc pokewillow.gbc
+mgba -4d -l 64 pokewillow.gbc

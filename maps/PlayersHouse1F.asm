@@ -211,38 +211,20 @@ MomWalksBackMovement:
 	step_end
 
 ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
+	text "Oh, <PLAYER>…! "
+	line "PROF. ELM"
 
-	para "ELM, was looking"
+	para "was looking"
 	line "for you."
 
-	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
 
-	para "Oh! I almost for-"
-	line "got! Your #MON"
-
-	para "GEAR is back from"
-	line "the repair shop."
-
-	para "Here you go!"
+	para "Take this."
 	done
 
 MomGivesPokegearText:
 	text "#MON GEAR, or"
-	line "just #GEAR."
+	line "whatever it is."
 
-	para "It's essential if"
-	line "you want to be a"
-	cont "good trainer."
-
-	para "Oh, the day of the"
-	line "week isn't set."
-
-	para "You mustn't forget"
-	line "that!"
 	done
 
 IsItDSTText:
@@ -251,43 +233,25 @@ IsItDSTText:
 	done
 
 ComeHomeForDSTText:
-	text "Come home to"
-	line "adjust your clock"
-
-	para "for Daylight"
+	text "I hate Daylight"
 	line "Saving Time."
 
-	para "By the way, do you"
-	line "know how to use"
-	cont "the PHONE?"
+	para "Don't you?"
 	done
 
 KnowTheInstructionsText:
-	text "Don't you just"
-	line "turn the #GEAR"
-
-	para "on and select the"
-	line "PHONE icon?"
+	text "Yeah."
 	done
 
 DontKnowTheInstructionsText:
-	text "I'll read the"
-	line "instructions."
-
-	para "Turn the #GEAR"
-	line "on and select the"
-	cont "PHONE icon."
+	text "Are you even"
+	line "my child??"
 	done
 
 InstructionsNextText:
-	text "Phone numbers are"
-	line "stored in memory."
+	text "Anyway, please call"
+	line "me every day."
 
-	para "Just choose a name"
-	line "you want to call."
-
-	para "Gee, isn't that"
-	line "convenient?"
 	done
 
 HurryUpElmIsWaitingText:
@@ -298,24 +262,13 @@ HurryUpElmIsWaitingText:
 	done
 
 SoWhatWasProfElmsErrandText:
-	text "So, what was PROF."
-	line "ELM's errand?"
+	text "So, PROF. ELM"
+	line "wants you to what?"
 
-	para "…"
-
-	para "That does sound"
-	line "challenging."
-
-	para "But, you should be"
-	line "proud that people"
-	cont "rely on you."
 	done
 
 ImBehindYouText:
-	text "<PLAYER>, do it!"
-
-	para "I'm behind you all"
-	line "the way!"
+	text "weird"
 	done
 
 NeighborMornIntroText:
