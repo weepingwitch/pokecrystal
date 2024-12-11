@@ -35,7 +35,7 @@ CheckBreedmonCompatibility:
 
 .compare_gender
 	cp b
-	jr nz, .compute
+	jr .compute
 
 .genderless
 	ld c, $0

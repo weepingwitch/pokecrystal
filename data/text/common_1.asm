@@ -1,6 +1,6 @@
 _FruitBearingTreeText::
-	text "It's a fruit-"
-	line "bearing tree."
+	text "It's a fruity"
+	line "tree."
 	done
 
 _HeyItsFruitText::
@@ -11,7 +11,7 @@ _HeyItsFruitText::
 	done
 
 _ObtainedFruitText::
-	text "Obtained"
+	text "Picked"
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
@@ -66,7 +66,8 @@ _BurnWasHealedText::
 _WasDefrostedText::
 	text_ram wStringBuffer1
 	text_start
-	line "was defrosted."
+	line "was defrosted"
+	line "on high for :30"
 	done
 
 _WokeUpText::
