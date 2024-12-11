@@ -50,11 +50,7 @@ PokeComNurseNiteText:
 	done
 
 NurseAskHealText:
-	text "We can heal your"
-	line "#MON to perfect"
-	cont "health."
-
-	para "Shall we heal your"
+	text "Shall we heal your"
 	line "#MON?"
 	done
 
@@ -64,16 +60,12 @@ NurseTakePokemonText:
 	done
 
 NurseReturnPokemonText:
-	text "Thank you for"
-	line "waiting."
-
-	para "Your #MON are"
+	text "Your #MON are"
 	line "fully healed."
 	done
 
 NurseGoodbyeText:
-	text "We hope to see you"
-	line "again."
+	text "bye"
 	done
 
 ; not used
@@ -116,21 +108,17 @@ PokeComNursePokerusText:
 
 DifficultBookshelfText:
 	text "It's full of"
-	line "difficult books."
+	line "assembly code."
 	done
 
 PictureBookshelfText:
 	text "A whole collection"
-	line "of #MON picture"
-	cont "books!"
+	line "of #MON fanart!"
 	done
 
 MagazineBookshelfText:
 	text "#MON magazines…"
-	line "#MON PAL,"
-
-	para "#MON HANDBOOK,"
-	line "#MON GRAPH…"
+	line "not for kids."
 	done
 
 TeamRocketOathText:
@@ -156,16 +144,16 @@ IncenseBurnerText:
 
 MerchandiseShelfText:
 	text "Lots of #MON"
-	line "merchandise!"
+	line "figurines!"
 	done
 
 LookTownMapText:
-	text "It's the TOWN MAP."
+	text "It's the map, duh."
 	done
 
 WindowText:
-	text "My reflection!"
-	line "Lookin' good!"
+	text "Despite everything"
+	line "it's still you."
 	done
 
 TVText:
@@ -188,8 +176,8 @@ HomepageText:
 	done
 
 TrashCanText:
-	text "There's nothing in"
-	line "here…"
+	text "There's trash in"
+	line "here… gross"
 	done
 
 ; not used
@@ -208,10 +196,8 @@ PokecenterSignText:
 	done
 
 MartSignText:
-	text "For All Your"
-	line "#MON Needs"
-
-	para "#MON MART"
+	text "items"
+	line "we've got em"
 	done
 
 ContestResults_ReadyToJudgeText:
@@ -258,8 +244,8 @@ ContestResults_ConsolationPrizeText:
 	done
 
 ContestResults_DidNotWinText:
-	text "We hope you do"
-	line "better next time."
+	text "do better"
+	line "next time."
 	done
 
 ContestResults_ReturnPartyText:
@@ -275,7 +261,7 @@ ContestResults_PartyFullText:
 	line "so the #MON was"
 
 	para "sent to your BOX"
-	line "in BILL's PC."
+	line "in willow's PC."
 	done
 
 GymStatue_CityGymText:
