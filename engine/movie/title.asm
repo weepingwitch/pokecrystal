@@ -75,7 +75,7 @@ _TitleScreen:
 ; 'CRYSTAL VERSION'
 	hlbgcoord 5, 9
 	ld bc, 11 ; length of version text
-	ld a, 1
+	ld a, 5
 	call ByteFill
 
 ; Suicune gfx
@@ -111,12 +111,7 @@ _TitleScreen:
 	ld e, 20
 	call DrawTitleGraphic
 
-; Draw copyright text
-	hlbgcoord 3, 0, vBGMap1
-	lb bc, 1, 13
-	ld d, $c
-	ld e, 16
-	call DrawTitleGraphic
+
 
 ; Initialize running Suicune?
 	ld d, $0

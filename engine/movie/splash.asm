@@ -35,28 +35,11 @@ SplashScreen:
 
 ; Play GameFreak logo animation
 	call GameFreakPresentsInit
-.joy_loop
-	call JoyTextDelay
-	ldh a, [hJoyLast]
-	and BUTTONS
-	jr nz, .pressed_button
-	ld a, [wJumptableIndex]
-	bit JUMPTABLE_EXIT_F, a
-	jr nz, .finish
-	call GameFreakPresentsScene
-	farcall PlaySpriteAnimations
-	call DelayFrame
-	jr .joy_loop
-
-.pressed_button
 	call GameFreakPresentsEnd
 	scf
 	ret
 
-.finish
-	call GameFreakPresentsEnd
-	and a
-	ret
+
 
 GameFreakPresentsInit:
 	ld de, GameFreakLogoGFX
