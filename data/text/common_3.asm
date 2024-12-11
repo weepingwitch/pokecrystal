@@ -1,28 +1,12 @@
 _OakText6::
-	text "Now, what did you"
+	text "What did you"
 	line "say your name was?"
 	prompt
 
 _OakText7::
 	text "<PLAYER>, are you"
-	line "ready?"
+	line "ready? let's go"
 
-	para "Your very own"
-	line "#MON story is"
-	cont "about to unfold."
-
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
-
-	para "A world of dreams"
-	line "and adventures"
-
-	para "with #MON"
-	line "awaits! Let's go!"
-
-	para "I'll be seeing you"
-	line "later!"
 	done
 
 _ClockTimeMayBeWrongText::
@@ -630,7 +614,7 @@ _MartSellHowManyText::
 	done
 
 _MartSellPriceText::
-	text "I can pay you"
+	text "I can give you"
 	line "¥@"
 	text_decimal hMoneyTemp, 3, 6
 	text "."
@@ -649,8 +633,7 @@ _MartThanksText::
 	done
 
 _MartNoMoneyText::
-	text "You don't have"
-	line "enough money."
+	text "You're poor.'
 	done
 
 _MartPackFullText::
@@ -974,11 +957,6 @@ _AskForgetMoveText::
 	text_ram wStringBuffer2
 	text "."
 
-	para "But @"
-	text_ram wMonOrItemNameBuffer
-	text_start
-	line "can't learn more"
-	cont "than four moves."
 
 	para "Delete an older"
 	line "move to make room"
@@ -1233,7 +1211,7 @@ _WaitButtonText::
 _BallSentToPCText::
 	text_ram wMonOrItemNameBuffer
 	text " was"
-	line "sent to BILL's PC."
+	line "sent to willow's PC."
 	prompt
 
 _NewDexDataText::

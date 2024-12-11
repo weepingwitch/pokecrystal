@@ -298,7 +298,7 @@ DoPlayerMovement::
 	ret
 
 .walk
-	ld a, STEP_WALK
+	ld a, STEP_BIKE
 	call .DoStep
 	scf
 	ret
