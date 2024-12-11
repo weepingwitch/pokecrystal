@@ -154,8 +154,8 @@ _CardFolderOpenText::
 	text_end
 
 _OakTimeWokeUpText::
-	text "<……><……><……><……><……><……>"
-	line "<……><……><……><……><……><……>"
+	text "honk shoo"
+	line "snork mimimi"
 
 	para "Zzz… Hm? Wha…?"
 	line "You woke me up!"
