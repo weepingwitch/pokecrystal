@@ -52,7 +52,7 @@ PrintMoveType:
 	call FarCopyBytes
 	ld a, [wStringBuffer1 + MOVE_TYPE]
 	pop hl
-
+	and TYPE_MASK
 	ld b, a
 
 PrintType:
