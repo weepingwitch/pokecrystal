@@ -157,11 +157,6 @@ _OakTimeWokeUpText::
 	text "honk shoo"
 	line "snork mimimi"
 
-	para "Zzz… Hm? Wha…?"
-	line "You woke me up!"
-
-	para "Will you check the"
-	line "clock for me?"
 	prompt
 
 _OakTimeWhatTimeIsItText::
