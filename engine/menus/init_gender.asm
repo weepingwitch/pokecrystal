@@ -34,7 +34,7 @@ InitGender:
 	call VerticalMenu
 	call CloseWindow
 	ld a, [wMenuCursorY]
-	dec a
+	ld a, 1
 	ld [wPlayerGender], a
 	ld c, 10
 	call DelayFrames
@@ -49,7 +49,7 @@ InitGender:
 .MenuData:
 	db STATICMENU_CURSOR | STATICMENU_WRAP | STATICMENU_DISABLE_B ; flags
 	db 2 ; items
-	db "Boy@"
+	db "Egg@"
 	db "Girl@"
 
 AreYouABoyOrAreYouAGirlText:
