@@ -467,13 +467,6 @@ AideScript_GivePotion:
 	opentext
 	writetext AideText_GiveYouPotion
 	promptbutton
-	givepoke SLOWPOKE, 5
-	givepoke ONIX, 5
-	givepoke SEADRA, 5
-	giveitem METAL_COAT
-	giveitem DRAGON_SCALE
-	giveitem KINGS_ROCK
-	giveitem UP_GRADE
 	verbosegiveitem POTION
 	writetext AideText_AlwaysBusy
 	waitbutton
@@ -813,9 +806,7 @@ ChoseStarterText:
 
 ReceivedStarterText:
 	text "<PLAYER> received"
-	line "@"
-	text_ram wStringBuffer3
-	text "!"
+	text "a #MON!"
 	done
 
 ElmDirectionsText1:
@@ -838,7 +829,7 @@ ElmDirectionsText3:
 	done
 
 GotElmsNumberText:
-	text "<PLAYER> got ELM's"
+	text "ELM have you his"
 	line "phone number."
 	done
 
@@ -849,7 +840,7 @@ ElmDescribesMrPokemonText:
 
 	para "Too bad they're"
 	line "just rare and"
-	cont "not very useful…"
+	cont "not useful…"
 	done
 
 ElmPokeBallText:
