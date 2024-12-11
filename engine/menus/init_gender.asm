@@ -33,7 +33,7 @@ InitGender:
 	call WaitBGMap2
 	call VerticalMenu
 	call CloseWindow
-	;ld a, [wMenuCursorY]
+	;ld a, [wMenuCursorY] ;we don't need this lol
 	ld a, 1 ; Force player gender to female
 	ld [wPlayerGender], a
 	ld c, 10
