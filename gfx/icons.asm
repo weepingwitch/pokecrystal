@@ -39,3 +39,5 @@ GyaradosIcon:     INCBIN "gfx/icons/gyarados.2bpp"
 SlowpokeIcon:     INCBIN "gfx/icons/slowpoke.2bpp"
 SudowoodoIcon:    INCBIN "gfx/icons/sudowoodo.2bpp"
 BigmonIcon:       INCBIN "gfx/icons/bigmon.2bpp"
+MarillIcon:       INCBIN "gfx/icons/marill.2bpp"
+
