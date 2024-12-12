@@ -803,6 +803,7 @@ PoliwagEvosAttacks:
 
 PoliwhirlEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, POLIWRATH
+	db EVOLVE_TRADE, KINGS_ROCK, POLITOED
 	db EVOLVE_ITEM, LEAF_STONE, POLITOED
 	db EVOLVE_ITEM, KINGS_ROCK, POLITOED
 	db 0 ; no more evolutions
@@ -835,6 +836,7 @@ AbraEvosAttacks:
 	db 0 ; no more level-up moves
 
 KadabraEvosAttacks:
+	db EVOLVE_TRADE, -1, ALAKAZAM
 	db EVOLVE_ITEM, MOON_STONE, ALAKAZAM
 	db 0 ; no more evolutions
 	db 1, TELEPORT
@@ -879,6 +881,7 @@ MachopEvosAttacks:
 	db 0 ; no more level-up moves
 
 MachokeEvosAttacks:
+	db EVOLVE_TRADE, -1, MACHAMP
 	db EVOLVE_ITEM, FIRE_STONE, MACHAMP
 	db EVOLVE_ITEM, THUNDERSTONE, MACHAMP
 	db EVOLVE_ITEM, SUN_STONE, MACHAMP
@@ -995,6 +998,7 @@ GeodudeEvosAttacks:
 	db 0 ; no more level-up moves
 
 GravelerEvosAttacks:
+	db EVOLVE_TRADE, -1, GOLEM
 	db EVOLVE_ITEM, MOON_STONE, GOLEM
 	db EVOLVE_ITEM, SUN_STONE, GOLEM
 	db 0 ; no more evolutions
@@ -1060,6 +1064,7 @@ RapidashEvosAttacks:
 
 SlowpokeEvosAttacks:
 	db EVOLVE_LEVEL, 37, SLOWBRO
+	db EVOLVE_TRADE, KINGS_ROCK, SLOWKING
 	db EVOLVE_ITEM, KINGS_ROCK, SLOWKING
 	db EVOLVE_ITEM, MOON_STONE, SLOWKING
 	db 0 ; no more evolutions
@@ -1252,6 +1257,7 @@ GastlyEvosAttacks:
 	db 0 ; no more level-up moves
 
 HaunterEvosAttacks:
+	db EVOLVE_TRADE, -1, GENGAR
 	db EVOLVE_ITEM, MOON_STONE, GENGAR
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
@@ -1281,6 +1287,7 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
+	db EVOLVE_TRADE, METAL_COAT, STEELIX
 	db EVOLVE_ITEM, FIRE_STONE, STEELIX
 	db EVOLVE_ITEM, THUNDERSTONE, STEELIX
 	db EVOLVE_ITEM, METAL_COAT, STEELIX
@@ -1593,6 +1600,7 @@ HorseaEvosAttacks:
 	db 0 ; no more level-up moves
 
 SeadraEvosAttacks:
+	db EVOLVE_TRADE, DRAGON_SCALE, KINGDRA
 	db EVOLVE_ITEM, WATER_STONE, KINGDRA
 	db EVOLVE_ITEM, DRAGON_SCALE, KINGDRA
 	db 0 ; no more evolutions
@@ -1676,6 +1684,7 @@ MrMimeEvosAttacks:
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
+	db EVOLVE_TRADE, METAL_COAT, SCIZOR
 	db EVOLVE_ITEM, METAL_COAT, SCIZOR
 	db EVOLVE_ITEM, THUNDERSTONE, SCIZOR
 	db 0 ; no more evolutions
@@ -1862,6 +1871,7 @@ FlareonEvosAttacks:
 	db 0 ; no more level-up moves
 
 PorygonEvosAttacks:
+	db EVOLVE_TRADE, UP_GRADE, PORYGON2
 	db EVOLVE_ITEM, THUNDERSTONE, PORYGON2
 	db EVOLVE_ITEM, UP_GRADE, PORYGON2
 	db 0 ; no more evolutions
