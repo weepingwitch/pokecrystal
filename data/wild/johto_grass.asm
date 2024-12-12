@@ -599,7 +599,7 @@ JohtoGrassWildMons:
 	db 13, GOLBAT
 	db 14, GEODUDE
 	db 16, RATICATE
-	db 16, RATICATE
+	db 16, SANDSHREW
 	; day
 	db 14, RATTATA
 	db 13, ZUBAT
@@ -607,7 +607,7 @@ JohtoGrassWildMons:
 	db 13, GOLBAT
 	db 14, GEODUDE
 	db 16, RATICATE
-	db 16, RATICATE
+	db 16, RHYHORN
 	; nite
 	db 14, RATTATA
 	db 13, ZUBAT
@@ -615,7 +615,7 @@ JohtoGrassWildMons:
 	db 13, GOLBAT
 	db 14, GEODUDE
 	db 16, RATICATE
-	db 16, RATICATE
+	db 16, DIGLETT
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_1F_INSIDE
@@ -655,7 +655,7 @@ JohtoGrassWildMons:
 	db 30, RATICATE
 	db 28, MACHOP
 	db 30, GOLBAT
-	db 30, GOLBAT
+	db 30, KABUTO
 	; day
 	db 31, GRAVELER
 	db 32, MACHOKE
@@ -663,7 +663,7 @@ JohtoGrassWildMons:
 	db 30, RATICATE
 	db 28, MACHOP
 	db 30, GOLBAT
-	db 30, GOLBAT
+	db 30, OMANYTE
 	; nite
 	db 31, GRAVELER
 	db 31, GEODUDE
@@ -671,7 +671,7 @@ JohtoGrassWildMons:
 	db 30, GOLBAT
 	db 28, MARILL
 	db 32, GOLBAT
-	db 32, GOLBAT
+	db 32, CUBONE
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_B1F
@@ -683,7 +683,7 @@ JohtoGrassWildMons:
 	db 16, MACHOP
 	db 16, GEODUDE
 	db 18, RATICATE
-	db 18, RATICATE
+	db 18, DIGLETT
 	; day
 	db 15, ZUBAT
 	db 17, ZUBAT
@@ -691,7 +691,7 @@ JohtoGrassWildMons:
 	db 16, MACHOP
 	db 16, GEODUDE
 	db 18, RATICATE
-	db 18, RATICATE
+	db 18, RHYHORN
 	; nite
 	db 15, ZUBAT
 	db 17, ZUBAT
@@ -699,7 +699,7 @@ JohtoGrassWildMons:
 	db 16, MARILL
 	db 16, GEODUDE
 	db 18, RATICATE
-	db 18, RATICATE
+	db 18, SANDSHREW
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_1F
@@ -727,7 +727,7 @@ JohtoGrassWildMons:
 	db 23, DELIBIRD
 	db 24, GOLBAT
 	db 22, GOLBAT
-	db 22, GOLBAT
+	db 22, SMOOCHUM
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B1F
@@ -754,7 +754,7 @@ JohtoGrassWildMons:
 	db 23, GOLBAT
 	db 24, DELIBIRD
 	db 25, GOLBAT
-	db 23, GOLBAT
+	db 23, SMOOCHUM
 	db 22, SNEASEL
 	end_grass_wildmons
 

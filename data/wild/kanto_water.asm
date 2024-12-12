@@ -69,7 +69,7 @@ KantoWaterWildMons:
 	db 6 percent ; encounter rate
 	db 35, TENTACOOL
 	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 35, ARTICUNO
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_21
@@ -167,7 +167,7 @@ KantoWaterWildMons:
 	db 6 percent ; encounter rate
 	db 35, TENTACOOL
 	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 5, MEWTWO
 	end_water_wildmons
 
 	db -1 ; end

@@ -55,7 +55,7 @@ KantoGrassWildMons:
 	db 12, PARAS
 	db 10, GEODUDE
 	db 12, CLEFAIRY
-	db 12, CLEFAIRY
+	db 5, MEW
 	end_grass_wildmons
 
 	def_grass_wildmons ROCK_TUNNEL_1F
@@ -123,7 +123,7 @@ KantoGrassWildMons:
 	db 34, GOLBAT
 	db 35, SANDSLASH
 	db 35, RHYDON
-	db 35, RHYDON
+	db 35, MOLTRES
 	; day
 	db 34, GRAVELER
 	db 32, RHYHORN
@@ -131,7 +131,7 @@ KantoGrassWildMons:
 	db 34, GOLBAT
 	db 35, SANDSLASH
 	db 35, RHYDON
-	db 35, RHYDON
+	db 35, MOLTRES
 	; nite
 	db 34, GOLBAT
 	db 34, GRAVELER
@@ -139,7 +139,7 @@ KantoGrassWildMons:
 	db 36, GRAVELER
 	db 38, GRAVELER
 	db 40, GRAVELER
-	db 40, GRAVELER
+	db 40, MOLTRES
 	end_grass_wildmons
 
 	def_grass_wildmons TOHJO_FALLS
@@ -431,7 +431,7 @@ KantoGrassWildMons:
 	db 15, FEAROW
 	db 15, MAROWAK
 	db 16, ELECTABUZZ
-	db 16, ELECTABUZZ
+	db 16, ZAPDOS
 	; day
 	db 15, SPEAROW
 	db 17, VOLTORB
@@ -439,7 +439,7 @@ KantoGrassWildMons:
 	db 15, FEAROW
 	db 15, MAROWAK
 	db 18, ELECTABUZZ
-	db 18, ELECTABUZZ
+	db 18, ZAPDOS
 	; nite
 	db 15, VENONAT
 	db 17, VOLTORB
@@ -447,7 +447,7 @@ KantoGrassWildMons:
 	db 15, VENOMOTH
 	db 15, ZUBAT
 	db 16, ELECTABUZZ
-	db 16, ELECTABUZZ
+	db 16, ZAPDOS
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_11
