@@ -159,8 +159,8 @@ CyndaquilPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
-	pokepic MAREEP
-	cry MAREEP
+	pokepic TYROGUE
+	cry TYROGUE
 	waitbutton
 	closepokepic
 	opentext
@@ -172,12 +172,12 @@ CyndaquilPokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	;waitsfx
-	getmonname STRING_BUFFER_3, MAREEP
+	getmonname STRING_BUFFER_3, TYROGUE
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke MAREEP, 5, BERRY
+	givepoke TYROGUE, 5, BERRY
 	closetext
 	readvar VAR_FACING
 	ifequal RIGHT, ElmDirectionsScript
@@ -189,8 +189,8 @@ TotodilePokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
-	pokepic MARILL
-	cry MARILL
+	pokepic DODUO
+	cry DODUO
 	waitbutton
 	closepokepic
 	opentext
@@ -202,12 +202,12 @@ TotodilePokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	;waitsfx
-	getmonname STRING_BUFFER_3, MARILL
+	getmonname STRING_BUFFER_3, DODUO
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke MARILL, 5, BERRY
+	givepoke DODUO, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterTotodileMovement
 	sjump ElmDirectionsScript
@@ -774,12 +774,12 @@ LabWhereGoingText:
 
 TakeCyndaquilText:
 	text "ELM: You'll take"
-	line "MAREEP?"
+	line "TYROGUE?"
 	done
 
 TakeTotodileText:
 	text "ELM: Do you want"
-	line "MARILL?"
+	line "DODUO?"
 	done
 
 TakeChikoritaText:
