@@ -571,7 +571,7 @@ JohtoGrassWildMons:
 	db 7, KAKUNA
 	db 7, PIDGEY
 	db 6, PARAS
-	db 6, PARAS
+	db 6, TANGELA
 	; day
 	db 5, CATERPIE
 	db 5, WEEDLE
@@ -579,15 +579,15 @@ JohtoGrassWildMons:
 	db 7, KAKUNA
 	db 7, PIDGEY
 	db 6, PARAS
-	db 6, PARAS
+	db 6, BELLSPROUT
 	; nite
-	db 5, ODDISH
+	db 5, MURKROW
 	db 5, VENONAT
 	db 7, ODDISH
 	db 7, PSYDUCK
 	db 7, HOOTHOOT
 	db 6, PARAS
-	db 6, PARAS
+	db 6, SPINARK
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_1F_OUTSIDE
@@ -1259,7 +1259,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 2, RATTATA
 	db 3, HOOTHOOT
-	db 3, ODDISH
+	db 3, VENONAT
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_30
@@ -1286,7 +1286,7 @@ JohtoGrassWildMons:
 	db 4, POLIWAG
 	db 4, HOOTHOOT
 	db 3, ZUBAT
-	db 4, HOOTHOOT
+	db 4, ODDISH
 	db 4, HOOTHOOT
 	end_grass_wildmons
 
@@ -1299,7 +1299,7 @@ JohtoGrassWildMons:
 	db 5, PIDGEY
 	db 4, WEEDLE
 	db 5, HOPPIP
-	db 5, HOPPIP
+	db 5, BULBASAUR
 	; day
 	db 4, PIDGEY
 	db 4, CATERPIE
@@ -1307,7 +1307,7 @@ JohtoGrassWildMons:
 	db 5, PIDGEY
 	db 4, WEEDLE
 	db 5, HOPPIP
-	db 5, HOPPIP
+	db 5, CHIKORITA
 	; nite
 	db 4, SPINARAK
 	db 4, POLIWAG
@@ -1326,7 +1326,7 @@ JohtoGrassWildMons:
 	db 7, BELLSPROUT
 	db 6, HOPPIP
 	db 7, PIDGEY
-	db 7, HOPPIP
+	db 7, ABRA
 	db 7, HOPPIP
 	; day
 	db 4, EKANS
@@ -1342,7 +1342,7 @@ JohtoGrassWildMons:
 	db 7, BELLSPROUT
 	db 6, ZUBAT
 	db 7, HOOTHOOT
-	db 7, GASTLY
+	db 7, ABRA
 	db 7, GASTLY
 	end_grass_wildmons
 
