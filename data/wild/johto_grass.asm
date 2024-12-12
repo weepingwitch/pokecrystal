@@ -1634,7 +1634,7 @@ JohtoGrassWildMons:
 	db 24, GLIGAR
 	db 25, DONPHAN
 	db 20, PHANPY
-	db 27, SKARMORY
+	db 5, CHARMANDER
 	db 27, SKARMORY
 	; day
 	db 23, GEODUDE
@@ -1642,7 +1642,7 @@ JohtoGrassWildMons:
 	db 24, GLIGAR
 	db 25, DONPHAN
 	db 30, DONPHAN
-	db 27, SKARMORY
+	db 5, CYNDAQUIL
 	db 27, SKARMORY
 	; nite
 	db 23, GEODUDE
