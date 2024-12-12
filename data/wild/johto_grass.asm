@@ -289,25 +289,25 @@ JohtoGrassWildMons:
 	db 14, KOFFING
 	db 15, RATTATA
 	db 14, ZUBAT
-	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, MAGBY
+	db 15, GROWLITHE
+	db 15, GRIMER
 	; day
 	db 13, RATTATA
 	db 14, KOFFING
 	db 15, RATTATA
 	db 14, ZUBAT
-	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, SLUGMA
+	db 15, PONYTA
+	db 15, GRIMER
 	; nite
 	db 13, RATTATA
 	db 14, KOFFING
 	db 15, RATTATA
 	db 14, ZUBAT
-	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, CUBONE
+	db 15, VULPIX
+	db 15, GRIMER
 	end_grass_wildmons
 
 	def_grass_wildmons BURNED_TOWER_B1F
@@ -403,7 +403,7 @@ JohtoGrassWildMons:
 	db 5, UNOWN
 	db 5, UNOWN
 	db 5, UNOWN
-	db 5, UNOWN
+	db 5, ESPEON
 	; day
 	db 5, UNOWN
 	db 5, UNOWN
@@ -411,7 +411,7 @@ JohtoGrassWildMons:
 	db 5, UNOWN
 	db 5, UNOWN
 	db 5, UNOWN
-	db 5, UNOWN
+	db 5, ABRA
 	; nite
 	db 5, UNOWN
 	db 5, UNOWN
@@ -419,7 +419,7 @@ JohtoGrassWildMons:
 	db 5, UNOWN
 	db 5, UNOWN
 	db 5, UNOWN
-	db 5, UNOWN
+	db 5, DROWZEE
 	end_grass_wildmons
 
 	def_grass_wildmons UNION_CAVE_1F
@@ -459,7 +459,7 @@ JohtoGrassWildMons:
 	db 8, ONIX
 	db 6, RATTATA
 	db 8, RATTATA
-	db 8, RATTATA
+	db 8, ABRA
 	; day
 	db 8, GEODUDE
 	db 6, ZUBAT
@@ -474,7 +474,7 @@ JohtoGrassWildMons:
 	db 8, WOOPER
 	db 8, ONIX
 	db 6, PARAS
-	db 8, RATTATA
+	db 8, GASTLY
 	db 8, RATTATA
 	end_grass_wildmons
 
@@ -487,7 +487,7 @@ JohtoGrassWildMons:
 	db 21, RATICATE
 	db 20, GEODUDE
 	db 23, ONIX
-	db 23, ONIX
+	db 23, UMBREON
 	; day
 	db 22, ZUBAT
 	db 22, GOLBAT
@@ -495,7 +495,7 @@ JohtoGrassWildMons:
 	db 21, RATICATE
 	db 20, GEODUDE
 	db 23, ONIX
-	db 23, ONIX
+	db 23, SNEASEL
 	; nite
 	db 22, ZUBAT
 	db 22, GOLBAT
@@ -503,7 +503,7 @@ JohtoGrassWildMons:
 	db 21, RATICATE
 	db 20, GEODUDE
 	db 23, ONIX
-	db 23, ONIX
+	db 23, MURKROW
 	end_grass_wildmons
 
 	def_grass_wildmons SLOWPOKE_WELL_B1F
@@ -539,27 +539,27 @@ JohtoGrassWildMons:
 	; morn
 	db 21, ZUBAT
 	db 23, ZUBAT
-	db 19, ZUBAT
+	db 19, SLOWPOKE
 	db 21, SLOWPOKE
 	db 23, GOLBAT
 	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, SHELLDER
 	; day
 	db 21, ZUBAT
 	db 23, ZUBAT
-	db 19, ZUBAT
+	db 19, SLOWPOKE
 	db 21, SLOWPOKE
 	db 23, GOLBAT
 	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, JYNX
 	; nite
 	db 21, ZUBAT
 	db 23, ZUBAT
-	db 19, ZUBAT
+	db 19, SLOWPOKE
 	db 21, SLOWPOKE
 	db 23, GOLBAT
 	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, SNEASEL
 	end_grass_wildmons
 
 	def_grass_wildmons ILEX_FOREST
