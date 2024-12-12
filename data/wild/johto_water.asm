@@ -97,7 +97,7 @@ JohtoWaterWildMons:
 	db 2 percent ; encounter rate
 	db 35, SEAKING
 	db 35, GOLDUCK
-	db 35, GOLDEEN
+	db 35, ARTICUNO
 	end_water_wildmons
 
 	def_water_wildmons DARK_CAVE_VIOLET_ENTRANCE
@@ -116,8 +116,8 @@ JohtoWaterWildMons:
 
 	def_water_wildmons DRAGONS_DEN_B1F
 	db 4 percent ; encounter rate
-	db 15, MAGIKARP
-	db 10, MAGIKARP
+	db 15, KABUTO
+	db 10, OMANYTE
 	db 10, DRATINI
 	end_water_wildmons
 
@@ -165,16 +165,16 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ROUTE_40
 	db 6 percent ; encounter rate
-	db 5, SQUIRTLE
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
+	db 5, SQUIRTLE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_41
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
-	db 5, TOTODILE
 	db 20, MANTINE
+	db 5, TOTODILE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_42
@@ -207,9 +207,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons NEW_BARK_TOWN
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
 	db 15, TENTACOOL
-	db 20, TENTACRUEL
+	db 5, TOTODILE
+	db 5, SQUIRTLE
 	end_water_wildmons
 
 	def_water_wildmons CHERRYGROVE_CITY
@@ -221,9 +221,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons VIOLET_CITY
 	db 2 percent ; encounter rate
-	db 20, POLIWAG
 	db 15, POLIWAG
 	db 20, POLIWHIRL
+	db 15, PSYDUCK
 	end_water_wildmons
 
 	def_water_wildmons CIANWOOD_CITY
@@ -263,9 +263,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons SILVER_CAVE_OUTSIDE
 	db 2 percent ; encounter rate
-	db 35, POLIWHIRL
 	db 40, POLIWHIRL
 	db 35, POLIWAG
+	db 30, LAPRAS
 	end_water_wildmons
 
 	db -1 ; end

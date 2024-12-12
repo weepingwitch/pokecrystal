@@ -150,13 +150,13 @@ FishGroups:
 	db 100 percent,     MAGIKARP,   10
 .Dratini_2_Good:
 	db  35 percent,     MAGIKARP,   10
-	db  70 percent,     MAGIKARP,   10
+	db  70 percent,     OMANYTE,   10
 	db  90 percent + 1, MAGIKARP,   10
 	db 100 percent,     time_group 16
 .Dratini_2_Super:
 	db  40 percent,     MAGIKARP,   10
 	db  70 percent,     time_group 17
-	db  90 percent + 1, MAGIKARP,   10
+	db  90 percent + 1, OMANYTE,   10
 	db 100 percent,     DRAGONAIR,  10
 
 .WhirlIslands_Old:

@@ -11,7 +11,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 6, RATTATA
 	db 5, RATTATA
-	db 5, RATTATA
+	db 3, BELLSPROUT
 	; day
 	db 3, RATTATA
 	db 4, RATTATA
@@ -19,7 +19,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 6, RATTATA
 	db 5, RATTATA
-	db 5, RATTATA
+	db 3, BELLSPROUT
 	; nite
 	db 3, GASTLY
 	db 4, GASTLY
@@ -39,7 +39,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 6, RATTATA
 	db 5, RATTATA
-	db 5, RATTATA
+	db 5, BELLSPROUT
 	; day
 	db 3, RATTATA
 	db 4, RATTATA
@@ -47,7 +47,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 6, RATTATA
 	db 5, RATTATA
-	db 5, RATTATA
+	db 5, BELLSPROUT
 	; nite
 	db 3, GASTLY
 	db 4, GASTLY
@@ -55,7 +55,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 6, GASTLY
 	db 5, RATTATA
-	db 5, RATTATA
+	db 5, MURKROW
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_2F
@@ -83,7 +83,7 @@ JohtoGrassWildMons:
 	db 22, RATTATA
 	db 23, RATTATA
 	db 24, RATTATA
-	db 24, RATTATA
+	db 24, MURKROW
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_3F
@@ -95,7 +95,7 @@ JohtoGrassWildMons:
 	db 22, RATTATA
 	db 23, RATTATA
 	db 24, RATTATA
-	db 24, RATTATA
+	db 24, MAGNEMITE
 	; day
 	db 20, RATTATA
 	db 21, RATTATA
@@ -103,15 +103,15 @@ JohtoGrassWildMons:
 	db 22, RATTATA
 	db 23, RATTATA
 	db 24, RATTATA
-	db 24, RATTATA
+	db 24, MAGNEMITE
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
 	db 22, RATTATA
 	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 24, MURKROW
+	db 24, MAGNEMITE
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_4F
@@ -122,24 +122,24 @@ JohtoGrassWildMons:
 	db 22, RATTATA
 	db 22, RATTATA
 	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	; day
 	db 20, RATTATA
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
 	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
 	db 22, RATTATA
 	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_5F
@@ -149,25 +149,25 @@ JohtoGrassWildMons:
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	; day
 	db 20, RATTATA
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_6F
@@ -177,25 +177,25 @@ JohtoGrassWildMons:
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	; day
 	db 20, RATTATA
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_7F
@@ -205,25 +205,25 @@ JohtoGrassWildMons:
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	; day
 	db 20, RATTATA
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, MAGNEMITE
+	db 24, SKARMORY
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_8F
@@ -233,25 +233,25 @@ JohtoGrassWildMons:
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, STEELIX
+	db 24, SKARMORY
 	; day
 	db 20, RATTATA
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, STEELIX
+	db 24, SKARMORY
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, STEELIX
+	db 24, SKARMORY
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_9F
@@ -261,25 +261,25 @@ JohtoGrassWildMons:
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, STEELIX
+	db 24, SKARMORY
 	; day
 	db 20, RATTATA
 	db 21, RATTATA
 	db 22, RATTATA
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, STEELIX
+	db 24, SKARMORY
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
 	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 23, VOLTORB
+	db 24, STEELIX
+	db 24, SKARMORY
 	end_grass_wildmons
 
 	def_grass_wildmons BURNED_TOWER_1F
@@ -318,7 +318,7 @@ JohtoGrassWildMons:
 	db 16, KOFFING
 	db 15, ZUBAT
 	db 12, KOFFING
-	db 16, KOFFING
+	db 16, HOUNDOUR
 	db 16, WEEZING
 	; day
 	db 14, RATTATA
@@ -326,7 +326,7 @@ JohtoGrassWildMons:
 	db 16, KOFFING
 	db 15, ZUBAT
 	db 12, KOFFING
-	db 16, KOFFING
+	db 16, HOUNDOUR
 	db 16, WEEZING
 	; nite
 	db 14, RATTATA
@@ -334,7 +334,7 @@ JohtoGrassWildMons:
 	db 16, KOFFING
 	db 15, ZUBAT
 	db 12, KOFFING
-	db 16, KOFFING
+	db 16, HOUNDOUR
 	db 16, WEEZING
 	end_grass_wildmons
 
@@ -347,7 +347,7 @@ JohtoGrassWildMons:
 	db 13, PIDGEY
 	db 10, CATERPIE
 	db 10, WEEDLE
-	db 10, WEEDLE
+	db 10, CHIKORITA
 	; day
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
@@ -355,7 +355,7 @@ JohtoGrassWildMons:
 	db 13, PIDGEY
 	db 10, CATERPIE
 	db 10, WEEDLE
-	db 10, WEEDLE
+	db 10, BULBASAUR
 	; nite
 	db 12, PSYDUCK
 	db 13, HOOTHOOT
@@ -363,7 +363,7 @@ JohtoGrassWildMons:
 	db 15, HOOTHOOT
 	db 10, VENONAT
 	db 12, VENONAT
-	db 12, VENONAT
+	db 12, TANGELA
 	end_grass_wildmons
 
 	def_grass_wildmons RUINS_OF_ALPH_OUTSIDE
@@ -375,7 +375,7 @@ JohtoGrassWildMons:
 	db 24, NATU
 	db 20, SMEARGLE
 	db 22, SMEARGLE
-	db 22, SMEARGLE
+	db 22, DITTO
 	; day
 	db 20, NATU
 	db 22, NATU
@@ -387,7 +387,7 @@ JohtoGrassWildMons:
 	; nite
 	db 20, NATU
 	db 22, NATU
-	db 18, NATU
+	db 18, GASTLY
 	db 24, NATU
 	db 22, WOOPER
 	db 22, QUAGSIRE
