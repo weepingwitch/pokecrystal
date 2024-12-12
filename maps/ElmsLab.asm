@@ -829,7 +829,7 @@ ElmDirectionsText3:
 	done
 
 GotElmsNumberText:
-	text "ELM have you his"
+	text "ELM gave you his"
 	line "phone number."
 	done
 

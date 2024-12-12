@@ -249,7 +249,7 @@ DontKnowTheInstructionsText:
 	done
 
 InstructionsNextText:
-	text "Anyway, please call"
+	text "Anyway,please call"
 	line "me every day."
 
 	done
