@@ -258,12 +258,7 @@ ElmDirectionsScript:
 	playsound SFX_REGISTER_PHONE_NUMBER
 	waitbutton
 	closetext
-	turnobject ELMSLAB_ELM, LEFT
 	turnobject ELMSLAB_ELM, DOWN
-	opentext
-	writetext ElmDirectionsText3
-	waitbutton
-	closetext
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	setevent EVENT_RIVAL_CHERRYGROVE_CITY
 	setscene SCENE_ELMSLAB_AIDE_GIVES_POTION
@@ -720,9 +715,6 @@ ElmText_Intro:
 	text "ELM: <PLAY_G>!"
 	line "There you are!"
 
-	para "I needed to ask"
-	line "you a favor."
-
 	para "I'm conducting new"
 	line "#MON research."
 
@@ -730,7 +722,7 @@ ElmText_Intro:
 	para "I need you to do"
 	line "unpaid work."
 
-	para "no credit."
+	para "No credit."
 	done
 
 ElmText_Accepted:
@@ -750,21 +742,21 @@ ElmText_GotAnEmail:
 	line "e-mail!"
 
 	para "<……><……><……>"
-	line "oh it's spam"
+	line "Oh it's spam"
 
-	para "anyway."
+	para "Snyway."
 	done
 
 ElmText_MissionFromMrPokemon:
 	text "Hey, listen."
 
-	para "More child labor."
-	line "Visit my friend."
+	para "Another job..."
+	line "visit my friend."
 	done
 
 ElmText_ChooseAPokemon:
-	text "I want you to"
-	line "pet-sit."
+	text "Also, I want you"
+	line "to pet-sit."
 
 	para "Go on. Pick one!"
 	done
@@ -796,12 +788,12 @@ TakeChikoritaText:
 	done
 
 DidntChooseStarterText:
-	text "ELM: lol ok"
+	text "ELM: LOL ok"
 	done
 
 ChoseStarterText:
-	text "ELM: that one?"
-	line "huh."
+	text "ELM: That one?"
+	line "Huh."
 	done
 
 ReceivedStarterText:
@@ -810,22 +802,16 @@ ReceivedStarterText:
 	done
 
 ElmDirectionsText1:
-	text "go visit my"
+	text "Now go visit my"
 	line "weird friend plz."
 
-	para "he lives in the"
+	para "He lives in the"
 	line "next city over."
 
-	para "call me if"
+	para "Call me if"
 	line "you get lost."
 
 
-	done
-
-
-ElmDirectionsText3:
-	text "<PLAY_G>, I'm"
-	line "counting on you!"
 	done
 
 GotElmsNumberText:

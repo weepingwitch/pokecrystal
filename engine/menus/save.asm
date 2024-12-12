@@ -111,7 +111,7 @@ MoveMonWOMail_InsertMon_SaveGame:
 	ld de, SFX_SAVE
 	call PlaySFX
 	ld c, 24
-	call DelayFrames
+	;call delayframes
 	ret
 
 StartMoveMonWOMail_SaveGame:
@@ -242,7 +242,7 @@ SavedTheGame:
 	call _SaveGameData
 	; wait 32 frames
 	ld c, 32
-	call DelayFrames
+	;call delayframes
 	; copy the original text speed setting to the stack
 	ld a, [wOptions]
 	push af
@@ -260,7 +260,7 @@ SavedTheGame:
 	call WaitSFX
 	; wait 30 frames
 	ld c, 30
-	call DelayFrames
+	;call delayframes
 	ret
 
 _SaveGameData:
@@ -354,7 +354,7 @@ SavingDontTurnOffThePower:
 	ld [wOptions], a
 	; Wait for 16 frames
 	ld c, 16
-	call DelayFrames
+	;call delayframes
 	ret
 
 ErasePreviousSave:

@@ -214,11 +214,12 @@ ElmsLookingForYouText:
 	text "Oh, <PLAYER>…! "
 	line "PROF. ELM"
 
-	para "was looking"
-	line "for you."
+	para "was looking for"
+	line "you."
 
 
-	para "Take this."
+	para "Also, take your"
+	line "weird toy."
 	done
 
 MomGivesPokegearText:
@@ -263,12 +264,12 @@ HurryUpElmIsWaitingText:
 
 SoWhatWasProfElmsErrandText:
 	text "So, PROF. ELM"
-	line "wants you to what?"
+	line "wants your soul?"
 
 	done
 
 ImBehindYouText:
-	text "weird"
+	text "Weird."
 	done
 
 NeighborMornIntroText:
@@ -301,39 +302,36 @@ NeighborText:
 	line "ELM's assistant."
 
 	para "She really loves"
-	line "#MON!"
+	line "unpaid labor!"
 	done
 
 PlayersHouse1FStoveText:
 	text "Mom's specialty!"
 
-	para "CINNABAR VOLCANO"
-	line "BURGER!"
+	para "BURNT TOAST"
 	done
 
 PlayersHouse1FSinkText:
-	text "The sink is spot-"
-	line "less. Mom likes it"
-	cont "clean."
+	text "The sink is kinda"
+	line "dirty. Gross."
 	done
 
 PlayersHouse1FFridgeText:
 	text "Let's see what's"
 	line "in the fridge…"
 
-	para "FRESH WATER and"
-	line "tasty LEMONADE!"
+	para "PICKLES and HOT"
+	line "SAUCE!"
 	done
 
 PlayersHouse1FTVText:
 	text "There's a movie on"
-	line "TV: Stars dot the"
+	line "TV: Twilight."
 
-	para "sky as two boys"
-	line "ride on a train…"
-
-	para "I'd better get"
-	line "rolling too!"
+	para "You love this one."
+	
+	para "You've watched it"
+	line "a million times."
 	done
 
 PlayersHouse1F_MapEvents:

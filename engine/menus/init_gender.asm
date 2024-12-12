@@ -37,7 +37,7 @@ InitGender:
 	ld a, 1 ; Force player gender to female
 	ld [wPlayerGender], a
 	ld c, 10
-	call DelayFrames
+	;call delayframes
 	ret
 
 .MenuHeader:
@@ -64,7 +64,7 @@ InitGenderScreen:
 	ld a, HIGH(MUSIC_NONE)
 	ld [wMusicFadeID + 1], a
 	ld c, 8
-	call DelayFrames
+	;call delayframes
 	call ClearBGPalettes
 	call InitCrystalData
 	call LoadFontsExtra

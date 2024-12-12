@@ -93,7 +93,7 @@ Rival1Group:
 	db "?@", TRAINERTYPE_NORMAL
 	db 12, GASTLY
 	db 14, ZUBAT
-	db 16, FLAAFY
+	db 16, FLAAFFY
 	db -1 ; end
 
 	; RIVAL1 (5)
