@@ -728,7 +728,7 @@ ElmText_Intro:
 
 	
 	para "I need you to do"
-	line "unpaid research."
+	line "unpaid work."
 
 	para "no credit."
 	done
@@ -792,7 +792,7 @@ TakeTotodileText:
 
 TakeChikoritaText:
 	text "ELM: So, you like"
-	line "CHIKORITA?"
+	line "LARVITAR?"
 	done
 
 DidntChooseStarterText:
@@ -806,7 +806,7 @@ ChoseStarterText:
 
 ReceivedStarterText:
 	text "<PLAYER> received"
-	text "a #MON!"
+	line "a #MON!"
 	done
 
 ElmDirectionsText1:
