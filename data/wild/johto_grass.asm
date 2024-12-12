@@ -446,7 +446,7 @@ JohtoGrassWildMons:
 	db 5, WOOPER
 	db 4, RATTATA
 	db 7, ZUBAT
-	db 6, ONIX
+	db 6, PARAS
 	db 6, ONIX
 	end_grass_wildmons
 
@@ -473,7 +473,7 @@ JohtoGrassWildMons:
 	db 6, ZUBAT
 	db 8, WOOPER
 	db 8, ONIX
-	db 6, RATTATA
+	db 6, PARAS
 	db 8, RATTATA
 	db 8, RATTATA
 	end_grass_wildmons
@@ -569,7 +569,7 @@ JohtoGrassWildMons:
 	db 5, WEEDLE
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 7, PIDGEY
+	db 7, CHIKORITA
 	db 6, PARAS
 	db 6, TANGELA
 	; day
@@ -577,7 +577,7 @@ JohtoGrassWildMons:
 	db 5, WEEDLE
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 7, PIDGEY
+	db 7, BULBASAUR
 	db 6, PARAS
 	db 6, BELLSPROUT
 	; nite
@@ -1243,7 +1243,7 @@ JohtoGrassWildMons:
 	db 3, SENTRET
 	db 2, RATTATA
 	db 3, HOPPIP
-	db 2, BULBASAUR
+	db 2, EEVEE
 	; day
 	db 2, PIDGEY
 	db 2, SENTRET
@@ -1251,7 +1251,7 @@ JohtoGrassWildMons:
 	db 3, NIDORAN_F
 	db 2, RATTATA
 	db 3, HOPPIP
-	db 3, CHIKORITA
+	db 3, EEVEE
 	; nite
 	db 2, HOOTHOOT
 	db 2, EKANS
@@ -1299,7 +1299,7 @@ JohtoGrassWildMons:
 	db 5, PIDGEY
 	db 4, WEEDLE
 	db 5, HOPPIP
-	db 5, BULBASAUR
+	db 5, EEVEE
 	; day
 	db 4, PIDGEY
 	db 4, CATERPIE
@@ -1307,7 +1307,7 @@ JohtoGrassWildMons:
 	db 5, PIDGEY
 	db 4, WEEDLE
 	db 5, HOPPIP
-	db 5, CHIKORITA
+	db 5, EEVEE
 	; nite
 	db 4, SPINARAK
 	db 4, POLIWAG
