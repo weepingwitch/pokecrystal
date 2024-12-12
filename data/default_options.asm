@@ -4,7 +4,7 @@ DefaultOptions:
 ; wSaveFileExists: no
 	db FALSE
 ; wTextboxFrame: frame 1
-	db FRAME_4
+	db FRAME_1
 ; wTextboxFlags: use text speed
 	db 0 << FAST_TEXT_DELAY_F
 ; wGBPrinterBrightness: normal

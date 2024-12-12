@@ -26,7 +26,7 @@ SplashScreen:
 ; Draw copyright screen
 	callfar Copyright
 	call WaitBGMap
-	ld c, 100
+	ld c, 10
 	call DelayFrames
 	call ClearTilemap
 
@@ -101,7 +101,7 @@ GameFreakPresentsEnd:
 	farcall ClearSpriteAnims
 	call ClearTilemap
 	call ClearSprites
-	ld c, 16
+	ld c, 10
 	call DelayFrames
 	ret
 

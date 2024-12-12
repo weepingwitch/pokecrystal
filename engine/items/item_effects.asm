@@ -1060,13 +1060,6 @@ LevelBallMultiplier:
 
 ; BallDodgedText and BallMissedText were used in Gen 1.
 
-BallDodgedText: ; unreferenced
-	text_far _BallDodgedText
-	text_end
-
-BallMissedText: ; unreferenced
-	text_far _BallMissedText
-	text_end
 
 BallBrokeFreeText:
 	text_far _BallBrokeFreeText
@@ -1767,7 +1760,7 @@ ItemActionTextWaitButton:
 	call ItemActionText
 	ld a, $1
 	ldh [hBGMapMode], a
-	ld c, 50
+	ld c, 10
 	call DelayFrames
 	jp WaitPressAorB_BlinkCursor
 
@@ -1889,22 +1882,8 @@ LoadCurHPIntoBuffer3:
 	ld [wHPBuffer3 + 1], a
 	ld a, [hl]
 	ld [wHPBuffer3], a
-	ret
-
-LoadHPIntoBuffer3: ; unreferenced
-	ld a, d
-	ld [wHPBuffer3 + 1], a
-	ld a, e
-	ld [wHPBuffer3], a
-	ret
-
-LoadHPFromBuffer3: ; unreferenced
-	ld a, [wHPBuffer3 + 1]
-	ld d, a
-	ld a, [wHPBuffer3]
-	ld e, a
-	ret
-
+	ret 
+	
 LoadCurHPIntoBuffer2:
 	ld a, MON_HP
 	call GetPartyParamLocation

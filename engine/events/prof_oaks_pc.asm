@@ -17,7 +17,7 @@ ProfOaksPCBoot:
 	call Rate
 	call PlaySFX ; sfx loaded by previous Rate function call
 	call JoyWaitAorB
-	call WaitSFX
+	;call WaitSFX
 	ret
 
 ProfOaksPCRating:

@@ -111,7 +111,7 @@ ENDM
 	call PlaySFX
 	pop de
 	ld c, 30
-	call DelayFrames
+	;call DelayFrames
 	dec b
 	jr nz, .party_loop
 	ret
@@ -179,7 +179,7 @@ INCLUDE "gfx/overworld/heal_machine.pal"
 .palette_loop
 	push bc
 	call .FlashPalettes
-	ld c, 10
+	ld c, 1
 	call DelayFrames
 	pop bc
 	dec c

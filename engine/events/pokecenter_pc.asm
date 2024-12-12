@@ -199,7 +199,7 @@ PC_PlaySwapItemsSound:
 
 PC_WaitPlaySFX:
 	push de
-	call WaitSFX
+	;call WaitSFX
 	pop de
 	call PlaySFX
 	ret

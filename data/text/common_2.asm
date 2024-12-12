@@ -12,8 +12,6 @@ _NameRaterHelloText::
 	text "Hello, hello! I'm"
 	line "the NAME RATER."
 
-	para "I rate the names"
-	line "of #MON."
 
 	para "Would you like me"
 	line "to rate names?"
@@ -186,10 +184,6 @@ _TMHMNotCompatibleText::
 	text_ram wStringBuffer1
 	text "."
 
-	para "It can't learn"
-	line "@"
-	text_ram wStringBuffer2
-	text "."
 	prompt
 
 _NoRoomTMHMText::
@@ -524,14 +518,13 @@ _WhitedOutText::
 	done
 
 _ItemfinderItemNearbyText::
-	text "Yes! ITEMFINDER"
-	line "indicates there's"
-	cont "an item nearby."
+	text "Yes! you are"
+	line "near an item!"
 	prompt
 
 _ItemfinderNopeText::
 	text "Nope! ITEMFINDER"
-	line "isn't responding."
+	line "can't find item."
 	prompt
 
 _PoisonFaintText::
@@ -544,8 +537,8 @@ _PoisonWhiteoutText::
 	text "<PLAYER> is out of"
 	line "useable #MON!"
 
-	para "<PLAYER> whited"
-	line "out!"
+	para "<PLAYER> died."
+	
 	prompt
 
 _UseSweetScentText::
@@ -873,17 +866,6 @@ _NoPromptText:: ; unreferenced
 	text "No"
 	prompt
 
-_AnimationTypeText:: ; unreferenced
-	text_decimal wcf64, 1, 3
-	text " @"
-	text_ram wStringBuffer1
-	text_start
-	line "Animation type @"
-	text_ram wStringBuffer2
-	text_end
-
-	text_end ; unreferenced
-
 _MonNumberText:: ; unreferenced
 	text "#MON number?"
 	done
@@ -1132,7 +1114,7 @@ _PokecenterPCWhoseText::
 	done
 
 _PokecenterBillsPCText::
-	text "BILL's PC"
+	text "willow's PC"
 	line "accessed."
 
 	para "#MON Storage"
@@ -1324,26 +1306,7 @@ _OakPCText4::
 	line "OAK's PC closed."
 	done
 
-_TrainerRankingExplanationText:: ; unreferenced
-	text "Triple-theme"
-	line "trainer ranking!"
 
-	para "The SAVE file you"
-	line "just sent might"
-	cont "make the rankings!"
-
-	para ""
-	done
-
-_TrainerRankingNoDataText:: ; unreferenced
-	text "There is no"
-	line "ranking data."
-
-	para "Link to obtain"
-	line "ranking data."
-
-	para ""
-	done
 
 _MemoryGameYeahText::
 	text " , yeah!"
@@ -1499,7 +1462,7 @@ _MayRegisterItemText::
 	done
 
 _OakText1::
-	text "Hello! Sorry to"
+	text "Hey! Sorry to"
 	line "keep you waiting!"
 	prompt
 
@@ -1509,15 +1472,13 @@ _OakText2::
 	prompt
 
 _OakText3::
-	text_promptbutton
-	text_end
-
+	
 	text_end ; unreferenced
 
 _OakText4::
-	text "#MON are cool "
+	text "#MON are cool."
 	prompt
 
 _OakText5::
-	text "anyway lol"
+	text "Anyway..."
 	prompt

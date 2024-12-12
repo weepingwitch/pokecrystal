@@ -773,7 +773,7 @@ Script_playsound:
 	ret
 
 Script_waitsfx:
-	call WaitSFX
+	;call WaitSFX
 	ret
 
 Script_warpsound:

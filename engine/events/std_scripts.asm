@@ -789,7 +789,7 @@ AskNumber2MScript:
 RegisteredNumberMScript:
 	farwritetext RegisteredNumber1Text
 	playsound SFX_REGISTER_PHONE_NUMBER
-	waitsfx
+	
 	promptbutton
 	end
 
@@ -1480,7 +1480,6 @@ AskNumber2FScript:
 RegisteredNumberFScript:
 	farwritetext RegisteredNumber2Text
 	playsound SFX_REGISTER_PHONE_NUMBER
-	waitsfx
 	promptbutton
 	end
 
@@ -1776,7 +1775,6 @@ ReceiveItemScript:
 	waitsfx
 	farwritetext ReceivedItemText
 	playsound SFX_ITEM
-	waitsfx
 	end
 
 ReceiveTogepiEggScript:

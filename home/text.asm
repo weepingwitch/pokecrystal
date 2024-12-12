@@ -607,7 +607,7 @@ TextScroll::
 	ld a, " "
 	ld bc, TEXTBOX_INNERW
 	call ByteFill
-	ld c, 5
+	ld c, 1
 	call DelayFrames
 	ret
 
@@ -893,7 +893,7 @@ TextCommand_PAUSE::
 	ldh a, [hJoyDown]
 	and A_BUTTON | B_BUTTON
 	jr nz, .done
-	ld c, 30
+	ld c, 20
 	call DelayFrames
 .done
 	pop bc

@@ -54,7 +54,7 @@ RotatePalettesRight::
 	ld a, [hli]
 	ld d, a
 	call DmgToCgbObjPals
-	ld c, 8
+	ld c, 2
 	call DelayFrames
 	pop de
 	dec b
@@ -96,7 +96,7 @@ RotatePalettesLeft::
 	call DmgToCgbObjPals
 	ld a, [hld]
 	call DmgToCgbBGPals
-	ld c, 8
+	ld c, 2
 	call DelayFrames
 	pop de
 	dec b
