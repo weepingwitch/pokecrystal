@@ -36,7 +36,7 @@ InitGender:
 	;ld a, [wMenuCursorY] ;we don't need this lol
 	ld a, 1 ; Force player gender to female
 	ld [wPlayerGender], a
-	ld c, 10
+	;ld c, 10
 	;call delayframes
 	ret
 
