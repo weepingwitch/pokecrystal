@@ -1007,7 +1007,7 @@ JohtoGrassWildMons:
 	db 25, KRABBY
 	db 26, GOLBAT
 	db 25, GOLBAT
-	db 25, GOLBAT
+	db 25, JYNX
 	end_grass_wildmons
 
 	def_grass_wildmons WHIRL_ISLAND_B2F
@@ -1035,7 +1035,7 @@ JohtoGrassWildMons:
 	db 26, KRABBY
 	db 27, GOLBAT
 	db 26, GOLBAT
-	db 26, GOLBAT
+	db 26, VAPOREON
 	end_grass_wildmons
 
 	def_grass_wildmons WHIRL_ISLAND_LUGIA_CHAMBER
@@ -1047,7 +1047,7 @@ JohtoGrassWildMons:
 	db 27, KRABBY
 	db 28, GOLBAT
 	db 27, SEEL
-	db 27, SEEL
+	db 27, GIRAFARIG
 	; day
 	db 25, KRABBY
 	db 26, ZUBAT
@@ -1055,15 +1055,15 @@ JohtoGrassWildMons:
 	db 27, KRABBY
 	db 28, GOLBAT
 	db 27, SEEL
-	db 27, SEEL
+	db 27, WOBBUFFET
 	; nite
 	db 25, KRABBY
 	db 26, ZUBAT
 	db 25, KRABBY
 	db 27, KRABBY
 	db 28, GOLBAT
-	db 27, GOLBAT
-	db 27, GOLBAT
+	db 27, HYPNO
+	db 27, VAPOREON
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_ROOM_1
@@ -1091,7 +1091,7 @@ JohtoGrassWildMons:
 	db 42, GOLBAT
 	db 45, GOLDUCK
 	db 46, GOLBAT
-	db 46, GOLBAT
+	db 46, MAROWAK
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_ROOM_2
@@ -1109,7 +1109,7 @@ JohtoGrassWildMons:
 	db 48, MACHOKE
 	db 47, URSARING
 	db 46, PARASECT
-	db 48, PARASECT
+	db 48, LICKITUNG
 	db 15, LARVITAR
 	db 20, LARVITAR
 	; nite
@@ -1147,7 +1147,7 @@ JohtoGrassWildMons:
 	db 49, GOLBAT
 	db 45, GOLDUCK
 	db 53, GOLBAT
-	db 53, GOLBAT
+	db 53, LICKITUNG
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_ITEM_ROOMS
@@ -1159,7 +1159,7 @@ JohtoGrassWildMons:
 	db 46, PARASECT
 	db 48, PARASECT
 	db 50, PARASECT
-	db 52, PARASECT
+	db 52, LICKITUNG
 	; day
 	db 48, GOLBAT
 	db 46, GOLBAT
@@ -1355,7 +1355,7 @@ JohtoGrassWildMons:
 	db 6, HOPPIP
 	db 7, EKANS
 	db 7, HOPPIP
-	db 7, HOPPIP
+	db 7, SMEARGLE
 	; day
 	db 6, RATTATA
 	db 6, SPEAROW
@@ -1363,7 +1363,7 @@ JohtoGrassWildMons:
 	db 6, HOPPIP
 	db 7, EKANS
 	db 7, HOPPIP
-	db 7, HOPPIP
+	db 7, ODDISH
 	; nite
 	db 6, RATTATA
 	db 6, ZUBAT
@@ -1371,7 +1371,7 @@ JohtoGrassWildMons:
 	db 6, ZUBAT
 	db 7, RATTATA
 	db 7, RATTATA
-	db 7, RATTATA
+	db 7, EEVEE
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_34
@@ -1455,7 +1455,7 @@ JohtoGrassWildMons:
 	db 5, HOOTHOOT
 	db 5, HOOTHOOT
 	db 5, GASTLY
-	db 5, GASTLY
+	db 5, HOUNDOUR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_37
@@ -1475,7 +1475,7 @@ JohtoGrassWildMons:
 	db 16, GROWLITHE
 	db 15, PIDGEOTTO
 	db 15, PIDGEY
-	db 15, PIDGEY
+	db 15, FARFETCH_D
 	; nite
 	db 13, SPINARAK
 	db 14, STANTLER
@@ -1490,12 +1490,12 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 16, RATTATA
-	db 16, RATICATE
+	db 16, MILTANK
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 13, TAUROS
 	db 13, MILTANK
-	db 13, MILTANK
+	db 7, TOGEPI
 	; day
 	db 16, RATTATA
 	db 16, RATICATE
@@ -1511,7 +1511,7 @@ JohtoGrassWildMons:
 	db 16, NOCTOWL
 	db 16, MEOWTH
 	db 16, MEOWTH
-	db 16, MEOWTH
+	db 16, MILTANK
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_39
@@ -1567,7 +1567,7 @@ JohtoGrassWildMons:
 	db 16, GOLBAT
 	db 15, MARILL
 	db 16, GOLBAT
-	db 16, GOLBAT
+	db 12, PIKACHU
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_43
@@ -1579,7 +1579,7 @@ JohtoGrassWildMons:
 	db 15, FURRET
 	db 17, RATICATE
 	db 17, FURRET
-	db 17, FURRET
+	db 17, AIPOM
 	; day
 	db 15, SENTRET
 	db 16, PIDGEOTTO
@@ -1607,7 +1607,7 @@ JohtoGrassWildMons:
 	db 24, WEEPINBELL
 	db 24, LICKITUNG
 	db 26, LICKITUNG
-	db 26, LICKITUNG
+	db 26, KANGASKHAN
 	; day
 	db 23, TANGELA
 	db 22, LICKITUNG
@@ -1615,7 +1615,7 @@ JohtoGrassWildMons:
 	db 24, WEEPINBELL
 	db 24, LICKITUNG
 	db 26, LICKITUNG
-	db 26, LICKITUNG
+	db 26, KANGASKHAN
 	; nite
 	db 23, TANGELA
 	db 22, POLIWAG
@@ -1651,7 +1651,7 @@ JohtoGrassWildMons:
 	db 25, GRAVELER
 	db 27, GRAVELER
 	db 27, GRAVELER
-	db 27, GRAVELER
+	db 27, FLAREON
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_46
@@ -1663,7 +1663,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 2, PHANPY
 	db 2, RATTATA
-	db 2, RATTATA
+	db 2, HOPPIP
 	; day
 	db 2, GEODUDE
 	db 2, SPEAROW
@@ -1671,7 +1671,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 2, RATTATA
 	db 2, RATTATA
-	db 2, RATTATA
+	db 2, BELLSPROUT
 	; nite
 	db 2, GEODUDE
 	db 2, RATTATA
@@ -1679,7 +1679,7 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 2, RATTATA
 	db 2, RATTATA
-	db 2, RATTATA
+	db 2, EKANS
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_OUTSIDE
@@ -1691,7 +1691,7 @@ JohtoGrassWildMons:
 	db 44, RAPIDASH
 	db 41, DODUO
 	db 43, DODRIO
-	db 43, DODRIO
+	db 43, FLAREON
 	; day
 	db 41, TANGELA
 	db 42, PONYTA
@@ -1699,7 +1699,7 @@ JohtoGrassWildMons:
 	db 44, RAPIDASH
 	db 41, DODUO
 	db 43, DODRIO
-	db 43, DODRIO
+	db 43, JOLTEON
 	; nite
 	db 41, TANGELA
 	db 42, POLIWHIRL
@@ -1707,7 +1707,7 @@ JohtoGrassWildMons:
 	db 44, POLIWHIRL
 	db 40, GOLBAT
 	db 44, GOLBAT
-	db 44, GOLBAT
+	db 44, UMBREON
 	end_grass_wildmons
 
 	db -1 ; end
