@@ -1,21 +1,4 @@
-ChrisNameMenuHeader:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 10, TEXTBOX_Y - 1
-	dw .MaleNames
-	db 1 ; default option
-	db 0 ; ???
 
-.MaleNames:
-	db STATICMENU_CURSOR | STATICMENU_PLACE_TITLE | STATICMENU_DISABLE_B ; flags
-	db 5 ; items
-	db "NEW NAME@"
-MalePlayerNameArray:
-	db "ALEX@"
-	db "WILL@"
-	db "BOBBY@"
-	db "MATT@"
-	db 2 ; title indent
-	db " NAME @" ; title
 
 KrisNameMenuHeader:
 	db MENU_BACKUP_TILES ; flags
@@ -32,6 +15,6 @@ FemalePlayerNameArray:
 	db "willow@"
 	db "Eliza@"
 	db "Sara@"
-	db "Kris@"
+	db "Alex@"
 	db 2 ; title indent
 	db " NAME @" ; title
