@@ -182,6 +182,18 @@ GoldenrodPokeCenter1FLinkReceptionistPleaseDoComeAgainText:
 	line "again!"
 	done
 
+GoldenrodPokecenter1FGameboyKidText:
+	text "The COLOSSEUM"
+	line "upstairs is for"
+	cont "link battles."
+
+	para "Battle records are"
+	line "posted on the"
+
+	para "wall, so I can't"
+	line "afford to lose."
+	done
+
 GoldenrodPokecomCenterSignText: ; unreferenced
 	text "#COM CENTER"
 	line "1F INFORMATION"
