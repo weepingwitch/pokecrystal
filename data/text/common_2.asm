@@ -287,7 +287,7 @@ _BadgeRequiredText::
 
 _CantUseItemText::
 	text "Can't use that"
-	line "here."
+	line "here, loser."
 	prompt
 
 _UseCutText::
@@ -302,8 +302,8 @@ _CutNothingText::
 	prompt
 
 _BlindingFlashText::
-	text "A blinding FLASH"
-	line "lights the area!@"
+	text "You FLASH the"
+	line "area!@"
 	text_promptbutton
 	text_end
 
@@ -313,16 +313,18 @@ _UsedSurfText::
 	text_ram wStringBuffer2
 	text " used"
 	line "SURF!"
+
+	para "Radical!"
 	done
 
 _CantSurfText::
-	text "You can't SURF"
-	line "here."
+	text "Aww... You can't"
+	line "SURF here."
 	prompt
 
 _AlreadySurfingText::
 	text "You're already"
-	line "SURFING."
+	line "SURFING dude."
 	prompt
 
 _AskSurfText::
@@ -370,7 +372,6 @@ _CantUseTeleportText::
 	text "Can't use that"
 	line "here."
 
-	para ""
 	done
 
 _AlreadyUsingStrengthText::
@@ -434,14 +435,13 @@ _UseHeadbuttText::
 
 _HeadbuttNothingText::
 	text "Nope. Nothing…"
+	line "Did you think"
+	cont "there would be?"
 	done
 
 _AskHeadbuttText::
-	text "A #MON could be"
-	line "in this tree."
-
 	para "Want to HEADBUTT"
-	line "it?"
+	line "this tree?"
 	done
 
 _UseRockSmashText::
@@ -596,7 +596,7 @@ _ThrewAwayText::
 	prompt
 
 _OakThisIsntTheTimeText::
-	text "nope lol"
+	text "Nope! LOL"
 	prompt
 
 _YouDontHaveAMonText::
@@ -797,8 +797,8 @@ _BreedBrimmingWithEnergyText::
 	prompt
 
 _BreedNoInterestText::
-	text "It has no interest"
-	line "in @"
+	text "It has the ick"
+	line "from @"
 	text_ram wStringBuffer1
 	text "."
 	prompt
@@ -811,15 +811,15 @@ _BreedAppearsToCareForText::
 	prompt
 
 _BreedFriendlyText::
-	text "It's friendly with"
+	text "It's flirty with"
 	line "@"
 	text_ram wStringBuffer1
 	text "."
 	prompt
 
 _BreedShowsInterestText::
-	text "It shows interest"
-	line "in @"
+	text "It carnally wants"
+	line "@"
 	text_ram wStringBuffer1
 	text "."
 	prompt
@@ -850,7 +850,7 @@ _MailAlreadyHoldingItemText::
 
 _MailEggText::
 	text "An EGG can't hold"
-	line "any MAIL."
+	line "any MAIL, dummy!"
 	prompt
 
 _MailMovedFromBoxText::
@@ -873,7 +873,7 @@ _MonNumberText:: ; unreferenced
 _WasSentToBillsPCText::
 	text_ram wStringBuffer1
 	text " was"
-	line "sent to BILL's PC."
+	line "sent to willow'sPC."
 	prompt
 
 _PCGottaHavePokemonText::
@@ -1047,14 +1047,13 @@ _CaughtAskNicknameText::
 	done
 
 _PokecenterPCCantUseText::
-	text "Bzzzzt! You must"
-	line "have a #MON to"
-	cont "use this!"
+	text "Bzzzzt! You broke"
+	line "it. Nice."
 	prompt
 
 _PlayersPCTurnOnText::
 	text "<PLAYER> turned on"
-	line "the PC."
+	line "the linux machine."
 	prompt
 
 _PlayersPCAskWhatDoText::
@@ -1106,7 +1105,7 @@ _PlayersPCNoRoomDepositText::
 
 _PokecenterPCTurnOnText::
 	text "<PLAYER> turned on"
-	line "the PC."
+	line "the linux machine."
 	prompt
 
 _PokecenterPCWhoseText::
@@ -1143,7 +1142,7 @@ _PokecenterPCOaksClosedText::
 
 _OakPCText1::
 	text "Want to get your"
-	line "#DEX rated?"
+	line "#DEX rated? :3"
 	done
 
 _OakPCText2::
@@ -1170,89 +1169,78 @@ _OakRating01::
 _OakRating02::
 	text "Good. I see you"
 	line "understand how to"
-	cont "use # BALLS."
+	cont "use your BALLS."
 	done
 
 _OakRating03::
-	text "You're getting"
-	line "good at this."
 
-	para "But you have a"
+	text "You still have a"
 	line "long way to go."
 	done
 
 _OakRating04::
-	text "You need to fill"
-	line "up the #DEX."
-
 	para "Catch different"
 	line "kinds of #MON!"
 	done
 
 _OakRating05::
-	text "You're trying--I"
-	line "can see that."
 
 	para "Your #DEX is"
 	line "coming together."
 	done
 
 _OakRating06::
-	text "To evolve, some"
-	line "#MON grow,"
+	text "Have you tried"
+	line "breeding? :3"
 
-	para "others use the"
-	line "effects of STONES."
 	done
 
 _OakRating07::
 	text "Have you gotten a"
-	line "fishing ROD? You"
-
-	para "can catch #MON"
-	line "by fishing."
+	line "fishing ROD Yet?"
 	done
 
 _OakRating08::
 	text "Excellent! You"
 	line "seem to like col-"
 	cont "lecting things!"
+
+	para "Have you been"
+	line "evaluated for"
+	cont "autism?"
 	done
 
 _OakRating09::
 	text "Some #MON only"
 	line "appear during"
 
-	para "certain times of"
-	line "the day."
+	para "the night or in"
+	line "the morning."
 	done
 
 _OakRating10::
 	text "Your #DEX is"
-	line "filling up. Keep"
-	cont "up the good work!"
+	line "filling up. Good"
+	cont "girl!"
 	done
 
 _OakRating11::
 	text "I'm impressed."
-	line "You're evolving"
+	line "You've evolved."
 
-	para "#MON, not just"
-	line "catching them."
 	done
 
 _OakRating12::
 	text "Have you met KURT?"
-	line "His custom BALLS"
-	cont "should help."
+	line "He makes BALLS."
 	done
 
 _OakRating13::
-	text "Wow. You've found"
-	line "more #MON than"
+	text "Wow. They didn't"
+	line "have this many"
 
-	para "the last #DEX"
-	line "research project."
+	para "#MON when I was"
+	line "your age!"
 	done
 
 _OakRating14::
@@ -1313,7 +1301,7 @@ _MemoryGameYeahText::
 	done
 
 _MemoryGameDarnText::
-	text "Darn…"
+	text "Damn…"
 	done
 
 _StartMenuContestEndText::
@@ -1350,7 +1338,7 @@ _ItemsTooImportantText::
 	prompt
 
 _ItemsOakWarningText::
-	text "nope lol"
+	text "Nope LOL"
 	done
 
 _PokemonSwapItemText::
