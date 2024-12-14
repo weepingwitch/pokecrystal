@@ -744,11 +744,11 @@ ElmText_GotAnEmail:
 	para "<……><……><……>"
 	line "Oh it's spam"
 
-	para "Snyway."
+	para "Anyway."
 	done
 
 ElmText_MissionFromMrPokemon:
-	text "Hey, listen."
+	text "Oh yeah..."
 
 	para "Another job..."
 	line "visit my friend."

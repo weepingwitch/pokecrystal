@@ -10,6 +10,7 @@ INCLUDE "audio/sfx_pointers.asm"
 
 SECTION "Songs 1", ROMX
 
+INCLUDE "audio/music/pokemoncenter.asm"
 INCLUDE "audio/music/route36.asm"
 INCLUDE "audio/music/rivalbattle.asm"
 INCLUDE "audio/music/rocketbattle.asm"
@@ -35,7 +36,6 @@ INCLUDE "audio/music/route12.asm"
 INCLUDE "audio/music/kantogymbattle.asm"
 INCLUDE "audio/music/kantotrainerbattle.asm"
 INCLUDE "audio/music/kantowildbattle.asm"
-INCLUDE "audio/music/pokemoncenter.asm"
 INCLUDE "audio/music/looklass.asm"
 INCLUDE "audio/music/lookofficer.asm"
 INCLUDE "audio/music/route2.asm"
