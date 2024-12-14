@@ -343,29 +343,22 @@ PicnickerKimAfterBattleText:
 	done
 
 BirdKeeperBryanSeenText:
-	text "What kinds of"
-	line "BALLS do you use?"
+	text "I'm the best with"
+	line "flying #MON!"
 	done
 
 BirdKeeperBryanBeatenText:
-	text "Yikes! Not fast"
-	line "enough!"
+	text "WHAT? You must"
+	line "have cheated!!"
 	done
 
 BirdKeeperBryanAfterBattleText:
-	text "Some #MON flee"
-	line "right away."
+	text "I need to find"
+	line "those three rare"
+	cont "bird #MON..."
 
-	para "Try catching them"
-	line "with KURT's FAST"
-	cont "BALL."
+	para "Uno, Dos, Tres!"
 
-	para "Whenever I find a"
-	line "WHT APRICORN, I"
-	cont "take it to KURT."
-
-	para "He turns it into a"
-	line "custom BALL."
 	done
 
 JugglerIrwin1SeenText:
