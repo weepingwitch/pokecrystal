@@ -1449,6 +1449,48 @@ _MayRegisterItemText::
 	line "on SELECT Button."
 	done
 
+_AboutText1::
+	text "changes made by"
+	line "willow:"
+
+	para "- player is always"
+	line "  a girl"
+
+	para "- different"
+	line "  starter <PKMN>"
+
+	para "- more diverse"
+	line "  wild <PKMN> spawns"
+
+	para "- trainers have"
+	line "  more <PKMN>"
+
+	para "- remixed gym"
+	line "  leader parties"
+
+	para "- single-player"
+	line "  completable dex"
+
+	para "changes copied"
+	line "from others:"
+
+	para "- reusable TMs"
+
+	para "- physical/special"
+	line "  move split"
+
+	para "- unique party <PKMN>"
+	line "  icons"
+
+	para "- shorter low hp"
+	line "  warning sound"
+
+	para "- various bug"
+	line "  fixes"
+	
+
+	prompt
+
 _OakText1::
 	text "Hey! Sorry to"
 	line "keep you waiting!"

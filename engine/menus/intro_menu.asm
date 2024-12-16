@@ -58,6 +58,11 @@ Option:
 	farcall _Option
 	ret
 
+AboutW:
+	call AboutSpeech
+	ret
+
+
 NewGame:
 	xor a
 	ld [wDebugFlags], a
@@ -628,6 +633,22 @@ Continue_DisplayGameTime:
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	jp PrintNum
 
+AboutSpeech:
+	call ClearTilemap
+	ld de, MUSIC_TITLE
+	call PlayMusic
+	ld hl, AboutText1
+	call PrintText
+	ret
+
+.ExitAbout:
+	ld de, SFX_TRANSACTION
+	call PlaySFX
+	call WaitSFX
+	pop af
+	ldh [hInMenu], a
+	ret
+
 OakSpeech:
 	farcall InitClock
 	call RotateFourPalettesLeft
@@ -705,6 +726,10 @@ OakSpeech:
 	ld hl, OakText7
 	call PrintText
 	ret
+
+AboutText1:
+	text_far _AboutText1
+	text_end
 
 OakText1:
 	text_far _OakText1
