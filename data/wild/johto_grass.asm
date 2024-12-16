@@ -1407,17 +1407,17 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 12, SNUBBULL
-	db 14, PIDGEY
+	db 14, MANKEY
 	db 13, GROWLITHE
 	db 10, ABRA
 	db 12, JIGGLYPUFF
-	db 10, DITTO
+	db 10, SUNKERN
 	db 12, YANMA
 	; day
 	db 12, SNUBBULL
-	db 14, PIDGEY
-	db 13, GROWLITHE
-	db 10, ABRA
+	db 14, NIDORAN_F
+	db 13, PONYTA
+	db 10, NIDORAN_M
 	db 12, JIGGLYPUFF
 	db 10, DITTO
 	db 12, YANMA
@@ -1427,7 +1427,7 @@ JohtoGrassWildMons:
 	db 13, PSYDUCK
 	db 10, ABRA
 	db 12, JIGGLYPUFF
-	db 10, DITTO
+	db 10, GLIGAR
 	db 12, YANMA
 	end_grass_wildmons
 
@@ -1438,23 +1438,23 @@ JohtoGrassWildMons:
 	db 4, PIDGEY
 	db 5, BELLSPROUT
 	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 6, PIDGEY
+	db 5, LICKITUNG
+	db 6, EXEGGCUTE
 	db 6, PONYTA
 	; day
 	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, EKANS
 	db 5, BELLSPROUT
 	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 6, PIDGEY
+	db 5, DUNSPARCE
+	db 6, MR__MIME
 	db 6, DODUO
 	; nite
 	db 4, SPINARAK
 	db 4, HOOTHOOT
 	db 5, BELLSPROUT
-	db 5, HOOTHOOT
-	db 5, HOOTHOOT
+	db 5, NATU
+	db 5, SLOWPOKE
 	db 5, GASTLY
 	db 5, HOUNDOUR
 	end_grass_wildmons
@@ -1465,18 +1465,18 @@ JohtoGrassWildMons:
 	db 13, LEDYBA
 	db 14, GROWLITHE
 	db 15, PIDGEY
-	db 16, GROWLITHE
 	db 15, PIDGEOTTO
 	db 15, LEDIAN
-	db 15, LEDIAN
+	db 15, WOOPER
+	db 16, DUNSPARCE
 	; day
 	db 13, PIDGEY
 	db 14, GROWLITHE
-	db 15, PIDGEY
-	db 16, GROWLITHE
+	db 16, JIGGLYPUFF
 	db 15, PIDGEOTTO
-	db 15, PIDGEY
+	db 15, SPEAROW
 	db 15, FARFETCH_D
+	db 15, HOUNDOUR
 	; nite
 	db 13, SPINARAK
 	db 14, STANTLER
@@ -1484,63 +1484,63 @@ JohtoGrassWildMons:
 	db 16, STANTLER
 	db 15, NOCTOWL
 	db 15, ARIADOS
-	db 15, ARIADOS
+	db 15, CLEFAIRY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_38
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 16, RATTATA
+	db 16, EKANS
 	db 16, MILTANK
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 13, TAUROS
-	db 13, MILTANK
+	db 13, YANMA
 	db 7, TOGEPI
 	; day
-	db 16, RATTATA
 	db 16, RATICATE
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
+	db 13, MILTANK
 	db 13, TAUROS
-	db 13, MILTANK
-	db 13, MILTANK
+	db 13, AIPOM
+	db 16, PONYTA
 	; nite
 	db 16, MEOWTH
 	db 16, RATICATE
 	db 16, MAGNEMITE
 	db 16, NOCTOWL
-	db 16, MEOWTH
-	db 16, MEOWTH
+	db 16, STANTLER
+	db 16, TAUROS
 	db 16, MILTANK
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_39
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 16, RATTATA
-	db 16, RATICATE
-	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 15, MILTANK
 	db 15, TAUROS
-	db 15, TAUROS
+	db 16, MAGNEMITE
+	db 15, STANTLER
+	db 16, VULPIX
+	db 16, SUDOWOODO
 	; day
-	db 16, RATTATA
+	db 16, SENTRET
 	db 16, RATICATE
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 15, MILTANK
 	db 15, TAUROS
-	db 15, TAUROS
+	db 15, GIRAFARIG
 	; nite
 	db 16, MEOWTH
 	db 16, RATICATE
 	db 16, MAGNEMITE
 	db 16, NOCTOWL
-	db 18, MEOWTH
-	db 18, MEOWTH
-	db 18, MEOWTH
+	db 18, FLAAFFY
+	db 18, SNUBBULL
+	db 18, MACHOP
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_42
