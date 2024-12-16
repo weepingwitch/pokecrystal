@@ -6,7 +6,7 @@ Music_TitleScreen:
 	channel 4, Music_TitleScreen_Ch4
 
 Music_TitleScreen_Ch1:
-	tempo 134
+	tempo 186
 	volume 7, 7
 	duty_cycle 3
 	pitch_offset 0
