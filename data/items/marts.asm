@@ -9,6 +9,7 @@ Marts:
 	dw MartGoldenrod2F1
 	dw MartGoldenrod2F2
 	dw MartGoldenrod3F
+	dw MartGoldenrod3F2
 	dw MartGoldenrod4F
 	dw MartGoldenrod5F1
 	dw MartGoldenrod5F2
@@ -122,6 +123,20 @@ MartGoldenrod3F:
 	db DIRE_HIT
 	db GUARD_SPEC
 	db X_ACCURACY
+	db -1 ; end
+
+MartGoldenrod3F2:
+	db 10 ; # items
+	db FIRE_STONE
+	db THUNDERSTONE
+	db WATER_STONE
+	db LEAF_STONE
+	db MOON_STONE
+	db SUN_STONE
+	db UP_GRADE
+	db KINGS_ROCK
+	db METAL_COAT
+	db DRAGON_SCALE
 	db -1 ; end
 
 MartGoldenrod4F:
@@ -240,7 +255,7 @@ MartViridian:
 	db -1 ; end
 
 MartPewter:
-	db 8 ; # items
+	db 7 ; # items
 	db GREAT_BALL
 	db SUPER_POTION
 	db SUPER_REPEL
@@ -248,7 +263,6 @@ MartPewter:
 	db PARLYZ_HEAL
 	db AWAKENING
 	db BURN_HEAL
-	db METAL_COAT
 	db -1 ; end
 
 MartCerulean:
@@ -323,15 +337,10 @@ MartCeladon3F:
 	db -1 ; end
 
 MartCeladon4F:
-	db 8 ; # items
-	db FIRE_STONE
-	db THUNDERSTONE
-	db WATER_STONE
-	db SUN_STONE
-	db UP_GRADE
-	db KINGS_ROCK
-	db METAL_COAT
-	db DRAGON_SCALE
+	db 3 ; # items
+	db POKE_DOLL
+	db LOVELY_MAIL
+	db SURF_MAIL
 	db -1 ; end
 
 MartCeladon5F1:
@@ -362,7 +371,7 @@ MartFuchsia:
 	db HYPER_POTION
 	db FULL_HEAL
 	db MAX_REPEL
-	db DRAGON_SCALE
+	db FLOWER_MAIL
 	db -1 ; end
 
 MartSaffron:
@@ -374,36 +383,28 @@ MartSaffron:
 	db FULL_HEAL
 	db X_ATTACK
 	db X_DEFEND
-	db UP_GRADE
+	db FLOWER_MAIL
 	db -1 ; end
 
 MartMtMoon:
-	db 10 ; # items
+	db 6 ; # items
 	db POKE_DOLL
+	db FRESH_WATER
 	db SODA_POP
 	db LEMONADE
 	db REPEL
-	db KINGS_ROCK
-	db MOON_STONE
-	db TM_SHADOW_BALL
-	db TM_MUD_SLAP
-	db TM_ATTRACT
-	db TM_FURY_CUTTER
+	db PORTRAITMAIL
 	db -1 ; end
 
 MartIndigoPlateau:
-	db 10 ; # items
+	db 7 ; # items
 	db ULTRA_BALL
+	db MAX_REPEL
+	db HYPER_POTION
 	db MAX_POTION
 	db FULL_RESTORE
 	db REVIVE
-	db TM_DYNAMICPUNCH
-	db TM_TOXIC
-	db TM_ICY_WIND
-	db TM_GIGA_DRAIN
-	db TM_IRON_TAIL
-	db TM_DRAGONBREATH
-
+	db FULL_HEAL
 	db -1 ; end
 
 MartUnderground:
@@ -419,3 +420,4 @@ DefaultMart:
 	db POKE_BALL
 	db POTION
 	db -1 ; end
+	
