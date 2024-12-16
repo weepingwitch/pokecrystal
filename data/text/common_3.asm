@@ -7,7 +7,7 @@ _OakText7::
 	text "<PLAYER>, are you"
 	line "ready? let's go"
 
-	done
+	prompt
 
 _ClockTimeMayBeWrongText::
 	text "The clock's time"

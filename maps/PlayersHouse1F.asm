@@ -44,6 +44,7 @@ MeetMomScript:
 	setscene SCENE_PLAYERSHOUSE1F_NOOP
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
+	promptbutton
 	writetext MomGivesPokegearText
 	promptbutton
 	special SetDayOfWeek
@@ -220,7 +221,7 @@ ElmsLookingForYouText:
 
 	para "Also, take your"
 	line "weird toy."
-	done
+	prompt
 
 MomGivesPokegearText:
 	text "#MON GEAR, or"

@@ -1470,8 +1470,10 @@ _AboutText1::
 
 	para "- single-player"
 	line "  completable dex"
+	prompt
 
-	para "changes copied"
+_AboutText2::
+	text "changes copied"
 	line "from others:"
 
 	para "- reusable TMs"
