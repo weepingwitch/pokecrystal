@@ -1237,19 +1237,19 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_29
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
 	db 2, SENTRET
 	db 3, SPEAROW
 	db 2, RATTATA
 	db 3, HOPPIP
 	db 2, EEVEE
 	db 2, PICHU
-	; day
 	db 2, PIDGEY
+	; day
 	db 2, SENTRET
 	db 2, RATTATA
 	db 3, NIDORAN_M
 	db 3, NIDORAN_F
+	db 2, SNUBBULL
 	db 3, HOPPIP
 	db 3, EEVEE
 	; nite
@@ -1268,17 +1268,17 @@ JohtoGrassWildMons:
 	; morn
 	db 3, LEDYBA
 	db 3, CATERPIE
-	db 4, SPEAROW
-	db 4, PIDGEY
 	db 3, WEEDLE
+	db 4, SPEAROW
+	db 4, SNUBBULL
 	db 4, HOPPIP
 	db 4, ELEKID
 	; day
-	db 3, PIDGEY
-	db 3, CATERPIE
-	db 4, SENTRET
 	db 4, RATTATA
+	db 3, CATERPIE
 	db 3, WEEDLE
+	db 4, SENTRET
+	db 3, AIPOM
 	db 4, HOPPIP
 	db 4, TOGEPI
 	; nite
@@ -1297,12 +1297,12 @@ JohtoGrassWildMons:
 	db 4, LEDYBA
 	db 4, CATERPIE
 	db 5, BELLSPROUT
-	db 5, PIDGEY
+	db 5, SPEAROW
 	db 4, WEEDLE
 	db 5, HOPPIP
 	db 5, EEVEE
 	; day
-	db 4, PIDGEY
+	db 4, SPEAROW
 	db 4, CATERPIE
 	db 5, BELLSPROUT
 	db 4, WEEDLE
@@ -1324,9 +1324,9 @@ JohtoGrassWildMons:
 	; morn
 	db 4, EKANS
 	db 5, RATTATA
-	db 7, BELLSPROUT
+	db 7, SPEAROW
 	db 6, HOPPIP
-	db 7, PIDGEY
+	db 7, DODUO
 	db 7, ABRA
 	db 7, PICHU
 	; day
@@ -1334,12 +1334,12 @@ JohtoGrassWildMons:
 	db 5, RATTATA
 	db 7, BELLSPROUT
 	db 6, KRABBY
-	db 7, PIDGEY
+	db 7, DODUO
 	db 7, TEDDIURSA
 	db 7, SUNKERN
 	; nite
 	db 4, WOOPER
-	db 7, BELLSPROUT
+	db 7, MEOWTH
 	db 6, ZUBAT
 	db 7, HOOTHOOT
 	db 7, ABRA
@@ -1366,11 +1366,11 @@ JohtoGrassWildMons:
 	db 7, PSYDUCK
 	db 7, ODDISH
 	; nite
-	db 6, RATTATA
+	db 6, VENONAT
 	db 6, ZUBAT
+	db 7, MEOWTH
 	db 6, GEODUDE
-	db 6, ZUBAT
-	db 7, RATTATA
+	db 6, DROWZEE	
 	db 7, EXEGGCUTE
 	db 7, GASTLY
 	end_grass_wildmons
@@ -1380,16 +1380,16 @@ JohtoGrassWildMons:
 	; morn
 	db 10, SNUBBULL
 	db 11, RATTATA
-	db 12, PIDGEY
 	db 10, ABRA
+	db 12, PIDGEY
 	db 12, JIGGLYPUFF
 	db 10, DITTO
 	db 10, PHANPY
 	; day
 	db 10, SNUBBULL
 	db 11, RATTATA
-	db 12, PIDGEY
 	db 12, JIGGLYPUFF
+	db 12, PIDGEY
 	db 10, FARFETCH_D
 	db 10, DITTO
 	db 10, MEOWTH
