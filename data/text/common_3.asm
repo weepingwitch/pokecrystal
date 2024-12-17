@@ -243,16 +243,11 @@ _ReceivedItemText::
 	line "@"
 	text_ram wStringBuffer4
 	text "."
-	done
+	prompt
 
 _PutItemInPocketText::
-	text "<PLAYER> put the"
-	line "@"
-	text_ram wStringBuffer1
-	text " in"
-	cont "the @"
-	text_ram wStringBuffer3
-	text "."
+	text "<PLAYER> "
+	line "it away."
 	prompt
 
 _PocketIsFullText::

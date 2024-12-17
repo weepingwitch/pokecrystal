@@ -1837,7 +1837,7 @@ _FoundAnEggText::
 _ReceivedEggText::
 	text "<PLAYER> received"
 	line "the EGG!"
-	done
+	prompt
 
 _TakeGoodCareOfEggText::
 	text "Take good care of"
