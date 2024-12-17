@@ -1457,6 +1457,9 @@ _AboutText1::
 	para "- different"
 	line "  starter <PKMN>"
 
+	para "- pidgey line are"
+	line "  pure flying type"
+
 	para "- more diverse"
 	line "  wild <PKMN> spawns"
 
