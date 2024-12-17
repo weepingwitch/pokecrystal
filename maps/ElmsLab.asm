@@ -189,8 +189,8 @@ TotodilePokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject ELMSLAB_ELM, DOWN
 	reanchormap
-	pokepic DODUO
-	cry DODUO
+	pokepic PIDGEY
+	cry PIDGEY
 	waitbutton
 	closepokepic
 	opentext
@@ -202,12 +202,12 @@ TotodilePokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	;waitsfx
-	getmonname STRING_BUFFER_3, DODUO
+	getmonname STRING_BUFFER_3, PIDGEY
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke DODUO, 5, BERRY
+	givepoke PIDGEY, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterTotodileMovement
 	sjump ElmDirectionsScript
@@ -812,7 +812,7 @@ TakeCyndaquilText:
 
 TakeTotodileText:
 	text "ELM: Do you want"
-	line "DODUO?"
+	line "PIDGEY?"
 	done
 
 TakeChikoritaText:
