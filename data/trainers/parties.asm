@@ -103,18 +103,11 @@ ClairGroup:
 Rival1Group:
 	; RIVAL1 (1)
 	db "?@", TRAINERTYPE_NORMAL
-	db  5, MAREEP
+	db  4, PIDGEY
+	db  4, LARVITAR 
+	db  5, TYROGUE
 	db -1 ; end
 
-	; RIVAL1 (2)
-	db "?@", TRAINERTYPE_NORMAL
-	db  5, LARVITAR
-	db -1 ; end
-
-	; RIVAL1 (3)
-	db "?@", TRAINERTYPE_NORMAL
-	db  5, MARILL
-	db -1 ; end
 
 	; RIVAL1 (4)
 	db "?@", TRAINERTYPE_NORMAL

@@ -1775,6 +1775,7 @@ ReceiveItemScript:
 	waitsfx
 	farwritetext ReceivedItemText
 	playsound SFX_ITEM
+	waitbutton
 	end
 
 ReceiveTogepiEggScript:

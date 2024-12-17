@@ -247,7 +247,7 @@ _ReceivedItemText::
 
 _PutItemInPocketText::
 	text "<PLAYER> "
-	line "it away."
+	line "out it away."
 	prompt
 
 _PocketIsFullText::

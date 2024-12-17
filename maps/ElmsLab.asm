@@ -177,7 +177,7 @@ CyndaquilPokeBallScript:
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke TYROGUE, 5, BERRY
+	givepoke TYROGUE, 6, BERRY
 	closetext
 	readvar VAR_FACING
 	ifequal RIGHT, ElmDirectionsScript
@@ -207,7 +207,7 @@ TotodilePokeBallScript:
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke PIDGEY, 5, BERRY
+	givepoke PIDGEY, 6, BERRY
 	closetext
 	applymovement PLAYER, AfterTotodileMovement
 	sjump ElmDirectionsScript
@@ -235,7 +235,7 @@ ChikoritaPokeBallScript:
 	playsound SFX_CAUGHT_MON
 	;waitsfx
 	promptbutton
-	givepoke LARVITAR, 5, BERRY
+	givepoke LARVITAR, 6, BERRY
 	closetext
 	applymovement PLAYER, AfterChikoritaMovement
 	sjump ElmDirectionsScript
@@ -255,8 +255,8 @@ ElmDirectionsScript:
 	addcellnum PHONE_ELM
 	opentext
 	writetext GotElmsNumberText
-	playsound SFX_REGISTER_PHONE_NUMBER
 	waitbutton
+	givepoke EEVEE, 5, BERRY
 	closetext
 	turnobject ELMSLAB_ELM, DOWN
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
@@ -848,8 +848,8 @@ ElmDirectionsText1:
 	done
 
 GotElmsNumberText:
-	text "ELM gave you his"
-	line "phone number."
+	text "Oh yeah, take"
+	line "this one too."
 	done
 
 ElmDescribesMrPokemonText:
