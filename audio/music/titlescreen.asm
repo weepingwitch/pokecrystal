@@ -19,32 +19,44 @@ Music_TitleScreen_Ch1:
 	note D_, 1
 	note A_, 1
 	note G_, 1
-	note F#, 1
+	note F#, 1 ;4
 	rest 1
-	note F#, 1
-	note G_, 6
-	rest 4
+	note F#, 1 ;6
+	note G_, 4 ;10
+	rest 2     ;12
+	note D_, 1
+	rest 1
+	note G_, 1
+	rest 1      ;16
+
+	note G_, 1
+	rest 1
+	note G_, 1
+	note G_, 1   ;20
+	note G_, 1
+	rest 1 ;22
+	note F#, 6 ;28
+	rest 4  ;32
+
 
 	note D_, 1
-	note D_, 1
+	note A_, 1 ;34
 	note G_, 1
-	rest 1
-	note G_, 1
-	rest 1
-	note G_, 1
-	note G_, 1
-	
-	note F#, 6
-	rest 2
-	note G_, 2
-	note E_, 8
-	note G_, 2
-	note G_, 2
-	rest 2
-	note G_, 2
-	note D#, 4
-	octave 4
-	note C_, 4
+	rest 1   ;36
+	note F#, 1
+	rest 1  
+	note G_, 2  ;40
+	rest 2 ;42
+	note E_, 4 ;46
+	rest 2 ;48
+
+	note D_, 1 
+	note A_, 1 ;50
+	note G_, 1 
+	rest 1 ;52
+	note F#, 2 ;54
+	note G_, 6 ;60
+	rest 4
 	sound_loop 0, .loop1
 
 Music_TitleScreen_Ch2:
@@ -141,15 +153,17 @@ Music_TitleScreen_Ch3:
 
 Music_TitleScreen_Ch4:
 	toggle_noise 5
+	volume 10, 10
 	stereo_panning TRUE, FALSE
 	drum_speed 12
 	
 .loop1
-	drum_note 1, 2
-	drum_note 8, 4
-	drum_note 8, 2
-	drum_note 1, 4
-	drum_note 8, 2
-	drum_note 8, 2
+	drum_note 2, 4
+	drum_note 10, 2
+	rest 2
+	drum_note 5, 4
+	drum_note 10, 2
+	rest 1
+	drum_note 2, 1
 	sound_loop 0, .loop1
 	sound_ret
