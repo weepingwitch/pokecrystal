@@ -39,7 +39,7 @@ AzaleaTownRivalBattleScene1:
 	turnobject PLAYER, RIGHT
 	showemote EMOTE_SHOCK, PLAYER, 15
 	special FadeOutMusic
-	pause 15
+	pause 10
 	appear AZALEATOWN_RIVAL
 	applymovement AZALEATOWN_RIVAL, AzaleaTownRivalBattleApproachMovement1
 	turnobject PLAYER, DOWN
@@ -49,7 +49,7 @@ AzaleaTownRivalBattleScene2:
 	turnobject PLAYER, RIGHT
 	showemote EMOTE_SHOCK, PLAYER, 15
 	special FadeOutMusic
-	pause 15
+	pause 10
 	appear AZALEATOWN_RIVAL
 	applymovement AZALEATOWN_RIVAL, AzaleaTownRivalBattleApproachMovement2
 	turnobject PLAYER, UP
@@ -136,7 +136,7 @@ AzaleaTownYoungsterScript:
 AzaleaTownSlowpokeScript:
 	opentext
 	writetext AzaleaTownSlowpokeText1
-	pause 60
+	pause 20
 	writetext AzaleaTownSlowpokeText2
 	cry SLOWPOKE
 	waitbutton

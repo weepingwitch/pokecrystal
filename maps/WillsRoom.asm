@@ -31,7 +31,7 @@ WillsRoomDoorLocksBehindYouScript:
 	applymovement PLAYER, WillsRoom_EnterMovement
 	reanchormap $86
 	playsound SFX_STRENGTH
-	earthquake 80
+	earthquake 20
 	changeblock 4, 14, $2a ; wall
 	refreshmap
 	closetext

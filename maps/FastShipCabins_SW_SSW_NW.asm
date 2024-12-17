@@ -72,7 +72,7 @@ FastShipBed:
 	special StubbedTrainerRankings_Healings
 	special HealParty
 	playmusic MUSIC_HEAL
-	pause 60
+	pause 20
 	special RestartMapMusic
 	special FadeInFromBlack
 	opentext
@@ -90,7 +90,7 @@ FastShipBed:
 
 .CanArrive:
 	playsound SFX_ELEVATOR_END
-	pause 30
+	pause 10
 	checkevent EVENT_FAST_SHIP_DESTINATION_OLIVINE
 	iftrue .ArrivedOlivine
 	opentext

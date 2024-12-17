@@ -24,14 +24,14 @@ PlayersNeighborsHouseRadioScript:
 	playmusic MUSIC_POKEMON_TALK
 	opentext
 	writetext PlayerNeighborRadioText1
-	pause 45
+	pause 20
 	writetext PlayerNeighborRadioText2
-	pause 45
+	pause 20
 	writetext PlayerNeighborRadioText3
-	pause 45
+	pause 20
 	musicfadeout MUSIC_NEW_BARK_TOWN, 16
 	writetext PlayerNeighborRadioText4
-	pause 45
+	pause 20
 	closetext
 	setevent EVENT_LISTENED_TO_INITIAL_RADIO
 	end
@@ -40,7 +40,7 @@ PlayersNeighborsHouseRadioScript:
 .AbbreviatedRadio:
 	opentext
 	writetext PlayerNeighborRadioText4
-	pause 45
+	pause 20
 	closetext
 	end
 

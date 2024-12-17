@@ -64,7 +64,7 @@ CeladonDeptStore6FVendingMachine:
 	sjump .VendItem
 
 .VendItem:
-	pause 10
+	pause 5
 	playsound SFX_ENTER_DOOR
 	writetext CeladonClangText
 	promptbutton

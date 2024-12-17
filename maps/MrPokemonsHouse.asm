@@ -113,7 +113,7 @@ MrPokemonsHouse_OakScript:
 	playmusic MUSIC_HEAL
 	special StubbedTrainerRankings_Healings
 	special HealParty
-	pause 60
+	pause 20
 	special FadeInFromBlack
 	special RestartMapMusic
 	opentext

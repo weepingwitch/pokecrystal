@@ -283,7 +283,7 @@ CheckSpecialPhoneCall::
 	ret
 
 .script
-	pause 30
+	pause 10
 	sjump Script_ReceivePhoneCall
 
 .DoSpecialPhoneCall:
@@ -441,7 +441,7 @@ Script_SpecialBillCall::
 
 Script_SpecialElmCall: ; unreferenced
 	callasm .LoadElmScript
-	pause 30
+	pause 10
 	sjump Script_ReceivePhoneCall
 
 .LoadElmScript:

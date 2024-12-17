@@ -61,7 +61,7 @@ CherrygroveCityGuideGent:
 	closetext
 	applymovement CHERRYGROVECITY_GRAMPS, GuideGentMovement5
 	turnobject PLAYER, UP
-	pause 60
+	pause 20
 	turnobject CHERRYGROVECITY_GRAMPS, LEFT
 	turnobject PLAYER, RIGHT
 	opentext

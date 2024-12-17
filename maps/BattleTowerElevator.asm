@@ -22,7 +22,7 @@ BattleTowerElevatorRideElevatorScript:
 	setval BATTLETOWERACTION_0A
 	special BattleTowerAction
 	playsound SFX_ELEVATOR
-	earthquake 60
+	earthquake 20
 	waitsfx
 	follow BATTLETOWERELEVATOR_RECEPTIONIST, PLAYER
 	applymovement BATTLETOWERELEVATOR_RECEPTIONIST, MovementData_BattleTowerElevatorExitElevator

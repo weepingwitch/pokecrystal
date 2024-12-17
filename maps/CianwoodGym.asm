@@ -29,7 +29,7 @@ CianwoodGymChuckScript:
 	closetext
 	applymovement CIANWOODGYM_BOULDER1, CianwoodGymMovement_ChuckChucksBoulder
 	playsound SFX_STRENGTH
-	earthquake 80
+	earthquake 30
 	disappear CIANWOODGYM_BOULDER1
 	pause 30
 	faceplayer

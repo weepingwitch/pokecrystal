@@ -32,7 +32,7 @@ BurnedTowerB1FLadderCallback:
 
 ReleaseTheBeasts:
 	playmusic MUSIC_NONE
-	pause 30
+	pause 20
 	appear BURNEDTOWERB1F_RAIKOU1
 	turnobject PLAYER, UP
 	pause 5
@@ -70,9 +70,9 @@ ReleaseTheBeasts:
 	turnobject PLAYER, DOWN
 	applymovement BURNEDTOWERB1F_SUICUNE1, BurnedTowerSuicuneMovement2
 	turnobject PLAYER, UP
-	pause 20
+	pause 10
 	cry SUICUNE
-	pause 30
+	pause 20
 	playsound SFX_WARP_FROM
 	applymovement BURNEDTOWERB1F_SUICUNE1, BurnedTowerSuicuneMovement3
 	turnobject PLAYER, DOWN

@@ -34,7 +34,7 @@ MobileBattleRoomConsoleScript:
 	special FadeOutToWhite
 	playmusic MUSIC_HEAL
 	special LoadMapPalettes
-	pause 60
+	pause 20
 	special FadeInFromWhite
 	special RestartMapMusic
 	reanchormap

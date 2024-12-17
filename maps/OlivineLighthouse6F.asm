@@ -40,7 +40,7 @@ OlivineLighthouseJasmine:
 	opentext
 	playmusic MUSIC_HEAL
 	writetext JasmineAmphyHowAreYouFeelingText
-	pause 60
+	pause 20
 	promptbutton
 	closetext
 	special RestartMapMusic

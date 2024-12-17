@@ -10,7 +10,7 @@ GoldenrodDeptStoreElevatorScript:
 	iffalse .Done
 	pause 5
 	playsound SFX_ELEVATOR
-	earthquake 60
+	earthquake 20
 	waitsfx
 	checkevent EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_BLOCKED_OFF
 	iftrue .Done

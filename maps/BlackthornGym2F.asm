@@ -50,7 +50,7 @@ BlackthornGym2FSetUpStoneTableCallback:
 
 .FX:
 	playsound SFX_STRENGTH
-	earthquake 80
+	earthquake 30
 	end
 
 BlackthornGymBoulder:

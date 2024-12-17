@@ -1364,7 +1364,7 @@ RockSmashScript:
 	closetext
 	special WaitSFX
 	playsound SFX_STRENGTH
-	earthquake 84
+	earthquake 64
 	applymovementlasttalked MovementData_RockSmash
 	disappear LAST_TALKED
 

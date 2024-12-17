@@ -33,7 +33,7 @@ LancesRoomDoorLocksBehindYouScript:
 	applymovement PLAYER, LancesRoom_EnterMovement
 	reanchormap $86
 	playsound SFX_STRENGTH
-	earthquake 80
+	earthquake 20
 	changeblock 4, 22, $34 ; wall
 	refreshmap
 	closetext

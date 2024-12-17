@@ -10,7 +10,7 @@ Script_Whiteout:
 	writetext .WhitedOutText
 	waitbutton
 	special FadeOutToWhite
-	pause 40
+	pause 20
 	special HealParty
 	checkflag ENGINE_BUG_CONTEST_TIMER
 	iftrue .bug_contest

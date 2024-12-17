@@ -10,7 +10,7 @@ CeladonDeptStoreElevatorScript:
 	iffalse .Done
 	pause 5
 	playsound SFX_ELEVATOR
-	earthquake 60
+	earthquake 20
 	waitsfx
 .Done:
 	end
