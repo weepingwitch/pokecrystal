@@ -25,6 +25,7 @@ StartMenu::
 	ld hl, .ContestMenuHeader
 
 .GotMenuData:
+	
 	call LoadMenuHeader
 	call .SetUpMenuItems
 	ld a, [wBattleMenuCursorPosition]
