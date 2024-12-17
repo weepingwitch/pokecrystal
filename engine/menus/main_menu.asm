@@ -31,7 +31,8 @@ MainMenu:
 	xor a
 	ld [wDisableTextAcceleration], a
 	call ClearTilemapEtc
-
+	call LoadGenderScreenPalx
+	call SetDefaultBGPAndOBP
 	ld hl, wGameTimerPaused
 	res GAME_TIMER_COUNTING_F, [hl]
 	call MainMenu_GetWhichMenu
@@ -391,3 +392,15 @@ MainMenu_Continue:
 MainMenu_MysteryGift:
 	farcall MysteryGift
 	ret
+
+LoadGenderScreenPalx:
+	ld hl, .Palette
+	ld de, wBGPals1
+	ld bc, 1 palettes
+	ld a, BANK(wBGPals1)
+	call FarCopyWRAM
+	farcall ApplyPals
+	ret
+
+.Palette:
+	INCLUDE "gfx/new_game/menu_colors.pal"
