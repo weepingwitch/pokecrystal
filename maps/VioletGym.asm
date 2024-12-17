@@ -111,48 +111,21 @@ VioletGymStatue:
 	jumpstd GymStatue2Script
 
 FalknerIntroText:
-	text "I'm FALKNER, the"
-	line "VIOLET #MON GYM"
-	cont "leader!"
-
-	para "People say you can"
-	line "clip flying-type"
-
-	para "#MON's wings"
-	line "with a jolt of"
-	cont "electricity…"
-
-	para "I won't allow such"
-	line "insults to bird"
-	cont "#MON!"
-
-	para "I'll show you the"
-	line "real power of the"
-
-	para "magnificent bird"
-	line "#MON!"
+	text "Goo Goo"
+	line "Gaa Gaa"
 	done
 
 FalknerWinLossText:
-	text "…Darn! My dad's"
-	line "cherished bird"
-	cont "#MON…"
-
-	para "All right."
-	line "Take this."
-
-	para "It's the official"
-	line "#MON LEAGUE"
-	cont "ZEPHYRBADGE."
+	text "...waaaaaaah"
 	done
 
 ReceivedZephyrBadgeText:
 	text "<PLAYER> received"
-	line "ZEPHYRBADGE."
+	line "BABYBADGE."
 	done
 
 FalknerZephyrBadgeText:
-	text "ZEPHYRBADGE"
+	text "BABYBADGE"
 	line "raises the attack"
 	cont "power of #MON."
 
@@ -173,10 +146,6 @@ FalknerTMMudSlapText:
 	para "instantly learn a"
 	line "new move."
 
-	para "Think before you"
-	line "act--a TM can be"
-	cont "used only once."
-
 	para "TM31 contains"
 	line "MUD-SLAP."
 
@@ -185,10 +154,6 @@ FalknerTMMudSlapText:
 
 	para "while it causes"
 	line "damage."
-
-	para "In other words, it"
-	line "is both defensive"
-	cont "and offensive."
 	done
 
 FalknerFightDoneText:
@@ -200,24 +165,11 @@ FalknerFightDoneText:
 	line "your skills at"
 	cont "these GYMS."
 
-	para "I'm going to train"
-	line "harder to become"
-
-	para "the greatest bird"
-	line "master!"
 	done
 
 BirdKeeperRodSeenText:
-	text "The keyword is"
-	line "guts!"
-
-	para "Those here are"
-	line "training night and"
-
-	para "day to become bird"
-	line "#MON masters."
-
-	para "Come on!"
+	text "Goo goo"
+	line "gaa gaa..."
 	done
 
 BirdKeeperRodBeatenText:
@@ -225,29 +177,20 @@ BirdKeeperRodBeatenText:
 	done
 
 BirdKeeperRodAfterBattleText:
-	text "FALKNER's skills"
-	line "are for real!"
-
-	para "Don't get cocky"
-	line "just because you"
-	cont "beat me!"
+	text "Waaaaaaaaa"
 	done
 
 BirdKeeperAbeSeenText:
-	text "Let me see if you"
-	line "are good enough to"
-	cont "face FALKNER!"
+	text "Goo goo"
+	line "gaa gaa..."
 	done
 
 BirdKeeperAbeBeatenText:
-	text "This can't be"
-	line "true!"
+	text "Gaaah!"
 	done
 
 BirdKeeperAbeAfterBattleText:
-	text "This is pathetic,"
-	line "losing to some"
-	cont "rookie trainer…"
+	text "Waaaaaaaaa"
 	done
 
 VioletGymGuideText:
@@ -264,11 +207,8 @@ VioletGymGuideText:
 	para "You believe?"
 	line "Then listen."
 
-	para "The grass-type is"
-	line "weak against the"
-
-	para "flying-type. Keep"
-	line "this in mind."
+	para "They are all"
+	line "babies."
 	done
 
 VioletGymGuideWinText:

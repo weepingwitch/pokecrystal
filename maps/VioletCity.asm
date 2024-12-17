@@ -229,14 +229,11 @@ VioletCityGrampsText:
 	text "FALKNER, from the"
 	line "VIOLET #MON"
 
-	para "GYM, is a fine"
-	line "trainer!"
+	para "GYM, is an ok"
+	line "trainer..."
 
-	para "He inherited his"
-	line "father's gym and"
-
-	para "has done a great"
-	line "job with it."
+	para "He's a bit"
+	line "childish."
 	done
 
 VioletCityYoungsterText:
@@ -260,8 +257,8 @@ VioletGymSignText:
 	line "#MON GYM"
 	cont "LEADER: FALKNER"
 
-	para "The Elegant Master"
-	line "of Flying #MON"
+	para "The Baby Master"
+	line "of Baby #MON"
 	done
 
 SproutTowerSignText:
