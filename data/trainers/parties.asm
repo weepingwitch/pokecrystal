@@ -234,24 +234,11 @@ WillGroup:
 PKMNTrainerGroup:
 	; CAL (1)
 	db "CAL@", TRAINERTYPE_NORMAL
-	db 10, CHIKORITA
-	db 10, CYNDAQUIL
-	db 10, TOTODILE
-	db -1 ; end
-
-	; CAL (2)
-	db "CAL@", TRAINERTYPE_NORMAL
-	db 30, BAYLEEF
-	db 30, QUILAVA
-	db 30, CROCONAW
-	db -1 ; end
-
-	; CAL (3)
-	db "CAL@", TRAINERTYPE_NORMAL
 	db 50, MEGANIUM
 	db 50, TYPHLOSION
 	db 50, FERALIGATR
 	db -1 ; end
+
 
 BrunoGroup:
 	; BRUNO (1)
@@ -3313,16 +3300,22 @@ PokefanMGroup:
 	; POKEFANM (9)
 	db "COLIN@", TRAINERTYPE_ITEM
 	db 32, DELIBIRD,   BERRY
+	db 30, CLEFABLE, BERRY
+	db 31, WIGGLYTUFF, BERRY
 	db -1 ; end
 
 	; POKEFANM (10)
 	db "DEREK@", TRAINERTYPE_ITEM
 	db 19, PIKACHU,    BERRY
+	db 20, RAICHU,     BERRY
+	db 19, MARILL,     BERRY
 	db -1 ; end
 
 	; POKEFANM (11)
 	db "DEREK@", TRAINERTYPE_ITEM
 	db 36, PIKACHU,    BERRY
+	db 38, RAICHU,    BERRY
+	db 37, AZUMARILL,  BERRY
 	db -1 ; end
 
 	; POKEFANM (12)
@@ -3345,34 +3338,45 @@ PokefanMGroup:
 KimonoGirlGroup:
 	; KIMONO_GIRL (1)
 	db "NAOKO@", TRAINERTYPE_NORMAL
-	db 20, SKIPLOOM
-	db 20, VULPIX
-	db 18, SKIPLOOM
+	db 20, EEVEE
+	db 20, EEVEE
+	db 20, EEVEE
+	db 20, EEVEE
 	db -1 ; end
 
 	; KIMONO_GIRL (2)
 	db "NAOKO@", TRAINERTYPE_NORMAL
+	db 17, VAPOREON
 	db 17, FLAREON
+	db 17, ESPEON
 	db -1 ; end
 
 	; KIMONO_GIRL (3)
 	db "SAYO@", TRAINERTYPE_NORMAL
 	db 17, ESPEON
+	db 17, UMBREON
+	db 17, FLAREON
 	db -1 ; end
 
 	; KIMONO_GIRL (4)
 	db "ZUKI@", TRAINERTYPE_NORMAL
 	db 17, UMBREON
+	db 17, ESPEON
+	db 17, VAPOREON
 	db -1 ; end
 
 	; KIMONO_GIRL (5)
 	db "KUNI@", TRAINERTYPE_NORMAL
 	db 17, VAPOREON
+	db 17, JOLTEON
+	db 17, ESPEON
 	db -1 ; end
 
 	; KIMONO_GIRL (6)
 	db "MIKI@", TRAINERTYPE_NORMAL
 	db 17, JOLTEON
+	db 17, FLAREON
+	db 17, VAPOREON
 	db -1 ; end
 
 TwinsGroup:
@@ -3440,21 +3444,29 @@ PokefanFGroup:
 	; POKEFANF (1)
 	db "BEVERLY@", TRAINERTYPE_ITEM
 	db 14, SNUBBULL,   BERRY
+	db 14, MEOWTH,     BERRY
 	db -1 ; end
 
 	; POKEFANF (2)
 	db "RUTH@", TRAINERTYPE_ITEM
 	db 17, PIKACHU,    BERRY
+	db 17, MARILL,     BERRY
 	db -1 ; end
 
 	; POKEFANF (3)
 	db "BEVERLY@", TRAINERTYPE_ITEM
 	db 18, SNUBBULL,   BERRY
+	db 18, AIPOM,     BERRY
+	db 18, MEOWTH,    BERRY
 	db -1 ; end
 
 	; POKEFANF (4)
 	db "BEVERLY@", TRAINERTYPE_ITEM
+	db 20, SNUBBULL,   BERRY
 	db 30, GRANBULL,   BERRY
+	db 30, VULPIX,    BERRY
+	db 30, HOUNDOUR, BERRY
+	db 30, GROWLITHE, BERRY
 	db -1 ; end
 
 	; POKEFANF (5)
@@ -3469,6 +3481,10 @@ PokefanFGroup:
 	; POKEFANF (6)
 	db "JAIME@", TRAINERTYPE_ITEM
 	db 16, MEOWTH,     BERRY
+	db 16, SNUBBULL,   BERRY
+	db 16, MILTANK, NO_ITEM
+	db 16, CHANSEY, NO_ITEM
+	db 16, JIGGLYPUFF, NO_ITEM
 	db -1 ; end
 
 RedGroup:
