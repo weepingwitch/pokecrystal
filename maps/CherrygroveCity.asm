@@ -338,9 +338,6 @@ GuideGentIntroText:
 	line "trainer, aren't"
 	cont "you? I can tell!"
 
-	para "That's OK! Every-"
-	line "one is a rookie"
-	cont "at some point!"
 
 	para "If you'd like, I"
 	line "can teach you a"
@@ -356,14 +353,10 @@ GuideGentPokecenterText:
 	text "This is a #MON"
 	line "CENTER. They heal"
 
-	para "your #MON in no"
-	line "time at all."
+	para "your #MON..."
+	line "for free!"
 
-	para "You'll be relying"
-	line "on them a lot, so"
 
-	para "you better learn"
-	line "about them."
 	done
 
 GuideGentMartText:
@@ -371,10 +364,8 @@ GuideGentMartText:
 	line "MART."
 
 	para "They sell BALLS"
-	line "for catching wild"
+	line "and other things."
 
-	para "#MON and other"
-	line "useful items."
 	done
 
 GuideGentRoute30Text:
@@ -382,10 +373,8 @@ GuideGentRoute30Text:
 	line "this way."
 
 	para "Trainers will be"
-	line "battling their"
+	line "battling there."
 
-	para "prized #MON"
-	line "there."
 	done
 
 GuideGentSeaText:
@@ -393,16 +382,14 @@ GuideGentSeaText:
 	line "as you can see."
 
 	para "Some #MON are"
-	line "found only in"
-	cont "water."
+	line "found in water."
 	done
 
 GuideGentGiftText:
 	text "Here…"
 
 	para "It's my house!"
-	line "Thanks for your"
-	cont "company."
+	
 
 	para "Let me give you a"
 	line "small gift."
@@ -411,14 +398,11 @@ GuideGentGiftText:
 GotMapCardText:
 	text "<PLAYER>'s #GEAR"
 	line "now has a MAP!"
-	done
+	prompt
 
 GuideGentPokegearText:
-	text "#GEAR becomes"
-	line "more useful as you"
-	cont "add CARDS."
-
-	para "I wish you luck on"
+	
+	text "I wish you luck on"
 	line "your journey!"
 	done
 
@@ -520,9 +504,6 @@ CherrygroveYoungsterText_HavePokedex:
 MysticWaterGuyTextBefore:
 	text "A #MON I caught"
 	line "had an item."
-
-	para "I think it's"
-	line "MYSTIC WATER."
 
 	para "I don't need it,"
 	line "so do you want it?"
