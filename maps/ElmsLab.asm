@@ -507,6 +507,11 @@ ElmsAideScript:
 	opentext
 	checkevent EVENT_BEAT_SCIENTIST_ELM
 	iftrue .regular
+	;givepoke TOGEPI, 5
+	;giveitem ULTRA_BALL
+	;giveitem ULTRA_BALL
+	;giveitem ULTRA_BALL
+	;giveitem ULTRA_BALL
 	readvar VAR_BADGES
 	if_equal 16, .doBattle
 .regular
@@ -521,9 +526,14 @@ ElmsAideScript:
 	closetext
 	end
 .doBattle:
+	writetext ElmAstSeenText
+	closetext
 	loadtrainer SCIENTIST, ELMAST
 	startbattle
 	reloadmapafterbattle
+	setevent EVENT_BEAT_SCIENTIST_ELM
+	opentext
+	writetext ElmAstBeatenText
 	closetext
 	end
 
@@ -724,23 +734,15 @@ AfterChikoritaMovement:
 	step_end
 
 ElmAstSeenText:
-	text "Oh, you are a cute"
-	line "little trainer! "
+	text "Ok, I'll battle"
+	line "you now! "
 
-	para "I like you, but I"
-	line "won't hold back!"
-	done
+	
+	prompt
 
 ElmAstBeatenText:
-	text "Let's see… Oops,"
-	line "it's over?"
-	done
-
-ElmAstAfterBattleText:
-	text "Wow, you must be"
-	line "good to beat me!"
-	cont "Keep it up!"
-	done
+	text "Well done!"
+	prompt
 
 ElmText_Intro:
 	text "ELM: <PLAY_G>!"
@@ -1184,32 +1186,16 @@ AideText_ExplainBalls:
 	done
 
 ElmsLabOfficerText1:
-	text "I heard a #MON"
-	line "was stolen here…"
+	text "oink oink oink"
+	line "oink oink oink."
 
-	para "I was just getting"
-	line "some information"
-	cont "from PROF.ELM."
-
-	para "Apparently, it was"
-	line "a young male with"
-	cont "long, red hair…"
-
-	para "What?"
-
-	para "You battled a"
-	line "trainer like that?"
-
-	para "Did you happen to"
-	line "get his name?"
 	done
 
 ElmsLabOfficerText2:
-	text "OK! So <RIVAL>"
-	line "was his name."
+	text "oink <RIVAL>"
+	line "oink onk oink."
 
-	para "Thanks for helping"
-	line "my investigation!"
+	para "Snitch!!!"
 	done
 
 ElmsLabWindowText1:

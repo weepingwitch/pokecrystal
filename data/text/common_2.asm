@@ -514,7 +514,7 @@ _WhitedOutText::
 	line "useable #MON!"
 
 	para "<PLAYER> died."
-	line "rip"
+	line "RIP"
 	done
 
 _ItemfinderItemNearbyText::
@@ -537,7 +537,7 @@ _PoisonWhiteoutText::
 	text "<PLAYER> is out of"
 	line "useable #MON!"
 
-	para "<PLAYER> died."
+	para "<PLAYER> RIP"
 	
 	prompt
 
@@ -554,10 +554,8 @@ _SweetScentNothingText::
 
 _SquirtbottleNothingText::
 	text "<PLAYER> sprinkled"
-	line "water."
+	line "water. Useless."
 
-	para "But nothing"
-	line "happened…"
 	done
 
 _UseSacredAshText::

@@ -238,9 +238,8 @@ BattleText_EnemyIsAboutToUseWillPlayerChangeMon:
 	done
 
 BattleText_EnemySentOut:
-	text "<ENEMY>"
-	line "sent out"
-	scroll "@"
+	text "<ENEMY> "
+	line "used @"
 	text_ram wEnemyMonNickname
 	text "!"
 	done
