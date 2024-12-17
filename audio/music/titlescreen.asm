@@ -61,6 +61,7 @@ Music_TitleScreen_Ch1:
 
 Music_TitleScreen_Ch2:
 	duty_cycle 3
+	stereo_panning FALSE, TRUE
 	vibrato 20, 1, 2
 	note_type 12, 12, 7
 	volume_envelope 10, 4
@@ -110,7 +111,7 @@ Music_TitleScreen_Ch2:
 	sound_loop 0, .loop1
 
 Music_TitleScreen_Ch3:
-	stereo_panning FALSE, TRUE
+	stereo_panning TRUE, TRUE
 	vibrato 16, 1, 4
 	pitch_offset 1
 	note_type 12, 1, 6
@@ -152,9 +153,9 @@ Music_TitleScreen_Ch3:
 	sound_loop 0, .loop1
 
 Music_TitleScreen_Ch4:
-	toggle_noise 5
+	toggle_noise 4
 	volume 10, 10
-	stereo_panning TRUE, FALSE
+	stereo_panning TRUE, TRUE
 	drum_speed 12
 	
 .loop1
@@ -163,7 +164,7 @@ Music_TitleScreen_Ch4:
 	rest 2
 	drum_note 5, 4
 	drum_note 10, 2
-	rest 1
+	drum_note 2, 1
 	drum_note 2, 1
 	sound_loop 0, .loop1
 	sound_ret
