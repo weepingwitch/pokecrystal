@@ -15,21 +15,26 @@ Music_TitleScreen_Ch1:
 	note_type 12, 10, 7
 	volume_envelope 10, 0
 .loop1
-	octave 3
-	note G_, 2
-	note F#, 2
-	note E_, 2
-	note F#, 2
-	note G_, 8
-	octave 3
-	note F#, 2
-	note F#, 2
-	note E_, 2
-	note D#, 1
-	note E_, 1
-	note D#, 8
-	note G_, 2
-	note G_, 2
+	octave 4
+	note D_, 1
+	note A_, 1
+	note G_, 1
+	note F#, 1
+	rest 1
+	note F#, 1
+	note G_, 6
+	rest 4
+
+	note D_, 1
+	note D_, 1
+	note G_, 1
+	rest 1
+	note G_, 1
+	rest 1
+	note G_, 1
+	note G_, 1
+	
+	note F#, 6
 	rest 2
 	note G_, 2
 	note E_, 8
@@ -48,33 +53,32 @@ Music_TitleScreen_Ch2:
 	note_type 12, 12, 7
 	volume_envelope 10, 4
 .loop1
-	octave 3
+	octave 2
 	note G_, 2
-	octave 4
+	octave 3
 	note D_, 2
-	octave 3
+	octave 2
+	note B_, 2
+	note G_, 2
+	note G_, 2
 	note B_, 2
 	note G_, 2
 	octave 3
-	note G_, 2
-	note B_, 2
-	note G_, 2
-	octave 4
 	note D_, 2
-	octave 3
+	octave 2
 	note B_, 2
-	octave 4
+	octave 3
 	note F#, 2
 	note D#, 2
+	octave 2
+	note B_, 2
+	note B_, 2
 	octave 3
-	note B_, 2
-	note B_, 2
-	octave 4
 	note F#, 2
 	note D#, 2
-	octave 3
+	octave 2
 	note B_, 2
-	octave 4
+	octave 3
 	note C_, 2
 	note G_, 2
 	note E_, 2
