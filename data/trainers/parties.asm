@@ -350,6 +350,15 @@ ScientistGroup:
 	db 30, PORYGON,    CONVERSION, CONVERSION2, RECOVER, TRI_ATTACK
 	db -1 ; end
 
+	; SCIENTIST (6)
+	db "ASST.@", TRAINERTYPE_NORMAL
+	db 55, MEW 
+	db 55, MEWTWO 
+	db 55, CELEBI 
+	db 55, RAIKOU
+	db 55, ENTEI 
+	db 55, SUICUNE
+
 ErikaGroup:
 	; ERIKA (1)
 	db "ERIKA@", TRAINERTYPE_MOVES

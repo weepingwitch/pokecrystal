@@ -339,6 +339,7 @@ ElmAfterTheftScript:
 
 ElmStudyingEggScript:
 	writetext ElmStudyingEggText
+	
 	waitbutton
 	closetext
 	end
@@ -504,6 +505,11 @@ AideScript_ReceiveTheBalls:
 ElmsAideScript:
 	faceplayer
 	opentext
+	checkevent EVENT_BEAT_SCIENTIST_ELM
+	iftrue .regular
+	readvar VAR_BADGES
+	if_equal 16, .doBattle
+.regular
 	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
 	iftrue AideScript_AfterTheft
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
@@ -512,6 +518,12 @@ ElmsAideScript:
 	iftrue AideScript_TheftTestimony
 	writetext AideText_AlwaysBusy
 	waitbutton
+	closetext
+	end
+.doBattle:
+	loadtrainer SCIENTIST, ELMAST
+	startbattle
+	reloadmapafterbattle
 	closetext
 	end
 
@@ -710,6 +722,25 @@ AfterChikoritaMovement:
 	step UP
 	turn_head UP
 	step_end
+
+ElmAstSeenText:
+	text "Oh, you are a cute"
+	line "little trainer! "
+
+	para "I like you, but I"
+	line "won't hold back!"
+	done
+
+ElmAstBeatenText:
+	text "Let's see… Oops,"
+	line "it's over?"
+	done
+
+ElmAstAfterBattleText:
+	text "Wow, you must be"
+	line "good to beat me!"
+	cont "Keep it up!"
+	done
 
 ElmText_Intro:
 	text "ELM: <PLAY_G>!"
