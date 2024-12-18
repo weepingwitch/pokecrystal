@@ -22,7 +22,8 @@ GoldenrodGymNoop2Scene:
 GoldenrodGymWhitneyScript:
 	faceplayer
 	checkevent EVENT_BEAT_WHITNEY
-	iftrue .FightDone
+	iftrue .MaybeDone
+.doBattle
 	opentext
 	writetext WhitneyBeforeText
 	waitbutton
@@ -71,6 +72,12 @@ GoldenrodGymWhitneyScript:
 	waitbutton
 	closetext
 	end
+
+
+.MaybeDone:
+	checkevent EVENT_BEAT_CHUCK
+	iftrue .doBattle
+	sjump .FightDone
 
 .GotAttract:
 	writetext WhitneyGoodCryText
