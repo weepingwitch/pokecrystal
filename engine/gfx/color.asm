@@ -320,6 +320,13 @@ ApplyMonOrTrainerPals:
 	call ApplyPals
 	ret
 
+ApplyMonPalsTest:
+	call GetMonPalettePointer
+	ld a, [wCurPartySpecies]
+	ld de, wBGPals1
+	call ApplyPals
+	ret
+
 ApplyHPBarPals:
 	ld a, [wWhichHPBar]
 	and a
@@ -1292,6 +1299,18 @@ endr
 	ld a, BANK(wBGPals1)
 	call FarCopyWRAM
 	ret
+
+LoadPokemonPalette:
+	ld a, [wCurPartySpecies]
+; hl = palette
+	call GetMonPalettePointer
+; load palette into de (set by caller)
+	;call ApplyPals
+	ld bc, PAL_COLOR_SIZE * 2
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	jp FarCopyWRAM		
+
 
 INCLUDE "data/maps/environment_colors.asm"
 
