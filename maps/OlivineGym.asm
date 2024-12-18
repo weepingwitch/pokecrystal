@@ -11,7 +11,8 @@ OlivineGymJasmineScript:
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_JASMINE
-	iftrue .FightDone
+	iftrue .MaybeDone
+.doBattle
 	writetext Jasmine_SteelTypeIntro
 	waitbutton
 	closetext
@@ -39,6 +40,11 @@ OlivineGymJasmineScript:
 	waitbutton
 	closetext
 	end
+
+.MaybeDone:
+	checkevent EVENT_BEAT_CLAIR
+	iftrue .doBattle
+	sjump .FightDone
 
 .GotIronTail:
 	writetext Jasmine_GoodLuck

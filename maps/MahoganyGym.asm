@@ -16,7 +16,8 @@ MahoganyGymPryceScript:
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_PRYCE
-	iftrue .FightDone
+	iftrue .MaybeDone
+.doBattle
 	writetext PryceText_Intro
 	waitbutton
 	closetext
@@ -49,6 +50,13 @@ MahoganyGymPryceScript:
 	waitbutton
 	closetext
 	end
+
+.MaybeDone:
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iftrue .doBattle
+	sjump .FightDone
+
+	
 
 PryceScript_Defeat:
 	writetext PryceText_CherishYourPokemon

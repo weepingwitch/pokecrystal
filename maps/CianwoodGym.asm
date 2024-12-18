@@ -18,7 +18,8 @@ CianwoodGymChuckScript:
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_CHUCK
-	iftrue .FightDone
+	iftrue .MaybeDone
+.doBattle
 	writetext ChuckIntroText1
 	waitbutton
 	closetext
@@ -65,6 +66,11 @@ CianwoodGymChuckScript:
 	waitbutton
 	closetext
 	end
+
+.MaybeDone:
+	checkevent EVENT_BEAT_PRYCE
+	iftrue .doBattle
+	sjump .FightDone
 
 .AlreadyGotTM:
 	writetext ChuckAfterText

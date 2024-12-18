@@ -30,9 +30,10 @@ BlackthornGymClairScript:
 	faceplayer
 	opentext
 	checkflag ENGINE_RISINGBADGE
-	iftrue .AlreadyGotBadge
+	iftrue .MaybeMaybeDone
 	checkevent EVENT_BEAT_CLAIR
-	iftrue .FightDone
+	iftrue .MaybeDone
+.doBattle
 	writetext ClairIntroText
 	waitbutton
 	closetext
@@ -40,6 +41,8 @@ BlackthornGymClairScript:
 	loadtrainer CLAIR, CLAIR1
 	startbattle
 	reloadmapafterbattle
+	checkevent EVENT_BEAT_CLAIR
+	iftrue .FightDone
 	setevent EVENT_BEAT_CLAIR
 	opentext
 	writetext ClairText_GoToDragonsDen
@@ -60,6 +63,19 @@ BlackthornGymClairScript:
 	waitbutton
 	closetext
 	end
+
+
+.MaybeDone:
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iftrue .doBattle
+	sjump .FightDone
+
+.MaybeMaybeDone:
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iftrue .doBattle
+	sjump .AlreadyGotBadge
+
+	
 
 .AlreadyGotBadge:
 	checkevent EVENT_GOT_TM24_DRAGONBREATH
