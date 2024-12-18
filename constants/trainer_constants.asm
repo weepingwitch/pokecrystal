@@ -114,6 +114,8 @@ DEF KRIS EQU __trainer_class__
 	const JASON
 	const JOEY4
 	const JOEY5
+	const ROD
+	const ABE
 
 	trainerclass SCHOOLBOY ; 17
 	const JACK1
@@ -142,8 +144,7 @@ DEF KRIS EQU __trainer_class__
 	const CHAD5
 
 	trainerclass BIRD_KEEPER ; 18
-	const ROD
-	const ABE
+	
 	const BRYAN
 	const THEO
 	const TOBY
