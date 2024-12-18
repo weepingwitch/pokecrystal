@@ -256,7 +256,7 @@ ElmDirectionsScript:
 	opentext
 	writetext GotElmsNumberText
 	waitbutton
-	givepoke EEVEE, 5, BERRY
+	givepoke EEVEE, 2, BERRY
 	closetext
 	turnobject ELMSLAB_ELM, DOWN
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
@@ -300,7 +300,7 @@ ElmsLabHealingMachine_HealParty:
 	playmusic MUSIC_NONE
 	setval HEALMACHINE_ELMS_LAB
 	special HealMachineAnim
-	pause 30
+	pause 20
 	special RestartMapMusic
 	closetext
 	end
@@ -490,7 +490,7 @@ AideScript_GiveYouBalls:
 	promptbutton
 	getitemname STRING_BUFFER_4, POKE_BALL
 	scall AideScript_ReceiveTheBalls
-	giveitem POKE_BALL, 5
+	giveitem POKE_BALL, 10
 	writetext AideText_ExplainBalls
 	promptbutton
 	itemnotify

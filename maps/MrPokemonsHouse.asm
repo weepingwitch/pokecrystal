@@ -69,7 +69,7 @@ MrPokemonsHouse_MrPokemonScript:
 	writetext MrPokemonText_GimmeTheScale
 	yesorno
 	iffalse .refused
-	verbosegiveitem LUCKY_EGG
+	verbosegiveitem MASTER_BALL
 	iffalse .full
 	takeitem RED_SCALE
 	sjump .AlwaysNewDiscoveries
@@ -128,20 +128,9 @@ MrPokemonsHouse_OakScript:
 	setmapscene ELMS_LAB, SCENE_ELMSLAB_MEET_OFFICER
 	specialphonecall SPECIALCALL_ROBBED
 	clearevent EVENT_COP_IN_ELMS_LAB
-	checkevent EVENT_GOT_TOTODILE_FROM_ELM
-	iftrue .RivalTakesChikorita
-	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
-	iftrue .RivalTakesCyndaquil
-	setevent EVENT_TOTODILE_POKEBALL_IN_ELMS_LAB
+	
 	end
 
-.RivalTakesChikorita:
-	setevent EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
-	end
-
-.RivalTakesCyndaquil:
-	setevent EVENT_CYNDAQUIL_POKEBALL_IN_ELMS_LAB
-	end
 
 MrPokemonsHouse_ForeignMagazines:
 	jumptext MrPokemonsHouse_ForeignMagazinesText
@@ -180,14 +169,13 @@ MrPokemonIntroText1:
 
 MrPokemonIntroText2:
 	text "This is what I"
-	line "want PROF.ELM to"
-	cont "examine."
+	line "want you to study."
 	done
 
 MrPokemonsHouse_GotEggText:
 	text "<PLAYER> received"
 	line "MYSTERY EGG."
-	done
+	prompt
 
 MrPokemonIntroText3:
 	text "I know a couple"
@@ -198,12 +186,7 @@ MrPokemonIntroText3:
 	line "EGG."
 
 	para "I was intrigued,"
-	line "so I sent mail to"
-	cont "PROF.ELM."
-
-	para "For #MON evolu-"
-	line "tion, PROF.ELM is"
-	cont "the authority."
+	line "but I'm lazy."
 	done
 
 MrPokemonIntroText4:
@@ -218,10 +201,9 @@ MrPokemonIntroText5:
 	done
 
 MrPokemonsHouse_MrPokemonHealText:
-	text "You are returning"
-	line "to PROF.ELM?"
 
-	para "Here. Your #MON"
+
+	text "Here. Your #MON"
 	line "should have some"
 	cont "rest."
 	done
@@ -266,26 +248,13 @@ MrPokemonsHouse_OakText1:
 	para "I understand why"
 	line "PROF.ELM gave you"
 
-	para "a #MON for this"
-	line "errand."
-
-	para "To researchers"
-	line "like PROF.ELM and"
-
-	para "I, #MON are our"
-	line "friends."
+	
 
 	para "He saw that you"
-	line "would treat your"
+	line "would be free"
+	cont "labor."
 
-	para "#MON with love"
-	line "and care."
-
-	para "…Ah!"
-
-	para "You seem to be"
-	line "dependable."
-
+	
 	para "How would you like"
 	line "to help me out?"
 
@@ -299,14 +268,12 @@ MrPokemonsHouse_OakText1:
 	para "#MON you've"
 	line "seen or caught."
 
-	para "It's a hi-tech"
-	line "encyclopedia!"
-	done
+	
 
 MrPokemonsHouse_GetDexText:
 	text "<PLAYER> received"
 	line "#DEX!"
-	done
+	prompt
 
 MrPokemonsHouse_OakText2:
 	text "Go meet many kinds"
@@ -315,15 +282,12 @@ MrPokemonsHouse_OakText2:
 	para "complete that"
 	line "#DEX!"
 
-	para "But I've stayed"
-	line "too long."
+	
 
 	para "I have to get to"
 	line "GOLDENROD for my"
 	cont "usual radio show."
 
-	para "<PLAY_G>, I'm"
-	line "counting on you!"
 	done
 
 MrPokemonText_GimmeTheScale:
@@ -338,7 +302,7 @@ MrPokemonText_GimmeTheScale:
 	line "care to trade it?"
 
 	para "I can offer this"
-	line "EXP.SHARE I got"
+	line "BALL I got"
 	cont "from PROF.OAK."
 	done
 
@@ -352,8 +316,8 @@ MrPokemonsHouse_ForeignMagazinesText:
 	text "It's packed with"
 	line "foreign magazines."
 
-	para "Can't even read"
-	line "their titles…"
+	para "I'm too young for"
+	line "these…"
 	done
 
 MrPokemonsHouse_BrokenComputerText:
