@@ -13,7 +13,8 @@ VioletGymFalknerScript:
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_FALKNER
-	iftrue .FightDone
+	iftrue .MaybeDone
+.doBattle
 	writetext FalknerIntroText
 	waitbutton
 	closetext
@@ -43,6 +44,11 @@ VioletGymFalknerScript:
 	waitbutton
 	closetext
 	end
+.MaybeDone:
+	checkevent EVENT_BEAT_WHITNEY
+	iftrue .doBattle
+	sjump .FightDone
+	
 
 .SpeechAfterTM:
 	writetext FalknerFightDoneText

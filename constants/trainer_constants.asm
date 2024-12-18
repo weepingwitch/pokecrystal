@@ -646,7 +646,7 @@ DEF KRIS EQU __trainer_class__
 	const ALLAN
 
 	trainerclass KIMONO_GIRL ; 3c
-	const NAOKO_UNUSED ; unused
+	
 	const NAOKO
 	const SAYO
 	const ZUKI
@@ -672,6 +672,7 @@ DEF KRIS EQU __trainer_class__
 	const BEVERLY3 ; unused
 	const GEORGIA
 	const JAIME
+	const MILF
 
 	trainerclass RED ; 3f
 	const RED1

@@ -11,7 +11,31 @@ PlayersNeighborsDaughterScript:
 	jumptextfaceplayer PlayersNeighborsDaughterText
 
 PlayersNeighborScript:
-	jumptextfaceplayer PlayersNeighborText
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_POKEFANF_MILF
+	iftrue .regular
+	readvar VAR_BADGES
+	if_equal 16, .doBattle
+.regular:
+	writetext PlayersNeighborText
+	waitbutton
+	closetext
+	end
+.doBattle:
+	writetext MILFSeenText
+	closetext
+	loadtrainer POKEFANF, MILF
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_POKEFANF_MILF
+	opentext
+	writetext MILFBeatenText
+	closetext
+	end
+
+
+	
 
 PlayersNeighborsHouseBookshelfScript:
 	jumpstd MagazineBookshelfScript
@@ -71,9 +95,17 @@ PlayersNeighborText:
 	line "ELM's assistant."
 
 	para "She really loves"
-	line "#MON!"
+	line "unpaid labor!"
+	done
 
-	para "But then, so do I!"
+MILFSeenText:
+	text "Ok, I'll battle"
+	line "you!"
+	done
+
+MILFBeatenText:
+	text "Ooh, you're so"
+	line "strong..."
 	done
 
 PlayerNeighborRadioText1:
