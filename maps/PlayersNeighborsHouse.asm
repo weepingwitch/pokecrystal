@@ -24,6 +24,7 @@ PlayersNeighborScript:
 	end
 .doBattle:
 	writetext MILFSeenText
+	waitbutton
 	closetext
 	loadtrainer POKEFANF, MILF
 	startbattle
