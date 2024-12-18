@@ -83,7 +83,7 @@ PlayBattleMusic:
 	jr .done
 
 .kantowild
-	ld de, MUSIC_KANTO_WILD_BATTLE
+	ld de, MUSIC_JOHTO_WILD_BATTLE
 	jr .done
 
 .trainermusic

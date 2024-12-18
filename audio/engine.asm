@@ -1121,7 +1121,6 @@ ReadNoiseSample:
 	jr z, .quit
 
 	and $f
-	inc a
 	ld [wNoiseSampleDelay], a
 	ld a, [de]
 	inc de
