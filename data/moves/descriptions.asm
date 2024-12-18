@@ -252,17 +252,30 @@ MoveDescriptions::
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
+	dw DazzingleamDescription
+	dw MoonblastDescription
+	dw DrainingkissDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFCDescription
-	dw MoveFDDescription
-	dw MoveFEDescription
+	
+	
+	
 	dw MoveFFDescription
 	dw Move00Description
 	assert_table_length $100
 
-MoveFCDescription:
-MoveFDDescription:
-MoveFEDescription:
+DazzingleamDescription:
+	db  "Powerful flash of"
+	next "damaging light.@"
+
+MoonblastDescription:
+	db "Uses moon power,"
+	next "might lower SPATK.@"
+
+DrainingkissDescription:
+	db "Steals HP with"
+	next "a kiss!@"
+
+
 MoveFFDescription:
 Move00Description:
 	db "?@"

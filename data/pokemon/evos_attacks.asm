@@ -470,19 +470,22 @@ ClefairyEvosAttacks:
 	db 4, ENCORE
 	db 8, SING
 	db 13, DOUBLESLAP
+	db 15, DRAININGKISS
 	db 19, MINIMIZE
-	db 26, DEFENSE_CURL
-	db 34, METRONOME
-	db 43, MOONLIGHT
+	db 24, DEFENSE_CURL
+	db 29, METRONOME
+	db 35, MOONLIGHT
+	db 45, MOONBLAST
 	db 53, LIGHT_SCREEN
 	db 0 ; no more level-up moves
 
 ClefableEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SING
-	db 1, DOUBLESLAP
+	db 1, MOONBLAST
 	db 1, METRONOME
 	db 1, MOONLIGHT
+	db 15, DRAININGKISS
 	db 0 ; no more level-up moves
 
 VulpixEvosAttacks:
@@ -519,6 +522,7 @@ JigglypuffEvosAttacks:
 	db 29, REST
 	db 34, BODY_SLAM
 	db 39, DOUBLE_EDGE
+	db 45, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 WigglytuffEvosAttacks:
@@ -564,6 +568,7 @@ OddishEvosAttacks:
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
 	db 23, ACID
+	db 28, MOONBLAST
 	db 32, MOONLIGHT
 	db 39, PETAL_DANCE
 	db 0 ; no more level-up moves
@@ -580,6 +585,7 @@ GloomEvosAttacks:
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
 	db 24, ACID
+	db 30, MOONBLAST
 	db 35, MOONLIGHT
 	db 44, PETAL_DANCE
 	db 0 ; no more level-up moves
@@ -588,7 +594,7 @@ VileplumeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ABSORB
 	db 1, SWEET_SCENT
-	db 1, STUN_SPORE
+	db 1, MOONBLAST
 	db 1, PETAL_DANCE
 	db 0 ; no more level-up moves
 
@@ -863,6 +869,7 @@ AlakazamEvosAttacks:
 	db 31, FUTURE_SIGHT
 	db 38, PSYCHIC_M
 	db 45, REFLECT
+	db 50, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 MachopEvosAttacks:
@@ -1552,6 +1559,7 @@ ChanseyEvosAttacks:
 	db 9, TAIL_WHIP
 	db 13, SOFTBOILED
 	db 17, DOUBLESLAP
+	db 20, DRAININGKISS
 	db 23, MINIMIZE
 	db 29, SING
 	db 35, EGG_BOMB
@@ -1680,6 +1688,7 @@ MrMimeEvosAttacks:
 	db 31, ENCORE
 	db 36, PSYBEAM
 	db 41, BATON_PASS
+	db 44, DAZZLINGLEAM
 	db 46, SAFEGUARD
 	db 0 ; no more level-up moves
 
@@ -1706,6 +1715,7 @@ JynxEvosAttacks:
 	db 1, LICK
 	db 1, LOVELY_KISS
 	db 1, POWDER_SNOW
+	db 8, DRAININGKISS
 	db 9, LOVELY_KISS
 	db 13, POWDER_SNOW
 	db 21, DOUBLESLAP
@@ -2245,6 +2255,7 @@ HoothootEvosAttacks:
 	db 22, REFLECT
 	db 28, TAKE_DOWN
 	db 34, CONFUSION
+	db 40, MOONBLAST
 	db 48, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -2260,6 +2271,7 @@ NoctowlEvosAttacks:
 	db 25, REFLECT
 	db 33, TAKE_DOWN
 	db 41, CONFUSION
+	db 47, MOONBLAST
 	db 57, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -2383,6 +2395,7 @@ CleffaEvosAttacks:
 	db 4, ENCORE
 	db 8, SING
 	db 13, SWEET_KISS
+	db 15, DRAININGKISS
 	db 0 ; no more level-up moves
 
 IgglybuffEvosAttacks:
@@ -2401,10 +2414,12 @@ TogepiEvosAttacks:
 	db 1, GROWL
 	db 1, CHARM
 	db 7, METRONOME
+	db 11, DRAININGKISS
 	db 18, SWEET_KISS
 	db 25, ENCORE
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
+	db 43, MOONBLAST
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
@@ -2412,10 +2427,12 @@ TogeticEvosAttacks:
 	db 1, GROWL
 	db 1, CHARM
 	db 7, METRONOME
+	db 11, DRAININGKISS
 	db 18, SWEET_KISS
 	db 25, ENCORE
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
+	db 43, MOONBLAST
 	db 0 ; no more level-up moves
 
 NatuEvosAttacks:
@@ -2452,6 +2469,7 @@ MareepEvosAttacks:
 	db 23, COTTON_SPORE
 	db 30, LIGHT_SCREEN
 	db 37, THUNDER
+	db 39, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 FlaaffyEvosAttacks:
@@ -2465,6 +2483,7 @@ FlaaffyEvosAttacks:
 	db 27, COTTON_SPORE
 	db 36, LIGHT_SCREEN
 	db 45, THUNDER
+	db 47, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 AmpharosEvosAttacks:
@@ -2478,6 +2497,7 @@ AmpharosEvosAttacks:
 	db 27, COTTON_SPORE
 	db 30, THUNDERPUNCH
 	db 42, LIGHT_SCREEN
+	db 51, DAZZLINGLEAM
 	db 57, THUNDER
 	db 0 ; no more level-up moves
 
@@ -2485,7 +2505,7 @@ BellossomEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ABSORB
 	db 1, SWEET_SCENT
-	db 1, STUN_SPORE
+	db 1, MOONBLAST
 	db 1, PETAL_DANCE
 	db 55, SOLARBEAM
 	db 0 ; no more level-up moves
@@ -3242,6 +3262,7 @@ BlisseyEvosAttacks:
 	db 10, SOFTBOILED
 	db 13, DOUBLESLAP
 	db 18, MINIMIZE
+	db 20, DRAININGKISS
 	db 23, SING
 	db 28, EGG_BOMB
 	db 33, DEFENSE_CURL
