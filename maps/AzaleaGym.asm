@@ -16,7 +16,8 @@ AzaleaGymBugsyScript:
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_BUGSY
-	iftrue .FightDone
+	iftrue .MaybeDone
+.doBattle
 	writetext BugsyText_INeverLose
 	waitbutton
 	closetext
@@ -48,6 +49,11 @@ AzaleaGymBugsyScript:
 	waitbutton
 	closetext
 	end
+
+.MaybeDone:
+	checkevent EVENT_BEAT_MORTY
+	iftrue .doBattle
+	sjump .FightDone
 
 .GotFuryCutter:
 	writetext BugsyText_BugMonsAreDeep
