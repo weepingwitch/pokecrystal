@@ -157,7 +157,9 @@ WindowText:
 	done
 
 TVText:
-	text "It's a TV."
+	text "Desperate"
+	line  "Housewives is"
+	cont  "on right now."
 	done
 
 HomepageText:
