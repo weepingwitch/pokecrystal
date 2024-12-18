@@ -150,19 +150,12 @@ GoldenrodPokeCenter1FLinkReceptionistWalkToStairsFromRightDoorwayTileMovement:
 
 
 GoldenrodPokecenter1FLassText:
-	text "A higher level"
-	line "#MON doesn't"
-	cont "always win."
+	text "I heard that some"
+	line "GYM LEADERS will"
+	cont "let you rematch,"
 
-	para "After all, it may"
-	line "have a type dis-"
-	cont "advantage."
-
-	para "I don't think"
-	line "there is a single"
-
-	para "#MON that is"
-	line "the toughest."
+	para "if you go back"
+	line "and visit them."
 	done
 
 GoldenrodPokeCenter1FLinkReceptionistPleaseAcceptGSBallText:
