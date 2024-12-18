@@ -25,7 +25,8 @@ EcruteakGymMortyScript:
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_MORTY
-	iftrue .FightDone
+	iftrue .MaybeDone
+.doBattle
 	writetext MortyIntroText
 	waitbutton
 	closetext
@@ -47,10 +48,6 @@ EcruteakGymMortyScript:
 .FightDone:
 	checkevent EVENT_GOT_TM30_SHADOW_BALL
 	iftrue .GotShadowBall
-	setevent EVENT_BEAT_SAGE_JEFFREY
-	setevent EVENT_BEAT_SAGE_PING
-	setevent EVENT_BEAT_MEDIUM_MARTHA
-	setevent EVENT_BEAT_MEDIUM_GRACE
 	writetext MortyText_FogBadgeSpeech
 	promptbutton
 	verbosegiveitem TM_SHADOW_BALL
@@ -60,6 +57,12 @@ EcruteakGymMortyScript:
 	waitbutton
 	closetext
 	end
+
+.MaybeDone:
+	checkevent EVENT_BEAT_JASMINE
+	iftrue .doBattle
+	sjump .FightDone
+	
 
 .GotShadowBall:
 	writetext MortyFightDoneText
