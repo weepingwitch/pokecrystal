@@ -740,14 +740,14 @@ LassGroup:
 	db 34, GRANBULL
 	db -1 ; end
 
-	; LASS (12)
+	; LASS (12) ;UNUSED 
 	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 21, MARILL
+	db 31, MARILL
 	db -1 ; end
 
-	; LASS (13)
+	; LASS (13) ; UNUSED
 	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 21, MARILL
+	db 41, MARILL
 	db -1 ; end
 
 	; LASS (14)
