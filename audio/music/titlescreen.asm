@@ -7,7 +7,7 @@ Music_TitleScreen:
 
 Music_TitleScreen_Ch1:
 	tempo 186
-	volume 7, 7
+	volume 9, 9
 	duty_cycle 3
 	pitch_offset 0
 	vibrato 16, 1, 2

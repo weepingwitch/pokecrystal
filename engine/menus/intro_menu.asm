@@ -2,7 +2,7 @@ Intro_MainMenu:
 	ld de, MUSIC_NONE
 	call PlayMusic
 	call DelayFrame
-	ld de, MUSIC_JOHTO_TRAINER_BATTLE
+	ld de, MUSIC_MAIN_MENU
 	ld a, e
 	ld [wMapMusic], a
 	call PlayMusic
@@ -649,9 +649,6 @@ AboutSpeech:
 
 	ld hl, AboutText2
 	call PrintText
-	ret
-
-.ExitAbout:
 	ld de, SFX_TRANSACTION
 	call PlaySFX
 	call WaitSFX
