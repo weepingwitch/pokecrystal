@@ -144,7 +144,7 @@ ReceivedEeveeText:
 
 BillEeveeMayEvolveText:
 	text "willow: Great,"
-	line "thanks~"
+	line "thanks! uwu"
 
 
 	done
