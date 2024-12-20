@@ -82,7 +82,7 @@ BillPhoneFullText:
 
 BillPhoneNewlyFullText:
 	text "Hi, <PLAY_G>?"
-	line "It's me, BILL!"
+	line "It's me, willow!"
 
 	para "Thanks for using"
 	line "my STORAGE SYSTEM."

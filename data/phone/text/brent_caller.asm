@@ -72,9 +72,10 @@ BrentFatherGossipText:
 
 BrentGrandpaGossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "BILL always picks"
 
-	para "seen in years..."
+	para "a girl character"
+	line "in games..."
 	done
 
 BrentGoldenrodGossipText:
@@ -115,9 +116,9 @@ BrentMilkGossipText:
 
 BrentBattlingGossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "BILL really liked"
 
-	para "seen in years..."
+	para "eating pickles..."
 	done
 
 BrentFlowerShopGossipText:
@@ -129,9 +130,9 @@ BrentFlowerShopGossipText:
 
 BrentKimonoGirlGossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "BILL always wears"
 
-	para "seen in years..."
+	para "a hoodie..."
 	done
 
 BrentSorryImTooBusyText:
