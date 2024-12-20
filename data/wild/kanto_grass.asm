@@ -39,7 +39,7 @@ KantoGrassWildMons:
 	db 12, PARAS
 	db 10, GEODUDE
 	db 8, CLEFAIRY
-	db 8, CLEFAIRY
+	db 8, ESPEON
 	; day
 	db 6, ZUBAT
 	db 8, GEODUDE
@@ -47,15 +47,15 @@ KantoGrassWildMons:
 	db 12, PARAS
 	db 10, GEODUDE
 	db 8, CLEFAIRY
-	db 8, CLEFAIRY
+	db 8, CLEFFA
 	; nite
 	db 6, ZUBAT
 	db 8, GEODUDE
 	db 8, CLEFAIRY
 	db 12, PARAS
 	db 10, GEODUDE
-	db 12, CLEFAIRY
-	db 5, MEW
+	db 12, CLEFFA
+	db 5, UMBREON
 	end_grass_wildmons
 
 	def_grass_wildmons ROCK_TUNNEL_1F

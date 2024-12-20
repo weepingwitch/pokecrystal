@@ -263,7 +263,7 @@ ContestResults_PartyFullText:
 	line "so the #MON was"
 
 	para "sent to your BOX"
-	line "in willow's PC."
+	line "in will's PC."
 	done
 
 GymStatue_CityGymText:

@@ -166,7 +166,7 @@ KantoWaterWildMons:
 	def_water_wildmons CINNABAR_ISLAND
 	db 6 percent ; encounter rate
 	db 35, TENTACOOL
-	db 30, TENTACOOL
+	db 5, WEEDLE
 	db 5, MEWTWO
 	end_water_wildmons
 

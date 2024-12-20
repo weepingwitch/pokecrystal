@@ -36,7 +36,7 @@ BrentLostAMonText:
 	para "didn't have any"
 	line "# BALLS…"
 
-	para "Would BILL laugh"
+	para "Would WILL laugh"
 	line "at my mistakes?"
 	done
 
@@ -65,85 +65,78 @@ BrentHangUpText:
 
 BrentFatherGossipText:
 	text "Did you know…?"
-	line "BILL's father is"
+	line "WILL hasn't been"
 
-	para "supposed to be a"
-	line "great #MANIAC."
+	para "seen in years..."
 	done
 
 BrentGrandpaGossipText:
 	text "Did you know…?"
-	line "Apparently BILL's"
+	line "WILL hasn't been"
 
-	para "grandpa isn't a"
-	line "#MANIAC."
+	para "seen in years..."
 	done
 
 BrentGoldenrodGossipText:
 	text "Did you know…?"
-	line "BILL's originally"
-	cont "from GOLDENROD."
+	line "WILL hasn't been"
+
+	para "seen in years..."
 	done
 
 BrentRoute25GossipText:
 	text "Did you know…?"
-	line "BILL evidently"
+	line "WILL hasn't been"
 
-	para "lives on ROUTE 25"
-	line "in KANTO."
+	para "seen in years..."
 	done
 
 BrentAbraGossipText:
 	text "Did you know…?"
 	line "ABRA was the first"
 
-	para "#MON that BILL"
+	para "#MON that WILL"
 	line "ostensibly caught."
 	done
 
 BrentSisterGossipText:
 	text "Did you know…?"
-	line "BILL's younger"
+	line "WILL hasn't been"
 
-	para "sister apparently"
-	line "can't wink."
+	para "seen in years..."
 	done
 
 BrentMilkGossipText:
 	text "Did you know…?"
-	line "BILL supposedly"
+	line "WILL hasn't been"
 
-	para "hates milk and"
-	line "can't drink it."
+	para "seen in years..."
 	done
 
 BrentBattlingGossipText:
 	text "Did you know…?"
-	line "Evidently, BILL"
+	line "WILL hasn't been"
 
-	para "isn't very good at"
-	line "battling."
+	para "seen in years..."
 	done
 
 BrentFlowerShopGossipText:
 	text "Did you know…?"
-	line "BILL appears to"
+	line "WILL hasn't been"
 
-	para "like the lady at"
-	line "the FLOWER SHOP."
+	para "seen in years..."
 	done
 
 BrentKimonoGirlGossipText:
 	text "Did you know…?"
-	line "BILL's mother is"
+	line "WILL hasn't been"
 
-	para "said to have been"
-	line "a KIMONO GIRL."
+	para "seen in years..."
 	done
 
 BrentSorryImTooBusyText:
 	text "You wanted to hear"
-	line "about BILL?"
+	line "about WILL?"
 
 	para "Sorry, but I'm too"
 	line "busy for you."

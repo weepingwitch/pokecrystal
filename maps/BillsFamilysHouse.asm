@@ -24,7 +24,7 @@ BillScript:
 	writetext ReceivedEeveeText
 	playsound SFX_CAUGHT_MON
 	waitsfx
-	givepoke EEVEE, 20
+	givepoke MEW, 5
 	setevent EVENT_GOT_EEVEE
 	writetext BillEeveeMayEvolveText
 	waitbutton
@@ -107,9 +107,9 @@ BillsHouseRadio:
 	jumpstd Radio2Script
 
 BillTakeThisEeveeText:
-	text "BILL: Hi, <PLAYER>!"
+	text "willow: Hi, <PLAYER>!"
 	line "Do us a favor and"
-	cont "take this EEVEE."
+	cont "take this MEW."
 
 	para "It came over when"
 	line "I was adjusting"
@@ -127,11 +127,8 @@ BillTakeThisEeveeText:
 	done
 
 BillImCountingOnYouText:
-	text "BILL: I knew you'd"
-	line "come through!"
-
-	para "Way to go! You're"
-	line "the real deal!"
+	text "willow: I knew"
+	line "you could do it!"
 
 	para "OK, I'm counting"
 	line "on you."
@@ -146,11 +143,10 @@ ReceivedEeveeText:
 	done
 
 BillEeveeMayEvolveText:
-	text "BILL: PROF.ELM"
-	line "claims EEVEE may"
+	text "willow: Great,"
+	line "thanks~"
 
-	para "evolve in new and"
-	line "unknown ways."
+
 	done
 
 BillPartyFullText:
@@ -165,7 +161,7 @@ BillNoEeveeText:
 	done
 
 BillPopWontWorkText:
-	text "BILL: My pop, he"
+	text "willow: My pop, he"
 	line "won't work. All he"
 
 	para "does is goof off"
@@ -178,7 +174,7 @@ BillPopWontWorkText:
 BillsMomText_BeforeEcruteak:
 	text "Oh, you collect"
 	line "#MON? My son"
-	cont "BILL is an expert."
+	cont "WILL is an expert."
 
 	para "He just got called"
 	line "to the #MON"
@@ -198,7 +194,7 @@ BillsMomText_AfterEcruteak:
 	line "once known as a"
 
 	para "#MANIAC."
-	line "BILL must have"
+	line "WILL must have"
 
 	para "taken after his"
 	line "father."
@@ -214,7 +210,7 @@ BillsYoungerSisterUsefulNumberText:
 
 RecordedBillsNumberText:
 	text "<PLAYER> recorded"
-	line "BILL's number."
+	line "willow's number."
 	done
 
 BillsYoungerSisterRefusedNumberText:
@@ -223,7 +219,7 @@ BillsYoungerSisterRefusedNumberText:
 	cont "storage system."
 
 	para "I was going to"
-	line "give you BILL's"
+	line "give you WILL's"
 	cont "number…"
 	done
 
@@ -234,7 +230,7 @@ BillsYoungerSisterPhoneFullText:
 
 BillsYoungerSisterStorageSystemText:
 	text "My big brother"
-	line "BILL made the PC"
+	line "WILL made the PC"
 
 	para "#MON storage"
 	line "system."
