@@ -107,7 +107,7 @@ BillsHouseRadio:
 	jumpstd Radio2Script
 
 BillTakeThisEeveeText:
-	text "willow: Hi, <PLAYER>!"
+	text "willow: <PLAYER>!"
 	line "Do us a favor and"
 	cont "take this MEW."
 
