@@ -435,6 +435,7 @@ Continue_CheckRTC_RestartClock:
 	ret
 
 FinishContinueFunction:
+	readvar VAR_BADGES
 .loop
 	xor a
 	ld [wDontPlayMapMusicOnReload], a
@@ -577,6 +578,8 @@ Continue_DisplayBadgeCount:
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits
+	ld a, [wNumSetBits] 
+	ld [wUnusedScriptByte], a
 	lb bc, 1, 2
 	jp PrintNum
 
@@ -660,7 +663,7 @@ OakSpeech:
 	farcall InitClock
 	call RotateFourPalettesLeft
 	call ClearTilemap
-
+	readvar VAR_BADGES
 	ld de, MUSIC_ROUTE_30
 	call PlayMusic
 

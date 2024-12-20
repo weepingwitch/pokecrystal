@@ -91,6 +91,11 @@ NewBarkTownTeacherScript:
 
 .TellMomYoureLeaving:
 	writetext Text_TellMomIfLeaving
+	setflag ENGINE_PLAINBADGE
+	setflag ENGINE_HIVEBADGE
+	setflag ENGINE_ZEPHYRBADGE
+	setflag ENGINE_FOGBADGE
+	readvar VAR_BADGES
 	waitbutton
 	closetext
 	end

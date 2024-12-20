@@ -89,6 +89,7 @@ _GetVarAction::
 	ld b, 2
 	call CountSetBits
 	ld a, [wNumSetBits]
+	ld [wUnusedScriptByte], a
 	jp .loadstringbuffer2
 
 .PlayerFacing:
