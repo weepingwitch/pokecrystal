@@ -1308,7 +1308,8 @@ LoadPokemonPalette:
 	;call ApplyPals
 	ld bc, PAL_COLOR_SIZE * 2
 	ld a, BANK(wBGPals1)
-	ld de, wBGPals1
+	;ld de, wBGPals1 palette 7 + 2
+	;ld bc, 4
 	jp FarCopyWRAM		
 
 
