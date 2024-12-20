@@ -36,7 +36,7 @@ BrentLostAMonText:
 	para "didn't have any"
 	line "# BALLS…"
 
-	para "Would WILL laugh"
+	para "Would BILL laugh"
 	line "at my mistakes?"
 	done
 
@@ -65,28 +65,28 @@ BrentHangUpText:
 
 BrentFatherGossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
 
 BrentGrandpaGossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
 
 BrentGoldenrodGossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
 
 BrentRoute25GossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
@@ -95,48 +95,48 @@ BrentAbraGossipText:
 	text "Did you know…?"
 	line "ABRA was the first"
 
-	para "#MON that WILL"
+	para "#MON that BILL"
 	line "ostensibly caught."
 	done
 
 BrentSisterGossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
 
 BrentMilkGossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
 
 BrentBattlingGossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
 
 BrentFlowerShopGossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
 
 BrentKimonoGirlGossipText:
 	text "Did you know…?"
-	line "WILL hasn't been"
+	line "BILL hasn't been"
 
 	para "seen in years..."
 	done
 
 BrentSorryImTooBusyText:
 	text "You wanted to hear"
-	line "about WILL?"
+	line "about BILL?"
 
 	para "Sorry, but I'm too"
 	line "busy for you."

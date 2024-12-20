@@ -174,7 +174,7 @@ BillPopWontWorkText:
 BillsMomText_BeforeEcruteak:
 	text "Oh, you collect"
 	line "#MON? My son"
-	cont "WILL is an expert."
+	cont "BILL is an expert."
 
 	para "He just got called"
 	line "to the #MON"
@@ -194,7 +194,7 @@ BillsMomText_AfterEcruteak:
 	line "once known as a"
 
 	para "#MANIAC."
-	line "WILL must have"
+	line "BILL must have"
 
 	para "taken after his"
 	line "father."
@@ -219,7 +219,7 @@ BillsYoungerSisterRefusedNumberText:
 	cont "storage system."
 
 	para "I was going to"
-	line "give you WILL's"
+	line "give you BILL's"
 	cont "number…"
 	done
 
@@ -230,7 +230,7 @@ BillsYoungerSisterPhoneFullText:
 
 BillsYoungerSisterStorageSystemText:
 	text "My big brother"
-	line "WILL made the PC"
+	line "BILL made the PC"
 
 	para "#MON storage"
 	line "system."

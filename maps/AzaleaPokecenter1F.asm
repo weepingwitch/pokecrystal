@@ -37,25 +37,25 @@ AzaleaPokecenter1FGentlemanText:
 	done
 
 AzaleaPokecenter1FUnusedText: ; unreferenced
-	text "This WILL guy"
+	text "This BILL guy"
 	line "created the system"
 
 	para "for storing"
 	line "#MON in a PC."
 
-	para "WILL's PC can"
+	para "BILL's PC can"
 	line "store up to 20"
 	cont "#MON per BOX."
 	done
 
 AzaleaPokecenter1FFishingGuruText:
-	text "This WILL guy"
+	text "This BILL guy"
 	line "created the system"
 
 	para "for storing"
 	line "#MON in a PC."
 
-	para "WILL's PC can"
+	para "BILL's PC can"
 	line "store up to 20"
 	cont "#MON per BOX."
 	done
