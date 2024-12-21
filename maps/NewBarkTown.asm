@@ -91,7 +91,9 @@ NewBarkTownTeacherScript:
 
 .TellMomYoureLeaving:
 	writetext Text_TellMomIfLeaving
-	;setflag ENGINE_PLAINBADGE
+	;setflag ENGINE_STORMBADGE
+	;giveitem HM_FLY
+	;givepoke PIDGEY, 5
 	;setflag ENGINE_HIVEBADGE
 	;setflag ENGINE_ZEPHYRBADGE
 	;setflag ENGINE_FOGBADGE
