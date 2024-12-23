@@ -12,28 +12,28 @@ KantoWaterWildMons:
 	def_water_wildmons VERMILION_PORT
 	db 2 percent ; encounter rate
 	db 35, TENTACOOL
-	db 30, TENTACOOL
+	db 30, SHUCKLE
 	db 35, TENTACRUEL
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_4
 	db 4 percent ; encounter rate
 	db 10, GOLDEEN
-	db 5, GOLDEEN
+	db 5, SQUIRTLE
 	db 10, SEAKING
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_6
 	db 2 percent ; encounter rate
 	db 10, PSYDUCK
-	db 5, PSYDUCK
-	db 10, GOLDUCK
+	db 5, STARYU
+	db 5, TOTODILE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_9
 	db 4 percent ; encounter rate
 	db 15, GOLDEEN
-	db 10, GOLDEEN
+	db 10, STARYU
 	db 15, SEAKING
 	end_water_wildmons
 
