@@ -11,6 +11,7 @@
 	const ROUTE40_POKEFAN_M
 	const ROUTE40_LASS2
 	const ROUTE40_STANDING_YOUNGSTER
+	const ROUTE40_BEAUTY_ELIZA
 
 Route40_MapScripts:
 	def_scene_scripts
@@ -28,6 +29,17 @@ Route40MonicaCallback:
 .MonicaAppears:
 	appear ROUTE40_MONICA
 	endcallback
+
+TrainerBeautyEliza:
+	trainer BEAUTY, ELIZA, EVENT_BEAT_BEAUTY_ELIZA, BeautyElizaSeenText, BeautyElizaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BeautyElizaAfterBattleText
+	waitbutton
+	closetext
+	end
 
 TrainerSwimmerfElaine:
 	trainer SWIMMERF, ELAINE, EVENT_BEAT_SWIMMERF_ELAINE, SwimmerfElaineSeenText, SwimmerfElaineBeatenText, 0, .Script
@@ -196,6 +208,24 @@ SwimmermRandallAfterBattleText:
 	cont "It's healthy."
 	done
 
+BeautyElizaSeenText:
+	text "Are you going to"
+	line "CIANWOOD?"
+
+	para "How about a quick"
+	line "battle first?"
+	done
+
+BeautyElizaBeatenText:
+	text "I lost that one!"
+	done
+
+BeautyElizaAfterBattleText:
+	text "I'd say I'm a bet-"
+	line "ter swimmer than"
+	cont "you. Yeah!"
+	done
+
 SwimmerfElaineSeenText:
 	text "Are you going to"
 	line "CIANWOOD?"
@@ -360,3 +390,4 @@ Route40_MapEvents:
 	object_event  7,  6, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route40PokefanMScript, -1
 	object_event 13,  4, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route40Lass2Script, -1
 	object_event 16,  9, SPRITE_STANDING_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route40StandingYoungsterScript, EVENT_BATTLE_TOWER_OPEN_CIVILIANS
+	object_event 14,  7, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_TRAINER, 5, TrainerBeautyEliza, -1

@@ -1068,8 +1068,13 @@ BeautyGroup:
 	db -1 ; end
 
 	; BEAUTY (3)
-	db "JULIE@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db "ELIZA@", TRAINERTYPE_NORMAL
+	db 28, CORSOLA
+	db 27, CROCONAW
+	db 26, AZUMARILL
+	db 28, WARTORTLE
+	db 30, VAPOREON
+	db 33, GOLDUCK
 	db -1 ; end
 
 	; BEAUTY (4)
