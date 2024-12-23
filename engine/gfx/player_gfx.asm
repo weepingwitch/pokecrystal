@@ -75,26 +75,19 @@ GetPlayerNameArray: ; unreferenced
 	ret
 
 GetPlayerIcon:
-	ld de, ChrisSpriteGFX
-	ld b, BANK(ChrisSpriteGFX)
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .got_gfx
+	
 	ld de, KrisSpriteGFX
 	ld b, BANK(KrisSpriteGFX)
 .got_gfx
 	ret
 
 GetCardPic:
-	ld hl, ChrisCardPic
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .got_pic
+	
 	ld hl, KrisCardPic
 .got_pic
 	ld de, vTiles2 tile $00
 	ld bc, $23 tiles
-	ld a, BANK(ChrisCardPic) ; aka BANK(KrisCardPic)
+	ld a, BANK(KrisCardPic) ; aka BANK(KrisCardPic)
 	call FarCopyBytes
 	ld hl, TrainerCardGFX
 	ld de, vTiles2 tile $23
@@ -103,8 +96,7 @@ GetCardPic:
 	call FarCopyBytes
 	ret
 
-ChrisCardPic:
-INCBIN "gfx/trainer_card/chris_card.2bpp"
+
 
 KrisCardPic:
 INCBIN "gfx/trainer_card/kris_card.2bpp"
@@ -113,19 +105,10 @@ TrainerCardGFX:
 INCBIN "gfx/trainer_card/trainer_card.2bpp"
 
 GetPlayerBackpic:
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, GetChrisBackpic
 	call GetKrisBackpic
 	ret
 
-GetChrisBackpic:
-	ld hl, ChrisBackpic
-	ld b, BANK(ChrisBackpic)
-	ld de, vTiles2 tile $31
-	ld c, 7 * 7
-	predef DecompressGet2bpp
-	ret
+
 
 HOF_LoadTrainerFrontpic:
 	call WaitBGMap
@@ -133,24 +116,16 @@ HOF_LoadTrainerFrontpic:
 	ldh [hBGMapMode], a
 
 ; Get class
-	ld e, CHRIS
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .got_class
 	ld e, KRIS
 .got_class
 	ld a, e
 	ld [wTrainerClass], a
 
 ; Load pic
-	ld de, ChrisPic
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .got_pic
 	ld de, KrisPic
 .got_pic
 	ld hl, vTiles2
-	ld b, BANK(ChrisPic) ; aka BANK(KrisPic)
+	ld b, BANK(KrisPic) ; aka BANK(KrisPic)
 	ld c, 7 * 7
 	call Get2bpp
 
@@ -163,24 +138,16 @@ DrawIntroPlayerPic:
 ; Draw the player pic at (6,4).
 
 ; Get class
-	ld e, CHRIS
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .got_class
 	ld e, KRIS
 .got_class
 	ld a, e
 	ld [wTrainerClass], a
 
 ; Load pic
-	ld de, ChrisPic
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .got_pic
 	ld de, KrisPic
 .got_pic
 	ld hl, vTiles2
-	ld b, BANK(ChrisPic) ; aka BANK(KrisPic)
+	ld b, BANK(KrisPic) ; aka BANK(KrisPic)
 	ld c, 7 * 7 ; dimensions
 	call Get2bpp
 
@@ -191,9 +158,6 @@ DrawIntroPlayerPic:
 	lb bc, 7, 7
 	predef PlaceGraphic
 	ret
-
-ChrisPic:
-INCBIN "gfx/player/chris.2bpp"
 
 KrisPic:
 INCBIN "gfx/player/kris.2bpp"
