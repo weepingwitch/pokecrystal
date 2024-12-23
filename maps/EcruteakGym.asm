@@ -197,25 +197,6 @@ MortyIntroText:
 	para "before a truly"
 	line "powerful trainer."
 
-	para "I believed that"
-	line "tale, so I have"
-
-	para "secretly trained"
-	line "here all my life."
-
-	para "As a result, I can"
-	line "now see what"
-	cont "others cannot."
-
-	para "Just a bit more…"
-
-	para "With a little"
-	line "more, I could see"
-
-	para "a future in which"
-	line "I meet the #MON"
-	cont "of rainbow colors."
-
 	para "You're going to"
 	line "help me reach that"
 	cont "level!"
