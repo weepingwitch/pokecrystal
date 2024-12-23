@@ -6,21 +6,21 @@ JohtoWaterWildMons:
 	db 2 percent ; encounter rate
 	db 15, WOOPER
 	db 20, QUAGSIRE
-	db 15, QUAGSIRE
+	db 15, PSYDUCK
 	end_water_wildmons
 
 	def_water_wildmons UNION_CAVE_1F
 	db 2 percent ; encounter rate
 	db 15, WOOPER
 	db 20, QUAGSIRE
-	db 15, QUAGSIRE
+	db 15, CORSOLA
 	end_water_wildmons
 
 	def_water_wildmons UNION_CAVE_B1F
 	db 2 percent ; encounter rate
 	db 15, WOOPER
 	db 20, QUAGSIRE
-	db 15, QUAGSIRE
+	db 15, SLOWPOKE
 	end_water_wildmons
 
 	def_water_wildmons UNION_CAVE_B2F
@@ -47,7 +47,7 @@ JohtoWaterWildMons:
 	def_water_wildmons ILEX_FOREST
 	db 2 percent ; encounter rate
 	db 15, PSYDUCK
-	db 10, PSYDUCK
+	db 10, PARAS
 	db 15, GOLDUCK
 	end_water_wildmons
 
@@ -60,7 +60,7 @@ JohtoWaterWildMons:
 
 	def_water_wildmons MOUNT_MORTAR_2F_INSIDE
 	db 2 percent ; encounter rate
-	db 20, GOLDEEN
+	db 20, POLIWAG
 	db 25, MARILL
 	db 25, SEAKING
 	end_water_wildmons
@@ -81,7 +81,7 @@ JohtoWaterWildMons:
 
 	def_water_wildmons WHIRL_ISLAND_B2F
 	db 4 percent ; encounter rate
-	db 15, HORSEA
+	db 15, STARYU
 	db 20, HORSEA
 	db 20, TENTACRUEL
 	end_water_wildmons
@@ -214,7 +214,7 @@ JohtoWaterWildMons:
 
 	def_water_wildmons CHERRYGROVE_CITY
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
+	db 20, POLIWAG
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
 	end_water_wildmons
@@ -235,7 +235,7 @@ JohtoWaterWildMons:
 
 	def_water_wildmons OLIVINE_CITY
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
+	db 20, SHUCKLE
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
 	end_water_wildmons

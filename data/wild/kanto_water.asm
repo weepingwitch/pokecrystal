@@ -159,8 +159,8 @@ KantoWaterWildMons:
 	def_water_wildmons FUCHSIA_CITY
 	db 2 percent ; encounter rate
 	db 20, MAGIKARP
-	db 15, MAGIKARP
-	db 10, MAGIKARP
+	db 15, PSYDUCK
+	db 10, SLOWBRO
 	end_water_wildmons
 
 	def_water_wildmons CINNABAR_ISLAND
