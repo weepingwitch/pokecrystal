@@ -110,7 +110,7 @@ VioletPokecenterElmsAideFavorText:
 	para "PROF.ELM asked me"
 	line "to find you."
 
-	para "He has another"
+	para "She has another"
 	line "favor to ask."
 
 	para "Would you take the"
@@ -128,9 +128,6 @@ VioletPokecenterElmsAideGiveEggText:
 	line "with other active"
 	cont "#MON to hatch."
 
-	para "<PLAY_G>, you're"
-	line "the only person"
-	cont "we can rely on."
 
 	para "Please call PROF."
 	line "ELM when that EGG"

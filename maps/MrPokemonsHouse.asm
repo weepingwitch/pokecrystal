@@ -247,10 +247,11 @@ MrPokemonsHouse_OakText1:
 
 	para "I understand why"
 	line "PROF.ELM gave you"
+	cont "a #MON"
 
 	
 
-	para "He saw that you"
+	para "She saw that you"
 	line "would be free"
 	cont "labor."
 
