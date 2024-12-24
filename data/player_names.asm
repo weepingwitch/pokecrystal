@@ -12,9 +12,9 @@ KrisNameMenuHeader:
 	db 5 ; items
 	db "NEW NAME@"
 FemalePlayerNameArray:
-	db "willow@"
 	db "Eliza@"
 	db "Sara@"
 	db "Alex@"
+	db "Dani@"
 	db 2 ; title indent
 	db " NAME @" ; title

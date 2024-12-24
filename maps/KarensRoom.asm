@@ -79,48 +79,20 @@ KarensRoom_EnterMovement:
 	step_end
 
 KarenScript_KarenBeforeText:
-	text "I am KAREN of the"
-	line "ELITE FOUR."
+	text "I guess it is"
+	line "time for us to"
+	cont "battle..."
 
-	para "You're <PLAYER>?"
-	line "How amusing."
-
-	para "I love dark-type"
-	line "#MON."
-
-	para "I find their wild,"
-	line "tough image to be"
-
-	para "so appealing. And"
-	line "they're so strong."
-
-	para "Think you can take"
-	line "them? Just try to"
-	cont "entertain me."
-
-	para "Let's go."
+	para "..."
+	line "..."
+	cont "Let's go."
 	done
 
 KarenScript_KarenBeatenText:
-	text "Well, aren't you"
-	line "good. I like that"
-	cont "in a trainer."
+	text "Well done."
 	done
 
 KarenScript_KarenDefeatText:
-	text "Strong #MON."
-
-	para "Weak #MON."
-
-	para "That is only the"
-	line "selfish perception"
-	cont "of people."
-
-	para "Truly skilled"
-	line "trainers should"
-
-	para "try to win with"
-	line "their favorites."
 
 	para "I like your style."
 	line "You understand"
@@ -144,4 +116,4 @@ KarensRoom_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  5,  7, SPRITE_KAREN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, KarenScript_Battle, -1
+	object_event  5,  7, SPRITE_BILL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, KarenScript_Battle, -1
