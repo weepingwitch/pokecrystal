@@ -331,6 +331,10 @@ GuideGentPokecenterText:
 	para "your #MON..."
 	line "for free!"
 
+	para "Back in my day,"
+	line "we had to pay"
+	cont "for healthcare."
+
 
 	done
 
@@ -338,7 +342,7 @@ GuideGentMartText:
 	text "This is a #MON"
 	line "MART."
 
-	para "They sell BALLS"
+	para "They sell BALLS,"
 	line "and other things."
 
 	done
@@ -392,22 +396,9 @@ GuideGentNoText:
 CherrygroveRivalText_Seen:
 	text "<……> <……> <……>"
 
-	para "You got a #MON"
-	line "at the LAB."
 
-	para "What a waste."
-	line "A wimp like you."
-
-	para "<……> <……> <……>"
-
-	para "Don't you get what"
-	line "I'm saying?"
-
-	para "Well, I too, have"
-	line "a good #MON."
-
-	para "I'll show you"
-	line "what I mean!"
+	para "I've got the"
+	line "EEVEEs!"
 	done
 
 RivalCherrygroveWinText:
@@ -421,9 +412,8 @@ CherrygroveRivalText_YouLost:
 	para "My name's ???."
 
 	para "I'm going to be"
-	line "the world's great-"
-	cont "est #MON"
-	cont "trainer."
+	line "the world's best"
+	cont "EEVEE trainer."
 	done
 
 RivalCherrygroveLossText:
@@ -437,9 +427,8 @@ CherrygroveRivalText_YouWon:
 	para "My name's ???."
 
 	para "I'm going to be"
-	line "the world's great-"
-	cont "est #MON"
-	cont "trainer."
+	line "the world's best"
+	cont "EEVEE trainer."
 	done
 
 CherrygroveTeacherText_NoMapCard:
@@ -462,6 +451,9 @@ CherrygroveYoungsterText_NoPokedex:
 	text "MR.#MON's house"
 	line "is still farther"
 	cont "up ahead."
+
+	para "He's really"
+	line "strange..."
 	done
 
 CherrygroveYoungsterText_HavePokedex:

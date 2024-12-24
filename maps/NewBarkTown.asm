@@ -212,8 +212,7 @@ Text_WhatDoYouThinkYoureDoing:
 
 Text_ItsDangerousToGoAlone:
 	text "It's dangerous to"
-	line "go out without a"
-	cont "#MON!"
+	line "go out alone!"
 
 	para "Wild #MON"
 	line "jump out of the"
@@ -259,6 +258,9 @@ NewBarkTownRivalText1:
 	para "So this is the"
 	line "famous ELM #MON"
 	cont "LAB…"
+
+	para "With all of the"
+	line "EEVEEs..."
 	done
 
 NewBarkTownRivalText2:

@@ -256,7 +256,6 @@ ElmDirectionsScript:
 	opentext
 	writetext GotElmsNumberText
 	waitbutton
-	givepoke EEVEE, 2, BERRY
 	closetext
 	turnobject ELMSLAB_ELM, DOWN
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
@@ -463,7 +462,7 @@ AideScript_GivePotion:
 	opentext
 	writetext AideText_GiveYouPotion
 	promptbutton
-	verbosegiveitem POTION
+	givepoke EEVEE, 1
 	writetext AideText_AlwaysBusy
 	waitbutton
 	closetext
@@ -759,7 +758,7 @@ ElmText_Intro:
 	done
 
 ElmText_Accepted:
-	text "haha sucker"
+	text "Haha sucker"
 
 	done
 
@@ -775,15 +774,14 @@ ElmText_GotAnEmail:
 	line "e-mail!"
 
 	para "<……><……><……>"
-	line "Oh it's spam"
+	line "Oh it's spam."
 
-	para "Anyway."
+	para "Someone trying to"
+	line "buy my EEVEEs."
 	done
 
 ElmText_MissionFromMrPokemon:
-	text "Oh yeah..."
-
-	para "Another job..."
+	text "So, the job..."
 	line "visit my friend."
 	done
 
@@ -844,12 +842,13 @@ ElmDirectionsText1:
 	para "Call me if"
 	line "you get lost."
 
-
 	done
 
 GotElmsNumberText:
-	text "Oh yeah, take"
-	line "this one too."
+	text "I need to get"
+	line "back to EEVEE"
+	cont "breeding..."
+
 	done
 
 ElmDescribesMrPokemonText:
@@ -881,6 +880,9 @@ ElmsLabHealingMachineText2:
 ElmAfterTheftText1:
 	text "ELM: <PLAY_G>, this"
 	line "is terrible…"
+
+	para "Someone stole all"
+	line "of my EEVEEs!"
 
 	para "Oh, yes, what was"
 	line "MR.#MON's big"
@@ -915,16 +917,10 @@ ElmAfterTheftText5:
 	line "true? Th-that's"
 	cont "incredible!"
 
-	para "He is superb at"
+	para "She is superb at"
 	line "seeing the poten-"
 	cont "tial of people as"
 	cont "trainers."
-
-	para "Wow, <PLAY_G>. You"
-	line "may have what it"
-
-	para "takes to become"
-	line "the CHAMPION."
 
 	para "You seem to be"
 	line "getting on great"
@@ -1135,6 +1131,9 @@ AideText_GiveYouPotion:
 	text "<PLAY_G>, I want"
 	line "you to have this"
 	cont "for your errand."
+
+	para "PROF.ELM breeds so"
+	line "many of them..."
 	done
 
 AideText_AlwaysBusy:
@@ -1149,23 +1148,13 @@ AideText_TheftTestimony:
 
 	para "When we went to"
 	line "look, someone"
-	cont "stole a #MON."
+	cont "all the EEVEEs!"
 
 	para "It's unbelievable"
 	line "that anyone would"
 	cont "do that!"
 
-	para "…sigh… That"
-	line "stolen #MON."
-
-	para "I wonder how it's"
-	line "doing."
-
-	para "They say a #MON"
-	line "raised by a bad"
-
-	para "person turns bad"
-	line "itself."
+	
 	done
 
 AideText_GiveYouBalls:
@@ -1206,7 +1195,7 @@ ElmsLabWindowText1:
 	done
 
 ElmsLabWindowText2:
-	text "He broke in"
+	text "She broke in"
 	line "through here!"
 	done
 
