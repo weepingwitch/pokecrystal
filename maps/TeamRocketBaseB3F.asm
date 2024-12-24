@@ -384,46 +384,39 @@ RocketBaseRivalText:
 	done
 
 ExecutiveM4BeforeText:
-	text "What? Who are you?"
-	line "This is the office"
+	text "The car's on fire"
+	
+	para "there's no driver"
+	line "at the wheel."
 
-	para "of our leader,"
-	line "GIOVANNI."
+	para "The sewers are"
+	line "all muddied"
 
-	para "Since disbanding"
-	line "TEAM ROCKET three"
+	para "with a thousand"
+	line "lonely suicides."
 
-	para "years ago, he has"
-	line "been in training."
+	para "And a dark wind"
+	line "blows…"
 
-	para "But we're certain"
-	line "he will be back"
-
-	para "some day to assume"
-	line "command again."
-
-	para "That's why we're"
-	line "standing guard."
-
-	para "I won't let any-"
-	line "one disturb this"
-	cont "place!"
 	done
 
 ExecutiveM4BeatenText:
-	text "I… I couldn't do a"
-	line "thing…"
+	text "The government is"
+	line "corrupt, and we"
 
-	para "GIOVANNI, please"
-	line "forgive me…"
+	para "are on so many"
+	line "drugs. Radio on,"
+	cont "curtains drawn."
 	done
 
 ExecutiveM4AfterText:
-	text "No, I can't let"
-	line "this affect me."
+	text "We're trapped in"
+	line "the belly of this"
+	cont "horrible machine,"
 
-	para "I have to inform"
-	line "the others…"
+	para "and the machine"
+	line "is bleeding to"
+	cont "death…"
 	done
 
 RocketBaseMurkrowText:

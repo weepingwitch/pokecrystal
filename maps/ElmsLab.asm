@@ -764,7 +764,7 @@ ElmText_Accepted:
 
 ElmText_Refused:
 	text "I'll tell your"
-	line "mom..."
+	line "mom…"
 	done
 
 
@@ -781,7 +781,7 @@ ElmText_GotAnEmail:
 	done
 
 ElmText_MissionFromMrPokemon:
-	text "So, the job..."
+	text "So, the job…"
 	line "visit my friend."
 	done
 
@@ -847,7 +847,7 @@ ElmDirectionsText1:
 GotElmsNumberText:
 	text "I need to get"
 	line "back to EEVEE"
-	cont "breeding..."
+	cont "breeding…"
 
 	done
 
@@ -1133,7 +1133,7 @@ AideText_GiveYouPotion:
 	cont "for your errand."
 
 	para "PROF.ELM breeds so"
-	line "many of them..."
+	line "many of them…"
 	done
 
 AideText_AlwaysBusy:

@@ -318,7 +318,7 @@ _UsedSurfText::
 	done
 
 _CantSurfText::
-	text "Aww... You can't"
+	text "Aww… You can't"
 	line "SURF here."
 	prompt
 
@@ -1513,5 +1513,5 @@ _OakText4::
 	prompt
 
 _OakText5::
-	text "Anyway..."
+	text "Anyway…"
 	prompt

@@ -328,7 +328,7 @@ GuideGentPokecenterText:
 	text "This is a #MON"
 	line "CENTER. They heal"
 
-	para "your #MON..."
+	para "your #MON…"
 	line "for free!"
 
 	para "Back in my day,"
@@ -453,7 +453,7 @@ CherrygroveYoungsterText_NoPokedex:
 	cont "up ahead."
 
 	para "He's really"
-	line "strange..."
+	line "strange…"
 	done
 
 CherrygroveYoungsterText_HavePokedex:

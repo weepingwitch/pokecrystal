@@ -75,7 +75,7 @@ BrentGrandpaGossipText:
 	line "BILL always picks"
 
 	para "a girl character"
-	line "in games..."
+	line "in games…"
 	done
 
 BrentGoldenrodGossipText:
@@ -116,9 +116,9 @@ BrentMilkGossipText:
 
 BrentBattlingGossipText:
 	text "Did you know…?"
-	line "BILL really liked"
+	line "BILL really likes"
 
-	para "eating pickles..."
+	para "eating pickles…"
 	done
 
 BrentFlowerShopGossipText:
@@ -132,7 +132,7 @@ BrentKimonoGirlGossipText:
 	text "Did you know…?"
 	line "BILL always wears"
 
-	para "a hoodie..."
+	para "a hoodie…"
 	done
 
 BrentSorryImTooBusyText:
