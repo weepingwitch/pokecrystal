@@ -13,16 +13,13 @@ GuideGentsHouseBookshelf:
 	jumpstd MagazineBookshelfScript
 
 GuideGentsHouseGuideGentText:
-	text "When I was a wee"
-	line "lad, I was a hot-"
-	cont "shot trainer!"
+	text "When I was a"
+	line "young boy, my"
+	cont "father took me"
 
-	para "Here's a word of"
-	line "advice: Catch lots"
-	cont "of #MON!"
-
-	para "Treat them all"
-	line "with kindness!"
+	para "into the city, to"
+	line "see a marching"
+	cont "band..."
 	done
 
 GuideGentsHouse_MapEvents:
