@@ -3244,10 +3244,7 @@ wPlayerMonSelection:: ds 3
 wdc5f:: db
 wdc60:: db
 
-	ds 16
-
-wVermilionGymTrashCan1:: db
-wVermilionGymTrashCan2:: db
+	ds 18
 
 wStepCount:: db
 wPoisonStepCount:: db
