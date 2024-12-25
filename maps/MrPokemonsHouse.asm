@@ -185,7 +185,7 @@ MrPokemonIntroText3:
 	para "They gave me that"
 	line "EGG."
 
-	para "I was intrigued,"
+	para "I have an idea,"
 	line "but I'm lazy."
 	done
 
@@ -247,7 +247,7 @@ MrPokemonsHouse_OakText1:
 
 	para "I understand why"
 	line "PROF.ELM gave you"
-	cont "a #MON"
+	cont "a #MON."
 
 	
 
@@ -269,7 +269,7 @@ MrPokemonsHouse_OakText1:
 	para "#MON you've"
 	line "seen or caught."
 
-	
+	prompt
 
 MrPokemonsHouse_GetDexText:
 	text "<PLAYER> received"
