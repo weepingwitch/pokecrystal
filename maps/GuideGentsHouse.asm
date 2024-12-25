@@ -13,12 +13,12 @@ GuideGentsHouseBookshelf:
 	jumpstd MagazineBookshelfScript
 
 GuideGentsHouseGuideGentText:
-	text "When I was a"
-	line "young boy, my"
+	text "When I was"
+	line "a young boy, my"
 	cont "father took me"
 
-	para "into the city, to"
-	line "see a marching"
+	para "into the city,"
+	line "to see a marching"
 	cont "band..."
 	done
 
