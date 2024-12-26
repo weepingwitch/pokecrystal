@@ -18,18 +18,39 @@ CherrygrovePokecenter1FFisherScript:
 CherrygrovePokecenter1FGentlemanScript:
 	jumptextfaceplayer CherrygrovePokecenter1FGentlemanText
 
+
+
 CherrygrovePokecenter1FTeacherScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .CommCenterOpen
-	writetext CherrygrovePokecenter1FTeacherText
+	writetext CherrygrovePokecenter1FTeacherDoYouHaveEonMailText
+	waitbutton
+	writetext CherrygrovePokecenter1FTeacherAskGiveAwayAnEonMailText
+	yesorno
+	iffalse .NoEonMail
+	takeitem ZELDA1
+	iffalse .NoEonMail
+	writetext CherrygrovePokecenter1FTeacherPlayerGaveAwayTheEonMailText
+	waitbutton
+	writetext CherrygrovePokecenter1FTeacherThisIsForYouText
+	waitbutton
+	verbosegiveitem GREAT_BALL
+	iffalse .NoRoom
+	verbosegiveitem ZELDA2
+	writetext CherrygrovePokecenter1FTeacherDaughterWillBeDelightedText
 	waitbutton
 	closetext
 	end
 
-.CommCenterOpen:
-	writetext CherrygrovePokecenter1FTeacherText_CommCenterOpen
+.NoEonMail:
+	writetext CherrygrovePokecenter1FTeacherTooBadText
+	waitbutton
+	closetext
+	end
+
+.NoRoom:
+	giveitem ZELDA1
+	writetext CherrygrovePokecenter1FTeacherAnotherTimeThenText
 	waitbutton
 	closetext
 	end
@@ -48,24 +69,52 @@ CherrygrovePokecenter1FGentlemanText:
 	cont "to use."
 	done
 
-CherrygrovePokecenter1FTeacherText:
-	text "The COMMUNICATION"
-	line "CENTER upstairs"
-	cont "was just built."
+CherrygrovePokecenter1FTeacherDoYouHaveEonMailText:
+	text "Oh my, your pack"
+	line "looks so heavy!"
 
-	para "But they're still"
-	line "finishing it up."
+	para "Oh! Do you happen"
+	line "to have ZELDA1?"
+
+	para "My daughter is"
+	line "after one."
+
+	para "You can part with"
+	line "one, can't you?"
 	done
 
-CherrygrovePokecenter1FTeacherText_CommCenterOpen:
-	text "The COMMUNICATION"
-	line "CENTER upstairs"
-	cont "was just built."
-
-	para "I traded #MON"
-	line "there already!"
+CherrygrovePokecenter1FTeacherAskGiveAwayAnEonMailText:
+	text "Give away the"
+	line "ZELDA1"
 	done
 
+CherrygrovePokecenter1FTeacherThisIsForYouText:
+	text "Oh, that's great!"
+	line "Thank you, honey!"
+
+	para "Here, this is for"
+	line "you in return!"
+	done
+
+CherrygrovePokecenter1FTeacherDaughterWillBeDelightedText:
+	text "My daughter will"
+	line "be delighted!"
+	done
+
+CherrygrovePokecenter1FTeacherTooBadText:
+	text "Oh? You don't have"
+	line "one? Too bad."
+	done
+
+CherrygrovePokecenter1FTeacherAnotherTimeThenText:
+	text "Oh… Well, another"
+	line "time, then."
+	done
+
+CherrygrovePokecenter1FTeacherPlayerGaveAwayTheEonMailText:
+	text "<PLAYER> gave away"
+	line "ZELDA1"
+	done
 CherrygrovePokecenter1F_MapEvents:
 	db 0, 0 ; filler
 

@@ -96,9 +96,9 @@ GoldenrodPokecenter1FPokefanF:
 	waitbutton
 	writetext GoldenrodPokecenter1FPokefanFThisIsForYouText
 	waitbutton
-	verbosegiveitem ZELDA6
 	verbosegiveitem REVIVE
 	iffalse .NoRoom
+	verbosegiveitem ZELDA6
 	writetext GoldenrodPokecenter1FPokefanFDaughterWillBeDelightedText
 	waitbutton
 	closetext
