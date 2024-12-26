@@ -11,7 +11,7 @@
 	const BLUESKY_MAIL_INDEX ; 7
 	const MUSIC_MAIL_INDEX   ; 8
 	const MIRAGE_MAIL_INDEX  ; 9
-DEF NUM_MAIL EQU const_value
+DEF NUM_MAIL EQU const_value - 6
 
 ReadPartyMonMail:
 	ld a, [wCurPartyMon]
@@ -135,12 +135,6 @@ MailGFXPointers:
 ; entries correspond to *MAIL_INDEX constants
 	table_width 3, MailGFXPointers
 	dbw FLOWER_MAIL,  LoadFlowerMailGFX
-	dbw SURF_MAIL,    LoadSurfMailGFX
-	dbw LITEBLUEMAIL, LoadLiteBlueMailGFX
-	dbw PORTRAITMAIL, LoadPortraitMailGFX
-	dbw LOVELY_MAIL,  LoadLovelyMailGFX
-	dbw EON_MAIL,     LoadEonMailGFX
-	dbw MORPH_MAIL,   LoadMorphMailGFX
 	dbw BLUESKY_MAIL, LoadBlueSkyMailGFX
 	dbw MUSIC_MAIL,   LoadMusicMailGFX
 	dbw MIRAGE_MAIL,  LoadMirageMailGFX

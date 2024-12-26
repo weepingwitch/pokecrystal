@@ -180,12 +180,12 @@ ItemNames::
 	li "RAINBOW WING"
 	li "TERU-SAMA"
 	li "BRICK PIECE"
-	li "ZELDA1"
-	li "ZELDA2"
-	li "ZELDA3"
-	li "LOVELY MAIL"
-	li "EON MAIL"
-	li "MORPH MAIL"
+	li "ZELDA1" ;zelda1
+	li "ZELDA2" ;z2
+	li "ZELDA3" ;z3
+	li "ZELDA4" ;z4
+	li "ZELDA5" ;z5
+	li "ZELDA6" ;z6
 	li "BLUESKY MAIL"
 	li "MUSIC MAIL"
 	li "MIRAGE MAIL"

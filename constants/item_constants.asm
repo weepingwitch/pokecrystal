@@ -186,12 +186,12 @@
 	const RAINBOW_WING ; b2
 	const ITEM_B3      ; b3
 	const BRICK_PIECE  ; b4
-	const SURF_MAIL    ; b5    - zelda1
-	const LITEBLUEMAIL ; b6 - zelda2
-	const PORTRAITMAIL ; b7 - zelda3
-	const LOVELY_MAIL  ; b8
-	const EON_MAIL     ; b9
-	const MORPH_MAIL   ; ba
+	const ZELDA1    ; b5    - zelda1
+	const ZELDA2 ; b6 - zelda2
+	const ZELDA3 ; b7 - zelda3
+	const ZELDA4  ; b8 - zelda4
+	const ZELDA5     ; b9 - zelda5
+	const ZELDA6   ; ba - zelda6
 	const BLUESKY_MAIL ; bb
 	const MUSIC_MAIL   ; bc
 	const MIRAGE_MAIL  ; bd

@@ -303,14 +303,12 @@ MartVermilion:
 	db -1 ; end
 
 MartCeladon2F1:
-	db 7 ; # items
+	db 5 ; # items
 	db POTION
 	db SUPER_POTION
 	db HYPER_POTION
 	db MAX_POTION
 	db REVIVE
-	db SUPER_REPEL
-	db MAX_REPEL
 	db -1 ; end
 
 MartCeladon2F2:
@@ -339,8 +337,8 @@ MartCeladon3F:
 MartCeladon4F:
 	db 3 ; # items
 	db POKE_DOLL
-	db LOVELY_MAIL
-	db CARBOS
+	db SUPER_REPEL
+	db MAX_REPEL
 	db -1 ; end
 
 MartCeladon5F1:

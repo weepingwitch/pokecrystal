@@ -949,15 +949,15 @@ BrickPieceDesc:
 	db   "A rare chunk of"
 	next "tile.@"
 
-SurfMailDesc:
+SurfMailDesc: ;zelda1 
 	db   "LAPRAS-print MAIL."
 	next "(HOLD)@"
 
-LiteBlueMailDesc:
+LiteBlueMailDesc: ;zelda2
 	db   "DRATINI-print"
 	next "MAIL. (HOLD)@"
 
-PortraitMailDesc:
+PortraitMailDesc: ;zelda3
 	db   "MAIL featuring the"
 	next "holder's likeness.@"
 
@@ -969,7 +969,7 @@ EonMailDesc:
 	db   "EEVEE-print MAIL."
 	next "(HOLD)@"
 
-MorphMailDesc:
+MorphMailDesc: ;zelda6
 	db   "DITTO-print MAIL."
 	next "(HOLD)@"
 
