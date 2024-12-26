@@ -1917,15 +1917,18 @@ SwimmerMGroup:
 	; SWIMMERM (14)
 	db "JEROME@", TRAINERTYPE_NORMAL
 	db 26, SEADRA
-	db 28, TENTACOOL
+	db 28, KADABRA
 	db 30, TENTACRUEL
 	db 28, GOLDEEN
+	db 30, FEAROW
 	db -1 ; end
 
 	; SWIMMERM (15)
 	db "TUCKER@", TRAINERTYPE_NORMAL
 	db 30, SHELLDER
 	db 34, CLOYSTER
+	db 35, MACHOKE
+	db 32, LICKITUNG
 	db -1 ; end
 
 	; SWIMMERM (16)
@@ -1938,13 +1941,17 @@ SwimmerMGroup:
 	; SWIMMERM (17)
 	db "CAMERON@", TRAINERTYPE_NORMAL
 	db 34, MARILL
+	db 34, JOLTEON
+	db 31, IVYSAUR
+	db 32, BEEDRILL
 	db -1 ; end
 
 	; SWIMMERM (18)
 	db "SETH@", TRAINERTYPE_NORMAL
 	db 29, QUAGSIRE
 	db 29, OCTILLERY
-	db 32, QUAGSIRE
+	db 32, RAICHU
+	db 30, BAYLEEF
 	db -1 ; end
 
 	; SWIMMERM (19)
@@ -1964,8 +1971,9 @@ SwimmerMGroup:
 	; SWIMMERM (21)
 	db "PARKER@", TRAINERTYPE_NORMAL
 	db 32, HORSEA
-	db 32, HORSEA
+	db 32, QUAGSIRE
 	db 35, SEADRA
+	db 34, HERACROSS
 	db -1 ; end
 
 SwimmerFGroup:
