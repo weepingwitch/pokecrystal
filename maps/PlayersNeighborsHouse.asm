@@ -8,7 +8,29 @@ PlayersNeighborsHouse_MapScripts:
 	def_callbacks
 
 PlayersNeighborsDaughterScript:
-	jumptextfaceplayer PlayersNeighborsDaughterText
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_PICNICKER_SARA
+	iftrue .regular
+	readvar VAR_BADGES
+	if_equal 16, .doBattle
+.regular:
+	writetext PlayersNeighborsDaughterText
+	waitbutton
+	closetext
+	end
+.doBattle
+	writetext SaraSeenText
+	waitbutton
+	closetext
+	loadtrainer PICNICKER, SARA
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_PICNICKER_SARA
+	opentext
+	writetext SaraBeatenText
+	closetext
+	end
 
 PlayersNeighborScript:
 	faceplayer
@@ -70,34 +92,34 @@ PlayersNeighborsHouseRadioScript:
 	end
 
 PlayersNeighborsDaughterText:
-	text "PIKACHU is an"
-	line "evolved #MON."
+	text "I'm willow's"
+	line "friend."
 
-	para "I was amazed by"
-	line "PROF.ELM's find-"
-	cont "ings."
+	para "I don't know"
+	line "anything about"
+	cont "#MON."
 
-	para "He's so famous for"
-	line "his research on"
-	cont "#MON evolution."
-
-	para "…sigh…"
-
-	para "I wish I could be"
-	line "a researcher like"
-	cont "him…"
 	done
 
 PlayersNeighborText:
 	text "My daughter is"
-	line "adamant about"
+	line "not interested in"
+	cont "#MON."
 
-	para "becoming PROF."
-	line "ELM's assistant."
 
-	para "She really loves"
-	line "unpaid labor!"
+	para "What a shame!"
+
 	done
+
+SaraSeenText:
+	text "willow told me to"
+	line "pick six #MON"
+
+	para "Here we go!"
+	done
+
+SaraBeatenText:
+	text "Bummer!"
 
 MILFSeenText:
 	text "Ok, I'll battle"
@@ -144,5 +166,5 @@ PlayersNeighborsHouse_MapEvents:
 	bg_event  7,  1, BGEVENT_READ, PlayersNeighborsHouseRadioScript
 
 	def_object_events
-	object_event  2,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PlayersNeighborsDaughterScript, -1
+	object_event  2,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PlayersNeighborsDaughterScript, -1
 	object_event  5,  3, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PlayersNeighborScript, EVENT_PLAYERS_NEIGHBORS_HOUSE_NEIGHBOR

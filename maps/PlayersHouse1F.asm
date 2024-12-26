@@ -296,14 +296,13 @@ NeighborText:
 	text "<PLAY_G>, have you"
 	line "heard?"
 
-	para "My daughter is"
-	line "adamant about"
+	text "My daughter is"
+	line "not interested in"
+	cont "#MON."
 
-	para "becoming PROF."
-	line "ELM's assistant."
 
-	para "She really loves"
-	line "unpaid labor!"
+	para "What a shame!"
+
 	done
 
 PlayersHouse1FStoveText:

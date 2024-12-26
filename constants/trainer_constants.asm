@@ -572,6 +572,7 @@ DEF KRIS EQU __trainer_class__
 	const GINA4
 	const GINA5
 	const TIFFANY4
+	const SARA
 
 	trainerclass CAMPER ; 36
 	const ROLAND
