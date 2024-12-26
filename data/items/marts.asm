@@ -190,7 +190,7 @@ MartOlivine:
 	db AWAKENING
 	db ICE_HEAL
 	db SUPER_REPEL
-	db SURF_MAIL
+	db IRON
 	db -1 ; end
 
 MartEcruteak:
@@ -275,7 +275,7 @@ MartCerulean:
 	db X_DEFEND
 	db X_ATTACK
 	db DIRE_HIT
-	db SURF_MAIL
+	db PROTEIN
 	db -1 ; end
 
 MartLavender:
@@ -299,7 +299,7 @@ MartVermilion:
 	db PARLYZ_HEAL
 	db AWAKENING
 	db BURN_HEAL
-	db LITEBLUEMAIL
+	db CALCIUM
 	db -1 ; end
 
 MartCeladon2F1:
@@ -340,7 +340,7 @@ MartCeladon4F:
 	db 3 ; # items
 	db POKE_DOLL
 	db LOVELY_MAIL
-	db SURF_MAIL
+	db CARBOS
 	db -1 ; end
 
 MartCeladon5F1:
@@ -388,12 +388,12 @@ MartSaffron:
 
 MartMtMoon:
 	db 6 ; # items
+	db GREAT_BALL
 	db POKE_DOLL
 	db FRESH_WATER
 	db SODA_POP
 	db LEMONADE
 	db REPEL
-	db PORTRAITMAIL
 	db -1 ; end
 
 MartIndigoPlateau:

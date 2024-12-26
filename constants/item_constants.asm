@@ -186,9 +186,9 @@
 	const RAINBOW_WING ; b2
 	const ITEM_B3      ; b3
 	const BRICK_PIECE  ; b4
-	const SURF_MAIL    ; b5
-	const LITEBLUEMAIL ; b6
-	const PORTRAITMAIL ; b7
+	const SURF_MAIL    ; b5    - zelda1
+	const LITEBLUEMAIL ; b6 - zelda2
+	const PORTRAITMAIL ; b7 - zelda3
 	const LOVELY_MAIL  ; b8
 	const EON_MAIL     ; b9
 	const MORPH_MAIL   ; ba
