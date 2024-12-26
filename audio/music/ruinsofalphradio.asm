@@ -11,118 +11,64 @@ Music_RuinsOfAlphRadio_Ch1:
 	pitch_offset 280
 	vibrato 0, 15, 0
 	stereo_panning TRUE, FALSE
-.loop1
-	octave 3
-	note G_, 2
-	note F#, 2
-	note E_, 2
-	note F#, 2
-	note G_, 8
-	octave 3
-	note F#, 2
-	note F#, 2
-	note E_, 2
-	note D#, 1
-	note E_, 1
-	note D#, 8
-	note G_, 2
-	note G_, 2
-	rest 2
-	note G_, 2
-	note E_, 8
-	note G_, 2
-	note G_, 2
-	rest 2
-	note G_, 2
-	note D#, 4
+.mainloop:
+	note_type 6, 7, 1
+	sound_call .sub1
+	note_type 12, 10, 1
+	rest 16
+	rest 16
+	sound_call .sub2
+	note_type 12, 10, 1
+	rest 16
+	rest 16
+	sound_call .sub1
+	note_type 12, 10, 1
+	rest 16
+	sound_loop 0, .mainloop
+
+.sub1:
 	octave 4
+	note G_, 1
+	note F#, 1
+	note G_, 1
+	note F#, 1
+	note C_, 8
+	sound_ret
+
+.sub2:
+	octave 4
+	note G_, 1
+	note F#, 1
+	note G_, 1
+	note F#, 1
 	note C_, 4
-	sound_loop 0, .loop1
+	note G_, 1
+	octave 5
+	note C_, 8
+	sound_ret
 
 Music_RuinsOfAlphRadio_Ch2:
 	duty_cycle 1
 	vibrato 1, 14, 0
-	.loop1
-		octave 3
-		note G_, 2
-		octave 4
-		note D_, 2
-		octave 3
-		note B_, 2
-		note G_, 2
-		octave 3
-		note G_, 2
-		note B_, 2
-		note G_, 2
-		octave 4
-		note D_, 2
-		octave 3
-		note B_, 2
-		octave 4
-		note F#, 2
-		note D#, 2
-		octave 3
-		note B_, 2
-		note B_, 2
-		octave 4
-		note F#, 2
-		note D#, 2
-		octave 3
-		note B_, 2
-		octave 4
-		note C_, 2
-		note G_, 2
-		note E_, 2
-		note C_, 2
-		note C_, 2
-		note E_, 2
-		note C_, 2
-		note G_, 2
-		note C_, 2
-		note G_, 2
-		note D#, 2
-		note C_, 2
-		note C_, 2
-		note G_, 2
-		note D#, 2
-		note C_, 2
-		sound_loop 0, .loop1
+.mainloop:
+	stereo_panning FALSE, TRUE
+	note_type 6, 8, 1
+	sound_call Music_RuinsOfAlphRadio_Ch1.sub1
+	note_type 12, 10, 1
+	rest 16
+	rest 16
+	note_type 6, 8, 1
+	sound_call Music_RuinsOfAlphRadio_Ch1.sub2
+	note_type 12, 10, 1
+	rest 16
+	sound_loop 0, .mainloop
 
 Music_RuinsOfAlphRadio_Ch3:
 	note_type 6, 2, 6
-	.loop1
-		octave 2
-		note G_, 6
-		rest 2
-		note G_, 1
-		rest 1
-		note G_, 1
-		rest 3
-		note G_, 1
-		rest 1
-		note B_, 6
-		rest 2
-		note B_, 1
-		rest 1
-		note B_, 1
-		rest 3
-		note B_, 1
-		rest 1
-		octave 3
-		note C_, 6
-		rest 2
-		note C_, 1
-		rest 1
-		note C_, 1
-		rest 3
-		note C_, 1
-		rest 1
-		note C_, 6
-		rest 2
-		note C_, 1
-		rest 1
-		note C_, 1
-		rest 3
-		note C_, 1
-		rest 1
-		sound_loop 0, .loop1
+.mainloop:
+	octave 2
+	note C_, 1
+	note C#, 1
+	note C_, 1
+	rest 16
+	sound_loop 0, .mainloop

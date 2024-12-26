@@ -184,15 +184,11 @@ _SavedTheGameText::
 	done
 
 _AlreadyASaveFileText::
-	text "There is already a"
-	line "save file. Is it"
-	cont "OK to overwrite?"
+	text "OK to overwrite?"
 	done
 
 _AnotherSaveFileText::
-	text "There is another"
-	line "save file. Is it"
-	cont "OK to overwrite?"
+	text "OK to overwrite?"
 	done
 
 _SaveFileCorruptedText::
@@ -246,8 +242,8 @@ _ReceivedItemText::
 	prompt
 
 _PutItemInPocketText::
-	text "<PLAYER> "
-	line "put it away."
+	text "<PLAYER> put it"
+	line "away."
 	prompt
 
 _PocketIsFullText::
