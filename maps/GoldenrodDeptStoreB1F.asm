@@ -6,6 +6,7 @@
 	const GOLDENRODDEPTSTOREB1F_BLACK_BELT1
 	const GOLDENRODDEPTSTOREB1F_BLACK_BELT2
 	const GOLDENRODDEPTSTOREB1F_BLACK_BELT3
+	const GOLDENRODDEPTSTOREB1F_BLACK_BELT4
 	const GOLDENRODDEPTSTOREB1F_MACHOP
 
 GoldenrodDeptStoreB1F_MapScripts:
@@ -52,6 +53,37 @@ GoldenrodDeptStoreB1FBlackBelt2Script:
 
 GoldenrodDeptStoreB1FBlackBelt3Script:
 	jumptextfaceplayer GoldenrodDeptStoreB1FBlackBelt3Text
+
+GoldenrodDeptStoreB1FBlackBelt4Script:
+	faceplayer
+	checkevent EVENT_ZELDA0
+	iftrue .alreadygiven
+	opentext
+	writetext GiveBlahaj
+	waitbutton
+	closetext
+	verbosegiveitem ZELDA1
+	setevent EVENT_ZELDA0
+	end
+.alreadygiven
+	opentext
+	writetext GivenBlahaj
+	waitbutton
+	closetext
+	end
+
+GiveBlahaj:
+	text "Hey, I bought too"
+	line "many of these."
+
+	para "Take one."
+	done
+
+GivenBlahaj:
+	text "Hugging it makes"
+	line "me feel so calm!"
+	done
+
 
 GoldenrodDeptStoreB1FMachopScript:
 	opentext
@@ -127,4 +159,5 @@ GoldenrodDeptStoreB1F_MapEvents:
 	object_event  9, 10, SPRITE_BLACK_BELT, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreB1FBlackBelt1Script, -1
 	object_event  4,  8, SPRITE_BLACK_BELT, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreB1FBlackBelt2Script, -1
 	object_event  6, 13, SPRITE_BLACK_BELT, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreB1FBlackBelt3Script, -1
+	object_event  11, 7, SPRITE_BLACK_BELT, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreB1FBlackBelt4Script, -1
 	object_event  7,  7, SPRITE_MACHOP, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreB1FMachopScript, -1

@@ -285,7 +285,7 @@
 	const EVENT_BEVERLY_ASKED_FOR_PHONE_NUMBER
 	const_skip ; unused in Crystal
 	const EVENT_HUEY_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_ZELDA0
 	const EVENT_GOT_PROTEIN_FROM_HUEY
 	const EVENT_GOT_HP_UP_FROM_JOEY
 	const EVENT_GOT_CARBOS_FROM_VANCE
