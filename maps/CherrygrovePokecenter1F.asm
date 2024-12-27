@@ -23,6 +23,8 @@ CherrygrovePokecenter1FGentlemanScript:
 CherrygrovePokecenter1FTeacherScript:
 	faceplayer
 	opentext
+	checkevent EVENT_ZELDA1
+	iftrue .AlreadyGiven
 	writetext CherrygrovePokecenter1FTeacherDoYouHaveEonMailText
 	waitbutton
 	writetext CherrygrovePokecenter1FTeacherAskGiveAwayAnEonMailText
@@ -38,6 +40,7 @@ CherrygrovePokecenter1FTeacherScript:
 	iffalse .NoRoom
 	verbosegiveitem ZELDA2
 	writetext CherrygrovePokecenter1FTeacherDaughterWillBeDelightedText
+	setevent EVENT_ZELDA1
 	waitbutton
 	closetext
 	end
@@ -54,6 +57,18 @@ CherrygrovePokecenter1FTeacherScript:
 	waitbutton
 	closetext
 	end
+
+.AlreadyGiven:
+	writetext CherrygroveAlreadyGivenText
+	waitbutton
+	closetext
+	end
+
+CherrygroveAlreadyGivenText:
+	text "Thank you!! My"
+	line "daughter is so"
+	cont "happy!"
+	done
 
 CherrygrovePokecenter1FFisherText:
 	text "It's great. I can"

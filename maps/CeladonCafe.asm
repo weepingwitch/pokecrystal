@@ -27,6 +27,25 @@ CeladonCafeFisher1:
 	opentext
 	writetext Fisher1Text_Concentration
 	waitbutton
+	yesorno
+	iffalse .NOHOTSAUCE
+	takeitem HOT_SAUCE
+	iffalse .NOHOTSAUCE
+	clearevent EVENT_GOT_HOTSAUCE
+	writetext Fisher1Text_Yummy
+	closetext
+	loadtrainer FIREBREATHER, DICK
+	startbattle
+	reloadmapafterbattle
+	opentext
+	writetext Fisher1Text_Beaten
+	waitbutton
+	closetext
+	turnobject CELADONCAFE_FISHER1, LEFT
+	end
+.NOHOTSAUCE:
+	writetext Fisher1_Disappointed
+	waitbutton
 	closetext
 	turnobject CELADONCAFE_FISHER1, LEFT
 	end
@@ -128,13 +147,30 @@ ChefText_Eatathon:
 
 Fisher1Text_Snarfle:
 	text "…Snarfle, chew…"
+	
+	para "I wish I had some"
+	line "HOT SAUCE..."
 	done
 
 Fisher1Text_Concentration:
-	text "Don't talk to me!"
+	text "Can you give me"
+	line "some?"
 
-	para "You'll break my"
-	line "concentration!"
+	done
+
+Fisher1Text_Yummy:
+	text "Delicious!"
+
+	para "I'm all fired up"
+	line "for battle!"
+
+Fisher1_Disappointed:
+	text "Aww, come on..."
+	done
+
+Fisher1Text_Beaten:
+	text "What a delicious"
+	line "battle!"
 	done
 
 Fisher2Text_GulpChew:

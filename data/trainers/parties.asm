@@ -2613,7 +2613,12 @@ FirebreatherGroup:
 
 	; FIREBREATHER (2) ;unused
 	db "DICK@", TRAINERTYPE_NORMAL
-	db 17, CHARMELEON
+	db 45, SNORLAX
+	db 45, MAGMAR
+	db 45, CHANSEY
+	db 45, GENGAR
+	db 45, VENUSAUR
+	db 45, GYARADOS
 	db -1 ; end
 
 	; FIREBREATHER (3) ;unused
