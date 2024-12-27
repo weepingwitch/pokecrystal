@@ -16,6 +16,7 @@ CherrygrovePokecenter1FFisherScript:
 	jumptextfaceplayer CherrygrovePokecenter1FFisherText
 
 CherrygrovePokecenter1FGentlemanScript:
+	;giveitem ZELDA1
 	jumptextfaceplayer CherrygrovePokecenter1FGentlemanText
 
 
