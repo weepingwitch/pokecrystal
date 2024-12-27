@@ -180,7 +180,7 @@ ItemNames::
 	li "RAINBOW WING"
 	li "TERU-SAMA"
 	li "BRICK PIECE"
-	li "ZELDA1" ;zelda1
+	li "BLAHAJ" ;zelda1
 	li "ZELDA2" ;z2
 	li "ZELDA3" ;z3
 	li "ZELDA4" ;z4

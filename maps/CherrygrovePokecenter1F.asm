@@ -74,7 +74,7 @@ CherrygrovePokecenter1FTeacherDoYouHaveEonMailText:
 	line "looks so heavy!"
 
 	para "Oh! Do you happen"
-	line "to have ZELDA1?"
+	line "to have BLAHAJ?"
 
 	para "My daughter is"
 	line "after one."
@@ -85,7 +85,7 @@ CherrygrovePokecenter1FTeacherDoYouHaveEonMailText:
 
 CherrygrovePokecenter1FTeacherAskGiveAwayAnEonMailText:
 	text "Give away the"
-	line "ZELDA1"
+	line "BLAHAJ?"
 	done
 
 CherrygrovePokecenter1FTeacherThisIsForYouText:
@@ -113,7 +113,7 @@ CherrygrovePokecenter1FTeacherAnotherTimeThenText:
 
 CherrygrovePokecenter1FTeacherPlayerGaveAwayTheEonMailText:
 	text "<PLAYER> gave away"
-	line "ZELDA1"
+	line "BLAHAJ"
 	done
 CherrygrovePokecenter1F_MapEvents:
 	db 0, 0 ; filler

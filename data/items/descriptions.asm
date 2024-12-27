@@ -950,8 +950,8 @@ BrickPieceDesc:
 	next "tile.@"
 
 SurfMailDesc: ;zelda1 
-	db   "LAPRAS-print MAIL."
-	next "(HOLD)@"
+	db   "A stuffed shark."
+	next "From ikea.@"
 
 LiteBlueMailDesc: ;zelda2
 	db   "DRATINI-print"
