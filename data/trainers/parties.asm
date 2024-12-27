@@ -1568,10 +1568,10 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (4)
 	db "WADE@", TRAINERTYPE_NORMAL
-	db  2, CATERPIE
-	db  2, CATERPIE
+	db  3, CATERPIE
 	db  3, WEEDLE
-	db  2, CATERPIE
+	db  4, CATERPIE
+	db 5, DODUO
 	db -1 ; end
 
 	; BUG_CATCHER (5)

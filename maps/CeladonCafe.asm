@@ -11,6 +11,7 @@ CeladonCafe_MapScripts:
 	def_callbacks
 
 CeladonCafeChef:
+	;takeitem HOT_SAUCE ;debug
 	faceplayer
 	opentext
 	writetext ChefText_Eatathon
@@ -33,6 +34,7 @@ CeladonCafeFisher1:
 	iffalse .NOHOTSAUCE
 	clearevent EVENT_GOT_HOTSAUCE
 	writetext Fisher1Text_Yummy
+	waitbutton
 	closetext
 	loadtrainer FIREBREATHER, DICK
 	startbattle
@@ -163,6 +165,7 @@ Fisher1Text_Yummy:
 
 	para "I'm all fired up"
 	line "for battle!"
+	done
 
 Fisher1_Disappointed:
 	text "Aww, come on..."
@@ -256,7 +259,7 @@ CeladonCafe_MapEvents:
 
 	def_object_events
 	object_event  9,  3, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CeladonCafeChef, -1
-	object_event  4,  6, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonCafeFisher1, -1
+	object_event  4,  6, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCafeFisher1, -1
 	object_event  1,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonCafeFisher2, -1
 	object_event  1,  2, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonCafeFisher3, -1
 	object_event  4,  3, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonCafeTeacher, -1
