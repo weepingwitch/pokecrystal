@@ -184,7 +184,7 @@ ItemNames::
 	li "ZELDA2" ;z2
 	li "ZELDA3" ;z3
 	li "ZELDA4" ;z4
-	li "ZELDA5" ;z5
+	li "FALLOUT NV" ;z5
 	li "ZELDA6" ;z6
 	li "BLUESKY MAIL"
 	li "MUSIC MAIL"

@@ -216,7 +216,7 @@ GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:
 
 	para "Oh! Do you happen"
 	line "to have something"
-	cont "named EON MAIL?"
+	cont "named FALLOUT NV?"
 
 	para "My daughter is"
 	line "after one."
@@ -226,8 +226,8 @@ GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:
 	done
 
 GoldenrodPokecenter1FAskGiveAwayAnEonMailText:
-	text "Give away an EON"
-	line "MAIL?"
+	text "Give away"
+	line "FALLOUT NV?"
 	done
 
 GoldenrodPokecenter1FPokefanFThisIsForYouText:
@@ -255,7 +255,7 @@ GoldenrodPokecenter1FPokefanFAnotherTimeThenText:
 
 GoldenrodPokecenter1FPlayerGaveAwayTheEonMailText:
 	text "<PLAYER> gave away"
-	line "the EON MAIL."
+	line "FALLOUT NV."
 	done
 
 GoldenrodPokecenter1F_MapEvents:

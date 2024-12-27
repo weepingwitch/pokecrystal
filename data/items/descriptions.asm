@@ -966,8 +966,8 @@ LovelyMailDesc:
 	next "(HOLD)@"
 
 EonMailDesc:
-	db   "EEVEE-print MAIL."
-	next "(HOLD)@"
+	db   "Post-apocalyptic"
+	next "role-playing game.@"
 
 MorphMailDesc: ;zelda6
 	db   "DITTO-print MAIL."
