@@ -782,7 +782,8 @@ PassDesc:
 	next "MAGNET TRAIN.@"
 
 TeruSama9Desc:
-	db   "?@"
+	db   "Some spicy hot"
+	next "sauce.@"
 
 TeruSama10Desc:
 	db   "?@"
@@ -954,16 +955,16 @@ SurfMailDesc: ;zelda1
 	next "From ikea.@"
 
 LiteBlueMailDesc: ;zelda2
-	db   "DRATINI-print"
-	next "MAIL. (HOLD)@"
+	db   "Sexy fish-net"
+	next "tights.@"
 
 PortraitMailDesc: ;zelda3
-	db   "MAIL featuring the"
-	next "holder's likeness.@"
+	db   "Little blueish-"
+	next "green pills.@"
 
 LovelyMailDesc:
-	db   "Heart-print MAIL."
-	next "(HOLD)@"
+	db   "Smudgy black"
+	next "eyeliner.@"
 
 EonMailDesc:
 	db   "Post-apocalyptic"

@@ -193,7 +193,19 @@ PlayersHouse1FSinkScript:
 	jumptext PlayersHouse1FSinkText
 
 PlayersHouse1FFridgeScript:
+	checkevent EVENT_GOT_HOTSAUCE
+	iftrue .regularfridge
+	opentext
+	writetext TakingSauceText
+	waitbutton
+	giveitem HOT_SAUCE
+	setevent EVENT_GOT_HOTSAUCE
+	closetext
+	end
+
+.regularfridge:
 	jumptext PlayersHouse1FFridgeText
+	end
 
 MomTurnsTowardPlayerMovement:
 	turn_head RIGHT
@@ -320,9 +332,17 @@ PlayersHouse1FFridgeText:
 	text "Let's see what's"
 	line "in the fridge…"
 
-	para "PICKLES and HOT"
-	line "SAUCE!"
+	para "HOT SAUCE..."
+	line "you've already"
+	cont "got some."
 	done
+	
+TakingSauceText:
+	text "There's some HOT"
+	line "SAUCE in here..."
+
+	para "You take some."
+	prompt
 
 PlayersHouse1FTVText:
 	text "There's a movie on"

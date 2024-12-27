@@ -237,11 +237,8 @@ Text_TellMomIfLeaving:
 	done
 
 Text_CallMomOnGear:
-	text "Call your mom on"
-	line "your #GEAR to"
-
-	para "let her know how"
-	line "you're doing."
+	text "Your mom has such"
+	line "good HOT SAUCE..."
 	done
 
 Text_ElmDiscoveredNewMon:

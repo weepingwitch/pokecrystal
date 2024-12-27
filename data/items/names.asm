@@ -134,7 +134,7 @@ ItemNames::
 	li "STAR PIECE"
 	li "BASEMENT KEY"
 	li "PASS"
-	li "TERU-SAMA"
+	li "HOT SAUCE"
 	li "TERU-SAMA"
 	li "TERU-SAMA"
 	li "CHARCOAL"
@@ -181,9 +181,9 @@ ItemNames::
 	li "TERU-SAMA"
 	li "BRICK PIECE"
 	li "BLAHAJ" ;zelda1
-	li "ZELDA2" ;z2
-	li "ZELDA3" ;z3
-	li "ZELDA4" ;z4
+	li "FISHNETS" ;z2
+	li "ESTRADIOL" ;z3
+	li "EYELINER" ;z4
 	li "FALLOUT NV" ;z5
 	li "ZELDA6" ;z6
 	li "BLUESKY MAIL"
