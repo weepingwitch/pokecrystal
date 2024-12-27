@@ -871,7 +871,7 @@ _MonNumberText:: ; unreferenced
 _WasSentToBillsPCText::
 	text_ram wStringBuffer1
 	text " was"
-	line "sent to will's PC."
+	line "sent to BILL's PC."
 	prompt
 
 _PCGottaHavePokemonText::
@@ -1111,7 +1111,7 @@ _PokecenterPCWhoseText::
 	done
 
 _PokecenterBillsPCText::
-	text "willow's PC"
+	text "BILL's PC"
 	line "accessed."
 
 	para "#MON Storage"

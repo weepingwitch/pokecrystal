@@ -1548,7 +1548,9 @@ BugCatcherGroup:
 	; BUG_CATCHER (1)
 	db "DON@", TRAINERTYPE_NORMAL
 	db  3, CATERPIE
-	db  3, CATERPIE
+	db  3, WEEDLE
+	db 3, PIDGEY
+	db 5, PIKACHU
 	db -1 ; end
 
 	; BUG_CATCHER (2)
@@ -3265,8 +3267,9 @@ SageGroup:
 	; SAGE (2)
 	db "NICO@", TRAINERTYPE_NORMAL
 	db  3, BELLSPROUT
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
+	db  5, GASTLY
+	db  4, BELLSPROUT
+	db  5, BULBASAUR
 	db -1 ; end
 
 	; SAGE (3)

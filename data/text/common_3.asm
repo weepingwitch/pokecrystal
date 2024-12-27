@@ -1195,7 +1195,7 @@ _WaitButtonText::
 _BallSentToPCText::
 	text_ram wMonOrItemNameBuffer
 	text " was"
-	line "sent to will's PC."
+	line "sent to BILL's PC."
 	prompt
 
 _NewDexDataText::
