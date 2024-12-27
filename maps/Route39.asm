@@ -28,7 +28,7 @@ TrainerPokefanmDerek:
 
 .Script:
 	loadvar VAR_CALLERID, PHONE_POKEFANM_DEREK
-	endifjustbattled
+	;endifjustbattled
 	opentext
 	checkflag ENGINE_DEREK_HAS_NUGGET
 	iftrue .HasNugget

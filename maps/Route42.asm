@@ -39,7 +39,7 @@ TrainerFisherTully:
 
 .Script:
 	loadvar VAR_CALLERID, PHONE_FISHER_TULLY
-	endifjustbattled
+	;endifjustbattled
 	opentext
 	checkflag ENGINE_TULLY_READY_FOR_REMATCH
 	iftrue .WantsBattle

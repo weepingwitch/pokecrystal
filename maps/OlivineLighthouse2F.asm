@@ -23,7 +23,7 @@ TrainerSailorHuey:
 
 .Script:
 	loadvar VAR_CALLERID, PHONE_SAILOR_HUEY
-	endifjustbattled
+	;endifjustbattled
 	opentext
 	checkflag ENGINE_HUEY_READY_FOR_REMATCH
 	iftrue .WantsBattle
