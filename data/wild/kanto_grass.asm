@@ -2,6 +2,35 @@
 
 KantoGrassWildMons:
 
+	def_grass_wildmons VIRIDIAN_FOREST
+	db 16 percent, 10 percent, 16 percent ; encounter rates: morn/day/nite
+	; morn
+	db 5, CATERPIE
+	db 5, WEEDLE
+	db 7, BULBASAUR
+	db 7, BELLSPROUT
+	db 7, CHIKORITA
+	db 6, STANTLER
+	db 6, PICHU
+	; day
+	db 5, CATERPIE
+	db 5, WEEDLE
+	db 7, CHIKORITA
+	db 7, BULBASAUR
+	db 7, PIKACHU
+	db 6, ODDISH
+	db 6, TEDDIURSA
+	; nite
+	db 5, SPINARAK
+	db 5, YANMA
+	db 7, GLOOM
+	db 7, PSYDUCK
+	db 7, HOOTHOOT
+	db 6, SUDOWOODO
+	db 6, PIKACHU
+	end_grass_wildmons
+
+
 	def_grass_wildmons DIGLETTS_CAVE
 	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
 	; morn
