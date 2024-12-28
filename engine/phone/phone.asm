@@ -450,7 +450,6 @@ Script_SpecialElmCall: ; unreferenced
 
 RingTwice_StartCall:
 	call .Ring
-	call .Ring
 	farcall StubbedTrainerRankings_PhoneCalls
 	ret
 
@@ -477,7 +476,6 @@ PhoneCall::
 	ld [wPhoneCaller], a
 	ld a, d
 	ld [wPhoneCaller + 1], a
-	call .Ring
 	call .Ring
 	farcall StubbedTrainerRankings_PhoneCalls
 	ret
@@ -573,7 +571,7 @@ HangUp_Wait20Frames:
 	jr Phone_Wait20Frames
 
 Phone_Wait20Frames:
-	ld c, 20
+	ld c, 5
 	call DelayFrames
 	farcall PhoneRing_CopyTilemapAtOnce
 	ret
