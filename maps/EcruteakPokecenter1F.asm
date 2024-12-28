@@ -59,12 +59,102 @@ EcruteakPokecenter1FNurseScript:
 	jumpstd PokecenterNurseScript
 
 EcruteakPokecenter1FPokefanMScript:
-	special CheckMobileAdapterStatusSpecial
-	iftrue .mobile
-	jumptextfaceplayer EcruteakPokecenter1FPokefanMText
+	faceplayer
+	opentext
+	checkevent EVENT_ZELDA3
+	iftrue .AlreadyGiven
+	writetext ZeldaTrade3DoYouHaveEonMailText
+	waitbutton
+	writetext ZeldaTrade3AskGiveAwayAnEonMailText
+	yesorno
+	iffalse .NoEonMail
+	takeitem ZELDA3
+	iffalse .NoEonMail
+	writetext ZeldaTrade3PlayerGaveAwayTheEonMailText
+	waitbutton
+	writetext ZeldaTrade3ThisIsForYouText
+	waitbutton
+	verbosegiveitem ULTRA_BALL
+	iffalse .NoRoom
+	verbosegiveitem ZELDA4
+	writetext ZeldaTrade3DaughterWillBeDelightedText
+	setevent EVENT_ZELDA3
+	waitbutton
+	closetext
+	end
 
-.mobile
-	jumptextfaceplayer EcruteakPokecenter1FPokefanMTextMobile
+.NoEonMail:
+	writetext ZeldaTrade3TooBadText
+	waitbutton
+	closetext
+	end
+
+.NoRoom:
+	giveitem ZELDA3
+	writetext ZeldaTrade3AnotherTimeThenText
+	waitbutton
+	closetext
+	end
+
+.AlreadyGiven:
+	writetext Zelda3AlreadyGivenText
+	waitbutton
+	closetext
+	end
+
+Zelda3AlreadyGivenText:
+	text "Thank you!! My"
+	line "daughter is so"
+	cont "happy!"
+	done
+
+
+ZeldaTrade3DoYouHaveEonMailText:
+	text "Oh my, your pack"
+	line "looks so heavy!"
+
+	para "Oh! Do you happen"
+	line "to have ESTRADIOL?"
+
+	para "My daughter is"
+	line "after some."
+
+	para "You can part with"
+	line "some, can't you?"
+	done
+
+ZeldaTrade3AskGiveAwayAnEonMailText:
+	text "Give away the"
+	line "ESTRADIOL?"
+	done
+
+ZeldaTrade3ThisIsForYouText:
+	text "Oh, that's great!"
+	line "Thank you, honey!"
+
+	para "Here, this is for"
+	line "you in return!"
+	done
+
+ZeldaTrade3DaughterWillBeDelightedText:
+	text "My daughter will"
+	line "be delighted!"
+	done
+
+ZeldaTrade3TooBadText:
+	text "Oh? You don't have"
+	line "one? Too bad."
+	done
+
+ZeldaTrade3AnotherTimeThenText:
+	text "Oh… Well, another"
+	line "time, then."
+	done
+
+ZeldaTrade3PlayerGaveAwayTheEonMailText:
+	text "<PLAYER> gave away"
+	line "the ESTRADIOL."
+	done
 
 EcruteakPokecenter1FCooltrainerFScript:
 	jumptextfaceplayer EcruteakPokecenter1FCooltrainerFText
@@ -97,47 +187,23 @@ EcruteakPokecenter1FPlayerMovement1:
 	step UP
 	step_end
 
+
+
 EcruteakPokecenter1F_BillText1:
 	text "Hi, I'm willow."
 	line "Who are you?"
 
 	para "Hmm, <PLAYER>, huh?"
-	line "You've come at the"
-	cont "right time."
+	line "Nice to meet you."
 	done
 
 EcruteakPokecenter1F_BillText2:
-	text "I just finished"
-	line "adjustments on my"
-	cont "TIME CAPSULE."
+	text "See you later."
 
 	para "Buh-bye!"
 	done
 
-EcruteakPokecenter1FPokefanMText:
-	text "The way the KIMONO"
-	line "GIRLS dance is"
 
-	para "marvelous. Just"
-	line "like the way they"
-	cont "use their #MON."
-	done
-
-EcruteakPokecenter1FPokefanMTextMobile:
-	text "You must be hoping"
-	line "to battle more"
-
-	para "people, right?"
-	line "There's apparently"
-
-	para "some place where"
-	line "trainers gather."
-
-	para "Where, you ask?"
-
-	para "It's a little past"
-	line "OLIVINE CITY."
-	done
 
 EcruteakPokecenter1FCooltrainerFText:
 	text "MORTY, the GYM"

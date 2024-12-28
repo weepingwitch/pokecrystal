@@ -1,60 +1,60 @@
-ZeldaTrade2Script:
+ZeldaTrade3Script:
 	faceplayer
 	opentext
-	checkevent EVENT_ZELDA2
+	checkevent EVENT_ZELDA3
 	iftrue .AlreadyGiven
-	writetext ZeldaTrade2DoYouHaveEonMailText
+	writetext ZeldaTrade3DoYouHaveEonMailText
 	waitbutton
-	writetext ZeldaTrade2AskGiveAwayAnEonMailText
+	writetext ZeldaTrade3AskGiveAwayAnEonMailText
 	yesorno
 	iffalse .NoEonMail
-	takeitem ZELDA2
+	takeitem ZELDA3
 	iffalse .NoEonMail
-	writetext ZeldaTrade2PlayerGaveAwayTheEonMailText
+	writetext ZeldaTrade3PlayerGaveAwayTheEonMailText
 	waitbutton
-	writetext ZeldaTrade2ThisIsForYouText
+	writetext ZeldaTrade3ThisIsForYouText
 	waitbutton
 	verbosegiveitem ULTRA_BALL
 	iffalse .NoRoom
-	verbosegiveitem ZELDA3
-	writetext ZeldaTrade2DaughterWillBeDelightedText
-	setevent EVENT_ZELDA2
+	verbosegiveitem ZELDA4
+	writetext ZeldaTrade3DaughterWillBeDelightedText
+	setevent EVENT_ZELDA3
 	waitbutton
 	closetext
 	end
 
 .NoEonMail:
-	writetext ZeldaTrade2TooBadText
+	writetext ZeldaTrade3TooBadText
 	waitbutton
 	closetext
 	end
 
 .NoRoom:
-	giveitem ZELDA2
-	writetext ZeldaTrade2AnotherTimeThenText
+	giveitem ZELDA3
+	writetext ZeldaTrade3AnotherTimeThenText
 	waitbutton
 	closetext
 	end
 
 .AlreadyGiven:
-	writetext Zelda2AlreadyGivenText
+	writetext Zelda3AlreadyGivenText
 	waitbutton
 	closetext
 	end
 
-Zelda2AlreadyGivenText:
+Zelda3AlreadyGivenText:
 	text "Thank you!! My"
 	line "daughter is so"
 	cont "happy!"
 	done
 
 
-ZeldaTrade2DoYouHaveEonMailText:
+ZeldaTrade3DoYouHaveEonMailText:
 	text "Oh my, your pack"
 	line "looks so heavy!"
 
 	para "Oh! Do you happen"
-	line "to have FISHNETS?"
+	line "to have ESTRADIOL?"
 
 	para "My daughter is"
 	line "after a pair."
@@ -63,12 +63,12 @@ ZeldaTrade2DoYouHaveEonMailText:
 	line "some, can't you?"
 	done
 
-ZeldaTrade2AskGiveAwayAnEonMailText:
+ZeldaTrade3AskGiveAwayAnEonMailText:
 	text "Give away the"
-	line "FISHNETS?"
+	line "ESTRADIOL?"
 	done
 
-ZeldaTrade2ThisIsForYouText:
+ZeldaTrade3ThisIsForYouText:
 	text "Oh, that's great!"
 	line "Thank you, honey!"
 
@@ -76,22 +76,22 @@ ZeldaTrade2ThisIsForYouText:
 	line "you in return!"
 	done
 
-ZeldaTrade2DaughterWillBeDelightedText:
+ZeldaTrade3DaughterWillBeDelightedText:
 	text "My daughter will"
 	line "be delighted!"
 	done
 
-ZeldaTrade2TooBadText:
+ZeldaTrade3TooBadText:
 	text "Oh? You don't have"
 	line "one? Too bad."
 	done
 
-ZeldaTrade2AnotherTimeThenText:
+ZeldaTrade3AnotherTimeThenText:
 	text "Oh… Well, another"
 	line "time, then."
 	done
 
-ZeldaTrade2PlayerGaveAwayTheEonMailText:
+ZeldaTrade3PlayerGaveAwayTheEonMailText:
 	text "<PLAYER> gave away"
-	line "the FISHNETS."
+	line "the ESTRADIOL."
 	done
