@@ -151,8 +151,8 @@ ENDM
 	map_const UNDERGROUND_PATH,                             3, 14 ; 86
 	map_const ROCK_TUNNEL_1F,                              15, 18 ; 87
 	map_const ROCK_TUNNEL_B1F,                             15, 18 ; 88
-	map_const SAFARI_ZONE_FUCHSIA_GATE_BETA,                5,  4 ; 89
-	map_const SAFARI_ZONE_BETA,                            10, 18 ; 90
+	map_const SAFARI_ZONE_2F,                				  10,18 ; 89
+	map_const SAFARI_ZONE,                              30,27 ; 90
 	map_const VICTORY_ROAD,                                10, 36 ; 91
 	map_const POKEMON_MANSION,							   20, 27 ; 92
 	endgroup

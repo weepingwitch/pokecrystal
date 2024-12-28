@@ -2,6 +2,20 @@
 
 KantoWaterWildMons:
 
+	def_water_wildmons SAFARI_ZONE
+	db 4 percent ; encounter rate
+	db 20, GOLDEEN
+	db 20, SLOWPOKE
+	db 20, SEAKING
+	end_water_wildmons
+
+	def_water_wildmons SAFARI_ZONE_2F
+	db 4 percent ; encounter rate
+	db 20, GOLDEEN
+	db 20, SLOWPOKE
+	db 20, SEAKING
+	end_water_wildmons
+
 	def_water_wildmons TOHJO_FALLS
 	db 4 percent ; encounter rate
 	db 20, GOLDEEN
