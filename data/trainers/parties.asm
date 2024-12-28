@@ -2855,6 +2855,7 @@ PsychicGroup:
 	db "NATHAN@", TRAINERTYPE_NORMAL
 	db 26, GIRAFARIG
 	db 25, DROWZEE
+	db 24, HAUNTER
 	db -1 ; end
 
 	; PSYCHIC_T (2)
@@ -2866,7 +2867,7 @@ PsychicGroup:
 	; PSYCHIC_T (3)
 	db "HERMAN@", TRAINERTYPE_NORMAL
 	db 30, EXEGGCUTE
-	db 30, EXEGGCUTE
+	db 30, GOLDUCK
 	db 30, EXEGGUTOR
 	db -1 ; end
 
@@ -2874,6 +2875,7 @@ PsychicGroup:
 	db "FIDEL@", TRAINERTYPE_NORMAL
 	db 34, XATU
 	db 35, DITTO
+	db 35, SMEARGLE
 	db -1 ; end
 
 	; PSYCHIC_T (5)
@@ -3570,30 +3572,30 @@ KimonoGirlGroup:
 
 	; KIMONO_GIRL (3)
 	db "SAYO@", TRAINERTYPE_NORMAL
-	db 17, ESPEON
-	db 17, UMBREON
-	db 17, FLAREON
+	db 17, HITMONLEE
+	db 17, JIGGLYPUFF
+	db 17, PIDGEY
 	db -1 ; end
 
 	; KIMONO_GIRL (4)
 	db "ZUKI@", TRAINERTYPE_NORMAL
-	db 17, JOLTEON
-	db 17, ESPEON
-	db 17, VAPOREON
+	db 17, HITMONCHAN
+	db 17, CLEFAIRY
+	db 17, HOOTHOOT
 	db -1 ; end
 
 	; KIMONO_GIRL (5)
 	db "KUNI@", TRAINERTYPE_NORMAL
-	db 17, VAPOREON
-	db 17, JOLTEON
-	db 17, UMBREON
+	db 17, HITMONTOP
+	db 17, CHANSEY
+	db 17, DODUO
 	db -1 ; end
 
 	; KIMONO_GIRL (6)
 	db "MIKI@", TRAINERTYPE_NORMAL
-	db 17, JOLTEON
-	db 17, FLAREON
-	db 17, VAPOREON
+	db 17, TYROGUE
+	db 17, TOGEPI
+	db 17, SPEAROW
 	db -1 ; end
 
 TwinsGroup:
@@ -3759,13 +3761,13 @@ BlueGroup:
 OfficerGroup:
 	; OFFICER (1)
 	db "KEITH@", TRAINERTYPE_NORMAL
-	db 17, SWINUB
+	db 5, SWINUB
 	db -1 ; end
 
 	; OFFICER (2)
 	db "DIRK@", TRAINERTYPE_NORMAL
-	db 14, SWINUB
-	db 14, SWINUB
+	db 5, SWINUB
+	db 5, SWINUB
 	db -1 ; end
 
 GruntFGroup:
@@ -3787,7 +3789,7 @@ GruntFGroup:
 	; GRUNTF (3)
 	db "GRUNT@", TRAINERTYPE_NORMAL
 	db 25, GLOOM
-	db 25, GLOOM
+	db 25, PSYDUCK
 	db 25, KOFFING
 	db 22, GRIMER
 	db -1 ; end
