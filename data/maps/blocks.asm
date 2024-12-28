@@ -103,9 +103,9 @@ Route3_Blocks:
 PewterCity_Blocks:
 	INCBIN "maps/PewterCity.blk"
 
-BetaSilverCaveOutside_Blocks: ; unreferenced
-	INCBIN "maps/unused/BetaSilverCaveOutside.blk"
-
+PewterMuseum_Blocks:
+	INCBIN "maps/PewterMuseum.blk"
+	
 BetaSproutTower2_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower2.blk"
 
