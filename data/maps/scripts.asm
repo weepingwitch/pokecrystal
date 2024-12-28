@@ -331,7 +331,6 @@ INCLUDE "maps/MahoganyTown.asm"
 INCLUDE "maps/Route32.asm"
 INCLUDE "maps/VermilionFishingSpeechHouse.asm"
 INCLUDE "maps/VermilionPokecenter1F.asm"
-INCLUDE "maps/VermilionPokecenter2FBeta.asm"
 INCLUDE "maps/PokemonFanClub.asm"
 INCLUDE "maps/VermilionMagnetTrainSpeechHouse.asm"
 INCLUDE "maps/VermilionMart.asm"
@@ -339,7 +338,7 @@ INCLUDE "maps/VermilionDiglettsCaveSpeechHouse.asm"
 INCLUDE "maps/VermilionGym.asm"
 INCLUDE "maps/Route6SaffronGate.asm"
 INCLUDE "maps/Route6UndergroundPathEntrance.asm"
-INCLUDE "maps/Pokecenter2F.asm"
+INCLUDE "maps/ViridianForest.asm"
 INCLUDE "maps/TradeCenter.asm"
 INCLUDE "maps/Colosseum.asm"
 INCLUDE "maps/TimeCapsule.asm"
@@ -485,5 +484,6 @@ SECTION "Map Scripts 25", ROMX
 
 INCLUDE "maps/SilverCaveOutside.asm"
 INCLUDE "maps/Route10North.asm"
+
 
 ENDSECTION

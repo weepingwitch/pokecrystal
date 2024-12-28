@@ -105,7 +105,7 @@ PewterCity_Blocks:
 
 PewterMuseum_Blocks:
 	INCBIN "maps/PewterMuseum.blk"
-	
+
 BetaSproutTower2_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower2.blk"
 
@@ -1045,5 +1045,12 @@ BetaBlank_Blocks: ; unreferenced
 
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
+
+
+SECTION "Map Blocks 4", ROMX
+
+
+ViridianForest_Blocks:
+	INCBIN "maps/ViridianForest.blk"
 
 ENDSECTION
