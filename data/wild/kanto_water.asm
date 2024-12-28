@@ -4,16 +4,16 @@ KantoWaterWildMons:
 
 	def_water_wildmons SAFARI_ZONE
 	db 4 percent ; encounter rate
-	db 20, GOLDEEN
-	db 20, SLOWPOKE
-	db 20, SEAKING
+	db 30, GYARADOS
+	db 30, SLOWKING
+	db 30, KINGDRA
 	end_water_wildmons
 
 	def_water_wildmons SAFARI_ZONE_2F
 	db 4 percent ; encounter rate
-	db 20, GOLDEEN
-	db 20, SLOWPOKE
-	db 20, SEAKING
+	db 30, VAPOREON
+	db 30, BLASTOISE
+	db 30, FERALIGATR
 	end_water_wildmons
 
 	def_water_wildmons TOHJO_FALLS

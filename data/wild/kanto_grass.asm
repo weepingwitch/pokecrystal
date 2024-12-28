@@ -30,60 +30,60 @@ KantoGrassWildMons:
 	db 6, PIKACHU
 	end_grass_wildmons
 
-	def_grass_wildmons SAFARI_ZONE
-	db 16 percent, 10 percent, 16 percent ; encounter rates: morn/day/nite
-	; morn
-	db 5, CATERPIE
-	db 5, WEEDLE
-	db 7, BULBASAUR
-	db 7, BELLSPROUT
-	db 7, CHIKORITA
-	db 6, STANTLER
-	db 6, PICHU
-	; day
-	db 5, CATERPIE
-	db 5, WEEDLE
-	db 7, CHIKORITA
-	db 7, BULBASAUR
-	db 7, PIKACHU
-	db 6, ODDISH
-	db 6, TEDDIURSA
-	; nite
-	db 5, SPINARAK
-	db 5, YANMA
-	db 7, GLOOM
-	db 7, PSYDUCK
-	db 7, HOOTHOOT
-	db 6, SUDOWOODO
-	db 6, PIKACHU
-	end_grass_wildmons
-
 	def_grass_wildmons SAFARI_ZONE_2F
 	db 16 percent, 10 percent, 16 percent ; encounter rates: morn/day/nite
 	; morn
-	db 5, CATERPIE
-	db 5, WEEDLE
-	db 7, BULBASAUR
-	db 7, BELLSPROUT
-	db 7, CHIKORITA
-	db 6, STANTLER
-	db 6, PICHU
+	db 35, EXEGGUTOR
+	db 30, JOLTEON
+	db 27, BELLOSSOM
+	db 37, GOLEM
+	db 27, STEELIX
+	db 26, AERODACTYL
+	db 46, RAIKOU
 	; day
-	db 5, CATERPIE
-	db 5, WEEDLE
-	db 7, CHIKORITA
-	db 7, BULBASAUR
-	db 7, PIKACHU
-	db 6, ODDISH
-	db 6, TEDDIURSA
+	db 35, KANGASKHAN
+	db 30, FLAREON
+	db 27, VICTREEBEL
+	db 37, MACHAMP
+	db 27, OMANYTE
+	db 26, AERODACTYL
+	db 46, ENTEI
 	; nite
-	db 5, SPINARAK
-	db 5, YANMA
-	db 7, GLOOM
-	db 7, PSYDUCK
-	db 7, HOOTHOOT
-	db 6, SUDOWOODO
-	db 6, PIKACHU
+	db 35, SCIZOR
+	db 30, URSARING
+	db 27, VILEPLUME
+	db 37, ALAKAZAM
+	db 27, KABUTO
+	db 26, AERODACTYL
+	db 46, TYRANITAR
+	end_grass_wildmons
+
+	def_grass_wildmons SAFARI_ZONE
+	db 16 percent, 10 percent, 16 percent ; encounter rates: morn/day/nite
+	; morn
+	db 5, SCYTHER
+	db 5, PINSIR
+	db 7, EXEGGCUTE
+	db 7, KANGASKHAN
+	db 7, CHANSEY
+	db 6, TANGELA
+	db 36, MAROWAK
+	; day
+	db 5, HERACROSS
+	db 5, SCYTHER
+	db 7, TANGELA
+	db 7, BULBASAUR
+	db 7, CHIKORITA
+	db 6, CHANSEY
+	db 36, SUDOWOODO
+	; nite
+	db 5, PINSIR
+	db 5, HERACROSS
+	db 27, NIDORINA
+	db 27, NIDORINO
+	db 7, KANGASKHAN
+	db 6, CHANSEY
+	db 36, NIDOQUEEN
 	end_grass_wildmons
 
 
