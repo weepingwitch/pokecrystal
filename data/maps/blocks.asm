@@ -1049,7 +1049,9 @@ GoldenrodDeptStoreRoof_Blocks:
 
 SECTION "Map Blocks 4", ROMX
 
-
+PokemonMansion_Blocks:
+	INCBIN "maps/PokemonMansion.blk"
+	
 ViridianForest_Blocks:
 	INCBIN "maps/ViridianForest.blk"
 

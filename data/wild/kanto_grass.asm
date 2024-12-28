@@ -31,6 +31,35 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 
+	def_grass_wildmons POKEMON_MANSION
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 25, GASTLY
+	db 27, MACHOKE
+	db 27, ARCANINE
+	db 25, KOFFING
+	db 25, QUILAVA
+	db 26, ESPEON
+	db 26, MEWTWO
+	; day
+	db 25, HAUNTER
+	db 27, MACHOKE
+	db 27, ARCANINE
+	db 25, CHARMELEON
+	db 25, GRIMER
+	db 26, FLAREON
+	db 26, MEWTWO
+	; nite
+	db 25, GENGAR
+	db 27, MACHOKE
+	db 27, ARCANINE
+	db 25, KADABRA
+	db 25, MAGMAR
+	db 26, UMBREON
+	db 26, MEWTWO
+	end_grass_wildmons
+
+
 	def_grass_wildmons DIGLETTS_CAVE
 	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
 	; morn

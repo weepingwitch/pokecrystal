@@ -1,7 +1,8 @@
     object_const_def
-    const ROUTE2_FRUIT_TREE
+    
     const ROUTE2_POKE_BALL1
     const ROUTE2_POKE_BALL2
+	const ROUTE2_FRUIT_TREE
 
 ViridianForest_MapScripts:
 	def_scene_scripts
