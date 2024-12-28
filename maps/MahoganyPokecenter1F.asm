@@ -43,12 +43,101 @@ MahoganyPokecenter1FYoungsterText:
 	done
 
 MahoganyPokecenter1FCooltrainerFText:
-	text "#MON do become"
-	line "stronger when they"
+	faceplayer
+	opentext
+	checkevent EVENT_ZELDA4
+	iftrue .AlreadyGiven
+	writetext ZeldaTrade4DoYouHaveEonMailText
+	waitbutton
+	writetext ZeldaTrade4AskGiveAwayAnEonMailText
+	yesorno
+	iffalse .NoEonMail
+	takeitem ZELDA4
+	iffalse .NoEonMail
+	writetext ZeldaTrade4PlayerGaveAwayTheEonMailText
+	waitbutton
+	writetext ZeldaTrade4ThisIsForYouText
+	waitbutton
+	verbosegiveitem ULTRA_BALL
+	iffalse .NoRoom
+	verbosegiveitem ZELDA5
+	writetext ZeldaTrade4DaughterWillBeDelightedText
+	setevent EVENT_ZELDA4
+	waitbutton
+	closetext
+	end
 
-	para "evolve, but they"
-	line "also learn moves"
-	cont "more slowly."
+.NoEonMail:
+	writetext ZeldaTrade4TooBadText
+	waitbutton
+	closetext
+	end
+
+.NoRoom:
+	giveitem ZELDA4
+	writetext ZeldaTrade4AnotherTimeThenText
+	waitbutton
+	closetext
+	end
+
+.AlreadyGiven:
+	writetext Zelda4AlreadyGivenText
+	waitbutton
+	closetext
+	end
+
+Zelda4AlreadyGivenText:
+	text "Thank you!! My"
+	line "daughter is so"
+	cont "happy!"
+	done
+
+
+ZeldaTrade4DoYouHaveEonMailText:
+	text "Oh my, your pack"
+	line "looks so heavy!"
+
+	para "Oh! Do you happen"
+	line "to have EYELINER?"
+
+	para "My daughter is"
+	line "after a stick."
+
+	para "You can part with"
+	line "it, can't you?"
+	done
+
+ZeldaTrade4AskGiveAwayAnEonMailText:
+	text "Give away the"
+	line "EYELINER?"
+	done
+
+ZeldaTrade4ThisIsForYouText:
+	text "Oh, that's great!"
+	line "Thank you, honey!"
+
+	para "Here, this is for"
+	line "you in return!"
+	done
+
+ZeldaTrade4DaughterWillBeDelightedText:
+	text "My daughter will"
+	line "be delighted!"
+	done
+
+ZeldaTrade4TooBadText:
+	text "Oh? You don't have"
+	line "one? Too bad."
+	done
+
+ZeldaTrade4AnotherTimeThenText:
+	text "Oh… Well, another"
+	line "time, then."
+	done
+
+ZeldaTrade4PlayerGaveAwayTheEonMailText:
+	text "<PLAYER> gave away"
+	line "the EYELINER."
 	done
 
 MahoganyPokecenter1F_MapEvents:

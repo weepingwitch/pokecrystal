@@ -185,7 +185,7 @@ ItemNames::
 	li "ESTRADIOL" ;z3
 	li "EYELINER" ;z4
 	li "FALLOUT NV" ;z5
-	li "ZELDA6" ;z6
+	li "PICKLES" ;z6
 	li "BLUESKY MAIL"
 	li "MUSIC MAIL"
 	li "MIRAGE MAIL"

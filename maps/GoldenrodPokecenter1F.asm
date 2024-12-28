@@ -85,6 +85,8 @@ GoldenrodPokecenter1FLassScript:
 GoldenrodPokecenter1FPokefanF:
 	faceplayer
 	opentext
+	checkevent EVENT_ZELDA5
+	iftrue .AlreadyGiven
 	writetext GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText
 	waitbutton
 	writetext GoldenrodPokecenter1FAskGiveAwayAnEonMailText
@@ -96,13 +98,20 @@ GoldenrodPokecenter1FPokefanF:
 	waitbutton
 	writetext GoldenrodPokecenter1FPokefanFThisIsForYouText
 	waitbutton
-	verbosegiveitem REVIVE
+	verbosegiveitem NUGGET
 	iffalse .NoRoom
 	verbosegiveitem ZELDA6
 	writetext GoldenrodPokecenter1FPokefanFDaughterWillBeDelightedText
 	waitbutton
 	closetext
 	end
+
+.AlreadyGiven:
+	writetext Zelda5AlreadyGivenText
+	waitbutton
+	closetext
+	end
+
 
 .NoEonMail:
 	writetext GoldenrodPokecenter1FPokefanFTooBadText
@@ -149,7 +158,12 @@ GoldenrodPokeCenter1FLinkReceptionistWalkToStairsFromRightDoorwayTileMovement:
 	step DOWN
 	step_end
 
-
+Zelda5AlreadyGivenText:
+	text "Thank you!! My"
+	line "daughter is so"
+	cont "happy!"
+	done
+	
 GoldenrodPokecenter1FLassText:
 	text "I heard that some"
 	line "GYM LEADERS will"
@@ -188,41 +202,20 @@ GoldenrodPokecenter1FGameboyKidText:
 	line "afford to lose."
 	done
 
-GoldenrodPokecomCenterSignText: ; unreferenced
-	text "#COM CENTER"
-	line "1F INFORMATION"
-
-	para "Left:"
-	line "ADMINISTRATION"
-
-	para "Center:"
-	line "TRADE CORNER"
-
-	para "Right:"
-	line "#MON NEWS"
-	done
-
-GoldenrodPokecomCenterNewsMachineNotYetText: ; unreferenced
-	text "It's a #MON"
-	line "NEWS MACHINE!"
-
-	para "It's not in"
-	line "operation yet…"
-	done
 
 GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:
 	text "Oh my, your pack"
 	line "looks so heavy!"
 
 	para "Oh! Do you happen"
-	line "to have something"
+	line "to have a game"
 	cont "named FALLOUT NV?"
 
 	para "My daughter is"
-	line "after one."
+	line "after it."
 
 	para "You can part with"
-	line "one, can't you?"
+	line "it, can't you?"
 	done
 
 GoldenrodPokecenter1FAskGiveAwayAnEonMailText:

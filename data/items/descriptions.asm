@@ -968,11 +968,11 @@ LovelyMailDesc:
 
 EonMailDesc:
 	db   "Post-apocalyptic"
-	next "role-playing game.@"
+	next "role-playing game@"
 
 MorphMailDesc: ;zelda6
-	db   "DITTO-print MAIL."
-	next "(HOLD)@"
+	db   "Sour, salty,"
+	next "crunchy pickles.@"
 
 BlueSkyMailDesc:
 	db   "Sky-print MAIL."
