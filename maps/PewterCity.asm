@@ -161,6 +161,7 @@ PewterCity_MapEvents:
 	warp_event  7, 29, PEWTER_SNOOZE_SPEECH_HOUSE, 1
 	warp_event 11, 7, PEWTER_MUSEUM, 1;6
 	warp_event 19, 5, PEWTER_MUSEUM, 3;7
+	warp_event 2, 23, UNDER_PATH_1F, 2 ;8
 
 	def_coord_events
 

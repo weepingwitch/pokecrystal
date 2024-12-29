@@ -155,6 +155,9 @@ ENDM
 	map_const SAFARI_ZONE,                              30,27 ; 90
 	map_const VICTORY_ROAD,                                10, 36 ; 91
 	map_const POKEMON_MANSION,							   20, 27 ; 92
+	map_const UNDER_PATH_JOHTO, 							10,9 ;93
+	map_const UNDER_PATH_1F, 								30,18 ;94
+	map_const UNDER_PATH_2F,								20, 18 ; 95
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4

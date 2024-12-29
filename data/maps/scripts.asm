@@ -487,6 +487,9 @@ SECTION "Map Scripts 25", ROMX
 INCLUDE "maps/SilverCaveOutside.asm"
 INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/PokemonMansion.asm"
+INCLUDE "maps/UnderPathJohto.asm"
+INCLUDE "maps/UnderPath1F.asm"
+INCLUDE "maps/UnderPath2F.asm"
 
 
 ENDSECTION

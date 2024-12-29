@@ -1061,4 +1061,13 @@ SafariZone2F_Blocks:
 SafariZone_Blocks:
 	INCBIN "maps/SafariZone.blk"
 
+UnderPathJohto_Blocks:
+	INCBIN "maps/UnderPathJohto.blk"
+
+UnderPath1F_Blocks:
+	INCBIN "maps/UnderPath1F.blk"
+
+UnderPath2F_Blocks:
+	INCBIN "maps/UnderPath2F.blk"
+
 ENDSECTION

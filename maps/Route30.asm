@@ -410,6 +410,7 @@ Route30_MapEvents:
 	def_warp_events
 	warp_event  7, 39, ROUTE_30_BERRY_HOUSE, 1
 	warp_event 17,  5, MR_POKEMONS_HOUSE, 1
+	warp_event 18, 19, UNDER_PATH_JOHTO, 1
 
 	def_coord_events
 

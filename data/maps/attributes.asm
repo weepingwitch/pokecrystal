@@ -698,3 +698,6 @@ ENDM
 	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
+	map_attributes UnderPathJohto, UNDER_PATH_JOHTO, $09, 0
+	map_attributes UnderPath1F, UNDER_PATH_1F, $09, 0
+	map_attributes UnderPath2F, UNDER_PATH_2F, $09, 0

@@ -2,6 +2,62 @@
 
 KantoGrassWildMons:
 
+	def_grass_wildmons UNDER_PATH_1F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 63, STEELIX
+	db 64, SANDSLASH
+	db 65, NINETAILS
+	db 63, POLIWRATH
+	db 66, GENGAR
+	db 65, TYRANITAR
+	db 63, DRAGONITE
+	; day
+	db 63, MUK
+	db 64, DUGTRIO
+	db 65, ARCANINE
+	db 63, NIDOQUEEN
+	db 66, ALAKAZAM
+	db 65, TYRANITAR
+	db 63, DRAGONITE
+	; nite
+	db 63, WEEZING
+	db 64, RHYDON
+	db 65, HOUNDOOM
+	db 63, NIDOKING
+	db 66, MACHAMP
+	db 65, TYRANITAR
+	db 65, DRAGONITE
+	end_grass_wildmons
+
+	def_grass_wildmons UNDER_PATH_2F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 73, RHYDON
+	db 74, ARTICUNO
+	db 75, TYPHLOSION
+	db 73, CHARIZARD
+	db 76, AERODACTYL
+	db 75, CELEBI
+	db 73, ENTEI
+	; day
+	db 73, GOLEM
+	db 74, ZAPDOS
+	db 75, MEGANIUM
+	db 73, VENUSAUR
+	db 76, TYRANITAR
+	db 75, MEW
+	db 73, RAIKOU
+	; nite
+	db 73, ALAKAZAM
+	db 74, MOLTRES
+	db 75, FERALIGATR
+	db 73, BLASTOISE
+	db 76, DRAGONITE
+	db 75, MEWTWO
+	db 75, SUICUNE
+	end_grass_wildmons
+
 	def_grass_wildmons VIRIDIAN_FOREST
 	db 16 percent, 10 percent, 16 percent ; encounter rates: morn/day/nite
 	; morn
