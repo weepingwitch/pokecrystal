@@ -5,29 +5,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons UNDER_PATH_JOHTO
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, RATTATA
-	db 4, RATTATA
-	db 5, RATTATA
-	db 3, RATTATA
-	db 6, RATTATA
-	db 5, RATTATA
-	db 3, BELLSPROUT
+	db 43, PHANPHY
+	db 44, CUBONE
+	db 45, TYROGUE
+	db 43, NIDORINO
+	db 46, FURRET
+	db 45, PARASECT
+	db 43, GRAVELER
 	; day
-	db 3, RATTATA
-	db 4, RATTATA
-	db 5, RATTATA
-	db 3, RATTATA
-	db 6, RATTATA
-	db 5, RATTATA
-	db 3, BELLSPROUT
+	db 43, PHANPHY
+	db 44, RATICATE
+	db 45, TYROGUE
+	db 43, NIDORINA
+	db 46, FURRET
+	db 45, GOLBAT
+	db 43, GLOOM
 	; nite
-	db 3, GASTLY
-	db 4, GASTLY
-	db 5, GASTLY
-	db 3, RATTATA
-	db 6, GASTLY
-	db 5, RATTATA
-	db 5, RATTATA
+	db 43, HAUNTER
+	db 44, CUBONE
+	db 45, NOCTOWL
+	db 43, GOLBAT
+	db 46, CROBAT
+	db 45, PARASECT
+	db 45, KADABRA
 	end_grass_wildmons
 
 
