@@ -1,4 +1,8 @@
     object_const_def
+    const UNDERPATH1_BOULDER
+    const UNDERPATH2_BOULDER
+    const UNDERPATH_POKE_BALL1
+	const UNDERPATH_POKE_BALL2
    
 
 UnderPath1F_MapScripts:
@@ -6,7 +10,18 @@ UnderPath1F_MapScripts:
 
 	def_callbacks
 
+UnderPathB1:
+    itemball NUGGET
 
+UnderPathB2:
+    itemball MASTER_BALL
+
+UnderPath1Boulder:
+    jumpstd StrengthBoulderScript
+    
+UnderPath2Boulder:
+    jumpstd StrengthBoulderScript
+    
 
 UnderPath1F_MapEvents:
 	db 0, 0 ; filler
@@ -24,4 +39,10 @@ UnderPath1F_MapEvents:
     
 
 	def_object_events
+    object_event 24, 4, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, UnderPath1Boulder, -1
+    object_event 3,28, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, UnderPath2Boulder, -1
+    object_event  7, 5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UnderPathB1, EVENT_UNDER_BALL_1
+	object_event  34, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UnderPathB2, EVENT_UNDER_BALL_2
+	
+  
   

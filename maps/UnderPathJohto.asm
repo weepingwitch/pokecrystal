@@ -1,4 +1,5 @@
     object_const_def
+    const UNDERPATHJOHTO_BOULDER
    
 
 UnderPathJohto_MapScripts:
@@ -6,7 +7,9 @@ UnderPathJohto_MapScripts:
 
 	def_callbacks
 
-
+UnderPathJohtoBoulder:
+    jumpstd StrengthBoulderScript
+    
 
 UnderPathJohto_MapEvents:
 	db 0, 0 ; filler
@@ -22,4 +25,4 @@ UnderPathJohto_MapEvents:
     
 
 	def_object_events
-  
+    object_event 13, 10, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, UnderPathJohtoBoulder, -1

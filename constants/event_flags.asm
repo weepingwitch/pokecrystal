@@ -339,9 +339,9 @@
 	const EVENT_WILTON_ASKED_FOR_PHONE_NUMBER
 	const_skip ; unused in Crystal
 	const EVENT_KENJI_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_UNDER_BALL_1
 	const EVENT_PARRY_ASKED_FOR_PHONE_NUMBER
-	const_skip ; unused in Crystal
+	const EVENT_UNDER_BALL_2
 	const EVENT_ERIN_ASKED_FOR_PHONE_NUMBER
 	const EVENT_BUENA_OFFERED_HER_PHONE_NUMBER_NO_BLUE_CARD
 	const_skip ; unused
