@@ -1475,7 +1475,7 @@ JohtoGrassWildMons:
 	db 4, EKANS
 	db 5, BELLSPROUT
 	db 5, GROWLITHE
-	db 5, DUNSPARCE
+	db 5, PHANPY
 	db 6, MR__MIME
 	db 6, DODUO
 	; nite
@@ -1497,7 +1497,7 @@ JohtoGrassWildMons:
 	db 15, PIDGEOTTO
 	db 15, LEDIAN
 	db 15, WOOPER
-	db 16, DUNSPARCE
+	db 16, PHANPY
 	; day
 	db 13, PIDGEY
 	db 14, GROWLITHE

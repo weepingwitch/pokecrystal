@@ -161,7 +161,7 @@ FalknerTMMudSlapText:
 	done
 
 FalknerFightDoneText:
-	para "You should test"
+	text "You should test"
 	line "your skills at"
 	cont "more GYMS."
 
