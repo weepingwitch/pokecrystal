@@ -1,5 +1,6 @@
     object_const_def
     const SAFARIZONE_POKE_BALL1
+    const SAFARIZONE_POKE_BALL3
 
 SafariZone_MapScripts:
 	def_scene_scripts
@@ -17,6 +18,9 @@ SafariZoneSignText:
 SafariZoneMball:
     itemball LEAF_STONE
 
+SafariZoneMball2:
+    itemball SUN_STONE
+
 SafariZone_MapEvents:
 	db 0, 0 ; filler
 
@@ -33,4 +37,5 @@ SafariZone_MapEvents:
 
 	def_object_events
     object_event  13, 51, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SafariZoneMball, EVENT_SAFARIZONE_BALL
+	object_event  54, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SafariZoneMball2, EVENT_SAFARI_BALL3
 	

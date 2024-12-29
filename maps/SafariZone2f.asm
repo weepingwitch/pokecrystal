@@ -8,7 +8,7 @@ SafariZone2F_MapScripts:
 
 
 SafariZone2Mball:
-    itemball LEAF_STONE
+    itemball MASTER_BALL
 
 SafariZone2F_MapEvents:
 	db 0, 0 ; filler
