@@ -2,6 +2,9 @@
 	const VERMILIONPORT_SAILOR1
 	const VERMILIONPORT_SAILOR2
 	const VERMILIONPORT_SUPER_NERD
+	const VERMILIONPORT_ROCK1
+	const VERMILIONPORT_ROCK2
+	const VERMILIONPORT_ROCK3
 
 VermilionPort_MapScripts:
 	def_scene_scripts
@@ -13,6 +16,9 @@ VermilionPort_MapScripts:
 
 VermilionPortNoopScene:
 	end
+
+VermilionPortBoulder:
+	jumpstd StrengthBoulderScript
 
 VermilionPortLeaveShipScene:
 	sdefer VermilionPortLeaveShipScript
@@ -187,13 +193,14 @@ VermilionPortSailorScript:
 VermilionPortSuperNerdScript:
 	faceplayer
 	opentext
+
 	writetext VermilionPortSuperNerdText
 	waitbutton
 	closetext
 	end
 
 VermilionPortHiddenIron:
-	hiddenitem IRON, EVENT_VERMILION_PORT_HIDDEN_IRON
+	hiddenitem MASTER_BALL, EVENT_VERMILION_PORT_HIDDEN_IRON
 
 VermilionPortEnterFastShipMovement:
 	step DOWN
@@ -307,9 +314,12 @@ VermilionPort_MapEvents:
 	coord_event  7, 11, SCENE_VERMILIONPORT_ASK_ENTER_SHIP, VermilionPortWalkUpToShipScript
 
 	def_bg_events
-	bg_event 16, 13, BGEVENT_ITEM, VermilionPortHiddenIron
+	bg_event 11, 8, BGEVENT_ITEM, VermilionPortHiddenIron
 
 	def_object_events
 	object_event  7, 17, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSailorAtGangwayScript, EVENT_VERMILION_PORT_SAILOR_AT_GANGWAY
 	object_event  6, 11, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSailorScript, -1
 	object_event 11, 11, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSuperNerdScript, -1
+	object_event 14, 10, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortBoulder, -1
+    object_event 14,11, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortBoulder, -1
+	object_event 6,16, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortBoulder, -1

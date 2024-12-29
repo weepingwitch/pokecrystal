@@ -1145,8 +1145,6 @@ Script_UsedStrength:
 	writetext .UseStrengthText
 	readmem wStrengthSpecies
 	cry 0 ; plays [wStrengthSpecies] cry
-	pause 3
-	writetext .MoveBoulderText
 	closetext
 	end
 
@@ -1191,13 +1189,30 @@ BouldersMayMoveText:
 	text_end
 
 TryStrengthOW:
-	ld d, STRENGTH
-	call CheckPartyMove
-	jr c, .nope
+
 
 	ld de, ENGINE_PLAINBADGE
 	call CheckEngineFlag
 	jr c, .nope
+
+	ld a, HM_STRENGTH
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
+	jr z, .nope
+
+; Step 3
+	ld d, STRENGTH
+	call CheckPartyCanLearnMove
+	and a
+	jr z, .yes
+
+; Step 4
+	ld d, STRENGTH
+	call CheckPartyMove
+	jr c, .nope
+
+.yes
 
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_STRENGTH_ACTIVE_F, [hl]
