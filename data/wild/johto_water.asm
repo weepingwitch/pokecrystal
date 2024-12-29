@@ -2,6 +2,13 @@
 
 JohtoWaterWildMons:
 
+	def_water_wildmons UNDER_PATH_JOHTO
+	db 25 percent
+	db 35, LAPRAS
+	db 35, OCTILLERY
+	db 35, KINGDRA
+	end_water_wildmons
+	
 	def_water_wildmons RUINS_OF_ALPH_OUTSIDE
 	db 2 percent ; encounter rate
 	db 15, WOOPER
@@ -228,7 +235,7 @@ JohtoWaterWildMons:
 
 	def_water_wildmons CIANWOOD_CITY
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
+	db 20, REMORAID
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
 	end_water_wildmons
@@ -242,7 +249,7 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ECRUTEAK_CITY
 	db 2 percent ; encounter rate
-	db 20, POLIWAG
+	db 20, REMORAID
 	db 15, POLIWAG
 	db 20, POLIWHIRL
 	end_water_wildmons

@@ -2,6 +2,15 @@
 
 KantoWaterWildMons:
 
+
+
+	def_water_wildmons UNDER_PATH_1F
+	db 25 percent
+	db 35, BLASTOISE
+	db 35, FERALIGATR
+	db 35, DRAGONAIR
+	end_water_wildmons
+	
 	def_water_wildmons SAFARI_ZONE
 	db 4 percent ; encounter rate
 	db 30, GYARADOS
