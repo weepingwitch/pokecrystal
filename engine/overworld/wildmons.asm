@@ -298,17 +298,28 @@ ChooseWildEncounter:
 	ld a, [wBattleType]
 	cp BATTLETYPE_SUICUNE
 	jr z, .ok
-
-; add current gym badges, doubled, to level
+	call Random
+	cp 35 percent
+	jr c, .contasusual
+	cp 64 percent
+	jr c, .doubleit
+.dontdouble ; add current gym badges to level
 	ld a, [wUnusedScriptByte]
-	rlc a
 	add b 
 	ld b, a
-
+	jr .contasusual
+; add current gym badges, doubled, to level
+.doubleit
+	ld a, [wUnusedScriptByte]
+	rlc a
+	
+	add b 
+	ld b, a
+.contasusual
 ; randomly buff the wild mon
 	call Random
 	cp 35 percent
-	jr c, .ok
+	jr c, .ok ;dont lol
 	inc b
 	cp 65 percent
 	jr c, .ok
@@ -323,8 +334,7 @@ ChooseWildEncounter:
 .ok
 ; BUG: ChooseWildEncounter doesn't really validate the wild Pokemon species (see docs/bugs_and_glitches.md)
 	ld a, b
-	;ld a, [wUnusedScriptByte]
-	;inc a
+
 	ld [wCurPartyLevel], a
 	ld b, [hl]
 	call ValidateTempWildMonSpecies

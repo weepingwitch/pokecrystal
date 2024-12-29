@@ -7,7 +7,7 @@ KantoGrassWildMons:
 	; morn
 	db 63, STEELIX
 	db 64, SANDSLASH
-	db 65, NINETAILS
+	db 65, NINETALES
 	db 63, POLIWRATH
 	db 66, GENGAR
 	db 65, TYRANITAR
