@@ -2614,33 +2614,7 @@ Function17e0fd:
 	ret
 
 Function17e133:
-	call IncCrashCheckPointer
-	ld de, wc708
-	ld bc, $5
-	call CopyBytes
-	ldh a, [rSVBK]
-	push af
-	ld a, $1
-	ldh [rSVBK], a
-	ld hl, wc708
-	ld a, [hli]
-	ld [wScriptVar], a
-	push hl
-	farcall MobileCheckOwnMonAnywhere
-	pop hl
-	jr c, .asm_17e159
-	inc hl
-	inc hl
-
-.asm_17e159
-	ld a, [hli]
-	ld b, a
-	ld a, [hl]
-	ld h, a
-	ld l, b
-	pop af
-	ldh [rSVBK], a
-	call Function17e40f
+	
 	ret
 
 Function17e165:
@@ -3775,57 +3749,7 @@ Function17f154:
 	ret
 
 Function17f181:
-	pop hl
-	call Function17f524
-	jr c, .asm_17f19d
-	ld de, $2
-	add hl, de
-	ld a, [hli]
-	ld e, l
-	ld d, h
-	ld l, c
-	ld h, b
-	ld c, a
-	ld b, 0
-	add hl, bc
-	ld a, [de]
-	cp "@"
-	jr z, .asm_17f19b
-	and a
-	ret
-
-.asm_17f19b
-	scf
-	ret
-
-.asm_17f19d
-	push bc
-	ld a, [hli]
-	ld e, a
-	ld a, [hli]
-	ld d, a
-	ld a, [hli]
-	ld [wcd54], a
-	pop bc
-	push hl
-	push bc
-	call Function17f4f6
-	add hl, de
-	ld a, [hl]
-	ld c, a
-	ld de, wc608
-	farcall Function48c63
-	pop hl
-	ld de, wc608
-	call PlaceString
-	ld a, c
-	ld [wcd52], a
-	ld a, b
-	ld [wcd53], a
-	ld a, [wcd54]
-	call Function17f50f
-	pop de
-	and a
+	
 	ret
 
 Function17f1d0:
@@ -4064,46 +3988,7 @@ MobileScript_PlayerName:
 	ret
 
 MobileScript_Prefecture:
-	pop hl
-	push bc
-	ld a, [hli]
-	ld [wcd55], a
-	and $f
-	ld [wcd54], a
-	pop bc
-	push hl
-	ld l, c
-	ld h, b
-	push hl
-	ld a, [wcd55]
-	bit 7, a
-	jr nz, .asm_17f355
-	ld a, BANK(sCrystalData)
-	call OpenSRAM
-	ld a, [sCrystalData + 2]
-	jr .asm_17f35d
-
-.asm_17f355
-	ld a, BANK(s5_b2f3)
-	call OpenSRAM
-	ld a, [s5_b2f3]
-
-.asm_17f35d
-	ld c, a
-	call CloseSRAM
-	ld de, wc608
-	farcall Function48c63
-	pop hl
-	ld de, wc608
-	call PlaceString
-	ld a, c
-	ld [wcd52], a
-	ld a, b
-	ld [wcd53], a
-	ld a, [wcd54]
-	call Function17f50f
-	pop de
-	and a
+	
 	ret
 
 Function17f382:

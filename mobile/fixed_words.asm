@@ -268,73 +268,11 @@ CopyMobileEZChatToC608:
 	jr .copy_string
 
 Function11c1ab:
-	ldh a, [hInMenu]
-	push af
-	ld a, $1
-	ldh [hInMenu], a
-	call Function11c1b9
-	pop af
-	ldh [hInMenu], a
+	
 	ret
 
 Function11c1b9:
-	call .InitKanaMode
-	ldh a, [rSVBK]
-	push af
-	ld a, $5
-	ldh [rSVBK], a
-	call EZChat_MasterLoop
-	pop af
-	ldh [rSVBK], a
-	ret
 
-.InitKanaMode:
-	xor a
-	ld [wJumptableIndex], a
-	ld [wcf64], a
-	ld [wcf65], a
-	ld [wcf66], a
-	ld [wcd23], a
-	ld [wcd20], a
-	ld [wcd21], a
-	ld [wcd22], a
-	ld [wcd35], a
-	ld [wcd2b], a
-	ld a, $ff
-	ld [wcd24], a
-	ld a, [wMenuCursorY]
-	dec a
-	call Function11c254
-	call ClearBGPalettes
-	call ClearSprites
-	call ClearScreen
-	call Function11d323
-	call SetDefaultBGPAndOBP
-	call DisableLCD
-	ld hl, SelectStartGFX
-	ld de, vTiles2
-	ld bc, $60
-	call CopyBytes
-	ld hl, EZChatSlowpokeLZ
-	ld de, vTiles0
-	call Decompress
-	call EnableLCD
-	farcall HDMATransferTilemapAndAttrmap_Overworld
-	farcall ClearSpriteAnims
-	farcall LoadPokemonData
-	farcall Pokedex_ABCMode
-	ldh a, [rSVBK]
-	push af
-	ld a, $5
-	ldh [rSVBK], a
-	ld hl, wc6d0
-	ld de, wLYOverrides
-	ld bc, $100
-	call CopyBytes
-	pop af
-	ldh [rSVBK], a
-	call EZChat_GetCategoryWordsByKana
-	call EZChat_GetSeenPokemonByKana
 	ret
 
 Function11c254:
@@ -365,178 +303,14 @@ EZChat_ClearBottom12Rows:
 	ret
 
 EZChat_MasterLoop:
-.loop
-	call JoyTextDelay
-	ldh a, [hJoyPressed]
-	ldh [hJoypadPressed], a
-	ld a, [wJumptableIndex]
-	bit JUMPTABLE_EXIT_F, a
-	jr nz, .exit
-	call .DoJumptableFunction
-	farcall PlaySpriteAnimations
-	farcall HDMATransferTilemapAndAttrmap_Overworld
-	jr .loop
-
-.exit
-	farcall ClearSpriteAnims
-	call ClearSprites
+	ret
+Function11c35f:
 	ret
 
-.DoJumptableFunction:
-	jumptable .Jumptable, wJumptableIndex
-
-.Jumptable:
-	dw .SpawnObjects ; 00
-	dw .InitRAM ; 01
-	dw Function11c35f ; 02
-	dw Function11c373 ; 03
-	dw Function11c3c2 ; 04
-	dw Function11c3ed ; 05
-	dw Function11c52c ; 06
-	dw Function11c53d ; 07
-	dw Function11c658 ; 08
-	dw Function11c675 ; 09
-	dw Function11c9bd ; 0a
-	dw Function11c9c3 ; 0b
-	dw Function11caad ; 0c
-	dw Function11cab3 ; 0d
-	dw Function11cb52 ; 0e
-	dw Function11cb66 ; 0f
-	dw Function11cbf5 ; 10
-	dw Function11ccef ; 11
-	dw Function11cd04 ; 12
-	dw Function11cd20 ; 13
-	dw Function11cd54 ; 14
-	dw Function11ce0b ; 15
-	dw Function11ce2b ; 16
-
-.SpawnObjects:
-	depixel 3, 1, 2, 5
-	ld a, SPRITE_ANIM_OBJ_EZCHAT_CURSOR
-	call InitSpriteAnimStruct
-
-	depixel 8, 1, 2, 5
-	ld a, SPRITE_ANIM_OBJ_EZCHAT_CURSOR
-	call InitSpriteAnimStruct
-	ld hl, SPRITEANIMSTRUCT_VAR1
-	add hl, bc
-	ld a, $1
-	ld [hl], a
-
-	depixel 9, 2, 2, 0
-	ld a, SPRITE_ANIM_OBJ_EZCHAT_CURSOR
-	call InitSpriteAnimStruct
-	ld hl, SPRITEANIMSTRUCT_VAR1
-	add hl, bc
-	ld a, $3
-	ld [hl], a
-
-	depixel 10, 16
-	ld a, SPRITE_ANIM_OBJ_EZCHAT_CURSOR
-	call InitSpriteAnimStruct
-	ld hl, SPRITEANIMSTRUCT_VAR1
-	add hl, bc
-	ld a, $4
-	ld [hl], a
-
-	depixel 10, 4
-	ld a, SPRITE_ANIM_OBJ_EZCHAT_CURSOR
-	call InitSpriteAnimStruct
-	ld hl, SPRITEANIMSTRUCT_VAR1
-	add hl, bc
-	ld a, $5
-	ld [hl], a
-
-	depixel 10, 2
-	ld a, SPRITE_ANIM_OBJ_EZCHAT_CURSOR
-	call InitSpriteAnimStruct
-	ld hl, SPRITEANIMSTRUCT_VAR1
-	add hl, bc
-	ld a, $2
-	ld [hl], a
-
-	ld hl, wcd23
-	set 1, [hl]
-	set 2, [hl]
-	jp Function11cfb5
-
-.InitRAM:
-	ld a, $9
-	ld [wcd2d], a
-	ld a, $2
-	ld [wcd2e], a
-	ld [wcd2f], a
-	ld [wcd30], a
-	ld de, wcd2d
-	call Function11cfce
-	jp Function11cfb5
-
-Function11c35f:
-	ld hl, wcd2f
-	inc [hl]
-	inc [hl]
-	dec hl
-	dec hl
-	dec [hl]
-	push af
-	ld de, wcd2d
-	call Function11cfce
-	pop af
-	ret nz
-	jp Function11cfb5
-
 Function11c373:
-	ld hl, wcd30
-	inc [hl]
-	inc [hl]
-	dec hl
-	dec hl
-	dec [hl]
-	push af
-	ld de, wcd2d
-	call Function11cfce
-	pop af
-	ret nz
-	call Function11c38a
-	jp Function11cfb5
-
+	ret
 Function11c38a:
-	ld hl, Unknown_11c986
-	ld bc, wcd36
-	ld a, $6
-.asm_11c392
-	push af
-	ld a, [hli]
-	ld e, a
-	ld a, [hli]
-	ld d, a
-	push hl
-	push de
-	pop hl
-	ld a, [bc]
-	inc bc
-	ld e, a
-	ld a, [bc]
-	inc bc
-	ld d, a
-	push bc
-	or e
-	jr z, .asm_11c3af
-	ld a, e
-	and d
-	cp $ff
-	jr z, .asm_11c3af
-	call Function11c05d
-	jr .asm_11c3b5
-.asm_11c3af
-	ld de, String_11c3bc
-	call PlaceString
-.asm_11c3b5
-	pop bc
-	pop hl
-	pop af
-	dec a
-	jr nz, .asm_11c392
+	
 	ret
 
 String_11c3bc:

@@ -712,87 +712,16 @@ Function17aae0:
 	call Function17aad7
 
 Function17aae3:
-	push af
-	ld a, [$d08a]
-	ld bc, $d
-	ld hl, Unknown_17aaf7
-	call AddNTimes
-	pop af
-	ld c, a
-	ld b, 0
-	add hl, bc
-	ld a, [hl]
+	
 	ret
 
-Unknown_17aaf7:
-	db $0, $0, $1, $6, $5, $9, $3, $2, $1, $2, $1, $2, $4
-	db $0, $0, $2, $9, $5, $a, $4, $0, $2, $a, $a, $3, $5
-	db $0, $0, $3, $c, $5, $b, $5, $1, $0, $1, $0, $4, $0
-	db $0, $0, $4, $6, $8, $0, $6, $5, $4, $5, $1, $5, $7
-	db $0, $0, $5, $9, $8, $1, $7, $3, $5, $0, $2, $6, $8
-	db $0, $0, $6, $c, $8, $2, $8, $4, $3, $1, $3, $7, $3
-	db $0, $0, $7, $6, $b, $3, $9, $8, $7, $8, $4, $8, $a
-	db $0, $0, $8, $9, $b, $4, $a, $6, $8, $3, $5, $9, $b
-	db $0, $0, $9, $c, $b, $5, $b, $7, $6, $4, $6, $a, $6
-	db $0, $0,$f2, $6, $e, $6, $0, $c, $a, $c, $7, $c, $0
-	db $0, $0, $0, $9, $e, $7, $1, $9, $b, $6, $8, $1, $1
-	db $0, $0,$f1, $c, $e, $8, $2, $a, $c, $7, $c, $2, $c
-	db $0, $0,$f0,$10, $e, $c, $c, $b, $9, $b, $9, $b, $9
 
 Function17aba0:
-	ldh a, [rVBK]
-	push af
-	ld a, $1
-	ldh [rVBK], a
 
-	ld hl, vTiles5 tile $00
-	ld de, DialpadGFX
-	lb bc, BANK(DialpadGFX), $80 ; includes first 4 tiles of DialpadCursorGFX
-	call Get2bpp
-
-	pop af
-	ldh [rVBK], a
-
-	ld hl, vTiles0 tile $00
-	ld de, DialpadCursorGFX
-	lb bc, BANK(DialpadCursorGFX), 5
-	call Get2bpp
-
-	ld hl, vTiles0 tile $05
-	ld de, MobileDialingGFX
-	lb bc, BANK(MobileDialingGFX), 4
-	call Get2bpp
 	ret
 
 Function17abcf:
-	ldh a, [rSVBK]
-	push af
-	ld a, BANK(wBGPals1)
-	ldh [rSVBK], a
-
-	ld hl, Palette_17ac55
-	ld de, wBGPals1
-	ld bc, 6 palettes
-	call CopyBytes
-
-	ld hl, Palette_17ac95
-	ld de, wOBPals1
-	ld bc, 8 palettes
-	call CopyBytes
-
-	ld hl, Palette_17b4b5
-	ld de, wOBPals1 palette 1
-	ld bc, 2 palettes
-	call CopyBytes
-
-	ld hl, MapObjectPals palette 1
-	ld de, wOBPals1 palette 3
-	ld bc, 1 palettes
-	ld a, BANK(MapObjectPals)
-	call FarCopyBytes
-
-	pop af
-	ldh [rSVBK], a
+	
 	ret
 
 Function17ac0c:
@@ -805,137 +734,19 @@ Function17ac0c:
 	ret
 
 Function17ac1d:
-	ld hl, DialpadTilemap
-	decoord 0, 4
-	ld bc, (SCREEN_HEIGHT - 4) * SCREEN_WIDTH
-	call CopyBytes
+	
 	ret
 
 Function17ac2a:
-	ld hl, DialpadAttrmap
-	decoord 0, 4, wAttrmap
-	ld bc, (SCREEN_HEIGHT - 4) * SCREEN_WIDTH
-	call CopyBytes
-	hlcoord 0, 4, wAttrmap
-	ld bc, (SCREEN_HEIGHT - 4) * SCREEN_WIDTH
-.loop
-	ld a, [hl]
-	or $8
-	ld [hli], a
-	dec bc
-	ld a, b
-	or c
-	jr nz, .loop
+	
 	ret
 
 Function17ac46:
-	ld a, [$d088]
-	bit 4, a
-	jr nz, .bit_4_set
-	call Textbox
+
 	ret
 
 .bit_4_set
 	call Function3eea
 	ret
 
-Palette_17ac55:
-	RGB  0,  0,  0
-	RGB  9, 10, 25
-	RGB 16, 19, 31
-	RGB 31, 31, 31
 
-	RGB  5, 11,  9
-	RGB  7, 14, 12
-	RGB 17, 24, 22
-	RGB 28, 31, 31
-
-	RGB  0,  0,  0
-	RGB  3,  0, 10
-	RGB  3,  3, 16
-	RGB  6,  8, 25
-
-	RGB  5, 11,  9
-	RGB 28, 31, 31
-	RGB  7, 14, 12
-	RGB 17, 24, 22
-
-	RGB  0,  0,  0
-	RGB  5,  2, 16
-	RGB  8,  8, 26
-	RGB 13,  9, 17
-
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-	RGB  0,  0,  0
-
-Palette_17ac95:
-	RGB 31, 31, 31
-	RGB  4,  3,  3
-	RGB 31, 13,  0
-	RGB 31, 31, 31
-
-	RGB 31, 31, 31
-	RGB  0,  0,  0
-	RGB 31, 31, 31
-	RGB 31, 31, 31
-
-	RGB 31,  0,  0
-	RGB 16,  3,  0
-	RGB 28, 19, 11
-	RGB 31, 31, 31
-
-	RGB 31, 16,  0
-	RGB  9,  6,  4
-	RGB 31, 16,  0
-	RGB 31, 24,  0
-
-	RGB 31, 18,  6
-	RGB  0,  3,  0
-	RGB  0,  9,  0
-	RGB  0, 12,  0
-
-	RGB  0, 16,  0
-	RGB  0, 22,  0
-	RGB  0, 25,  0
-	RGB  0, 27,  0
-
-	RGB  0, 31,  0
-	RGB  3, 31,  0
-	RGB  8, 31,  0
-	RGB 14, 31,  0
-
-	RGB 16, 31,  0
-	RGB 22, 31,  0
-	RGB 27, 31,  0
-	RGB 31, 31,  0
-
-DialpadTilemap:
-INCBIN "gfx/mobile/dialpad.tilemap"
-
-DialpadAttrmap:
-INCBIN "gfx/mobile/dialpad.attrmap"
-
-DialpadGFX:
-INCBIN "gfx/mobile/dialpad.2bpp"
-
-DialpadCursorGFX:
-INCBIN "gfx/mobile/dialpad_cursor.2bpp"
-
-Palette_17b4b5:
-	RGB  2,  6, 10
-	RGB 24, 30, 29
-
-MobileCardListGFX::
-INCBIN "gfx/mobile/card_list.2bpp"

@@ -186,7 +186,7 @@ INCLUDE "engine/events/celebi.asm"
 INCLUDE "engine/menus/main_menu.asm"
 INCLUDE "mobile/mobile_menu.asm"
 INCLUDE "engine/pokemon/search_owned.asm"
-INCLUDE "mobile/mobile_12_2.asm"
+;INCLUDE "mobile/mobile_12_2.asm"
 INCLUDE "engine/events/buena_menu.asm"
 
 
@@ -221,7 +221,7 @@ INCLUDE "engine/movie/evolution_animation.asm"
 INCLUDE "engine/movie/init_hof_credits.asm"
 INCLUDE "engine/events/battle_tower/get_trainer_class.asm"
 INCLUDE "engine/battle/sliding_intro.asm"
-INCLUDE "mobile/print_opp_message.asm"
+;INCLUDE "mobile/print_opp_message.asm"
 INCLUDE "engine/battle/check_battle_scene.asm"
 INCLUDE "engine/movie/gbc_only.asm"
 INCLUDE "engine/events/poke_seer.asm"
@@ -672,10 +672,6 @@ SECTION "Battle Tower Trainer Data", ROMX
 
 INCLUDE "data/battle_tower/unknown.asm"
 
-
-SECTION "Mobile News Data", ROMX
-
-INCLUDE "mobile/news/news.asm"
 
 
 SECTION "Crystal Events", ROMX

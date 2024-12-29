@@ -1217,65 +1217,6 @@ _TheBoxIsFullText:: ; unreferenced
 	text "The BOX is full!"
 	done
 
-; Mobile Adapter
-
-_NewCardArrivedText::
-	text "A new CARD arrived"
-	line "from @"
-	text_ram wStringBuffer2
-	text "."
-	done
-
-_PutCardInCardFolderText::
-	text "Put this CARD in"
-	line "the CARD FOLDER?"
-	done
-
-_CardWasListedText::
-	text_ram wStringBuffer2
-	text "'s CARD was"
-	line "listed as no.@"
-	text_decimal wStringBuffer1, 1, 2
-	text "."
-	prompt
-
-_StartingLinkText::
-	text "Starting link."
-	done
-
-_LinkTerminatedText::
-	text "Link terminated."
-	done
-
-_ClosingLinkText::
-	text "Closing link."
-	done
-
-_ClearTimeLimitText:: ; unreferenced
-	text "Clear the time"
-	line "limit?"
-	done
-
-_TimeLimitWasClearedText:: ; unreferenced
-	text "The time limit was"
-	line "cleared."
-	done
-
-_PickErrorPacketText:: ; unreferenced
-	text "Pick which packet"
-	line "as an error?"
-	done
-
-_TradingMonForOTMonText::
-	text "Trading @"
-	text_ram wStringBuffer2
-	text_start
-	line "for @"
-	text_ram wStringBuffer1
-	text "…"
-	done
-
-; Mobile Adapter End
 
 _ObtainedTheVoltorbBadgeText:: ; unreferenced
 	text "Obtained the"

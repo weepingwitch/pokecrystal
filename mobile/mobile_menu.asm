@@ -1,40 +1,9 @@
 MainMenu_Mobile:
-	call ClearBGPalettes
-	ld a, MUSIC_MOBILE_ADAPTER_MENU
-	ld [wMapMusic], a
-	ld de, MUSIC_MOBILE_ADAPTER_MENU
-	call Function4a6c5
+	ret
 Function49f0a:
-	call ClearBGPalettes
-	call Function4a3a7
-	call Function4a492
-	call ClearBGPalettes
+	ret
 Function49f16:
-	call MobileMenu_InitMenuBuffers
-	ld c, 12
-	call DelayFrames
-	hlcoord 4, 0
-	ld b, 10
-	ld c, 10
-	call Function48cdc
-	hlcoord 6, 2
-	ld de, MobileString1
-	call PlaceString
-	hlcoord 0, 12
-	ld b, 4
-	ld c, SCREEN_HEIGHT
-	call Textbox
-	xor a
-	ld de, String_0x49fe9
-	hlcoord 1, 14
-	call PlaceString
-	call WaitBGMap2
-	call SetDefaultBGPAndOBP
-	call StaticMenuJoypad
-	ld hl, wMenuCursorY
-	ld b, [hl]
-	push bc
-	jr .check_buttons
+	ret
 
 .joy_loop
 	call ScrollingMenuJoypad
@@ -173,30 +142,7 @@ Function4a0b9:
 	jp Function4a4c4
 
 Function4a0c2:
-	ld a, 2
-	call MenuClickSound
-	ld a, BANK(sPlayerData)
-	call OpenSRAM
-	ld hl, sPlayerData + wPlayerName - wPlayerData
-	ld de, wPlayerName
-	ld bc, NAME_LENGTH_JAPANESE
-	call CopyBytes
-	call CloseSRAM
-	farcall _LoadData
-	ld c, 2
-	call DelayFrames
-	ld c, $1
-	call InitMobileProfile
-	push af
-	call ClearBGPalettes
-	pop af
-	and a
-	jr nz, .skip_save
-	farcall _SaveData
-.skip_save
-	ld c, 5
-	call DelayFrames
-	jr asm_4a111
+	ret
 
 Function4a100:
 	ld a, 2
@@ -212,117 +158,21 @@ asm_4a111:
 	jp Function49f0a
 
 Function4a118:
-	ld hl, w2DMenuCursorInitY
-	ld a, $1
-	ld [hli], a
-	ld a, $d
-	ld [hli], a
-	ld a, $3
-	ld [hli], a
-	ld a, $1
-	ld [hli], a
-	ld [hl], $0
-	set 5, [hl]
-	inc hl
-	xor a
-	ld [hli], a
-	ld a, $20
-	ld [hli], a
-	ld a, $1
-	add $2
-	ld [hli], a
-	ld a, $1
-	ld [hli], a
-	ld [hli], a
+	
 	ret
 
 Function4a13b:
-	call Function4a3a7
-	call Function4a492
-	call Function4a373
-	ld c, 10
-	call DelayFrames
+	ret
 
 Function4a149:
-	hlcoord 1, 2
-	ld b, $6
-	ld c, $10
-	call Function48cdc
-	hlcoord 3, 4
-	ld de, String_4a1ef
-	call PlaceString
-	hlcoord 0, 12
-	ld b, $4
-	ld c, $12
-	call Textbox
-	ld a, [wMenuCursorY]
-	dec a
-	ld hl, Strings_4a23d
-	call GetNthString
-	ld d, h
-	ld e, l
-	hlcoord 1, 13
-	ld b, $4
-	ld c, $12
-	call ClearBox
-	hlcoord 1, 14
-	call PlaceString
-	farcall Mobile_HDMATransferTilemapAndAttrmap_Menu
-	call SetDefaultBGPAndOBP
-	call StaticMenuJoypad
-	ld hl, wMenuCursorY
-	ld b, [hl]
-	push bc
-	jr asm_4a19d
+	ret
 
 Function4a195:
-	call ScrollingMenuJoypad
-	ld hl, wMenuCursorY
-	ld b, [hl]
-	push bc
+	ret
 
 asm_4a19d:
 	bit 0, a
-	jr nz, .asm_4a1a7
-	bit 1, a
-	jr nz, .asm_4a1ba
-	jr .asm_4a1bc
-.asm_4a1a7
-	ld hl, wMenuCursorY
-	ld a, [hl]
-	cp $1
-	jp z, Function4a20e
-	cp $2
-	jp z, Function4a221
-	ld a, $1
-	call MenuClickSound
-.asm_4a1ba
-	pop bc
 	ret
-.asm_4a1bc
-	ld hl, wMenuCursorY
-	ld a, [hl]
-	dec a
-	ld hl, Strings_4a23d
-	call GetNthString
-	ld d, h
-	ld e, l
-	hlcoord 1, 13
-	ld b, $4
-	ld c, $12
-	call ClearBox
-	hlcoord 1, 14
-	call PlaceString
-	jr .asm_4a1db
-.asm_4a1db
-	call Function4a373
-	pop bc
-	ld hl, wMenuCursorY
-	ld [hl], b
-	lb bc, 6, 1
-	hlcoord 2, 3
-	call ClearBox
-	jp Function4a195
 
 String_4a1ef:
 	db   "モバイルセンター<WO>えらぶ"
@@ -366,80 +216,7 @@ Strings_4a23d:
 	db   "@"
 
 Function4a28a:
-	hlcoord 2, 3
-	lb bc, 6, 1
-	ld a, " "
-	call Function4a6d8
-	call PlaceHollowCursor
-	call WaitBGMap
-	call LoadStandardMenuHeader
-	ld a, $5
-	call OpenSRAM
-	ld a, [$aa4b]
-	call CloseSRAM
-	and a
-	jr z, .asm_4a2df
-	hlcoord 12, 0
-	ld b, $5
-	ld c, $6
-	call Function48cdc
-	hlcoord 14, 1
-	ld de, String_4a34b
-	call PlaceString
-	farcall Mobile_HDMATransferTilemapAndAttrmap_Menu
-	call Function4a118
-	call ScrollingMenuJoypad
-	push af
-	call PlayClickSFX
-	pop af
-	bit B_BUTTON_F, a
-	jr nz, .quit
-	ld a, [wMenuCursorY]
-	cp $2
-	jr z, .DeleteLoginPassword
-	cp $3
-	jr z, .quit
-.asm_4a2df
-	farcall Function11765d
-	call ClearBGPalettes
-	call Call_ExitMenu
-	call LoadFontsExtra
-	scf
-	ret
-
-.DeleteLoginPassword:
-	call PlaceHollowCursor
-	ld hl, DeleteSavedLoginPasswordText
-	call PrintText
-	hlcoord 14, 7
-	ld b, 3
-	ld c, 4
-	call Textbox
-	farcall Mobile_HDMATransferTilemapAndAttrmap_Menu
-	ld hl, DeletePassword_YesNo_MenuHeader
-	call LoadMenuHeader
-	call VerticalMenu
-	bit B_BUTTON_F, a
-	jr nz, .dont_delete_password
-	ld a, [wMenuCursorY]
-	cp $2
-	jr z, .dont_delete_password
-	ld a, BANK(sMobileLoginPassword)
-	call OpenSRAM
-	ld hl, sMobileLoginPassword
-	xor a
-	ld bc, MOBILE_LOGIN_PASSWORD_LENGTH
-	call ByteFill
-	call CloseSRAM
-	ld hl, DeletedTheLoginPasswordText
-	call PrintText
-	call JoyWaitAorB
-.dont_delete_password
-	call ExitMenu
-.quit
-	call Call_ExitMenu
-	farcall Mobile_HDMATransferTilemapAndAttrmap_Menu
-	xor a
+	
 	ret
 
 MenuHeader_0x4a346: ; unreferenced
@@ -632,56 +409,7 @@ MainMenu_MobileStudium:
 	ret
 
 Function4a4c4:
-	call ClearBGPalettes
-	call Function4a3a7
-	call Function4a492
-	call Function4a680
-	call ClearBGPalettes
-	ld c, 20
-	call DelayFrames
-	hlcoord 2, 0
-	ld b, $a
-	ld c, $e
-	call Function48cdc
-	hlcoord 4, 2
-	ld de, String_4a5c5
-	call PlaceString
-	hlcoord 4, 4
-	ld de, String_4a5cd
-	call PlaceString
-	hlcoord 4, 6
-	ld de, String_4a5da
-	call PlaceString
-	hlcoord 4, 8
-	ld de, String_4a5e6
-	call PlaceString
-	hlcoord 4, 10
-	ld de, String_4a5f2
-	call PlaceString
-	hlcoord 0, 12
-	ld b, $4
-	ld c, $12
-	call Textbox
-	xor a
-	ld hl, Strings_4a5f6
-	ld d, h
-	ld e, l
-	hlcoord 1, 14
-	call PlaceString
-	ld a, $1
-	ld hl, Strings_4a5f6
-	call GetNthString
-	ld d, h
-	ld e, l
-	hlcoord 1, 16
-	call PlaceString
-	call WaitBGMap2
-	call SetDefaultBGPAndOBP
-	call StaticMenuJoypad
-	ld hl, wMenuCursorY
-	ld b, [hl]
-	push bc
-	jr asm_4a54d
+	ret
 
 Function4a545:
 	call ScrollingMenuJoypad
@@ -805,16 +533,7 @@ Function4a680:
 	ret
 
 Function4a6ab:
-	ld a, $2
-	call MenuClickSound
-	call ClearBGPalettes
-	ld b, SCGB_DIPLOMA
-	call GetSGBLayout
-	farcall Function11c1ab
-	pop bc
-	call LoadFontsExtra
-	jp Function4a4c4
-
+	ret
 Function4a6c5:
 	ld a, $5
 	ld [wMusicFade], a
@@ -827,18 +546,7 @@ Function4a6c5:
 	ret
 
 Function4a6d8:
-	push bc
-	push hl
-.asm_4a6da
-	ld [hli], a
-	dec c
-	jr nz, .asm_4a6da
-	pop hl
-	ld bc, SCREEN_WIDTH
-	add hl, bc
-	pop bc
-	dec b
-	jr nz, Function4a6d8
+	
 	ret
 
 if DEF(_DEBUG)

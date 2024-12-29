@@ -18,6 +18,9 @@ INCLUDE "data/events/special_pointers.asm"
 UnusedDummySpecial:
 	ret
 
+UnusedDummySpecial2:
+	ret
+
 SetPlayerPalette:
 	ld a, [wScriptVar]
 	ld d, a
@@ -93,7 +96,7 @@ NameRival:
 	ret
 
 .DefaultName:
-	db "SILVER@"
+	db "THIEF@"
 
 NameRater:
 	farcall _NameRater

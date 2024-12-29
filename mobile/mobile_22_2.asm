@@ -558,46 +558,15 @@ Function8b664:
 	ret
 
 Function8b677:
-	call ClearBGPalettes
-	call DisableLCD
-	call Function8b690
-	call Function8b6bb
-	call Function8b6ed
-	call EnableLCD
-	call Function891ab
-	call SetDefaultBGPAndOBP
+	
 	ret
 
 Function8b690:
-	ld hl, MobileCardListGFX
-	ld de, vTiles2
-	ld bc, $16 tiles
-	ld a, BANK(MobileCardListGFX)
-	call FarCopyBytes
-	ld hl, MobileCardListGFX tile $15
-	ld de, vTiles2 tile $61
-	ld bc, 1 tiles
-	ld a, BANK(MobileCardListGFX)
-	call FarCopyBytes
-	ld hl, MobileCardListGFX tile $16
-	ld de, vTiles0 tile $ee
-	ld bc, 1 tiles
-	ld a, BANK(MobileCardListGFX)
-	call FarCopyBytes
+
 	ret
 
 Function8b6bb:
-	ldh a, [rSVBK]
-	push af
-	ld a, $5
-	ldh [rSVBK], a
-	ld hl, Palette_8b6d5
-	ld de, wBGPals1
-	ld bc, 3 palettes
-	call CopyBytes
-	pop af
-	ldh [rSVBK], a
-	call Function8949c
+	
 	ret
 
 Palette_8b6d5:

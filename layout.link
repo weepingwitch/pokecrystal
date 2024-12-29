@@ -111,7 +111,7 @@ ROMX $23
 ROMX $24
 	"bank24"
 ROMX $25
-	"Events"
+	"Maps"
 ROMX $26
 	"Map Scripts 11"
 ROMX $27
@@ -303,14 +303,14 @@ ROMX $77
 	"Pokégear GFX"
 	"European Mail"
 ROMX $78
-	"Maps"
+	
 	"Tileset Data 8"
 ROMX $7b
 	"Battle Tower Text"
 ROMX $7c
 	"Battle Tower Trainer Data"
 ROMX $7d
-	"Mobile News Data"
+	"Events"
 ROMX $7e
 	"Crystal Events"
 ROMX $7f

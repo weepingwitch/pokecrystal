@@ -1717,8 +1717,7 @@ Function89b28:
 	ret
 
 Function89b3b:
-	call Mobile22_SetBGMapMode0
-	farcall Function48cda
+	
 	ret
 
 Function89b45:

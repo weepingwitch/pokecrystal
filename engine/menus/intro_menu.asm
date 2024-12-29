@@ -83,14 +83,10 @@ NewGame:
 	jp FinishContinueFunction
 
 PlayerProfileSetup:
-	farcall CheckMobileAdapterStatus
-	jr c, .ok
+	
 	farcall InitGender
 	ret
-.ok
-	ld c, 0
-	farcall InitMobileProfile
-	ret
+
 
 if DEF(_DEBUG)
 DebugRoom: ; unreferenced
@@ -303,7 +299,7 @@ InitializeNPCNames:
 	call CopyBytes
 	ret
 
-.Rival:  db "???@"
+.Rival:  db "THIEF@"
 .Red:    db "RED@"
 .Green:  db "GREEN@"
 .Mom:    db "MOM@"
@@ -819,9 +815,9 @@ NamePlayer:
 	ret
 
 .Chris:
-	db "CHRIS@@@@@@"
+	db "willow@@@@@"
 .Kris:
-	db "KRIS@@@@@@@"
+	db "willow@@@@@"
 
 GSShowPlayerNamingChoices: ; unreferenced
 	call LoadMenuHeader

@@ -1,327 +1,26 @@
 MobileCheckOwnMonAnywhere:
-; Like CheckOwnMonAnywhere, but only checks for species.
-; OT/ID don't matter.
 
-; inputs:
-; [wScriptVar] should contain the species we're looking for.
-
-; outputs:
-; sets carry if monster matches species.
-
-	; If there are no monsters in the party,
-	; the player must not own any yet.
-
-	ld a, [wPartyCount]
-	and a
-	ret z
-
-	ld d, a
-	ld e, 0
-	ld hl, wPartyMon1Species
-	ld bc, wPartyMonOTs
-
-	; Run .CheckMatch on each Pokémon in the party.
-
-.partymon
-	call .CheckMatch
-	ret c
-
-	push bc
-	ld bc, PARTYMON_STRUCT_LENGTH
-	add hl, bc
-	pop bc
-	call .AdvanceOTName
-	dec d
-	jr nz, .partymon
-
-	; Run .CheckMatch on each Pokémon in the PC.
-
-	ld a, BANK(sBoxCount)
-	call OpenSRAM
-	ld a, [sBoxCount]
-	and a
-	jr z, .boxes
-
-	ld d, a
-	ld hl, sBoxMon1Species
-	ld bc, sBoxMonOTs
-.openboxmon
-	call .CheckMatch
-	jr nc, .loop
-
-	call CloseSRAM
-	ret
-
-.loop
-	push bc
-	ld bc, BOXMON_STRUCT_LENGTH
-	add hl, bc
-	pop bc
-	call .AdvanceOTName
-	dec d
-	jr nz, .openboxmon
-
-	; Run .CheckMatch on each monster in the other 13 PC boxes.
-
-.boxes
-	call CloseSRAM
-
-	ld c, 0
-.box
-	; Don't search the current box again.
-	ld a, [wCurBox]
-	and $f
-	cp c
-	jr z, .loopbox
-
-	; Load the box.
-
-	ld hl, .BoxAddresses
-	ld b, 0
-	add hl, bc
-	add hl, bc
-	add hl, bc
-	ld a, [hli]
-	call OpenSRAM
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
-
-	; Number of monsters in the box
-
-	ld a, [hl]
-	and a
-	jr z, .loopbox
-
-	push bc
-
-	push hl
-	ld de, sBoxMons - sBoxCount
-	add hl, de
-	ld d, h
-	ld e, l
-	pop hl
-	push de
-	ld de, sBoxMonOTs - sBoxCount
-	add hl, de
-	ld b, h
-	ld c, l
-	pop hl
-
-	ld d, a
-
-.boxmon
-	call .CheckMatch
-	jr nc, .loopboxmon
-
-	pop bc
-	call CloseSRAM
-	ret
-
-.loopboxmon
-	push bc
-	ld bc, BOXMON_STRUCT_LENGTH
-	add hl, bc
-	pop bc
-	call .AdvanceOTName
-	dec d
-	jr nz, .boxmon
-	pop bc
-
-.loopbox
-	inc c
-	ld a, c
-	cp NUM_BOXES
-	jr c, .box
-
-	call CloseSRAM
-	and a
-	ret
-
-.CheckMatch:
-	; Check if a Pokémon is of a specific species.
-	; We compare the species we are looking for in
-	; [wScriptVar] to the species we have in [hl].
-	; Sets carry flag if species matches.
-
-	push bc
-	push hl
-	push de
-	ld d, b
-	ld e, c
-
-	; check species
-
-	ld a, [wScriptVar]
-	ld b, [hl]
-	cp b
-	jr nz, .no_match
-	jr .match
-
-.no_match
-	pop de
-	pop hl
-	pop bc
-	and a
-	ret
-
-.match
-	pop de
-	pop hl
-	pop bc
-	scf
-	ret
-
-.BoxAddresses:
-	table_width 3, MobileCheckOwnMonAnywhere.BoxAddresses
-for n, 1, NUM_BOXES + 1
-	dba sBox{d:n}
-endr
-	assert_table_length NUM_BOXES
-
-.AdvanceOTName:
-	push hl
-	ld hl, NAME_LENGTH
-	add hl, bc
-	ld b, h
-	ld c, l
-	pop hl
 	ret
 
 UnusedFindItemInPCOrBag:
-	ld a, [wScriptVar]
-	ld [wCurItem], a
-	ld hl, wNumPCItems
-	call CheckItem
-	jr c, .found
-
-	ld a, [wScriptVar]
-	ld [wCurItem], a
-	ld hl, wNumItems
-	call CheckItem
-	jr c, .found
-
-	xor a
-	ld [wScriptVar], a
-	ret
-
-.found
-	ld a, 1
-	ld [wScriptVar], a
+	
 	ret
 
 Function4a94e:
-	call FadeToMenu
-	ld a, -1
-	ld hl, wd002
-	ld bc, 3
-	call ByteFill
-	xor a
-	ld [wd018], a
-	ld [wd019], a
-	ld b, SCGB_PACKPALS
-	call GetSGBLayout
-	call SetDefaultBGPAndOBP
-	call Function4aa22
-	jr c, .asm_4a985
-	jr z, .asm_4a9a1
-	jr .asm_4a97b
-
-.asm_4a974
-	call Function4aa25
-	jr c, .asm_4a985
-	jr z, .asm_4a9a1
-
-.asm_4a97b
-	call Function4ac58
-	ld hl, wd019
-	res 1, [hl]
-	jr .asm_4a974
-
-.asm_4a985
-	ld a, [wd018]
-	and a
-	jr nz, .asm_4a990
-	call Function4aba8
-	jr c, .asm_4a974
-
-.asm_4a990
-	call CloseSubmenu
-	ld hl, wd002
-	ld a, -1
-	ld bc, 3
-	call ByteFill
-	scf
-	jr .asm_4a9af
-
-.asm_4a9a1
-	call Function4a9c3
-	jr c, .asm_4a9b0
-	call Function4a9d7
-	jr c, .asm_4a974
-	call CloseSubmenu
-	and a
-
-.asm_4a9af
 	ret
-
-.asm_4a9b0
-	ld de, SFX_WRONG
-	call PlaySFX
-	ld hl, MobilePickThreeMonForBattleText
-	call PrintText
-	jr .asm_4a974
 
 MobilePickThreeMonForBattleText:
 	text_far _MobilePickThreeMonForBattleText
 	text_end
 
 Function4a9c3:
-	ld hl, wd002
-	ld a, $ff
-	cp [hl]
-	jr z, .asm_4a9d5
-	inc hl
-	cp [hl]
-	jr z, .asm_4a9d5
-	inc hl
-	cp [hl]
-	jr z, .asm_4a9d5
-	and a
+	
 	ret
 
-.asm_4a9d5
-	scf
-	ret
+
 
 Function4a9d7:
-	ld a, [wd002]
-	ld hl, wPartyMonNicknames
-	call GetNickname
-	ld h, d
-	ld l, e
-	ld de, wMobileParticipant1Nickname
-	ld bc, NAME_LENGTH_JAPANESE
-	call CopyBytes
-	ld a, [wd003]
-	ld hl, wPartyMonNicknames
-	call GetNickname
-	ld h, d
-	ld l, e
-	ld de, wMobileParticipant2Nickname
-	ld bc, NAME_LENGTH_JAPANESE
-	call CopyBytes
-	ld a, [wd004]
-	ld hl, wPartyMonNicknames
-	call GetNickname
-	ld h, d
-	ld l, e
-	ld de, wMobileParticipant3Nickname
-	ld bc, NAME_LENGTH_JAPANESE
-	call CopyBytes
-	ld hl, MobileUseTheseThreeMonText
-	call PrintText
-	call YesNoBox
+	
 	ret
 
 MobileUseTheseThreeMonText:
@@ -337,40 +36,11 @@ Function4aa25:
 	call Function4aad3
 
 Function4aa34:
-	ld a, PARTYMENUACTION_MOBILE
-	ld [wPartyMenuActionText], a
-	farcall WritePartyMenuTilemap
-	xor a
-	ld [wPartyMenuActionText], a
-	farcall PlacePartyMenuText
-	call Function4aab6
-	call WaitBGMap
-	call SetDefaultBGPAndOBP
-	call DelayFrame
-	call Function4ab1a
-	jr z, .asm_4aa66
-	push af
-	call Function4aafb
-	jr c, .asm_4aa67
-	call Function4ab06
-	jr c, .asm_4aa67
-	pop af
-
-.asm_4aa66
-	ret
-
-.asm_4aa67
-	ld hl, wd019
-	set 1, [hl]
-	pop af
+	
 	ret
 
 Function4aa6e: ; unreferenced
-	pop af
-	ld de, SFX_WRONG
-	call PlaySFX
-	call WaitSFX
-	jr Function4aa34
+	ret
 
 Function4aa7a:
 	ld hl, wd002
@@ -427,24 +97,7 @@ Function4aa7a:
 	ret
 
 Function4aab6:
-	ld hl, wd002
-	ld d, $3
-.loop
-	ld a, [hli]
-	cp -1
-	jr z, .done
-	push de
-	push hl
-	hlcoord 0, 1
-	ld bc, $28
-	call AddNTimes
-	ld [hl], $ec
-	pop hl
-	pop de
-	dec d
-	jr nz, .loop
-
-.done
+	
 	ret
 
 Function4aad3:

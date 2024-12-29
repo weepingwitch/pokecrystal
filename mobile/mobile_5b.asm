@@ -155,441 +155,59 @@ Function16c0fa:
 	ret
 
 MobileSystemSplashScreen_InitGFX:
-	call DisableLCD
-	ld hl, vTiles2
-	ld de, .Tiles
-	lb bc, BANK(.Tiles), 104
-	call Get2bpp
-	call .LoadPals
-	call .LoadTilemap
-	call .LoadAttrmap
-	hlbgcoord 0, 0
-	call Function16cc73
-	call Function16cc02
-	xor a
-	ldh [hBGMapMode], a
-	call EnableLCD
 	ret
 
-.LoadPals:
-	ld de, wBGPals1
-	ld hl, MobileSplashScreenPalettes
-	ld bc, 8
-	ld a, $5
-	call FarCopyWRAM
-	farcall ApplyPals
-	ret
-
-.LoadTilemap:
-	hlcoord 0, 0
-	ld bc, 20
-	xor a
-	call ByteFill
-	ld hl, .Tilemap
-	decoord 0, 1
-	ld bc, $0154
-	call CopyBytes
-	ret
-
-.LoadAttrmap:
-	hlcoord 0, 0, wAttrmap
-	ld bc, SCREEN_WIDTH
-	xor a
-	call ByteFill
-	ld hl, .Attrmap
-	decoord 0, 1, wAttrmap
-	ld bc, 17 * SCREEN_WIDTH
-	call CopyBytes
-	ret
-
-.Tiles:
-INCBIN "gfx/mobile/mobile_splash.2bpp"
-
-.Tilemap:
-INCBIN "gfx/mobile/mobile_splash.tilemap"
-
-.Attrmap:
-INCBIN "gfx/mobile/mobile_splash.attrmap"
-
-MobileSplashScreenPalettes:
-INCLUDE "gfx/mobile/mobile_splash.pal"
 
 Function16c943:
-	ld a, [wd003]
-	and a
-	jr nz, .asm_16c95e
-	ldh a, [rSVBK]
-	push af
-	ld a, $5
-	ldh [rSVBK], a
-	ld a, $ff
-	ld bc, 1 palettes
-	ld hl, wBGPals1
-	call ByteFill
-	pop af
-	ldh [rSVBK], a
 
-.asm_16c95e
-	ldh a, [rSVBK]
-	push af
-	ld a, $5
-	ldh [rSVBK], a
-	ld e, $0
-	ld a, $0
-.asm_16c969
-	ld hl, MobileSplashScreenPalettes
-	call Function16cab6
-	call Function16cabb
-	ld d, a
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cabb
-	cp d
-	jr z, .asm_16c991
-	ld b, $1
-.asm_16c981
-	dec a
-	cp d
-	jr z, .asm_16c988
-	dec b
-	jr nz, .asm_16c981
-
-.asm_16c988
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cadc
-
-.asm_16c991
-	ld hl, MobileSplashScreenPalettes
-	call Function16cab6
-	call Function16cad8
-	ld d, a
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cad8
-	cp d
-	jr z, .asm_16c9b9
-	ld b, $1
-.asm_16c9a9
-	dec a
-	cp d
-	jr z, .asm_16c9b0
-	dec b
-	jr nz, .asm_16c9a9
-
-.asm_16c9b0
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cb08
-
-.asm_16c9b9
-	ld hl, MobileSplashScreenPalettes
-	call Function16cab6
-	call Function16cac4
-	ld d, a
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cac4
-	cp d
-	jr z, .asm_16c9e1
-	ld b, $1
-.asm_16c9d1
-	dec a
-	cp d
-	jr z, .asm_16c9d8
-	dec b
-	jr nz, .asm_16c9d1
-
-.asm_16c9d8
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cae8
-
-.asm_16c9e1
-	inc e
-	inc e
-	ld a, e
-	cp $8
-	jr nz, .asm_16c969
-	farcall ApplyPals
-	call SetDefaultBGPAndOBP
-	ldh a, [rSVBK]
-	push af
-	ld a, $1
-	ldh [rSVBK], a
-	ld a, [wd003]
-	cp $1f
-	jr z, .asm_16ca09
-	pop af
-	ldh [rSVBK], a
-	ld e, $0
-	pop af
-	ldh [rSVBK], a
-	and a
-	ret
-
-.asm_16ca09
-	pop af
-	ldh [rSVBK], a
-	pop af
-	ldh [rSVBK], a
-	scf
 	ret
 
 Function16ca11:
-	ld a, [wd003]
-	and a
-	jr nz, .asm_16ca1d
-	farcall ApplyPals
-
-.asm_16ca1d
-	ldh a, [rSVBK]
-	push af
-	ld a, $5
-	ldh [rSVBK], a
-	ld e, $0
-	ld a, $0
-.asm_16ca28
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cabb
-	cp $1f
-	jr z, .asm_16ca48
-	ld b, $1
-.asm_16ca37
-	inc a
-	cp $1f
-	jr z, .asm_16ca3f
-	dec b
-	jr nz, .asm_16ca37
-
-.asm_16ca3f
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cadc
-
-.asm_16ca48
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cad8
-	cp $1f
-	jr z, .asm_16ca68
-	ld b, $1
-.asm_16ca57
-	inc a
-	cp $1f
-	jr z, .asm_16ca5f
-	dec b
-	jr nz, .asm_16ca57
-
-.asm_16ca5f
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cb08
-
-.asm_16ca68
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cac4
-	cp $1f
-	jr z, .asm_16ca88
-	ld b, $1
-.asm_16ca77
-	inc a
-	cp $1f
-	jr z, .asm_16ca7f
-	dec b
-	jr nz, .asm_16ca77
-
-.asm_16ca7f
-	ld hl, wBGPals1
-	call Function16cab6
-	call Function16cae8
-
-.asm_16ca88
-	inc e
-	inc e
-	ld a, e
-	cp $8
-	jr nz, .asm_16ca28
-	farcall ApplyPals
-	call SetDefaultBGPAndOBP
-	ldh a, [rSVBK]
-	push af
-	ld a, $1
-	ldh [rSVBK], a
-	ld a, [wd003]
-	cp $1f
-	jr z, .asm_16caae
-	pop af
-	ldh [rSVBK], a
-	pop af
-	ldh [rSVBK], a
-	and a
-	ret
-
-.asm_16caae
-	pop af
-	ldh [rSVBK], a
-	pop af
-	ldh [rSVBK], a
-	scf
+	
 	ret
 
 Function16cab6:
-	ld b, $0
-	ld c, e
-	add hl, bc
+	
 	ret
 
 Function16cabb:
-	inc hl
-	ld a, [hl]
-	srl a
-	srl a
-	and $1f
+	
 	ret
 
 Function16cac4:
-	inc hl
-	ld a, [hld]
-	and $3
-	ld b, a
-	ld a, [hl]
-	sla a
-	rl b
-	sla a
-	rl b
-	sla a
-	rl b
-	ld a, b
+	
 	ret
 
 Function16cad8:
-	ld a, [hl]
-	and $1f
+	
 	ret
 
 Function16cadc:
-	sla a
-	sla a
-	ld b, a
-	inc hl
-	ld a, [hl]
-	and $83
-	or b
-	ld [hl], a
+	
 	ret
 
 Function16cae8:
-	ld c, a
-	srl a
-	srl a
-	srl a
-	ld b, a
-	inc hl
-	ld a, [hl]
-	and $fc
-	or b
-	ld [hld], a
-	ld a, c
-	sla a
-	sla a
-	sla a
-	sla a
-	sla a
-	ld b, a
-	ld a, [hl]
-	and $1f
-	or b
-	ld [hl], a
+	
 	ret
 
 Function16cb08:
-	ld b, a
-	ld a, [hl]
-	and $e0
-	or b
-	ld [hl], a
+	
 	ret
 
 Function16cb0f:
-	xor a
-	ld [wd1ea], a
-	ld [wd1eb], a
-	xor a
-	ld [wd1ec], a
-	ld a, $70
-	ld [wd1ee], a
-	ld a, $4
-	ld [wd1ed], a
-	ld a, $a0
-	ld [wd1ef], a
-	xor a
-	ld [wd1f0], a
+	
 	ret
 
 Function16cb2e:
-	ld a, [wd1eb]
-	and a
-	ret z
-	call Function16cb40
-	ld hl, Unknown_16cb86
-	ld de, wShadowOAM
-	call Function16cb5d
+	
 	ret
 
 Function16cb40:
-	ld hl, wd1ec
-	inc [hl]
-	ld a, [hl]
-	cp $18
-	ret c
-	xor a
-	ld [hl], a
-	ld a, [wd1ef]
-	cp $a0
-	jr nz, .asm_16cb57
-	ld a, $a7
-	ld [wd1ef], a
-	ret
-
-.asm_16cb57
-	ld a, $a0
-	ld [wd1ef], a
+	
 	ret
 
 Function16cb5d:
-	ld a, [hli]
-	and a
-	ret z
-.asm_16cb60
-	push af
-	ld a, [wd1ee]
-	add [hl]
-	add $10
-	ld [de], a
-	inc hl
-	inc de
-	ld a, [wd1ed]
-	add [hl]
-	add $8
-	ld [de], a
-	inc hl
-	inc de
-	ld a, [wd1ef]
-	add [hl]
-	ld [de], a
-	inc hl
-	inc de
-	ld a, [wd1f0]
-	or [hl]
-	ld [de], a
-	inc hl
-	inc de
-	pop af
-	dec a
-	jr nz, .asm_16cb60
+	
 	ret
 
 Unknown_16cb86:
@@ -603,10 +221,7 @@ Unknown_16cb86:
 	db 16, 16, 6, 0
 
 Function16cba3:
-	xor a
-	ld [wd1f1], a
-	ld [wd1f2], a
-	ld [wd1f3], a
+	
 	ret
 
 Function16cbae:

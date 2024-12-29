@@ -178,7 +178,7 @@ SpecialsPointers::
 	add_special Function10387b
 	add_special AskRememberPassword
 	add_special LoadMapPalettes
-	add_special UnusedFindItemInPCOrBag
+	add_special UnusedDummySpecial2 ; unused
 
 	add_special InitialSetDSTFlag
 	add_special InitialClearDSTFlag

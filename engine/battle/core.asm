@@ -2394,11 +2394,7 @@ WinTrainerBattle:
 	jp .give_money
 
 .mobile
-	call BattleWinSlideInEnemyTrainerFrontpic
-	ld c, 40
-	;call delayframes
-	ld c, $4 ; win
-	farcall Mobile_PrintOpponentBattleMessage
+	
 	ret
 
 .battle_tower
@@ -2997,17 +2993,7 @@ LostBattle:
 
 .mobile
 ; Remove the enemy from the screen.
-	hlcoord 0, 0
-	lb bc, 8, 21
-	call ClearBox
-	call BattleWinSlideInEnemyTrainerFrontpic
-
-	ld c, 40
-	;call delayframes
-
-	ld c, $3 ; lost
-	farcall Mobile_PrintOpponentBattleMessage
-	scf
+	
 	ret
 
 EnemyMonFaintedAnimation:
@@ -9068,6 +9054,6 @@ BattleStartMessage:
 	ret nz
 
 	ld c, $2 ; start
-	farcall Mobile_PrintOpponentBattleMessage
+	;farcall Mobile_PrintOpponentBattleMessage
 
 	ret
