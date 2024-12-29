@@ -925,7 +925,7 @@ TextCommand_PAUSE::
 	ldh a, [hJoyDown]
 	and A_BUTTON | B_BUTTON
 	jr nz, .done
-	ld c, 20
+	ld c, 10
 	call DelayFrames
 .done
 	pop bc

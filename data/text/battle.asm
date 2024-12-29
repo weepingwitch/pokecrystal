@@ -187,8 +187,7 @@ SentSomeToMomText:
 	text "<PLAYER> got ¥@"
 	text_decimal wBattleReward, 3, 6
 	text_start
-	line "for winning!"
-	scroll "Sent some to MOM!"
+	line "Sent some to MOM!"
 	prompt
 
 SentHalfToMomText:
@@ -227,8 +226,7 @@ LostAgainstText:
 	prompt
 
 BattleText_EnemyIsAboutToUseWillPlayerChangeMon:
-	text "<ENEMY>"
-	line "is about to use"
+	text "They're gonna use"
 	scroll "@"
 	text_ram wEnemyMonNickname
 	text "."
@@ -260,8 +258,7 @@ BattleText_CantEscape2:
 
 BattleText_TheresNoEscapeFromTrainerBattle:
 	text "No! There's no"
-	line "running from a"
-	scroll "trainer battle!"
+	line "running here!"
 	prompt
 
 BattleText_GotAwaySafely:

@@ -299,10 +299,10 @@ ChooseWildEncounter:
 	cp BATTLETYPE_SUICUNE
 	jr z, .ok
 	call Random
-	cp 25 percent
-	jr c, .contasusual
-	cp 54 percent
+	cp 50 percent
 	jr c, .doubleit
+	cp 74 percent
+	jr c, .contasusual
 .dontdouble ; add current gym badges to level
 	ld a, [wUnusedScriptByte]
 	add b 
