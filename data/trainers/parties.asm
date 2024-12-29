@@ -1492,9 +1492,12 @@ GruntMGroup:
 
 	; GRUNTM (30)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 25, GOLBAT
-	db 25, GOLBAT
-	db 30, ARBOK
+	db 35, GOLBAT
+	db 42, MUK
+	db 40, ARBOK
+	db 41, GOLEM
+	db 42, CHARMELEON
+	db 45, GENGAR
 	db -1 ; end
 
 	; GRUNTM (31)
@@ -2698,9 +2701,12 @@ FirebreatherGroup:
 
 	; FIREBREATHER (3) ;unused
 	db "NED@", TRAINERTYPE_NORMAL
-	db 15, KOFFING
-	db 16, GROWLITHE
-	db 15, KOFFING
+	db 45, WEEZING
+	db 36, GROWLITHE
+	db 45, MUK
+	db 38, MURKROW
+	db 42, CHARIZARD
+	db 38, QUAGSIRE
 	db -1 ; end
 
 	; FIREBREATHER (4)
@@ -3440,9 +3446,12 @@ MediumGroup:
 
 	; MEDIUM (3)
 	db "BETHANY@", TRAINERTYPE_NORMAL
-	db 25, HAUNTER
-	db 22, JYNX
-	db 21, WOBBUFFET
+	db 35, HAUNTER
+	db 42, JYNX
+	db 41, WOBBUFFET
+	db 47, KADABRA
+	db 38, PSYDUCK
+	db 41, RAPIDASH
 	db -1 ; end
 
 	; MEDIUM (4)

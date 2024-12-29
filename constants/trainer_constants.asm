@@ -499,7 +499,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass FIREBREATHER ; 30
 	const OTIS
 	const DICK 
-	const NED ; unused
+	const NED ; mansion
 	const BURT
 	const BILL
 	const WALT
@@ -619,7 +619,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass MEDIUM ; 39
 	const MARTHA
 	const GRACE
-	const BETHANY ; unused
+	const BETHANY ; mansion
 	const MARGRET ; unused
 	const ETHEL ; unused
 	const REBECCA
