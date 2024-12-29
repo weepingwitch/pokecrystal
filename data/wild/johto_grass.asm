@@ -5,7 +5,7 @@ JohtoGrassWildMons:
 	def_grass_wildmons UNDER_PATH_JOHTO
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 43, PHANPHY
+	db 43, PHANPY
 	db 44, CUBONE
 	db 45, TYROGUE
 	db 43, NIDORINO
@@ -13,7 +13,7 @@ JohtoGrassWildMons:
 	db 45, PARASECT
 	db 43, GRAVELER
 	; day
-	db 43, PHANPHY
+	db 43, PHANPY
 	db 44, RATICATE
 	db 45, TYROGUE
 	db 43, NIDORINA
