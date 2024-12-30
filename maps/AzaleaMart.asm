@@ -29,7 +29,7 @@ AzaleaMartCooltrainerMText:
 
 	para "I wish KURT would"
 	line "make me some of"
-	cont "his custom BALLS."
+	cont "his fancy BALLS."
 	done
 
 AzaleaMartBugCatcherText:

@@ -22,16 +22,10 @@ BlackthornMartBlackBeltScript:
 
 BlackthornMartCooltrainerMText:
 	text "You can't buy MAX"
-	line "REVIVE, but it"
+	line "REVIVE here."
 
-	para "fully restores a"
-	line "fainted #MON."
-
-	para "Beware--it won't"
-	line "restore PP, the"
-
-	para "POWER POINTS"
-	line "needed for moves."
+	para "I'm complaining"
+	line "to the manager."
 	done
 
 BlackthornMartBlackBeltText:
@@ -39,9 +33,8 @@ BlackthornMartBlackBeltText:
 	line "weak #MON away"
 	cont "from you."
 
-	para "It's the longest"
-	line "lasting of the"
-	cont "REPEL sprays."
+	para "I wish it worked"
+	line "for people too!"
 	done
 
 BlackthornMart_MapEvents:

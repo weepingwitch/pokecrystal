@@ -26,37 +26,14 @@ MountMoonRivalBattleScript:
 	writetext MountMoonRivalTextBefore
 	waitbutton
 	closetext
-	checkevent EVENT_GOT_TOTODILE_FROM_ELM
-	iftrue .Totodile
-	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
-	iftrue .Chikorita
+	
 	winlosstext MountMoonRivalTextWin, MountMoonRivalTextLoss
 	setlasttalked MOUNTMOON_RIVAL
-	loadtrainer RIVAL2, RIVAL2_1_TOTODILE
+	loadtrainer RIVAL2, RIVAL2_1
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
-	sjump .FinishBattle
-
-.Totodile:
-	winlosstext MountMoonRivalTextWin, MountMoonRivalTextLoss
-	setlasttalked MOUNTMOON_RIVAL
-	loadtrainer RIVAL2, RIVAL2_1_CHIKORITA
-	startbattle
-	dontrestartmapmusic
-	reloadmapafterbattle
-	sjump .FinishBattle
-
-.Chikorita:
-	winlosstext MountMoonRivalTextWin, MountMoonRivalTextLoss
-	setlasttalked MOUNTMOON_RIVAL
-	loadtrainer RIVAL2, RIVAL2_1_CYNDAQUIL
-	startbattle
-	dontrestartmapmusic
-	reloadmapafterbattle
-	sjump .FinishBattle
-
-.FinishBattle:
+	
 	playmusic MUSIC_RIVAL_AFTER
 	opentext
 	writetext MountMoonRivalTextAfter
@@ -88,52 +65,20 @@ MountMoonRivalMovementAfter:
 MountMoonRivalTextBefore:
 	text "<……> <……> <……>"
 
-	para "It's been a while,"
-	line "<PLAYER>."
-
-	para "…Since I lost to"
-	line "you, I thought"
-
-	para "about what I was"
-	line "lacking with my"
-	cont "#MON…"
-
-	para "And we came up"
-	line "with an answer."
-
-	para "<PLAYER>, now we'll"
-	line "show you!"
+	para "You again."
+	
 	done
 
 MountMoonRivalTextWin:
 	text "<……> <……> <……>"
 
-	para "I thought I raised"
-	line "my #MON to be"
-
-	para "the best they"
-	line "could be…"
-
-	para "…But it still "
-	line "wasn't enough…"
+	para "Fuck."
+	
 	done
 
 MountMoonRivalTextAfter:
 	text "<……> <……> <……>"
 
-	para "…You won, fair"
-	line "and square."
-
-	para "I admit it. But"
-	line "this isn't the"
-	cont "end."
-
-	para "I'm going to be"
-	line "the greatest #-"
-	cont "MON trainer ever."
-
-	para "Because these guys"
-	line "are behind me."
 
 	para "…Listen, <PLAYER>."
 
@@ -147,15 +92,8 @@ MountMoonRivalTextAfter:
 MountMoonRivalTextLoss:
 	text "<……> <……> <……>"
 
-	para "I've repaid my"
-	line "debt to you."
-
-	para "With my #MON,"
-	line "I'm going to beat"
-
-	para "the CHAMPION and"
-	line "become the world's"
-	cont "greatest trainer."
+	para "Suck it."
+	
 	done
 
 MountMoon_MapEvents:

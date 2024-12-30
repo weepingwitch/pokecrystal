@@ -442,10 +442,8 @@ DEF KRIS EQU __trainer_class__
 	const MARKUS
 
 	trainerclass RIVAL2 ; 2a
-	const RIVAL2_1_CHIKORITA
-	const RIVAL2_1_CYNDAQUIL
-	const RIVAL2_1_TOTODILE
-	const RIVAL2_2_CHIKORITA
+	const RIVAL2_1
+	const RIVAL2_2
 	const RIVAL2_2_CYNDAQUIL
 	const RIVAL2_2_TOTODILE
 

@@ -22,28 +22,18 @@ BlackthornPokecenter1FCooltrainerMScript:
 	jumpstd HappinessCheckScript
 
 BlackthornPokecenter1FGentlemanText:
-	text "Deep inside far-"
-	line "off INDIGO PLATEAU"
+	text "What?"
+	
 
-	para "is the #MON"
-	line "LEAGUE."
-
-	para "I hear the best"
-	line "trainers gather"
-
-	para "there from around"
-	line "the country."
+	para "I can't hear you!"
+	
 	done
 
 BlackthornPokecenter1FTwinText:
-	text "There was this"
-	line "move I just had"
+	
 
-	para "to teach my #-"
-	line "MON."
-
-	para "So I got the MOVE"
-	line "DELETER to make it"
+	para "I got the MOVE"
+	line "DELETER to help me"
 	cont "forget an HM move."
 	done
 

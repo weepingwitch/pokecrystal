@@ -146,11 +146,7 @@ SlowpokeWellB1FKurtText:
 	text "KURT: Hey there,"
 	line "<PLAYER>!"
 
-	para "The guard up top"
-	line "took off when I"
-	cont "shouted at him."
-
-	para "But then I took a"
+	para "I took a terrible"
 	line "tumble down the"
 	cont "WELL."
 
@@ -158,14 +154,8 @@ SlowpokeWellB1FKurtText:
 	line "hard on my back,"
 	cont "so I can't move."
 
-	para "Rats! If I were"
-	line "fit, my #MON"
+	para "Rats!"
 
-	para "would've punished"
-	line "them…"
-
-	para "Ah, it can't be"
-	line "helped."
 
 	para "<PLAYER>, show them"
 	line "how gutsy you are"
@@ -189,11 +179,11 @@ GruntM29SeenText:
 	line "ing guard up top"
 
 	para "when some old coot"
-	line "yelled at me."
+	line "tripped and fell."
 
 	para "He startled me so"
 	line "much that I fell"
-	cont "down here."
+	cont "down here too."
 
 	para "I think I'll vent"
 	line "my anger by taking"
@@ -210,16 +200,19 @@ GruntM29AfterBattleText:
 	line "hacking the tails"
 
 	para "off SLOWPOKE and"
-	line "selling them."
+	line "frying them."
 
-	para "Everything we do"
-	line "is for profit."
+	para "How is that any"
+	line "different from"
+	cont "TAUROS Burgers?"
+
+	para "Or MAGIKARP Soup?"
 
 	para "That's right!"
 	line "We're TEAM ROCKET,"
 
 	para "and we'll do any-"
-	line "thing for money!"
+	line "thing for food!"
 	done
 
 GruntM1SeenText:
@@ -251,7 +244,7 @@ TrainerGruntM1WhenTalkText:
 	done
 
 GruntM2SeenText:
-	text "Quit taking SLOW-"
+	text "Quit frying SLOW-"
 	line "POKETAILS?"
 
 	para "If we obeyed you,"
@@ -265,23 +258,29 @@ GruntM2BeatenText:
 	done
 
 GruntM2AfterBattleText:
-	text "We need the money,"
-	line "but selling SLOW-"
-	cont "POKETAILS?"
+	text "Mmmmm mmmm mmmmm."
+	line "These are so good"
+	cont "and crisp!"
 
-	para "It's tough being a"
+	para "It's nice being a"
 	line "ROCKET GRUNT!"
 	done
 
 GruntF1SeenText:
-	text "Stop taking TAILS?"
+	text "Stop frying TAILS?"
 
 	para "Yeah, just try to"
 	line "defeat all of us!"
+
+	para "We're culinary"
+	line "geniuses!"
 	done
 
 GruntF1BeatenText:
 	text "You rotten brat!"
+
+	para "You'll ruin our"
+	line "recipes!"
 	done
 
 GruntF1AfterBattleText:
@@ -289,33 +288,37 @@ GruntF1AfterBattleText:
 	line "grow back fast!"
 
 	para "What's wrong with"
-	line "selling them?"
+	line "frying them?"
 	done
 
 SlowpokeWellB1FSlowpokeWithMailText:
 	text "A SLOWPOKE with"
 	line "its TAIL cut off…"
 
-	para "Huh? It has MAIL."
-	line "Read it?"
+
+	para "Huh? It has a tag"
+	line "on it. Read it?"
 	done
 
 SlowpokeWellB1FSlowpokeMailText:
 	text "<PLAYER> read the"
-	line "MAIL."
+	line "tag."
 
-	para "Be good and look"
-	line "after the house"
+	para "It's a recipe for"
+	line "fried SLOWPOKE-"
+	cont "TAIL."
 
-	para "with Grandpa and"
-	line "SLOWPOKE."
-
-	para "Love, Dad"
+	para "Your stomach"
+	line "rumbles."
+	
 	done
 
 SlowpokeWellB1FTaillessSlowpokeText:
 	text "A SLOWPOKE with"
 	line "its TAIL cut off…"
+
+	para "Your stomach"
+	line "rumbles."
 	done
 
 SlowpokeWellB1F_MapEvents:

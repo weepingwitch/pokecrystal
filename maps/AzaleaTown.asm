@@ -235,8 +235,8 @@ AzaleaTownRivalBeforeText:
 	cont "lying."
 
 	para "You're not joking?"
-	line "Then let's see how"
-	cont "good you are."
+	line "Where will I get"
+	cont "fried food now?"
 	done
 
 AzaleaTownRivalWinText:
@@ -246,32 +246,19 @@ AzaleaTownRivalWinText:
 	para "Listen, you. You"
 	line "only won because"
 
-	para "my #MON were"
-	line "weak."
+	para "my EEVEEs were"
+	line "tired."
 	done
 
 AzaleaTownRivalAfterText:
 	text "I hate the weak."
 
-	para "#MON, trainers."
-	line "It doesn't matter"
-	cont "who or what."
 
 	para "I'm going to be"
 	line "strong and wipe"
 	cont "out the weak."
 
-	para "That goes for TEAM"
-	line "ROCKET too."
-
-	para "They act big and"
-	line "tough in a group."
-
-	para "But get them"
-	line "alone, and they're"
-	cont "weak."
-
-	para "I hate them all."
+	para "I'm a fascist."
 
 	para "You stay out of my"
 	line "way. A weakling"
@@ -290,8 +277,8 @@ AzaleaTownRocket1Text:
 	line "in there, so I'm"
 	cont "standing guard."
 
-	para "Aren't I a good"
-	line "Samaritan?"
+	para "You don't want"
+	line "to fall!"
 	done
 
 AzaleaTownRocket2Text:
@@ -299,8 +286,8 @@ AzaleaTownRocket2Text:
 	line "SLOWPOKETAIL? I"
 	cont "heard it's tasty!"
 
-	para "Aren't you glad I"
-	line "told you that?"
+	para "Especially when"
+	line "you fry it!"
 	done
 
 AzaleaTownGrampsTextBefore:
@@ -310,7 +297,7 @@ AzaleaTownGrampsTextBefore:
 
 	para "I heard their"
 	line "TAILS are being"
-	cont "sold somewhere."
+	cont "fried somewhere."
 	done
 
 AzaleaTownGrampsTextAfter:
@@ -357,6 +344,9 @@ AzaleaTownSlowpokeText1:
 
 AzaleaTownSlowpokeText2:
 	text "<……> <……>Yawn?"
+
+	para "Your stomach"
+	line "rumbles."
 	done
 
 WoosterText:
@@ -406,18 +396,9 @@ AzaleaGymSignText:
 SlowpokeWellSignText:
 	text "SLOWPOKE WELL"
 
-	para "Also known as the"
-	line "RAINMAKER WELL."
+	para "Don't fall in."
+	
 
-	para "Locals believe"
-	line "that a SLOWPOKE's"
-	cont "yawn summons rain."
-
-	para "Records show that"
-	line "a SLOWPOKE's yawn"
-
-	para "ended a drought"
-	line "400 years ago."
 	done
 
 CharcoalKilnSignText:
