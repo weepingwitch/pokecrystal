@@ -28,7 +28,9 @@ Marts:
 	dw MartCeladon2F1
 	dw MartCeladon2F2
 	dw MartCeladon3F
+	dw MartCeladon3F2
 	dw MartCeladon4F
+	dw MartCeladon4F2
 	dw MartCeladon5F1
 	dw MartCeladon5F2
 	dw MartFuchsia
@@ -333,6 +335,19 @@ MartCeladon3F:
 	db TM_SANDSTORM
 	db -1 ; end
 
+MartCeladon3F2:
+	db 9
+	db NEVERMELTICE
+	db PINK_BOW
+	db POISON_BARB
+	db POLKADOT_BOW
+	db SHARP_BEAK
+	db SILVERPOWDER
+	db SOFT_SAND
+	db SPELL_TAG
+	db TWISTEDSPOON
+	db -1
+
 MartCeladon4F:
 	db 7 ; # items
 	db POKE_DOLL
@@ -343,6 +358,20 @@ MartCeladon4F:
 	db CLEANSE_TAG
 	db AMULET_COIN
 	db -1 ; end
+
+MartCeladon4F2:
+	db 9
+	db BLACKBELT_I
+	db BLACKGLASSES
+	db CHARCOAL
+	db DRAGON_FANG
+	db HARD_STONE
+	db MAGNET
+	db METAL_COAT
+	db MIRACLE_SEED
+	db MYSTIC_WATER
+	
+	db -1 
 
 MartCeladon5F1:
 	db 6 ; # items
