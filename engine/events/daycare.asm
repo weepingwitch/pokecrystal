@@ -572,9 +572,6 @@ DayCare_InitBreeding:
 	cp DITTO
 	ld a, $0
 	jr z, .LoadWhichBreedmonIsTheMother
-	farcall GetGender
-	ld a, $0
-	jr z, .LoadWhichBreedmonIsTheMother
 	inc a
 
 .LoadWhichBreedmonIsTheMother:
