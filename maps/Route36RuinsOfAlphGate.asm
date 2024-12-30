@@ -14,10 +14,9 @@ Route36RuinsOfAlphGateGrampsScript:
 	jumptextfaceplayer Route36RuinsOfAlphGateGrampsText
 
 Route36RuinsOfAlphGateOfficerText:
-	text "Don't you wonder"
-	line "who'd make some-"
-	cont "thing like this?"
-	cont "And why?"
+	text "oink oink oink"
+	line "oink oink oink."
+
 	done
 
 Route36RuinsOfAlphGateGrampsText:

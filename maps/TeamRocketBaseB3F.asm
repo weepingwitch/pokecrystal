@@ -91,7 +91,7 @@ RocketBaseBossLeft:
 RocketBaseBossRight:
 	applymovement PLAYER, RocketBasePlayerApproachesBossRightMovement
 RocketBaseBoss:
-	pause 30
+	pause 10
 	showemote EMOTE_SHOCK, TEAMROCKETBASEB3F_ROCKET1, 15
 	playmusic MUSIC_ROCKET_ENCOUNTER
 	turnobject TEAMROCKETBASEB3F_ROCKET1, DOWN
@@ -327,16 +327,16 @@ LanceGetPasswordText:
 	line "are known only to"
 	cont "a few ROCKETS."
 
-	para "That ROCKET there"
-	line "very graciously"
-	cont "told me so."
+	para "Don't ask how"
+	line "I know this."
+	
 
 	para "<PLAY_G>, let's go"
 	line "get the passwords."
 	done
 
 TeamRocketBaseB3FRocketText:
-	text "Urrggh… The guy"
+	text "Urgh… The weirdo"
 	line "in the cape is"
 	cont "incredibly tough…"
 	done
@@ -350,33 +350,7 @@ RocketBaseRivalText:
 	para "to destroy TEAM"
 	line "ROCKET?"
 
-	para "…Tell me, who was"
-	line "the guy in the"
-
-	para "cape who used"
-	line "dragon #MON?"
-
-	para "My #MON were no"
-	line "match at all."
-
-	para "I don't care that"
-	line "I lost. I can beat"
-
-	para "him by getting"
-	line "stronger #MON."
-
-	para "It's what he said"
-	line "that bothers me…"
-
-	para "He told me that"
-	line "I don't love and"
-
-	para "trust my #MON"
-	line "enough."
-
-	para "I'm furious that I"
-	line "lost to a bleeding"
-	cont "heart like him."
+	
 
 	para "…Humph! I don't"
 	line "have the time for"
@@ -423,7 +397,9 @@ RocketBaseMurkrowText:
 	text "MURKROW: The"
 	line "password is…"
 
-	para "HAIL GIOVANNI."
+	para "Password1234"
+
+	para "capital P."
 	done
 
 GruntF5SeenText:
@@ -443,9 +419,11 @@ GruntF5BeatenText:
 
 GruntF5AfterBattleText:
 	text "The password to"
-	line "the boss's room is"
+	line "the room is"
 
-	para "SLOWPOKETAIL."
+	para "6bbb0b625497235f7"
+	line "5bb5eaa32df58a982"
+	cont "a8cd76"
 
 	para "But it's useless"
 	line "unless you have"
@@ -481,18 +459,16 @@ GruntM28AfterBattleText:
 	para "The password to"
 	line "the boss's room…"
 
-	para "Uh…, I think it is"
-	line "RATICATE TAIL."
+	para "Uh…, I think it's"
+	line "password1234?"
+
+	para "All lowercase."
 	done
 
 ScientistRossSeenText:
-	text "I used to work for"
-	line "SILPH, but now I"
 
-	para "run research for"
-	line "TEAM ROCKET."
 
-	para "A meddlesome child"
+	text "A meddlesome child"
 	line "like you needs to"
 	cont "be punished."
 	done
@@ -508,12 +484,12 @@ ScientistRossAfterBattleText:
 	cont "MON mad…"
 
 	para "My experiment is a"
-	line "complete success."
+	line "complete failure."
 
-	para "My promotion is"
-	line "assured. This loss"
+	para "Who would want"
+	line "that anyway?"
 
-	para "means absolutely"
+	para "Worth absolutely"
 	line "nothing."
 	done
 
@@ -531,10 +507,10 @@ ScientistMitchBeatenText:
 
 ScientistMitchAfterBattleText:
 	text "If we turn up the"
-	line "power of our radio"
+	line "power of our big"
 
-	para "signal for broad-"
-	line "cast nationwide…"
+	para "science machines"
+	line "and gizmos..."
 
 	para "The very thought"
 	line "excites me!"
@@ -552,6 +528,12 @@ TeamRocketBaseB3FLockedDoorOpenSesameText:
 
 	para "<PLAYER> entered"
 	line "the two passwords."
+
+	para "Incorrect password"
+
+	para "<PLAYER> entered"
+	line "the two passwords,"
+	cont "again."
 
 	para "The door opened!"
 	done

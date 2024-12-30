@@ -224,7 +224,7 @@ RocketText_MakingABundle:
 OfficerText_FoundTM:
 	text "I got chased from"
 	line "my post by these"
-	cont "thugs in black."
+	cont "thugs."
 
 	para "They left this"
 	line "behind."
@@ -232,6 +232,8 @@ OfficerText_FoundTM:
 	para "It makes me uncom-"
 	line "fortable. Could"
 	cont "you take it away?"
+
+	para "Oink oink oink."
 	done
 
 Text_ReceivedTM30: ; unreferenced
@@ -243,6 +245,7 @@ OfficerText_AvoidGrass:
 	text "Use this gate to"
 	line "avoid walking in"
 	cont "the grass."
+	para "Oink oink oink."
 	done
 
 Route43Gate_MapEvents:

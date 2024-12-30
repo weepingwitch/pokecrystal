@@ -14,11 +14,10 @@ IlexForestAzaleaGateGrannyScript:
 	jumptextfaceplayer IlexForestAzaleaGateGrannyText
 
 IlexForestAzaleaGateOfficerText:
-	text "ILEX FOREST is"
-	line "big. Be careful!"
-	cont "Don't get lost."
-	done
+	text "oink oink oink"
+	line "oink oink oink."
 
+	done
 IlexForestAzaleaGateGrannyText:
 	text "The FOREST is"
 	line "watched over by"

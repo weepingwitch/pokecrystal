@@ -1070,7 +1070,7 @@ TeleportFunction:
 	refreshmap
 	special UpdateTimePals
 	writetext .TeleportReturnText
-	pause 60
+	pause 20
 	refreshmap
 	closetext
 	playsound SFX_WARP_TO
@@ -1745,7 +1745,7 @@ Script_GotABite:
 	applymovement PLAYER, .Movement_NotFacingUp
 
 .FightTheHookedPokemon:
-	pause 40
+	pause 10
 	applymovement PLAYER, .Movement_RestoreRod
 	writetext RodBiteText
 	callasm PutTheRodAway
@@ -1797,7 +1797,7 @@ Script_FishCastRod:
 	callasm LoadFishingGFX
 	loademote EMOTE_SHOCK
 	applymovement PLAYER, MovementData_CastRod
-	pause 40
+	pause 10
 	end
 
 MovementData_CastRod:

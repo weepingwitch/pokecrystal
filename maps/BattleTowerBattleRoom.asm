@@ -49,7 +49,7 @@ Script_BattleRoomLoop:
 	playmusic MUSIC_HEAL
 	special FadeOutToWhite
 	special LoadMapPalettes
-	pause 60
+	pause 20
 	special FadeInFromWhite
 	special RestartMapMusic
 	opentext
@@ -91,7 +91,7 @@ Script_DontSaveAndEndTheSession:
 	sjump Script_BattleTowerHopeToServeYouAgain
 
 Script_FailedBattleTowerChallenge:
-	pause 60
+	pause 20
 	special BattleTowerFade
 	warpfacing UP, BATTLE_TOWER_1F, 7, 7
 	setval BATTLETOWERACTION_CHALLENGECANCELED
@@ -103,7 +103,7 @@ Script_FailedBattleTowerChallenge:
 	end
 
 Script_BeatenAllTrainers:
-	pause 60
+	pause 20
 	special BattleTowerFade
 	warpfacing UP, BATTLE_TOWER_1F, 7, 7
 Script_BeatenAllTrainers2:

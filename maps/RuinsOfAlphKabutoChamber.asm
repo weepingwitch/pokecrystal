@@ -37,14 +37,14 @@ RuinsOfAlphKabutoChamberHiddenDoorsCallback:
 	endcallback
 
 RuinsOfAlphKabutoChamberWallOpenScript:
-	pause 30
-	earthquake 30
+	pause 10
+	earthquake 20
 	showemote EMOTE_SHOCK, PLAYER, 20
-	pause 30
+	pause 10
 	playsound SFX_STRENGTH
 	changeblock 4, 0, $30 ; open wall
 	refreshmap
-	earthquake 50
+	earthquake 20
 	setscene SCENE_RUINSOFALPHKABUTOCHAMBER_NOOP
 	closetext
 	end

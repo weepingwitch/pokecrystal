@@ -31,13 +31,13 @@ RuinsOfAlphResearchCenterScientistCallback:
 RuinsOfAlphResearchCenterGetUnownDexScript:
 	applymovement RUINSOFALPHRESEARCHCENTER_SCIENTIST3, RuinsOfAlphResearchCenterApproachesComputerMovement
 	playsound SFX_BOOT_PC
-	pause 60
+	pause 10
 	playsound SFX_SWITCH_POKEMON
-	pause 30
+	pause 10
 	playsound SFX_TALLY
-	pause 30
+	pause 10
 	playsound SFX_TRANSACTION
-	pause 30
+	pause 10
 	turnobject RUINSOFALPHRESEARCHCENTER_SCIENTIST3, DOWN
 	opentext
 	writetext RuinsOfAlphResearchCenterModifiedDexText

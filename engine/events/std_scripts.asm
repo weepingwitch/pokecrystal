@@ -111,7 +111,7 @@ PokecenterNurseScript:
 	iffalse .done
 
 	farwritetext NurseTakePokemonText
-	pause 10
+	pause 5
 	special StubbedTrainerRankings_Healings
 	turnobject LAST_TALKED, LEFT
 	pause 5
@@ -119,7 +119,7 @@ PokecenterNurseScript:
 	playmusic MUSIC_NONE
 	setval HEALMACHINE_POKECENTER
 	special HealMachineAnim
-	pause 20
+	pause 5
 	special RestartMapMusic
 	turnobject LAST_TALKED, DOWN
 	pause 5
@@ -133,7 +133,7 @@ PokecenterNurseScript:
 .no
 
 	farwritetext NurseReturnPokemonText
-	pause 10
+	pause 5
 
 .done
 	farwritetext NurseGoodbyeText

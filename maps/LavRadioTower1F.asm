@@ -96,6 +96,8 @@ LavRadioTower1FOfficerText:
 
 	para "have had to step"
 	line "up our security."
+
+	para "Oink oink oink."
 	done
 
 LavRadioTower1FSuperNerd1Text:

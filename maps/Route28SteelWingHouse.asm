@@ -33,7 +33,7 @@ Celebrity:
 CelebritysFearow:
 	opentext
 	writetext CelebritysFearowText
-	cry FEAROW
+	cry MOLTRES
 	waitbutton
 	closetext
 	end
@@ -60,12 +60,16 @@ CelebrityText2:
 	para "Everywhere I go,"
 	line "people chase me."
 
+	para "They always"
+	line "recognize me."
+
 	para "I just want to be"
 	line "left alone…"
 	done
 
 CelebritysFearowText:
-	text "FEAROW: Feero!"
+	text "TONY HAWK's BIRD:"
+	line "squawk"
 	done
 
 Route28SteelWingHouse_MapEvents:
@@ -83,4 +87,4 @@ Route28SteelWingHouse_MapEvents:
 
 	def_object_events
 	object_event  2,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Celebrity, -1
-	object_event  6,  5, SPRITE_MOLTRES, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CelebritysFearow, -1
+	object_event  6,  5, SPRITE_MOLTRES, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CelebritysFearow, -1

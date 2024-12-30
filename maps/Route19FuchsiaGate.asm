@@ -31,13 +31,12 @@ Route19FuchsiaGateOfficerText:
 	cont "19 indefinitely."
 
 	para "I wonder if the"
-	line "people of CINNABAR"
-	cont "are safe…"
+	line "property is safe."
 	done
 
 Route19FuchsiaGateOfficerText_RocksCleared:
-	text "No CINNABAR citi-"
-	line "zens were injured"
+	text "No CINNABAR prop-"
+	line "erty were injured"
 
 	para "by the eruption."
 	line "That's great!"

@@ -17,21 +17,17 @@ Route29Route46GateOfficerText:
 	text "You can't climb"
 	line "ledges."
 
-	para "But you can jump"
-	line "down from them to"
-	cont "take a shortcut."
+	para "Which is kind of"
+	line "patheitc, they're"
+	cont "like 6 inches..."
 	done
 
 Route29Route46GateYoungsterText:
-	text "Different kinds of"
-	line "#MON appear"
-	cont "past here."
+	text "Are you my mom?"
+	
+	para "..."
 
-	para "If you want to"
-	line "catch them all,"
-
-	para "you have to look"
-	line "everywhere."
+	para "..."
 	done
 
 Route29Route46Gate_MapEvents:

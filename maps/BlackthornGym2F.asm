@@ -40,7 +40,7 @@ BlackthornGym2FSetUpStoneTableCallback:
 	sjump .Fall
 
 .Fall:
-	pause 30
+	pause 15
 	scall .FX
 	opentext
 	writetext BlackthornGym2FBoulderFellText
@@ -50,7 +50,7 @@ BlackthornGym2FSetUpStoneTableCallback:
 
 .FX:
 	playsound SFX_STRENGTH
-	earthquake 30
+	earthquake 15
 	end
 
 BlackthornGymBoulder:

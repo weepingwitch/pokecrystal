@@ -30,9 +30,6 @@ Route30BerrySpeechHouseMonEatBerriesText:
 	text "You know, #MON"
 	line "eat BERRIES."
 
-	para "Well, my #MON"
-	line "got healthier by"
-	cont "eating a BERRY."
 
 	para "Here. I'll share"
 	line "one with you!"
@@ -42,6 +39,10 @@ Route30BerrySpeechHouseCheckTreesText:
 	text "Check trees for"
 	line "BERRIES. They just"
 	cont "drop right off."
+
+	para "It's not stealing"
+	line "if you don't get"
+	cont "caught!"
 	done
 
 Route30BerryHouse_MapEvents:
