@@ -78,51 +78,16 @@ Text_GrampsLookingForYou:
 	line "for you."
 	done
 
-Text_DayCareManTalksAboutEggTicket: ; unreferenced
-	text "I'm the DAY-CARE"
-	line "MAN."
-
-	para "There's something"
-	line "new in GOLDENROD"
-
-	para "called the TRADE"
-	line "CORNER."
-
-	para "I was given an EGG"
-	line "TICKET that can be"
-
-	para "traded in for a"
-	line "ODD EGG."
-
-	para "But since we run a"
-	line "DAY-CARE, we don't"
-
-	para "need it. You may"
-	line "as well have it."
-	done
 
 DayCareManText_GiveOddEgg:
 	text "I'm the DAY-CARE"
 	line "MAN."
 
-	para "Do you know about"
-	line "EGGS?"
+	
+	para "Here, let me give"
+	line "you this EGG."
 
-	para "I was raising"
-	line "#MON with my"
-	cont "wife, you see."
-
-	para "We were shocked to"
-	line "find an EGG!"
-
-	para "How incredible is"
-	line "that?"
-
-	para "Well, wouldn't you"
-	line "like this EGG?"
-
-	para "Then fine, this is"
-	line "yours to keep!"
+	
 	done
 
 DayCareText_ComeAgain: ; unreferenced
@@ -135,22 +100,13 @@ DayCareText_GotOddEgg:
 	done
 
 DayCareText_DescribeOddEgg:
-	text "I found that when"
-	line "I was caring for"
-
-	para "someone's #MON"
-	line "before."
-
-	para "But the trainer"
-	line "didn't want the"
-
-	para "EGG, so I'd kept"
-	line "it around."
+	text "I have too many."
+	
 	done
 
 DayCareText_PartyFull:
 	text "You've no room for"
-	line "this."
+	line "this. Come back."
 	done
 
 DayCare_MapEvents:

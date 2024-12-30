@@ -1600,46 +1600,20 @@ _DayCareManIntroText::
 	done
 
 _DayCareManIntroEggText::
-	text "I'm the DAY-CARE"
-	line "MAN. Do you know"
-	cont "about EGGS?"
+	
 
-	para "I was raising"
-	line "#MON with my"
-	cont "wife, you see."
-
-	para "We were shocked to"
-	line "find an EGG!"
-
-	para "How incredible is"
-	line "that?"
-
-	para "So, want me to"
+	para "Want me to"
 	line "raise a #MON?"
 	done
 
 _DayCareLadyIntroText::
-	text "I'm the DAY-CARE"
-	line "LADY."
-
+	
 	para "Should I raise a"
 	line "#MON for you?"
 	done
 
 _DayCareLadyIntroEggText::
-	text "I'm the DAY-CARE"
-	line "LADY. Do you know"
-	cont "about EGGS?"
-
-	para "My husband and I"
-	line "were raising some"
-	cont "#MON, you see."
-
-	para "We were shocked to"
-	line "find an EGG!"
-
-	para "How incredible"
-	line "could that be?"
+	
 
 	para "Should I raise a"
 	line "#MON for you?"
@@ -1757,22 +1731,10 @@ _NotYetText::
 	done
 
 _FoundAnEggText::
-	text "Ah, it's you!"
+	
 
-	para "We were raising"
-	line "your #MON, and"
-
-	para "my goodness, were"
-	line "we surprised!"
-
-	para "Your #MON had"
-	line "an EGG!"
-
-	para "We don't know how"
-	line "it got there, but"
-
-	para "your #MON had"
-	line "it. You want it?"
+	text "Your #MON had"
+	line "sex. Free EGG?"
 	done
 
 _ReceivedEggText::

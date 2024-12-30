@@ -159,7 +159,7 @@ Mom_GetScriptPointer:
 	ld de, .ItemScript
 	cp MOM_ITEM
 	ret z
-	ld de, .DollScript
+	ld de, .ItemScript
 	ret
 
 .ItemScript:

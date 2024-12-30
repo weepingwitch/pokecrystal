@@ -598,37 +598,31 @@ PicnickerGina1AfterText:
 	done
 
 OfficerKeithSeenText:
-	text "Who goes there?"
-	line "What are you up"
-	cont "to?"
+	text "Oink oink oink"
+	line "oink oink oink"
 	done
 
 OfficerKeithWinText:
-	text "You're a tough"
-	line "little kid."
+	text "Oink oink onk."
+	
 	done
 
 OfficerKeithAfterText:
-	text "Yep, I see nothing"
-	line "wrong today. You"
-
-	para "be good and stay"
-	line "out of trouble."
+	text "Oink oink oink"
+	line "oink oink oink"
 	done
 
 OfficerKeithDaytimeText:
-	text "I'm on patrol for"
-	line "suspicious indi-"
-	cont "viduals."
+	text "Oink oink oink"
+	line "oink oink oink"
 	done
 
 PokefanmBrandonSeenText:
-	text "I just got my"
-	line "#MON back from"
+	text "My #MON fucked"
+	line "while at the"
 	cont "DAY-CARE."
 
-	para "Let's see how much"
-	line "stronger it got!"
+	para "Nice!"
 	done
 
 PokefanmBrandonBeatenText:
