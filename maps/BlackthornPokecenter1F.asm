@@ -24,7 +24,6 @@ BlackthornPokecenter1FCooltrainerMScript:
 BlackthornPokecenter1FGentlemanText:
 	text "What?"
 	
-
 	para "I can't hear you!"
 	
 	done
