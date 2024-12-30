@@ -138,8 +138,7 @@ AcademyNotebook:
 	closetext
 	end
 
-AcademyStickerMachine: ; unreferenced
-	jumptext AcademyStickerMachineText
+
 
 AcademyBookshelf:
 	jumpstd DifficultBookshelfScript
@@ -161,61 +160,34 @@ AcademyEarlSpinMovement:
 	step_end
 
 AcademyEarlIntroText:
-	text "EARL, I am!"
+	text "Blah blah blah."
 
-	para "Wonderful are"
-	line "#MON, yes!"
+	para "Blah blah blah"
+	line "blah blah blah."
 
-	para "Teach you I will"
-	line "to be a better"
-	cont "trainer!"
-
-	para "What you want to"
-	line "know? Want to be"
-	cont "a winner is you?"
+	para "Blah blah blah"
+	line "blah blah blah."
+	
 	done
 
 AcademyEarlTeachHowToWinText:
-	text "Good! Teach you,"
-	line "I will!"
-
-	para "In battle, #MON"
-	line "top on list jump"
-	cont "out first!"
-
-	para "Change order in"
-	line "list, make battle"
-	cont "easy, maybe!"
-
-	para "More from me you"
-	line "want to hear?"
+	text "Blah blah blah"
+	line "blah blah blah."
+	para "Blah blah blah"
+	line "blah blah blah."
 	done
 
 AcademyEarlTeachMoreText:
-	text "So, want to know"
-	line "how to raise"
-	cont "#MON well?"
+	text "Blah blah blah"
+	line "blah blah blah."
 	done
 
 AcademyEarlTeachHowToRaiseWellText:
-	text "Fine! Teach you,"
-	line "I will!"
+	text "Blah blah blah"
+	line "blah blah blah."
 
-	para "If #MON come"
-	line "out in battle even"
-
-	para "briefly, some EXP."
-	line "Points it gets."
-
-	para "At top of list put"
-	line "weak #MON."
-
-	para "Switch in battle"
-	line "quick!"
-
-	para "This way, weak"
-	line "#MON strong"
-	cont "become!"
+	para "Blah blah blah"
+	line "blah blah blah."
 	done
 
 AcademyEarlNoMoreToTeachText:
@@ -223,8 +195,6 @@ AcademyEarlNoMoreToTeachText:
 	line "you are! Nothing"
 	cont "more do I teach!"
 
-	para "Good to #MON"
-	line "you must be!"
 	done
 
 EarlsPokemonAcademyYoungster1Text:
@@ -240,34 +210,27 @@ EarlsPokemonAcademyYoungster1Text:
 EarlsPokemonAcademyGameboyKid1Text:
 	text "I traded my best"
 	line "#MON to the"
-	cont "guy beside me."
+	cont "girl beside me."
 	done
 
 EarlsPokemonAcademyGameboyKid2Text:
 	text "Huh? The #MON I"
-	line "just got is hold-"
-	cont "ing something!"
+	line "just got is crap!"
+	
 	done
 
 EarlsPokemonAcademyYoungster2Text:
-	text "A #MON holding"
-	line "a BERRY will heal"
-	cont "itself in battle."
+	
 
-	para "Many other items"
-	line "can be held by"
-	cont "#MON…"
-
-	para "It sure is tough"
+	text "It sure is tough"
 	line "taking notes…"
 	done
 
 AcademyBlackboardText:
 	text "The blackboard"
 	line "describes #MON"
-
-	para "status changes in"
-	line "battle."
+	cont "status changes."
+	
 	done
 
 AcademyBlackboardText2: ; unreferenced
@@ -342,54 +305,33 @@ AcademyNotebookText:
 	text "It's this kid's"
 	line "notebook…"
 
-	para "Catch #MON"
-	line "using # BALLS."
-
-	para "Up to six can be"
-	line "in your party."
-
-	para "Keep reading?"
+	para "Read it?"
 	done
 
 AcademyNotebookText1:
-	text "Before throwing a"
-	line "# BALL, weaken"
-	cont "the target first."
+	text "You see the kid's"
+	line "crush's name,"
 
-	para "A poisoned or"
-	line "burned #MON is"
-	cont "easier to catch."
+	para "written over and"
+	line "over again."
+	
 
 	para "Keep reading?"
 	done
 
 AcademyNotebookText2:
-	text "Some moves may"
-	line "cause confusion."
+	text "You see a crude"
+	line "drawing of the"
+	cont "teacher."
 
-	para "Confusion may make"
-	line "a #MON attack"
-	cont "itself."
-
-	para "Leaving battle"
-	line "clears up any"
-	cont "confusion."
 
 	para "Keep reading?"
 	done
 
 AcademyNotebookText3:
-	text "People who catch"
-	line "and use #MON"
-
-	para "in battle are"
-	line "#MON trainers."
-
-	para "They are expected"
-	line "to visit #MON"
-
-	para "GYMS and defeat"
-	line "other trainers."
+	text "The word SHIT"
+	line "is written over"
+	cont "and over again."
 
 	para "The next page"
 	line "is… Blank!"
@@ -400,12 +342,6 @@ AcademyNotebookText3:
 	line "anymore…"
 	done
 
-AcademyStickerMachineText:
-	text "This super machine"
-	line "prints data out as"
-
-	para "stickers!"
-	done
 
 EarlsPokemonAcademy_MapEvents:
 	db 0, 0 ; filler

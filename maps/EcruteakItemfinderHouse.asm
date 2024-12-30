@@ -17,7 +17,10 @@ EcruteakItemfinderGuy:
 	iffalse .no
 	writetext EcruteakItemfinderTrueSpiritText
 	promptbutton
-	verbosegiveitem ITEMFINDER
+	verbosegiveitem NUGGET
+	giveitem NUGGET
+	giveitem NUGGET
+	giveitem NUGGET
 	setevent EVENT_GOT_ITEMFINDER
 .itemfinder:
 	writetext ItemfinderExplanationText
@@ -60,49 +63,21 @@ EcruteakItemfinderAdventureText:
 	line "adventure with"
 	cont "your #MON?"
 
-	para "Well, what's an"
-	line "adventure without"
-	cont "treasure hunting?"
-
-	para "Am I right, or am"
-	line "I right?"
+	para "You look poor."
+	
 	done
 
 EcruteakItemfinderTrueSpiritText:
-	text "Good! You under-"
-	line "stand the true"
 
-	para "spirit of adven-"
-	line "ture."
-
-	para "I like that! Take"
-	line "this with you."
+	text "I like that! Take"
+	line "these with you."
 	done
 
 ItemfinderExplanationText:
-	text "There are many"
-	line "items lying about"
+	text "Don't expect that"
+	line "again!"
 
-	para "that aren't ob-"
-	line "vious."
-
-	para "Use ITEMFINDER to"
-	line "check if there is"
-
-	para "an item on the"
-	line "ground near you."
-
-	para "It doesn't show"
-	line "the exact spot,"
-
-	para "so you'll have to"
-	line "look yourself."
-
-	para "Oh yeah--I heard"
-	line "there are items"
-
-	para "in ECRUTEAK's"
-	line "BURNED TOWER."
+	
 	done
 
 EcruteakItemfinderToEachHisOwnText:
@@ -129,9 +104,8 @@ EcruteakTwoTowersText:
 	line "towers burned to"
 	cont "the ground."
 
-	para "The two #MON"
-	line "haven't been seen"
-	cont "since…"
+	para "On 9/11."
+	
 
 	para "Keep reading?"
 	done
@@ -143,17 +117,8 @@ EcruteakThreeMonText:
 	para "#MON that raced"
 	line "around the town."
 
-	para "They were said to"
-	line "have been born of"
 
-	para "water, lightning"
-	line "and fire."
-
-	para "But they could not"
-	line "contain their"
-	cont "excessive power."
-
-	para "So they say the"
+	para "They say the"
 	line "three ran like the"
 
 	para "wind off into the"

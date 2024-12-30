@@ -208,7 +208,7 @@ EcruteakPokecenter1F_BillText2:
 EcruteakPokecenter1FCooltrainerFText:
 	text "MORTY, the GYM"
 	line "LEADER, is soooo"
-	cont "cool."
+	cont "hot."
 
 	para "His #MON are"
 	line "really tough too."

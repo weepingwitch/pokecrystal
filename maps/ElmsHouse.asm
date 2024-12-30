@@ -21,22 +21,22 @@ ElmsHouseBookshelf:
 
 ElmsWifeText:
 	text "Hi, <PLAY_G>! My"
-	line "husband's always"
+	line "wife's always"
 
 	para "so busy--I hope"
-	line "he's OK."
+	line "she's OK."
 
-	para "When he's caught"
-	line "up in his #MON"
+	para "When she's caught"
+	line "up in her #MON"
 
-	para "research, he even"
+	para "research, she even"
 	line "forgets to eat."
 	done
 
 ElmsSonText:
 	text "When I grow up,"
 	line "I'm going to help"
-	cont "my dad!"
+	cont "my mom!"
 
 	para "I'm going to be a"
 	line "great #MON"
@@ -56,27 +56,15 @@ ElmsHousePokemonFoodText: ; unreferenced
 	done
 
 ElmsHousePCText:
-	text "#MON. Where do"
-	line "they come from? "
+	text "#MON. How do they"
+	line "reproduce? "
 
-	para "Where are they"
-	line "going?"
-
-	para "Why has no one"
-	line "ever witnessed a"
-	cont "#MON's birth?"
-
-	para "I want to know! I"
-	line "will dedicate my"
-
-	para "life to the study"
-	line "of #MON!"
-
+	
 	para "…"
 
 	para "It's a part of"
-	line "PROF.ELM's re-"
-	cont "search papers."
+	line "PROF.ELM's"
+	cont "search history."
 	done
 
 ElmsHouse_MapEvents:

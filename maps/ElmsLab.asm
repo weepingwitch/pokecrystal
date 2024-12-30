@@ -836,7 +836,7 @@ ElmDirectionsText1:
 	text "Now go visit my"
 	line "weird friend plz."
 
-	para "He lives in the"
+	para "She lives in the"
 	line "next city over."
 
 	para "Call me if"
@@ -852,7 +852,7 @@ GotElmsNumberText:
 	done
 
 ElmDescribesMrPokemonText:
-	text "MR.#MON goes"
+	text "MRS.#MON goes"
 	line "everywhere and"
 	cont "finds rarities."
 
@@ -885,7 +885,7 @@ ElmAfterTheftText1:
 	line "of my EEVEEs!"
 
 	para "Oh, yes, what was"
-	line "MR.#MON's big"
+	line "MRS.#MON's big"
 	cont "discovery?"
 	done
 
@@ -900,11 +900,8 @@ ElmAfterTheftText3:
 	done
 
 ElmAfterTheftText4:
-	text "But… Is it a"
+	text "It's just a"
 	line "#MON EGG?"
-
-	para "If it is, it is a"
-	line "great discovery!"
 	done
 
 ElmAfterTheftText5:
@@ -967,8 +964,8 @@ ElmAideHasEggText:
 	line "#MON CENTER."
 
 	para "You must have just"
-	line "missed him. Try to"
-	cont "catch him there."
+	line "missed her. Try to"
+	cont "catch her there."
 	done
 
 ElmWaitingEggHatchText:
@@ -1023,15 +1020,6 @@ ElmGiveEverstoneText2:
 	text "That's an"
 	line "EVERSTONE."
 
-	para "Some species of"
-	line "#MON evolve"
-
-	para "when they grow to"
-	line "certain levels."
-
-	para "A #MON holding"
-	line "the EVERSTONE"
-	cont "won't evolve."
 
 	para "Give it to a #-"
 	line "MON you don't want"
@@ -1045,11 +1033,11 @@ ElmText_CallYou:
 	done
 
 AideText_AfterTheft:
-	text "…sigh… That"
-	line "stolen #MON."
+	text "…sigh… Those"
+	line "stolen EEVEEs."
 
-	para "I wonder how it's"
-	line "doing."
+	para "I wonder how they"
+	line "are doing."
 
 	para "They say a #MON"
 	line "raised by a bad"
@@ -1146,9 +1134,9 @@ AideText_TheftTestimony:
 	text "There was a loud"
 	line "noise outside…"
 
-	para "When we went to"
-	line "look, someone"
-	cont "all the EEVEEs!"
+	para "And then, someone"
+	line "stole all of the"
+	cont "EEVEEs!"
 
 	para "It's unbelievable"
 	line "that anyone would"

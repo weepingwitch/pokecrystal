@@ -167,8 +167,8 @@ JasmineCianwoodPharmacyText:
 	line "at night."
 
 	para "…But it suddenly"
-	line "got sick… It's"
-	cont "gasping for air…"
+	line "got sick… It"
+	cont "got COVID."
 
 	para "…I understand"
 	line "that there is a"
@@ -197,7 +197,7 @@ JasmineCureAmphyText:
 
 PlayerHandedSecretpotionText:
 	text "<PLAYER> handed the"
-	line "SECRETPOTION to"
+	line "TYLENOL to"
 	cont "JASMINE."
 	done
 
@@ -222,9 +222,7 @@ JasmineThankYouText:
 	text "JASMINE: …Oh, I'm"
 	line "so relieved…"
 
-	para "This is just so"
-	line "wonderful…"
-
+	
 	para "Thank you so very,"
 	line "very much."
 
@@ -248,6 +246,8 @@ AmphyPalPalooText:
 AmphyBreathingLaboredText:
 	text "Its breathing is"
 	line "terribly labored…"
+
+	para "It has COVID."
 	done
 
 AmphyPaluPaluluText:

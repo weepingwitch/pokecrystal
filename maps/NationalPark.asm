@@ -309,16 +309,15 @@ NationalParkLassText:
 	text "Look! Check out my"
 	line "bag!"
 
-	para "I printed out my"
-	line "favorites from my"
+	para "It has the Dark"
+	line "Side of the Moon"
+	cont "cover art!"
 
-	para "#DEX and stuck"
-	line "them on my bag."
 	done
 
 NationalParkPokefanFText:
-	text "This is MAIL I got"
-	line "from my daughter."
+	text "I'm reading texts"
+	line "from my wife."
 	cont "It cheers me up."
 	done
 
@@ -349,18 +348,17 @@ NationalParkTeacher1Text_GotQuickClaw:
 	para "Sometimes it will"
 	line "strike first"
 	cont "during battle."
+	
 	done
 
 NationalParkYoungster1Text:
-	text "I'm playing with"
-	line "stickers I printed"
-	cont "from my #DEX."
+	text "I'm playing a"
+	line "#MON romhack."
 	done
 
 NationalParkYoungster2Text:
-	text "I get the other"
-	line "guy's #DEX"
-	cont "sticker if I win."
+	text "That girl is"
+	line "cheating!"
 	done
 
 NationalParkTeacher2Text:
@@ -379,25 +377,17 @@ NationalParkPersianText:
 	done
 
 NationalParkGameboyKidText:
-	text "I'm printing out"
-	line "my #DEX."
+	text "I've gotta beat"
+	line "the next gym"
+	cont "leader..."
 
-	para "You can also print"
-	line "out stuff like"
-
-	para "MAIL and your PC"
-	line "BOXES."
 	done
 
 SchoolboyJack1SeenText:
 	text "The world of"
 	line "#MON is deep."
 
-	para "There are still"
-	line "lots of things we"
-	cont "don't know."
-
-	para "But I know more"
+	para "I know more"
 	line "than you do!"
 	done
 
@@ -485,6 +475,8 @@ LassKriseAfterBattleText:
 	text "I thought you were"
 	line "staring at me"
 	cont "because I'm cute!"
+
+	para "(blush)"
 	done
 
 NationalParkRelaxationSquareText:
@@ -504,11 +496,9 @@ NationalParkBattleNoticeText:
 	done
 
 NationalParkTrainerTipsText:
-	text "TRAINER TIPS"
+	text "PARK RULES"
+	para "Be chill."
 
-	para "Print out MAIL by"
-	line "opening it then"
-	cont "pressing START."
 	done
 
 NationalPark_MapEvents:

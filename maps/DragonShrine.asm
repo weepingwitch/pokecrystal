@@ -392,24 +392,16 @@ DragonShrineClairWalkOutMovement:
 	step_end
 
 DragonShrineElderGreetingText:
-	text "Hm… Good to see"
-	line "you here."
-
-	para "No need to explain"
-	line "why you came."
-
-	para "CLAIR sent you"
+	
+	text "CLAIR sent you"
 	line "here, didn't she?"
 
-	para "That girl is a"
-	line "handful…"
+	
 
 	para "I am sorry, but I"
 	line "must test you."
 
-	para "Not to worry, you"
-	line "are to answer only"
-	cont "a few questions."
+	
 
 	para "Ready?"
 	done
@@ -452,15 +444,7 @@ DragonShrinePassedTestText:
 
 	para "Very commendable."
 
-	para "That conviction is"
-	line "what is important!"
-
-	para "<PLAYER>, don't"
-	line "lose that belief."
-
-	para "It will see you"
-	line "through at the"
-	cont "#MON LEAGUE."
+	
 	done
 
 DragonShrineMustIInformLanceText:
@@ -474,8 +458,6 @@ DragonShrineMustIInformLanceText:
 	line "confer the RISING-"
 	cont "BADGE!"
 
-	para "…Or must I inform"
-	line "LANCE of this?"
 	done
 
 DragonShrineElderScoldsClairText:
@@ -497,11 +479,6 @@ DragonShrineTakeThisDratiniText:
 	text "Hm… Good to see"
 	line "you here."
 
-	para "Your arrival is"
-	line "most fortunate."
-
-	para "I have something"
-	line "for you."
 
 	para "Take this DRATINI"
 	line "as proof that I"
@@ -548,11 +525,8 @@ DragonShrineRivalIsInTrainingText:
 	line "your age is in"
 	cont "training here."
 
-	para "He is much like"
-	line "CLAIR when she was"
-
-	para "younger. It is a"
-	line "little worrisome…"
+	para "It is a little"
+	line "worrisome…"
 	done
 
 DragonShrineWrongAnswerText1:
@@ -566,7 +540,7 @@ DragonShrineWrongAnswerText2:
 	done
 
 DragonShrineRightAnswerText:
-	text "Oh, I understand…"
+	text "Yes, yes…"
 	done
 
 DragonShrineElder2Text:
@@ -599,7 +573,7 @@ DragonShrineClairYouPassedText:
 	para "I guess there's no"
 	line "point in asking."
 
-	para "You did fail?"
+	para "You failed?"
 
 	para "<……><……><……><……><……><……>"
 

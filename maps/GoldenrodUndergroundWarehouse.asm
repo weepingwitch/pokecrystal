@@ -166,11 +166,6 @@ DirectorIntroText:
 
 	para "The RADIO TOWER!"
 
-	para "What's happening"
-	line "there?"
-
-	para "Taken over by TEAM"
-	line "ROCKET?"
 
 	para "Here. Take this"
 	line "CARD KEY."
@@ -189,23 +184,15 @@ DirectorAfterText:
 	para "There's no telling"
 	line "what they'll do if"
 
-	para "they control the"
-	line "transmitter."
+	para "they broadcast"
+	line "their recipes."
 
-	para "They may even be"
-	line "able to control"
-
-	para "#MON using a"
-	line "special signal!"
-
-	para "You're the only"
-	line "one I can call on."
 
 	para "Please save the"
 	line "RADIO TOWER…"
 
-	para "And all the #-"
-	line "MON nationwide!"
+	para "And all the food"
+	line "nationwide!"
 	done
 
 GoldenrodUndergroundWarehouse_MapEvents:

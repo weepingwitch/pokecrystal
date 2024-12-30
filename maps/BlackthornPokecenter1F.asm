@@ -31,7 +31,7 @@ BlackthornPokecenter1FGentlemanText:
 BlackthornPokecenter1FTwinText:
 	
 
-	para "I got the MOVE"
+	text "I got the MOVE"
 	line "DELETER to help me"
 	cont "forget an HM move."
 	done

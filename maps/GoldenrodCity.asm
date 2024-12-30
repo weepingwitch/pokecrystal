@@ -318,9 +318,7 @@ GoldenrodCityCooltrainerF2Text:
 	line "GOLDENROD CITY is"
 	cont "a landmark."
 
-	para "They're running a"
-	line "promotional cam- "
-	cont "paign right now."
+
 
 	para "They'll modify"
 	line "your #GEAR,"
@@ -337,11 +335,12 @@ GoldenrodCityCooltrainerF2Text_GotRadioCard:
 GoldenrodCityYoungster2Text:
 	text "E-he-he-he…"
 
-	para "I got in trouble"
-	line "for playing in the"
+	para "I saw someone"
+	line "delivering sharks"
+	cont "to the basement"
 
-	para "basement of the"
-	line "DEPT.STORE."
+	para "of the DEPT."
+	line "STORE!"
 	done
 
 GoldenrodCityLassText:

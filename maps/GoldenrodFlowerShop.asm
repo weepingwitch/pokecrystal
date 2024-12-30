@@ -90,10 +90,9 @@ GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
 	line "36?"
 
 	para "My little sister"
-	line "got all excited"
+	line "got all excited."
 
-	para "and went to see"
-	line "it…"
+
 
 	para "I'm worried… Isn't"
 	line "it dangerous?"
@@ -101,13 +100,8 @@ GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
 
 GoldenrodFlowerShopTeacherAskWantToBorrowWaterBottleText:
 	text "Do you want to"
-	line "borrow the water"
+	line "squirt too?"
 
-	para "bottle too?"
-	line "I don't want you"
-
-	para "doing anything"
-	line "dangerous with it."
 	done
 
 GoldenrodFlowerShopTeacherHeresTheSquirtbottleText:
@@ -140,7 +134,7 @@ GoldenrodFlowerShopFloriaWonderIfSisWillLendWaterBottleText:
 	para "If I beat WHITNEY,"
 	line "I wonder if she'll"
 
-	para "lend me her water"
+	para "lend me a squirt"
 	line "bottle…"
 	done
 

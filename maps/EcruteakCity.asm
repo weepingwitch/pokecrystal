@@ -27,7 +27,7 @@ EcruteakCityGramps3Script:
 	jumptextfaceplayer EcruteakCityGramps3Text
 
 EcruteakCityLass1Script:
-	jumptextfaceplayer EcruteakCityLass1Text
+	jumptextfaceplayer UnusedMissingDaughterText
 
 EcruteakCityLass2Script:
 	faceplayer
@@ -88,7 +88,7 @@ EcruteakCityMartSign:
 EcruteakCityHiddenHyperPotion:
 	hiddenitem HYPER_POTION, EVENT_ECRUTEAK_CITY_HIDDEN_HYPER_POTION
 
-UnusedMissingDaughterText: ; unreferenced
+UnusedMissingDaughterText: 
 	text "Oh, no. Oh, no…"
 
 	para "My daughter is"
@@ -117,11 +117,7 @@ EcruteakCityGramps1Text:
 	done
 
 EcruteakCityGramps2Text:
-	text "Ah, child."
-	line "Have you learned"
 
-	para "to dance like the"
-	line "KIMONO GIRLS?"
 
 	para "If you go to their"
 	line "DANCE THEATER, an"
@@ -144,8 +140,8 @@ EcruteakCityLass2Text:
 	line "used to be here…"
 
 	para "My grandma told me"
-	line "it used to be much"
-	cont "taller."
+	line "to never forget."
+	
 	done
 
 EcruteakCityLass2Text_ReleasedBeasts:
@@ -156,12 +152,10 @@ EcruteakCityLass2Text_ReleasedBeasts:
 	done
 
 EcruteakCityFisherText:
-	text "I heard a rumor"
-	line "about OLIVINE"
-	cont "LIGHTHOUSE."
 
-	para "The #MON that"
-	line "serves as the"
+	text "The #MON that"
+	line "is the OLIVINE"
+	cont "LIGHTHOUSE's"
 
 	para "beacon fell ill."
 	line "Sounds like they"
@@ -188,31 +182,11 @@ EcruteakCityYoungsterText:
 
 EcruteakCityGramps3Text:
 	text "In the distant"
-	line "past…"
+	line "past… On 9/11,"
 
-	para "This tower burned"
-	line "in a fire. Three"
+	para "this tower burned"
+	line "in a fire."
 
-	para "nameless #MON"
-	line "perished in it."
-
-	para "A rainbow-colored"
-	line "#MON descended"
-
-	para "from the sky and"
-	line "resurrected them…"
-
-	para "It's a legend that"
-	line "has been passed"
-
-	para "down by ECRUTEAK"
-	line "GYM LEADERS."
-
-	para "Me?"
-
-	para "I was a trainer"
-	line "way back when."
-	cont "Hohoho!"
 	done
 
 EcruteakCitySignText:
@@ -291,7 +265,7 @@ EcruteakCity_MapEvents:
 	def_object_events
 	object_event 18, 15, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakCityGramps1Script, -1
 	object_event 20, 21, SPRITE_GRAMPS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakCityGramps2Script, -1
-	object_event 21, 29, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, EcruteakCityLass1Script, -1
+	object_event 21, 29, SPRITE_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, EcruteakCityLass1Script, -1
 	object_event  3,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakCityLass2Script, -1
 	object_event  9, 22, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, EcruteakCityFisherScript, -1
 	object_event 10, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, EcruteakCityYoungsterScript, -1

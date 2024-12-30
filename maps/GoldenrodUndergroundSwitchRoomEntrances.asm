@@ -649,14 +649,6 @@ UndergroundRivalRetreatMovement2:
 UndergroundRivalBeforeText:
 	text "Hold it!"
 
-	para "I saw you, so I"
-	line "tailed you."
-
-	para "I don't need you"
-	line "underfoot while I"
-
-	para "take care of TEAM"
-	line "ROCKET."
 
 	para "…Wait a second."
 	line "You beat me be-"
@@ -692,30 +684,7 @@ UndergroundRivalAfterText:
 	para "That I don't treat"
 	line "#MON properly?"
 
-	para "Love…"
-
-	para "Trust…"
-
-	para "Are they really"
-	line "what I lack?"
-
-	para "Are they keeping"
-	line "me from winning?"
-
-	para "I… I just don't"
-	line "understand."
-
-	para "But it's not going"
-	line "to end here."
-
-	para "Not now. Not"
-	line "because of this."
-
-	para "I won't give up my"
-	line "dream of becoming"
-
-	para "the world's best"
-	line "#MON trainer!"
+	para "Nah."
 	done
 
 UndergroundRivalLossText:
@@ -864,11 +833,7 @@ SwitchRoomText_Switch1:
 	done
 
 GruntF3SeenText:
-	text "Are you lost? No,"
-	line "you can't be."
-
-	para "You don't have"
-	line "that scared look."
+	text "Are you lost?"
 
 	para "I'll give you"
 	line "something to be"

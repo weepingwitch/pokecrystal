@@ -34,9 +34,7 @@ OlivineCafeStrengthSailorText:
 	line "sure look like"
 	cont "lightweights!"
 
-	para "They don't have"
-	line "the power to move"
-	cont "boulders aside."
+
 
 	para "Here, use this"
 	line "and teach them"
@@ -60,6 +58,10 @@ OlivineCafeFishingGuruText:
 
 	para "of hearty fare for"
 	line "beefy SAILORS!"
+
+	para "The fried SLOW-"
+	line "POKETAIL is very"
+	cont "good!"
 	done
 
 OlivineCafeSailorText:

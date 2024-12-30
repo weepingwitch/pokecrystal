@@ -424,7 +424,7 @@ SupernerdEricSeenText:
 	cont "NER."
 
 	para "I was trying to"
-	line "cheat using my"
+	line "cheat with my"
 	cont "#MON…"
 	done
 
@@ -434,8 +434,8 @@ SupernerdEricBeatenText:
 
 SupernerdEricAfterBattleText:
 	text "I guess I have to"
-	line "do things fair and"
-	cont "square…"
+	line "be more subtle."
+	
 	done
 
 SupernerdTeruSeenText:
@@ -443,11 +443,7 @@ SupernerdTeruSeenText:
 	line "type alignments in"
 	cont "battle?"
 
-	para "If you know your"
-	line "type advantages,"
-
-	para "you'll do better"
-	line "in battle."
+	
 	done
 
 SupernerdTeruBeatenText:

@@ -1602,20 +1602,20 @@ _DayCareManIntroText::
 _DayCareManIntroEggText::
 	
 
-	para "Want me to"
+	text "Want me to"
 	line "raise a #MON?"
 	done
 
 _DayCareLadyIntroText::
 	
-	para "Should I raise a"
+	text "Should I raise a"
 	line "#MON for you?"
 	done
 
 _DayCareLadyIntroEggText::
 	
 
-	para "Should I raise a"
+	text "Should I raise a"
 	line "#MON for you?"
 	done
 
@@ -1697,11 +1697,7 @@ _GotBackMonText::
 
 _BackAlreadyText::
 	text "Huh? Back already?"
-	line "Your @"
-	text_ram wStringBuffer1
-	text_start
-	para "needs a little"
-	line "more time with us."
+	
 
 	para "If you want your"
 	line "#MON back, it"

@@ -168,19 +168,11 @@ OlivineCityPlayerStepsAsideBottomMovement:
 OlivineCityRivalText:
 	text "…"
 
-	para "You again?"
+	
+	para "Look, the city's"
 
-	para "There's no need to"
-	line "panic. I don't"
-
-	para "bother with wimps"
-	line "like you."
-
-	para "Speaking of weak-"
-	line "lings, the city's"
-
-	para "GYM LEADER isn't"
-	line "here."
+	line "GYM LEADER isn't"
+	cont "here."
 
 	para "Supposedly taking"
 	line "care of a sick"
@@ -188,33 +180,17 @@ OlivineCityRivalText:
 	para "#MON at the"
 	line "LIGHTHOUSE."
 
-	para "Humph! Boo-hoo!"
-	line "Just let sick"
-	cont "#MON go!"
-
 	para "A #MON that"
 	line "can't battle is"
 	cont "worthless!"
 
-	para "Why don't you go"
-	line "train at the"
-	cont "LIGHTHOUSE?"
-
-	para "Who knows. It may"
-	line "make you a bit"
-	cont "less weak!"
 	done
 
 OlivineCitySailor1Text:
-	text "Dark roads are"
+	text "Dark seas are"
 	line "dangerous at"
 	cont "night."
 
-	para "But in the pitch-"
-	line "black of night,"
-
-	para "the sea is even"
-	line "more treacherous!"
 
 	para "Without the beacon"
 	line "of the LIGHTHOUSE"
@@ -228,6 +204,9 @@ OlivineCityStandingYoungsterPokegearText:
 	line "have--it's a #-"
 	cont "GEAR, right? Wow,"
 	cont "that's cool."
+
+	para "Does it have"
+	line "games on it?"
 	done
 
 OlivineCityStandingYoungsterPokedexText:
@@ -236,15 +215,15 @@ OlivineCityStandingYoungsterPokedexText:
 
 	para "That is just so"
 	line "awesome."
+
+	para "Does it have"
+	line "games on it?"
 	done
 
 OlivineCitySailor2Text:
-	text "The sea is sweet!"
+	
 
-	para "Sunsets on the sea"
-	line "are marvelous!"
-
-	para "Sing with me! "
+	text "Sing with me! "
 	line "Yo-ho! Blow the"
 	cont "man down!…"
 	done
@@ -254,6 +233,9 @@ OlivineCitySignText:
 
 	para "The Port Closest"
 	line "to Foreign Lands"
+
+	para "We can see RUSSIA"
+	line "from our backyard"
 	done
 
 OlivineCityPortSignText:
