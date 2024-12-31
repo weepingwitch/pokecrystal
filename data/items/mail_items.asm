@@ -1,6 +1,4 @@
 MailItems:
 	db FLOWER_MAIL
-	db BLUESKY_MAIL
-	db MUSIC_MAIL
-	db MIRAGE_MAIL
+	
 	db -1
