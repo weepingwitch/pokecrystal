@@ -1,20 +1,18 @@
 NurseMornText:
-	text "Good morning!"
-	line "Welcome to our"
-	cont "#MON CENTER."
+	
+	text "Welcome to our"
+	line "#MON CENTER."
 	done
 
 NurseDayText:
-	text "Hello!"
-	line "Welcome to our"
-	cont "#MON CENTER."
+	
+	text "Welcome to our"
+	line "#MON CENTER."
 	done
 
 NurseNiteText:
-	text "Good evening!"
-	line "You're out late."
-
-	para "Welcome to our"
+	
+	text "Welcome to our"
 	line "#MON CENTER."
 	done
 

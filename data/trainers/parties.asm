@@ -3353,7 +3353,9 @@ SageGroup:
 	; SAGE (1)
 	db "CHOW@", TRAINERTYPE_NORMAL
 	db  3, BELLSPROUT
+	db 4, GASTLY
 	db  3, BELLSPROUT
+	db 6, CUBONE
 	db  3, BELLSPROUT
 	
 	db -1 ; end
@@ -3400,6 +3402,7 @@ SageGroup:
 	db "EDMOND@", TRAINERTYPE_NORMAL
 	db  3, BELLSPROUT
 	db  3, BELLSPROUT
+	db 8, PIDGEY
 	db  3, BELLSPROUT
 	db 3, ODDISH
 	db -1 ; end
@@ -3408,13 +3411,16 @@ SageGroup:
 	db "NEAL@", TRAINERTYPE_NORMAL
 	db  6, BELLSPROUT
 	db 6, NATU
+	db 6, ODDISH
 	db -1 ; end
 
 	; SAGE (9)
 	db "LI@", TRAINERTYPE_NORMAL
 	db  7, BELLSPROUT
+	db 8, GASTLY
 	db  7, BELLSPROUT
 	db 10, HOOTHOOT
+	db 8, ODDISH
 	db -1 ; end
 
 	; SAGE (10)

@@ -227,7 +227,7 @@ LostAgainstText:
 
 BattleText_EnemyIsAboutToUseWillPlayerChangeMon:
 	text "They're gonna use"
-	scroll "@"
+	line "@"
 	text_ram wEnemyMonNickname
 	text "."
 
