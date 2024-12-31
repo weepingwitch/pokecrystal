@@ -480,17 +480,14 @@ ScientistRossBeatenText:
 
 ScientistRossAfterBattleText:
 	text "A radio signal"
-	line "that drives #-"
-	cont "MON mad…"
+	line "that drives all"
+	cont "#MON mad…"
 
-	para "My experiment is a"
-	line "complete failure."
+	para "The secret is,"
+	line "the signal is"
+	cont "SMOOTH JAZZ!"
 
-	para "Who would want"
-	line "that anyway?"
-
-	para "Worth absolutely"
-	line "nothing."
+	
 	done
 
 ScientistMitchSeenText:

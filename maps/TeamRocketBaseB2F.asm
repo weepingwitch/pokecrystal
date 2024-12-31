@@ -567,16 +567,6 @@ RocketBaseBossFThrashText:
 	line "brat like you on"
 	cont "the loose."
 
-	para "It's harmful to"
-	line "TEAM ROCKET's"
-	cont "pride, you see."
-
-	para "However strong you"
-	line "may be, you can't"
-
-	para "take both of us at"
-	line "the same time."
-
 	para "Sorry, baby. Now"
 	line "get ready to be"
 	cont "thrashed."
@@ -595,14 +585,7 @@ RocketBaseBossDontMeddleText:
 	para "Where is your"
 	line "sense of honor?"
 
-	para "As the interim"
-	line "boss in place of"
-
-	para "GIOVANNI, I'll"
-	line "show you how wrong"
-
-	para "it is to meddle"
-	line "with TEAM ROCKET!"
+	
 	done
 
 RocketBaseBossWinText:
@@ -683,10 +666,10 @@ RockerBaseLanceElectrodeFaintText:
 	line "switch on it…"
 
 	para "We have no choice."
-	line "We have to make"
+	line "We have to kill"
 
 	para "all the ELECTRODE"
-	line "faint."
+	line "around it."
 
 	para "That should stop"
 	line "this machine from"
@@ -761,23 +744,6 @@ RocketBaseLanceMonMasterText:
 
 	para "MASTER is long and"
 	line "difficult."
-
-	para "Knowing that, will"
-	line "you keep going?"
-
-	para "…"
-
-	para "I see. No, you're"
-	line "right."
-
-	para "If you would give"
-	line "up that easily,"
-
-	para "you would have"
-	line "never chased that"
-
-	para "dream in the first"
-	line "place."
 
 	para "I look forward to"
 	line "seeing you again!"
@@ -867,8 +833,8 @@ GruntM19AfterBattleText:
 	cont "for that door."
 
 	para "Where's the boss?"
-	line "Who knows? Go look"
-	cont "for yourself."
+	line "Who knows? Go fuck"
+	cont "yourself."
 	done
 
 RocketBaseDoorNoPasswordText:
