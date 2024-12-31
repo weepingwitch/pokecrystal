@@ -115,13 +115,7 @@ MoveMonWOMail_InsertMon_SaveGame:
 	ret
 
 StartMoveMonWOMail_SaveGame:
-	ld hl, MoveMonWOMailSaveText
-	call MenuTextbox
-	call YesNoBox
-	call ExitMenu
-	jr c, .refused
-	call AskOverwriteSaveFile
-	jr c, .refused
+	
 	call PauseGameLogic
 	call _SavingDontTurnOffThePower
 	call ResumeGameLogic

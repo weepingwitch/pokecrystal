@@ -204,8 +204,8 @@ _ChangeBoxSaveText::
 
 _MoveMonWOMailSaveText::
 	text "Each time you move"
-	line "a #MON, data"
-	cont "will be saved. OK?"
+	line "#MON, game saves."
+	
 	done
 
 _WindowAreaExceededErrorText:: ; unreferenced

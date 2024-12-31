@@ -1109,29 +1109,26 @@ _PokecenterPCTurnOnText::
 	prompt
 
 _PokecenterPCWhoseText::
-	text "Access whose PC?"
+	text "Access what PC?"
 	done
 
 _PokecenterBillsPCText::
-	text "BILL's PC"
-	line "accessed."
 
-	para "#MON Storage"
+	text "#MON Storage"
 	line "System opened."
 	prompt
 
 _PokecenterPlayersPCText::
-	text "Accessed own PC."
+	
 
-	para "Item Storage"
+	text "Item Storage"
 	line "System opened."
 	prompt
 
 _PokecenterOaksPCText::
-	text "PROF.OAK's PC"
-	line "accessed."
 
-	para "#DEX Rating"
+
+	text "#DEX Rating"
 	line "System opened."
 	prompt
 

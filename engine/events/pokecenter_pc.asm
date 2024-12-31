@@ -16,8 +16,8 @@ PokemonCenterPC:
 	call PC_CheckPartyForPokemon
 	ret c
 	call PC_PlayBootSound
-	ld hl, PokecenterPCTurnOnText
-	call PC_DisplayText
+	;ld hl, PokecenterPCTurnOnText
+	;call PC_DisplayText
 	ld hl, PokecenterPCWhoseText
 	call PC_DisplayTextWaitMenu
 	ld hl, .TopMenu
@@ -61,11 +61,11 @@ PokemonCenterPC:
 	dw HallOfFamePC, .String_HallOfFame
 	dw TurnOffPC,    .String_TurnOff
 
-.String_PlayersPC:  db "<PLAYER>'s PC@"
-.String_BillsPC:    db "BILL's PC@"
-.String_OaksPC:     db "PROF.OAK's PC@"
+.String_PlayersPC:  db "item box@"
+.String_BillsPC:    db "poke box@"
+.String_OaksPC:     db "dex rating@"
 .String_HallOfFame: db "HALL OF FAME@"
-.String_TurnOff:    db "TURN OFF@"
+.String_TurnOff:    db "log off@"
 
 .WhichPC:
 ; entries correspond to PCPC_* constants
@@ -141,16 +141,16 @@ PC_CheckPartyForPokemon:
 
 BillsPC:
 	call PC_PlayChoosePCSound
-	ld hl, PokecenterBillsPCText
-	call PC_DisplayText
+	;ld hl, PokecenterBillsPCText
+	;call PC_DisplayText
 	farcall _BillsPC
 	and a
 	ret
 
 PlayersPC:
 	call PC_PlayChoosePCSound
-	ld hl, PokecenterPlayersPCText
-	call PC_DisplayText
+	;ld hl, PokecenterPlayersPCText
+	;call PC_DisplayText
 	ld b, PLAYERSPC_NORMAL
 	call _PlayersPC
 	and a
@@ -158,8 +158,8 @@ PlayersPC:
 
 OaksPC:
 	call PC_PlayChoosePCSound
-	ld hl, PokecenterOaksPCText
-	call PC_DisplayText
+	;ld hl, PokecenterOaksPCText
+	;call PC_DisplayText
 	farcall ProfOaksPC
 	and a
 	ret
