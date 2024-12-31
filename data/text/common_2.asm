@@ -105,8 +105,10 @@ _ExpPointsText::
 	text_start
 	line "@"
 	text_decimal wStringBuffer2, 2, 5
-	text " EXP. Points!"
-	prompt
+	text " EXP. Points!@"
+	text_end
+	
+
 
 _GoMonText::
 	text "Go! @"

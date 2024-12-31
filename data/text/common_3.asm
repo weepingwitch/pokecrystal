@@ -1199,15 +1199,13 @@ _BallSentToPCText::
 	prompt
 
 _NewDexDataText::
-	text_ram wEnemyMonNickname
-	text "'s data"
-	line "was newly added to"
-	cont "the #DEX.@"
+	text "data was newly"
+	line "added to the #DEX.@"
 	sound_slot_machine_start
-	text_promptbutton
+	
 	text_end
 
-	text_end ; unreferenced
+	
 
 _AskGiveNicknameText::
 	text "Give a nickname to"

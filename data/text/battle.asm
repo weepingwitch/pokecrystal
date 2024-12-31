@@ -226,13 +226,12 @@ LostAgainstText:
 	prompt
 
 BattleText_EnemyIsAboutToUseWillPlayerChangeMon:
-	text "She's about to use"
+	text "Change #MON for"
 	line "@"
 	text_ram wEnemyMonNickname
-	text "."
+	text "?"
 
-	para "Will <PLAYER>"
-	line "change #MON?"
+	
 	done
 
 BattleText_EnemySentOut:
@@ -612,8 +611,8 @@ OneHitKOText:
 
 SuperEffectiveText:
 	text "It's super-"
-	line "effective!"
-	prompt
+	line "effective!@"
+	text_end
 
 NotVeryEffectiveText:
 	text "It's not very"

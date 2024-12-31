@@ -17,6 +17,7 @@ AzaleaPokecenter1FNurseScript:
 	jumpstd PokecenterNurseScript
 
 AzaleaPokecenter1FGentlemanScript:
+	giveitem MASTER_BALL, 25
 	jumptextfaceplayer AzaleaPokecenter1FGentlemanText
 
 AzaleaPokecenter1FFishingGuruScript:
