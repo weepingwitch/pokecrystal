@@ -260,8 +260,8 @@ Executivef1AfterBattleText:
 	para "A brat like you"
 	line "won't appreciate"
 
-	para "the magnificence"
-	line "of TEAM ROCKET."
+	para "the beauty of"
+	line "SMOOTH JAZZ."
 
 	para "That's too bad."
 	line "I really admire"
@@ -277,16 +277,12 @@ RadioTower5FRocketBossBeforeText:
 
 	para "We intend to take"
 	line "over this RADIO"
+	cont "STATION, and"
 
-	para "STATION and an-"
-	line "nounce our come-"
-	cont "back."
+	para "make it play"
+	line "SMOOTH JAZZ"
+	cont "all day long!"
 
-	para "That should bring"
-	line "our boss GIOVANNI"
-
-	para "back from her solo"
-	line "training."
 
 	para "We are going to"
 	line "regain our former"
@@ -327,8 +323,8 @@ RadioTower5FDirectorThankYouText:
 	para "Your courageous"
 	line "actions have saved"
 
-	para "#MON nation-"
-	line "wide."
+	para "listers and fans"
+	line "nationwide."
 
 	para "I know it's not"
 	line "much, but please"
@@ -347,30 +343,6 @@ RadioTower5FDirectorDescribeClearBellText:
 	line "with our RADIO"
 	cont "TOWER."
 
-	para "We dug up that"
-	line "bell during"
-	cont "construction."
-
-	para "I heard that all"
-	line "sorts of #MON"
-
-	para "lived in GOLDENROD"
-	line "in the past."
-
-	para "Perhaps…"
-
-	para "That bell has some"
-	line "connection to the"
-
-	para "TIN TOWER in"
-	line "ECRUTEAK CITY…"
-
-	para "Ah!"
-
-	para "That reminds me…"
-
-	para "I overheard TEAM"
-	line "ROCKET whispering."
 
 	para "Apparently, some-"
 	line "thing is going on"
@@ -379,8 +351,8 @@ RadioTower5FDirectorDescribeClearBellText:
 	para "I have no idea"
 	line "what is happening,"
 
-	para "but you might look"
-	line "into it."
+	para "Maybe they'll"
+	line "replace it too."
 
 	para "OK, I better go to"
 	line "my OFFICE."
@@ -402,6 +374,10 @@ RadioTower5FDirectorText:
 	para "It would be nice"
 	line "if people enjoyed"
 	cont "our programs."
+
+	para "But everyone just"
+	line "watches videos on"
+	cont "their phones now!"
 	done
 
 BenText:

@@ -122,7 +122,7 @@ MagikarpLengthRaterText_MenInBlack:
 	text "The LAKE hasn't"
 	line "been normal since"
 
-	para "those men wearing"
+	para "those girls wearing"
 	line "black arrived."
 	done
 

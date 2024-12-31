@@ -117,6 +117,10 @@ RadioTower4FDJMaryText:
 	line "I have to suffer"
 	cont "through this?"
 
+	para "Why does a wise"
+	line "and loving god"
+	cont "allow such pain?"
+
 	para "MEOWTH, help me!"
 	done
 

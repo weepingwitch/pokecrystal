@@ -295,6 +295,9 @@ GoldenrodCityYoungster1Text:
 
 	para "I can't find it"
 	line "anywhere."
+
+	para "I'm so lazy and"
+	line "unobservant."
 	done
 
 GoldenrodCityCooltrainerF1Text:
@@ -348,16 +351,41 @@ GoldenrodCityLassText:
 	line "house rates your"
 	cont "#MON names."
 
-	para "she can even rename"
+	para "She can even rename"
 	line "your #MON."
 	done
 
 GoldenrodCityGrampsText:
 	text "Whew! This is one"
-	line "big town. I don't"
+	line "big city. I don't"
 
 	para "know where any-"
 	line "thing is."
+
+	para "Back in my day"
+	line "we didn't have"
+	cont "any cities..."
+
+	para "We had to walk"
+	line "uphill both ways"
+	cont "in the snow,"
+
+	para "just to get to"
+	line "the nearest"
+	cont "street."
+
+	para "MARTs? Ha!"
+	line "The trees were"
+	cont "our MARTs,"
+
+	para "and the rivers"
+	line "were our"
+	cont "#CENTERs!"
+
+	para "Humph!"
+
+	para "Kids these days"
+	line "don't know shit."
 	done
 
 GoldenrodCityRocketScoutText1:
@@ -368,6 +396,10 @@ GoldenrodCityRocketScoutText1:
 GoldenrodCityRocketScoutText2:
 	text "What do you want,"
 	line "you pest? Scram!"
+
+	para "You don't look"
+	line "like you enjoy"
+	cont "SMOOTH JAZZ."
 	done
 
 GoldenrodCityRocket1Text:
@@ -379,24 +411,30 @@ GoldenrodCityRocket2Text:
 	text "Take over the"
 	line "RADIO TOWER…"
 
+	para "Broadcast only"
+	line "SMOOTH JAZZ"
+	cont "all day long…"
+
 	para "What? It's none of"
 	line "your business!"
 	done
 
 GoldenrodCityRocket3Text:
 	text "#MON? They're"
-	line "nothing more than"
+	line "nothing compared"
 
-	para "tools for making"
-	line "money!"
+	para "to the joy of"
+	line "SMOOTH JAZZ!"
+
 	done
 
 GoldenrodCityRocket4Text:
 	text "Our dream will"
 	line "soon come true…"
 
-	para "It was such a long"
-	line "struggle…"
+	para "SMOOTH JAZZ"
+	line "all day long…"
+
 	done
 
 GoldenrodCityRocket5Text:
@@ -407,8 +445,8 @@ GoldenrodCityRocket5Text:
 
 GoldenrodCityRocket6Text:
 	text "Come taste the"
-	line "true terror of"
-	cont "TEAM ROCKET!"
+	line "true delight of"
+	cont "SMOOTH JAZZ!"
 	done
 
 GoldenrodCityStationSignText:
@@ -436,6 +474,9 @@ GoldenrodGymSignText:
 
 	para "The Incredibly"
 	line "Pretty Girl!"
+
+	para "That's just"
+	line "misogynist…"
 	done
 
 GoldenrodCitySignText:
@@ -443,11 +484,14 @@ GoldenrodCitySignText:
 
 	para "The Festive City"
 	line "of Opulent Charm"
+
+	para "Rich people live"
+	line "here."
 	done
 
 GoldenrodCityBikeShopSignText:
 	text "The World is a"
-	line "Cycle Path!"
+	line "Beautiful Place!"
 	cont "BIKE SHOP"
 	done
 
@@ -456,6 +500,9 @@ GoldenrodCityGameCornerSignText:
 
 	para "GOLDENROD CITY"
 	line "GAME CORNER"
+
+	para "Come get addicted"
+	line "to gambling…"
 	done
 
 GoldenrodCityNameRaterSignText:
@@ -481,8 +528,10 @@ GoldenrodCityPokeComCenterSignText: ; unreferenced
 	done
 
 GoldenrodCityFlowerShopSignText:
-	text "Blooming Beautiful"
+	text "NATURAL HEALTH"
 	line "FLOWER SHOP"
+	cont "med and rec"
+	cont "18 and up"
 	done
 
 GoldenrodCityMoveTutorAskTeachAMoveText:

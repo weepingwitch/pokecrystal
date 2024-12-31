@@ -354,7 +354,7 @@ RadioTower1FRadioCardWomanQuestion4Text:
 	para "Is FALKNER the"
 	line "VIOLET GYM LEADER"
 
-	para "who uses bird"
+	para "who uses baby"
 	line "#MON?"
 	done
 
@@ -428,11 +428,8 @@ GruntM3SeenText:
 	para "Now everyone will"
 	line "get to experience"
 
-	para "the true terror of"
-	line "TEAM ROCKET!"
-
-	para "We'll show you"
-	line "how scary we are!"
+	para "the true delight of"
+	line "SMOOTH JAZZ!"
 	done
 
 GruntM3BeatenText:

@@ -166,15 +166,13 @@ RadioTower3FSuperNerdText:
 	done
 
 RadioTower3FGymGuideText_Rockets:
-	text "To trainers, #-"
-	line "MON are their"
-	cont "beloved partners."
-
-	para "It's terrible how"
+	
+	text "It's terrible how"
 	line "TEAM ROCKET is"
 
-	para "trying to control"
-	line "#MON."
+	para "trying to make us"
+	line "all listen to"
+	cont "SMOOTH JAZZ."
 	done
 
 RadioTower3FGymGuideText:
@@ -200,7 +198,7 @@ RadioTower3FCooltrainerFPleaseSaveDirectorText:
 	para "she's up on the"
 	line "fifth floor."
 
-	para "Please save him!"
+	para "Please save her!"
 	done
 
 RadioTower3FCooltrainerFIsDirectorSafeText:
@@ -281,7 +279,7 @@ GruntM9BeatenText:
 
 GruntM9AfterBattleText:
 	text "What?! You made it"
-	line "past our men in"
+	line "past our girls in"
 	cont "the UNDERGROUND?"
 
 	para "How could you?"

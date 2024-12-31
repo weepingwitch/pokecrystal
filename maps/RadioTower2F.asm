@@ -414,7 +414,8 @@ GruntM5SeenText:
 	cont "#MON!"
 
 	para "We love being"
-	line "evil! Scared?"
+	line "evil! And also"
+	cont "SMOOTH JAZZ!"
 	done
 
 GruntM5BeatenText:
@@ -423,7 +424,7 @@ GruntM5BeatenText:
 	done
 
 GruntM5AfterBattleText:
-	text "We're not always"
+	text "We're always"
 	line "evil. We just do"
 	cont "whatever we like."
 	done
