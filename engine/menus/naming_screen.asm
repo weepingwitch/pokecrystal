@@ -104,7 +104,7 @@ NamingScreen:
 	call PlaceString
 	farcall GetGender
 	jr c, .genderless
-	ld a, "♂"
+	ld a, "♀"
 	jr nz, .place_gender
 	ld a, "♀"
 .place_gender

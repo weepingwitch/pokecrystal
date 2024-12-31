@@ -97,7 +97,7 @@ GetBasePokemonName::
 	ld a, [hl]
 	cp "@"
 	jr z, .quit
-	cp "♂"
+	cp "♀"
 	jr z, .end
 	cp "♀"
 	jr z, .end

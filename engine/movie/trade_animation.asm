@@ -1000,7 +1000,7 @@ TrademonStats_PrintOTName:
 	ret
 
 .Gender:
-	db " ", "♂", "♀"
+	db " ", "♀", "♀"
 
 TrademonStats_PrintTrademonID:
 	hlcoord 7, 6

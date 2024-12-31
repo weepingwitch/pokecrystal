@@ -848,7 +848,7 @@ Printer_GetMonGender:
 	farcall GetGender
 	ld a, " "
 	jr c, .got_gender
-	ld a, "♂"
+	ld a, "♀"
 	jr nz, .got_gender
 	ld a, "♀"
 .got_gender

@@ -467,7 +467,7 @@ PlacePartyMonGender:
 	ret
 
 .male
-	db "♂…MALE@"
+	db "♀…FEMALE@"
 
 .female
 	db "♀…FEMALE@"

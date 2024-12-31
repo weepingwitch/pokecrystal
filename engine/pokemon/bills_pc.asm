@@ -1083,7 +1083,7 @@ PCMonInfo:
 	ld [wMonType], a
 	farcall GetGender
 	jr c, .skip_gender
-	ld a, "♂"
+	ld a, "♀"
 	jr nz, .printgender
 	ld a, "♀"
 .printgender
@@ -2465,10 +2465,10 @@ BillsPC_ChangeBoxSubmenu:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "SWITCH@"
-	db "NAME@"
-	db "PRINT@"
-	db "QUIT@"
+	db "switch@"
+	db "name@"
+	db "print@"
+	db "quit@"
 
 BillsPC_PlaceChooseABoxString:
 	ld de, .ChooseABox

@@ -4680,7 +4680,7 @@ PrintPlayerHUD:
 	callfar GetGender
 	ld a, " "
 	jr c, .got_gender_char
-	ld a, "♂"
+	ld a, "♀"
 	jr nz, .got_gender_char
 	ld a, "♀"
 
@@ -4756,7 +4756,7 @@ DrawEnemyHUD:
 	callfar GetGender
 	ld a, " "
 	jr c, .got_gender
-	ld a, "♂"
+	ld a, "♀"
 	jr nz, .got_gender
 	ld a, "♀"
 
