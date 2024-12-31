@@ -488,8 +488,8 @@ NationalParkBattleNoticeText:
 	text "What is this"
 	line "notice?"
 
-	para "Please battle only"
-	line "in the grass."
+	para "Please have fun."
+	
 
 	para "NATIONAL PARK"
 	line "WARDEN'S OFFICE"

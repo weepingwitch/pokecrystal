@@ -226,7 +226,7 @@ LostAgainstText:
 	prompt
 
 BattleText_EnemyIsAboutToUseWillPlayerChangeMon:
-	text "They're gonna use"
+	text "She's about to use"
 	line "@"
 	text_ram wEnemyMonNickname
 	text "."

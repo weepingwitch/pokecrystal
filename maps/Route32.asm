@@ -604,7 +604,7 @@ Text_MillionDollarSlowpokeTail:
 	text "How would you like"
 	line "to have this"
 
-	para "tasty, nutritious"
+	para "tasty, deep-fried"
 	line "SLOWPOKETAIL?"
 
 	para "For you right now,"
