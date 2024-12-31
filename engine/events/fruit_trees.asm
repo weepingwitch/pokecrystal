@@ -9,7 +9,7 @@ FruitTreeScript::
 	callasm CheckFruitTree
 	iffalse .fruit
 	writetext NothingHereText
-	waitbutton
+	pause 15
 	sjump .end
 
 .fruit
@@ -27,7 +27,7 @@ FruitTreeScript::
 .packisfull
 	promptbutton
 	writetext FruitPackIsFullText
-	waitbutton
+	pause 15
 
 .end
 	closetext

@@ -239,12 +239,12 @@ _ReceivedItemText::
 	line "@"
 	text_ram wStringBuffer4
 	text "."
-	prompt
+	pause 10
 
 _PutItemInPocketText::
 	text "<PLAYER> put it"
 	line "away."
-	prompt
+	pause 10
 
 _PocketIsFullText::
 	text "The @"
@@ -931,7 +931,7 @@ _DidNotLearnMoveText::
 	cont "@"
 	text_ram wStringBuffer2
 	text "."
-	prompt
+	pause 10
 
 _AskForgetMoveText::
 	text_ram wMonOrItemNameBuffer
@@ -969,7 +969,7 @@ _MoveForgotText::
 	text "."
 
 	para "And…"
-	prompt
+	pause 10
 
 _MoveCantForgetHMText::
 	text "HM moves can't be"

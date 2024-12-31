@@ -23,7 +23,7 @@ FindItemInBallScript::
 	writetext .FoundItemText
 	waitbutton
 	writetext .CantCarryItemText
-	waitbutton
+	pause 15
 	closetext
 	end
 

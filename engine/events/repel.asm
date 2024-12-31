@@ -1,7 +1,7 @@
 RepelWoreOffScript::
 	opentext
 	writetext .RepelWoreOffText
-	waitbutton
+	pause 15
 	closetext
 	end
 
