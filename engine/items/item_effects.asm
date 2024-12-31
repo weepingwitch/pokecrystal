@@ -624,11 +624,6 @@ PokeBallEffect:
 	ld a, [sBoxCount]
 	cp MONS_PER_BOX
 	jr nz, .BoxNotFullYet
-	;ld a, [wCurBox]
-	;inc a 
-	;ld e, a
-	;farcall ChangeBoxSaveGame
-
 	ld hl, wBattleResult
 	set BATTLERESULT_BOX_FULL, [hl]
 .BoxNotFullYet:

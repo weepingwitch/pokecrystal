@@ -511,7 +511,7 @@ SurfFromMenuScript:
 UsedSurfScript:
 ; BUG: Surfing directly across a map connection does not load the new map (see docs/bugs_and_glitches.md)
 	writetext UsedSurfText ; "used SURF!"
-	pause 10
+	waitbutton
 	closetext
 
 	callasm .stubbed_fn
@@ -796,7 +796,7 @@ Script_WaterfallFromMenu:
 Script_UsedWaterfall:
 	callasm GetPartyNickname
 	writetext .UseWaterfallText
-	pause 15
+	waitbutton
 	closetext
 	playsound SFX_BUBBLEBEAM
 .loop
@@ -986,7 +986,7 @@ EscapeRopeOrDig:
 	writetext .UseDigText
 
 .UsedDigOrEscapeRopeScript:
-	pause 10
+	waitbutton
 	closetext
 	playsound SFX_WARP_TO
 	applymovement PLAYER, .DigOut
@@ -1450,7 +1450,7 @@ HeadbuttScript:
 
 .no_battle
 	writetext HeadbuttNothingText
-	pause 15
+	waitbutton
 	closetext
 	end
 
@@ -1916,7 +1916,7 @@ Script_GetOnBike:
 	special UpdateTimePals
 	loadvar VAR_MOVEMENT, PLAYER_BIKE
 	writetext GotOnBikeText
-	pause 10
+	waitbutton
 	closetext
 	special UpdatePlayerSprite
 	end
@@ -1936,7 +1936,7 @@ Script_GetOffBike:
 	special UpdateTimePals
 	loadvar VAR_MOVEMENT, PLAYER_NORMAL
 	writetext GotOffBikeText
-	pause 10
+	waitbutton
 
 FinishGettingOffBike:
 	closetext

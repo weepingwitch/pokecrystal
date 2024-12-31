@@ -346,17 +346,17 @@ _LookGiantDecoText::
 _MomHiHowAreYouText::
 	text "Hi, <PLAYER>!"
 	line "How are you?"
-	pause 10
+	prompt
 
 _MomFoundAnItemText::
 	text "I found a useful"
 	line "item shopping, so"
-	pause 10
+	prompt
 
 _MomBoughtWithYourMoneyText::
 	text "I bought it with"
 	line "your money. Sorry!"
-	pause 10
+	prompt
 
 _MomItsInPCText::
 	text "It's in your PC."

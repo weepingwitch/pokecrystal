@@ -186,7 +186,7 @@ MerchandiseShelfScript:
 TownMapScript:
 	opentext
 	farwritetext LookTownMapText
-	pause 15
+	waitbutton
 	special OverworldTownMap
 	closetext
 	end

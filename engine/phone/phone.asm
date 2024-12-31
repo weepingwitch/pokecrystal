@@ -425,7 +425,7 @@ Script_ReceivePhoneCall:
 	reanchormap
 	callasm RingTwice_StartCall
 	memcall wCallerContact + PHONE_CONTACT_SCRIPT2_BANK
-	pause 5
+	waitbutton
 	callasm HangUp
 	closetext
 	callasm InitCallReceiveDelay

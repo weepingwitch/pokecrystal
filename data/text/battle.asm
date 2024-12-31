@@ -226,11 +226,13 @@ LostAgainstText:
 	prompt
 
 BattleText_EnemyIsAboutToUseWillPlayerChangeMon:
-	text "Change #MON for"
+	text "She's about to use"
 	line "@"
 	text_ram wEnemyMonNickname
-	text "?"
+	text "."
 
+	para "Will <PLAYER>"
+	line "change #MON?"
 	done
 
 BattleText_EnemySentOut:
@@ -261,7 +263,7 @@ BattleText_TheresNoEscapeFromTrainerBattle:
 
 BattleText_GotAwaySafely:
 	text "Got away safely!"
-	pause 10
+	prompt
 
 BattleText_UserFledUsingAStringBuffer1:
 	text "<USER>"
@@ -278,7 +280,7 @@ BattleText_CantEscape:
 BattleText_UserHurtBySpikes:
 	text "<USER>'s"
 	line "hurt by SPIKES!"
-	pause 10
+	prompt
 
 RecoveredUsingText:
 	text "<TARGET>"
@@ -286,7 +288,7 @@ RecoveredUsingText:
 	scroll "@"
 	text_ram wStringBuffer1
 	text "!"
-	pause 10
+	prompt
 
 BattleText_UsersStringBuffer1Activated:
 	text "<USER>'s"
@@ -294,7 +296,7 @@ BattleText_UsersStringBuffer1Activated:
 	text_ram wStringBuffer1
 	text_start
 	scroll "activated!"
-	pause 10
+	prompt
 
 BattleText_ItemsCantBeUsedHere:
 	text "Items can't be"
@@ -362,52 +364,52 @@ BattleText_WildMonIsAngry:
 FastAsleepText:
 	text "<USER>"
 	line "is fast asleep!"
-	pause 15
+	prompt
 
 WokeUpText:
 	text "<USER>"
 	line "woke up!"
-	pause 15
+	prompt
 
 FrozenSolidText:
 	text "<USER>"
 	line "is frozen solid!"
-	pause 15
+	prompt
 
 FlinchedText:
 	text "<USER>"
 	line "flinched!"
-	pause 15
+	prompt
 
 MustRechargeText:
 	text "<USER>"
 	line "must recharge!"
-	pause 15
+	prompt
 
 DisabledNoMoreText:
 	text "<USER>'s"
 	line "disabled no more!"
-	pause 15
+	prompt
 
 IsConfusedText:
 	text "<USER>"
 	line "is confused!"
-	pause 15
+	prompt
 
 HurtItselfText:
 	text "It hurt itself in"
 	line "its confusion!"
-	pause 15
+	prompt
 
 ConfusedNoMoreText:
 	text "<USER>'s"
 	line "confused no more!"
-	pause 15
+	prompt
 
 BecameConfusedText:
 	text "<TARGET>"
 	line "became confused!"
-	pause 15
+	prompt
 
 BattleText_ItemHealedConfusion:
 	text "A @"
@@ -415,12 +417,12 @@ BattleText_ItemHealedConfusion:
 	text " rid"
 	line "<TARGET>"
 	scroll "of its confusion."
-	pause 10
+	prompt
 
 AlreadyConfusedText:
 	text "<TARGET>'s"
 	line "already confused!"
-	pause 10
+	prompt
 
 BattleText_UsersHurtByStringBuffer1:
 	text "<USER>'s"
@@ -428,7 +430,7 @@ BattleText_UsersHurtByStringBuffer1:
 	scroll "@"
 	text_ram wStringBuffer1
 	text "!"
-	pause 10
+	prompt
 
 BattleText_UserWasReleasedFromStringBuffer1:
 	text "<USER>"
@@ -436,45 +438,45 @@ BattleText_UserWasReleasedFromStringBuffer1:
 	scroll "@"
 	text_ram wStringBuffer1
 	text "!"
-	pause 10
+	prompt
 
 UsedBindText:
 	text "<USER>"
 	line "used BIND on"
 	scroll "<TARGET>!"
-	pause 10
+	prompt
 
 WhirlpoolTrapText:
 	text "<TARGET>"
 	line "was trapped!"
-	pause 10
+	prompt
 
 FireSpinTrapText:
 	text "<TARGET>"
 	line "was trapped!"
-	pause 10
+	prompt
 
 WrappedByText:
 	text "<TARGET>"
 	line "was WRAPPED by"
 	scroll "<USER>!"
-	pause 10
+	prompt
 
 ClampedByText:
 	text "<TARGET>"
 	line "was CLAMPED by"
 	scroll "<USER>!"
-	pause 10
+	prompt
 
 StoringEnergyText:
 	text "<USER>"
 	line "is storing energy!"
-	pause 10
+	prompt
 
 UnleashedEnergyText:
 	text "<USER>"
 	line "unleashed energy!"
-	pause 10
+	prompt
 
 HungOnText:
 	text "<TARGET>"
@@ -482,12 +484,12 @@ HungOnText:
 	scroll "@"
 	text_ram wStringBuffer1
 	text "!"
-	pause 10
+	prompt
 
 EnduredText:
 	text "<TARGET>"
 	line "ENDURED the hit!"
-	pause 10
+	prompt
 
 InLoveWithText:
 	text "<USER>"
@@ -499,7 +501,7 @@ InfatuationText:
 	text "<USER>'s"
 	line "infatuation kept"
 	scroll "it from attacking!"
-	pause 10
+	prompt
 
 DisabledMoveText:
 	text "<USER>'s"
@@ -577,12 +579,12 @@ RegainedHealthText:
 AttackMissedText:
 	text "<USER>'s"
 	line "attack missed!"
-	pause 10
+	prompt
 
 AttackMissed2Text:
 	text "<USER>'s"
 	line "attack missed!"
-	pause 10
+	prompt
 
 CrashedText:
 	text "<USER>"
@@ -602,7 +604,7 @@ DoesntAffectText:
 
 CriticalHitText:
 	text "A critical hit!"
-	pause 10
+	prompt
 
 OneHitKOText:
 	text "It's a one-hit KO!"
@@ -611,12 +613,12 @@ OneHitKOText:
 SuperEffectiveText:
 	text "It's super-"
 	line "effective!"
-	pause 10
+	prompt
 
 NotVeryEffectiveText:
 	text "It's not very"
 	line "effective…"
-	pause 10
+	prompt
 
 TookDownWithItText:
 	text "<TARGET>"
@@ -666,7 +668,7 @@ SpiteEffectText:
 	scroll "reduced by @"
 	text_decimal wTextDecimalByte, 1, 1
 	text "!"
-	pause 10
+	prompt
 
 BellChimedText:
 	text "A bell chimed!"
@@ -824,7 +826,7 @@ MimicLearnedMoveText:
 WasSeededText:
 	text "<TARGET>"
 	line "was seeded!"
-	pause 10
+	prompt
 
 EvadedText:
 	text "<TARGET>"
@@ -863,26 +865,26 @@ TransformedText:
 	scroll "@"
 	text_ram wStringBuffer1
 	text "!"
-	pause 10
+	prompt
 
 LightScreenEffectText:
 	text "<USER>'s"
 	line "SPCL.DEF rose!"
-	pause 10
+	prompt
 
 ReflectEffectText:
 	text "<USER>'s"
 	line "DEFENSE rose!"
-	pause 10
+	prompt
 
 NothingHappenedText:
 	text "But nothing"
 	line "happened."
-	pause 15
+	prompt
 
 ButItFailedText:
 	text "But it failed!"
-	pause 15
+	prompt
 
 ItFailedText:
 	text "It failed!"
@@ -912,12 +914,12 @@ ParalyzedText:
 	text "<TARGET>'s"
 	line "paralyzed! Maybe"
 	scroll "it can't attack!"
-	pause 10
+	prompt
 
 FullyParalyzedText:
 	text "<USER>'s"
 	line "fully paralyzed!"
-	pause 10
+	prompt
 
 AlreadyParalyzedText:
 	text "<TARGET>'s"
@@ -999,7 +1001,7 @@ StartPerishText:
 SandstormBrewedText:
 	text "A SANDSTORM"
 	line "brewed!"
-	pause 10
+	prompt
 
 BracedItselfText:
 	text "<USER>"
@@ -1047,12 +1049,12 @@ BlewSpikesText:
 DownpourText:
 	text "A downpour"
 	line "started!"
-	pause 10
+	prompt
 
 SunGotBrightText:
 	text "The sunlight got"
 	line "bright!"
-	pause 10
+	prompt
 
 BellyDrumText:
 	text "<USER>"

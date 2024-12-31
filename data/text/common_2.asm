@@ -98,7 +98,7 @@ _BoostedExpPointsText::
 	cont "@"
 	text_decimal wStringBuffer2, 2, 5
 	text " EXP. Points!"
-	pause 10
+	prompt
 
 _ExpPointsText::
 
@@ -106,7 +106,7 @@ _ExpPointsText::
 	line "@"
 	text_decimal wStringBuffer2, 2, 5
 	text " EXP. Points!"
-	pause 10
+	prompt
 
 _GoMonText::
 	text "Go! @"
@@ -158,11 +158,11 @@ _ComeBackText::
 
 _BootedTMText::
 	text "Booted up a TM."
-	pause 10
+	prompt
 
 _BootedHMText::
 	text "Booted up an HM."
-	pause 10
+	prompt
 
 _ContainedMoveText::
 	text "It contained"
@@ -199,7 +199,7 @@ _ReceivedTMHMText::
 	line "@"
 	text_ram wStringBuffer1
 	text "!"
-	pause 10
+	prompt
 
 _MysteryGiftCanceledText::
 	text "The link has been"
@@ -312,13 +312,14 @@ _BlindingFlashText::
 _UsedSurfText::
 	text_ram wStringBuffer2
 	text " used"
-	line "SURF! Radical!"
-	
+	line "SURF!"
+
+	para "Radical!"
 	done
 
 _CantSurfText::
 	text "Aww… You can't"
-	line "SURF here, man."
+	line "SURF here."
 	prompt
 
 _AlreadySurfingText::
@@ -376,13 +377,13 @@ _CantUseTeleportText::
 _AlreadyUsingStrengthText::
 	text "A #MON is using"
 	line "STRENGTH already."
-	pause 10
+	prompt
 
 _UseStrengthText::
 	text_ram wStringBuffer2
 	text " used"
 	line "STRENGTH!"
-	pause 10
+	done
 
 _MoveBoulderText::
 	text_ram wStringBuffer1
@@ -447,7 +448,7 @@ _UseRockSmashText::
 	text_ram wStringBuffer2
 	text " used"
 	line "ROCK SMASH!"
-	pause 10
+	prompt
 
 _MaySmashText::
 	text "Maybe a #MON"
@@ -463,11 +464,11 @@ _AskRockSmashText::
 _RodBiteText::
 	text "Oh!"
 	line "A bite!"
-	pause 10
+	prompt
 
 _RodNothingText::
 	text "Not even a nibble!"
-	pause 10
+	prompt
 
 _UnusedNothingHereText::
 	text "Looks like there's"
@@ -594,7 +595,7 @@ _ThrewAwayText::
 
 _OakThisIsntTheTimeText::
 	text "Nope! LOL"
-	pause 10
+	prompt
 
 _YouDontHaveAMonText::
 	text "You don't have a"
@@ -643,11 +644,11 @@ Text_BattleEffectActivate::
 _BattleStatWentWayUpText::
 	text_pause
 	text "<SCROLL>went way up!"
-	pause 10
+	prompt
 
 _BattleStatWentUpText::
 	text " went up!"
-	pause 10
+	prompt
 
 Text_BattleFoeEffectActivate::
 	text "<TARGET>'s"
@@ -660,11 +661,11 @@ Text_BattleFoeEffectActivate::
 _BattleStatSharplyFellText::
 	text_pause
 	text "<SCROLL>sharply fell!"
-	pause 10
+	prompt
 
 _BattleStatFellText::
 	text " fell!"
-	pause 10
+	prompt
 
 Text_BattleUser::
 	text "<USER>@"
@@ -673,32 +674,32 @@ Text_BattleUser::
 _BattleMadeWhirlwindText::
 	text_start
 	line "made a whirlwind!"
-	pause 10
+	prompt
 
 _BattleTookSunlightText::
 	text_start
 	line "took in sunlight!"
-	pause 10
+	prompt
 
 _BattleLoweredHeadText::
 	text_start
 	line "lowered its head!"
-	pause 10
+	prompt
 
 _BattleGlowingText::
 	text_start
 	line "is glowing!"
-	pause 10
+	prompt
 
 _BattleFlewText::
 	text_start
 	line "flew up high!"
-	pause 10
+	prompt
 
 _BattleDugText::
 	text_start
 	line "dug a hole!"
-	pause 10
+	prompt
 
 _ActorNameText::
 	text "<USER>@"
