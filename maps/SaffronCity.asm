@@ -253,7 +253,7 @@ SilphCoSignText:
 	done
 
 MrPsychicsHouseSignText:
-	text "MR.PSYCHIC'S"
+	text "MS.PSYCHIC'S"
 	line "HOUSE"
 	done
 

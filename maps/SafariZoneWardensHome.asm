@@ -32,7 +32,7 @@ WardensHomeBookshelf:
 	jumpstd PictureBookshelfScript
 
 WardensGranddaughterText1:
-	text "My grandpa is the"
+	text "My grandma is the"
 	line "SAFARI ZONE WAR-"
 	cont "DEN."
 
@@ -42,7 +42,7 @@ WardensGranddaughterText1:
 	line "on a vacation and"
 
 	para "took off overseas"
-	line "all by himself."
+	line "all by herself."
 
 	para "she quit running"
 	line "SAFARI ZONE just"
@@ -54,7 +54,7 @@ WardensGranddaughterText2:
 	line "disappointed that"
 
 	para "SAFARI ZONE closed"
-	line "down, but Grandpa"
+	line "down, but grandma"
 	cont "is so stubborn…"
 	done
 

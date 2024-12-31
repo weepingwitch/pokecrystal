@@ -44,7 +44,7 @@ MrFujisHouseBookshelf:
 	jumpstd DifficultBookshelfScript
 
 MrFujisHouseSuperNerdText:
-	text "MR.FUJI does live"
+	text "MRS.FUJI does live"
 	line "here, but she's not"
 
 	para "home now."
@@ -58,7 +58,7 @@ MrFujisHouseLassText:
 	line "people stop caring"
 	cont "for their #MON."
 
-	para "Grandpa takes in"
+	para "Grandma takes in"
 	line "the poor homeless"
 
 	para "#MON and takes"

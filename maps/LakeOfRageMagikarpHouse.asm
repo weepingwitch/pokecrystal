@@ -105,8 +105,8 @@ MagikarpLengthRaterText_LakeOfRageHistory:
 	para "That's the story"
 	line "passed on from my"
 
-	para "Grandpa's great-"
-	line "great-grandpa."
+	para "grandma's great-"
+	line "great-grandma."
 
 	para "It used to be that"
 	line "you could catch"
