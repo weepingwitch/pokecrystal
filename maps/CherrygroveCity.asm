@@ -433,7 +433,7 @@ CherrygroveRivalText_YouWon:
 
 CherrygroveTeacherText_NoMapCard:
 	text "Did you talk to"
-	line "the old man by the"
+	line "the old lady by the"
 	cont "#MON CENTER?"
 
 	para "He'll put a MAP of"
@@ -448,11 +448,11 @@ CherrygroveTeacherText_HaveMapCard:
 	done
 
 CherrygroveYoungsterText_NoPokedex:
-	text "MR.#MON's house"
+	text "MRS.#MON's house"
 	line "is still farther"
 	cont "up ahead."
 
-	para "He's really"
+	para "Shee's really"
 	line "strange…"
 	done
 

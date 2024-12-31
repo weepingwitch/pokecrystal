@@ -498,10 +498,10 @@ PokemaniacDonaldAfterBattleText:
 
 	para "The HIKER on ROUTE"
 	line "33, ANTHONY, is a"
-	cont "good guy."
+	cont "good gal."
 
 	para "He'll phone you if"
-	line "he sees any rare"
+	line "she sees any rare"
 	cont "#MON."
 	done
 

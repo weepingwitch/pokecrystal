@@ -169,10 +169,10 @@ JackHeardSomeGreatTipsText:
 	text "My friend heard"
 	line "some great tips."
 
-	para "He's going to let"
+	para "she's going to let"
 	line "me in on some."
 
-	para "When he tells me,"
+	para "When she tells me,"
 	line "I'll call right"
 	cont "away and tell you."
 	done

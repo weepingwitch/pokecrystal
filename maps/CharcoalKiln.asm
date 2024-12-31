@@ -98,7 +98,7 @@ CharcoalKilnBossText2:
 	cont "from ILEX FOREST."
 
 	para "Where in the world"
-	line "is that lazy guy?"
+	line "is that lazy gal?"
 	done
 
 CharcoalKilnBossText3:

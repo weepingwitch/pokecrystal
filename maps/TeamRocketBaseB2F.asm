@@ -656,7 +656,7 @@ RocketBaseLancePostBattleText:
 	para "But I'm concerned"
 	line "about the young"
 
-	para "guy I battled in"
+	para "gal I battled in"
 	line "the process…"
 	done
 

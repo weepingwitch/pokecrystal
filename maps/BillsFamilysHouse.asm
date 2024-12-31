@@ -161,13 +161,13 @@ BillNoEeveeText:
 	done
 
 BillPopWontWorkText:
-	text "willow: My pop, he"
-	line "won't work. All he"
+	text "willow: My pop, she"
+	line "won't work. All she"
 
 	para "does is goof off"
 	line "all day long."
 
-	para "He's getting to be"
+	para "she's getting to be"
 	line "a real headache…"
 	done
 
@@ -176,7 +176,7 @@ BillsMomText_BeforeEcruteak:
 	line "#MON? My son"
 	cont "BILL is an expert."
 
-	para "He just got called"
+	para "she just got called"
 	line "to the #MON"
 
 	para "CENTER in ECRUTEAK"
@@ -196,7 +196,7 @@ BillsMomText_AfterEcruteak:
 	para "#MANIAC."
 	line "BILL must have"
 
-	para "taken after his"
+	para "taken after her"
 	line "father."
 	done
 

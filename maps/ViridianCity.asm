@@ -129,10 +129,10 @@ ViridianCityGrampsNearGymText:
 	line "have a LEADER"
 	cont "until recently."
 
-	para "A young man from"
+	para "A young lady from"
 	line "PALLET became the"
 
-	para "LEADER, but he's"
+	para "LEADER, but she's"
 	line "often away."
 	done
 

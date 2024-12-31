@@ -527,13 +527,13 @@ Route32CooltrainerMText_WhatsTheHurry:
 
 Route32CooltrainerMText_AideIsWaiting:
 	text "<PLAYER>, right?"
-	line "Some guy wearing"
+	line "Some gal wearing"
 
 	para "glasses was look-"
 	line "ing for you."
 
 	para "See for yourself."
-	line "He's waiting for"
+	line "she's waiting for"
 
 	para "you at the #MON"
 	line "CENTER."
@@ -691,7 +691,7 @@ Route32UnusedFisher1BeatenText: ; unreferenced
 	done
 
 Route32UnusedFisher1AfterText: ; unreferenced
-	text "How come the guy"
+	text "How come the gal"
 	line "next to me catches"
 	cont "good #MON?"
 	done

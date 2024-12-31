@@ -232,7 +232,7 @@ VioletCityGrampsText:
 	para "GYM, is an ok"
 	line "trainer..."
 
-	para "He's a bit"
+	para "she's a bit"
 	line "childish."
 	done
 

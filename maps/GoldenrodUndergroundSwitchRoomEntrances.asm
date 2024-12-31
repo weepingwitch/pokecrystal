@@ -679,7 +679,7 @@ UndergroundRivalAfterText:
 	line "stand…"
 
 	para "Is what that LANCE"
-	line "guy said true?"
+	line "gal said true?"
 
 	para "That I don't treat"
 	line "#MON properly?"

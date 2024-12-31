@@ -24,19 +24,19 @@ FishingDudeText:
 	line "FISHING GURU at"
 	cont "LAKE OF RAGE?"
 
-	para "He dreams about"
+	para "she dreams about"
 	line "seeing the world's"
 	cont "greatest MAGIKARP."
 
 	para "If you don't mind,"
-	line "could you show him"
+	line "could you show her"
 
 	para "any MAGIKARP you"
 	line "catch?"
 
 	para "Who knows, you may"
 	line "catch the MAGIKARP"
-	cont "of his dreams."
+	cont "of her dreams."
 	done
 
 FishingDudesHousePhotoText:

@@ -101,7 +101,7 @@ BuenaPhoneWentOutWithBenText:
 	para "with DJ BEN!"
 	line "Isn't it great?"
 
-	para "Not only that, he"
+	para "Not only that, she"
 	line "said the music on"
 
 	para "my program is"
@@ -125,7 +125,7 @@ BuenaPhoneReceptionistText:
 	para "'Welcome,' is all"
 	line "she ever says."
 
-	para "But she's really"
+	para "But sshe's really"
 	line "the chattiest"
 
 	para "person at the"
@@ -148,11 +148,11 @@ BuenaPhoneLuckyNumberShowText:
 	line "LUCKY NUMBER SHOW?"
 
 	para "REED moans that"
-	line "he's never won, so"
+	line "she's never won, so"
 
-	para "he vows to keep"
+	para "she vows to keep"
 	line "the show on the"
-	cont "air till he does."
+	cont "air till she does."
 
 	para "Let's chat again!"
 	done
@@ -191,7 +191,7 @@ BuenaPhoneProfessorOakText:
 	text "Yesterday, PROF."
 	line "OAK was in the"
 
-	para "studio to tape his"
+	para "studio to tape her"
 	line "show."
 
 	para "So I went over and"
@@ -204,7 +204,7 @@ BuenaPhoneProfessorOakText:
 	line "PROF.OAK again!"
 
 	para "I'm going to chat"
-	line "him up again!"
+	line "her up again!"
 
 	para "Catch you later!"
 	done
@@ -296,14 +296,14 @@ BuenaPhoneRadioTowerDirectorText:
 	para "said that black"
 	line "suits were in."
 
-	para "Now all he wears"
+	para "Now all she wears"
 	line "are black suits."
 
 	para "But it's a secret"
 	line "that our DIRECTOR"
 
 	para "is a TV fan, so if"
-	line "you see him, don't"
+	line "you see her, don't"
 
 	para "you dare mention"
 	line "it!"

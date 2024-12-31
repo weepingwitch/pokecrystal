@@ -165,7 +165,7 @@ CooltrainerfCarolAfterBattleText:
 
 PokemaniacEthanSeenText:
 	text "Do you know LILY?"
-	line "She's a hot DJ in"
+	line "Sshe's a hot DJ in"
 	cont "KANTO."
 	done
 

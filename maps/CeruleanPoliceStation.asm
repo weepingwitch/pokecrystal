@@ -28,13 +28,11 @@ CeruleanPoliceStationFishingGuruText:
 	cont "skulking about."
 
 	para "I won't stand for"
-	line "it if he turns out"
-	cont "to be a thief."
+	line "it..."
 	done
 
 CeruleanPoliceStationPokefanFText:
-	text "We were held up by"
-	line "robbers before."
+	text "Oink oink oink"
 	done
 
 CeruleanDiglettText:

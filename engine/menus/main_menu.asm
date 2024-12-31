@@ -64,10 +64,10 @@ MainMenu:
 
 .Strings:
 ; entries correspond to MAINMENUITEM_* constants
-	db "CONTINUE@"
-	db "NEW GAME@"
-	db "OPTIONS@"
-	db "ABOUT@"
+	db "continue@"
+	db "new game@"
+	db "options@"
+	db "about@"
 
 if DEF(_DEBUG)
 	db "DEBUG ROOM@"

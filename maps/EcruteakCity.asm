@@ -122,7 +122,7 @@ EcruteakCityGramps2Text:
 	para "If you go to their"
 	line "DANCE THEATER, an"
 
-	para "odd old man will"
+	para "odd old lady will"
 	line "give you something"
 	cont "nice, I hear."
 	done

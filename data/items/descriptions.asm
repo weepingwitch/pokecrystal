@@ -528,7 +528,7 @@ SSTicketDesc:
 
 MysteryEggDesc:
 	db   "An EGG obtained"
-	next "from MR.#MON.@"
+	next "from MRS.#MON.@"
 
 ClearBellDesc:
 	db   "Makes a gentle"

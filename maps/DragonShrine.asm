@@ -559,9 +559,9 @@ DragonShrineElder3Text:
 	text "You know young"
 	line "Master LANCE?"
 
-	para "He looks so much"
+	para "she looks so much"
 	line "like our MASTER"
-	cont "did in his youth."
+	cont "did in her youth."
 
 	para "It's in their"
 	line "blood."

@@ -176,9 +176,9 @@ SproutTowerRivalOnlyCareAboutStrongText:
 	text "…"
 	line "…Humph!"
 
-	para "He claims to be"
+	para "she claims to be"
 	line "the ELDER but"
-	cont "he's weak."
+	cont "she's weak."
 
 	para "It stands to"
 	line "reason."

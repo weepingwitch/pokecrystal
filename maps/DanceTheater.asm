@@ -229,8 +229,7 @@ KimonoGirlMikiAfterBattleText:
 	para "people who enjoy"
 	line "what I do."
 
-	para "My #MON keep my"
-	line "spirits up too."
+	
 	done
 
 SurfGuyNeverLeftAScratchText:
@@ -241,15 +240,11 @@ SurfGuyNeverLeftAScratchText:
 	line "also skilled at"
 	cont "#MON."
 
-	para "I always challenge"
-	line "them, but I've"
-
-	para "never even left a"
-	line "scratch…"
+	
 	done
 
 SurfGuyLadGiftText:
-	text "Lad! If you can"
+	text "Lassie! If you can"
 	line "defeat all the"
 
 	para "KIMONO GIRLS, I'll"
@@ -269,8 +264,7 @@ SurfGuyLikeADanceText:
 	line "tled, it was like"
 	cont "watching a dance."
 
-	para "It was a rare"
-	line "treat to see!"
+	
 
 	para "I want you to have"
 	line "this. Don't worry"
@@ -278,17 +272,15 @@ SurfGuyLikeADanceText:
 	done
 
 SurfGuySurfExplanationText:
-	text "That's SURF."
-
-	para "It's a move that"
+	text "It's a move that"
 	line "lets #MON swim"
 	cont "across water."
 	done
 
 SurfGuyElegantKimonoGirlsText:
-	text "I wish my #MON"
-	line "were as elegant as"
-	cont "the KIMONO GIRLS…"
+	text "I wish I was as"
+	line "elegant as THE"
+	cont "KIMONO GIRLS…"
 	done
 
 RhydonText:
@@ -298,13 +290,13 @@ RhydonText:
 
 DanceTheaterCooltrainerMText:
 	text "That man's always"
-	line "with his RHYDON."
+	line "with her RHYDON."
 
-	para "Says he wants a"
+	para "Says she wants a"
 	line "#MON that can"
 	cont "SURF and dance."
 
-	para "Is he trying to"
+	para "Is she trying to"
 	line "make a synchro-"
 	cont "nized swimming"
 	cont "#MON?"
@@ -318,11 +310,6 @@ DanceTheaterGrannyText:
 	line "go through rigor-"
 	cont "ous training."
 
-	para "And they have to"
-	line "learn to follow"
-
-	para "customs before ap-"
-	line "pearing in public."
 
 	para "But if you love"
 	line "something, any-"

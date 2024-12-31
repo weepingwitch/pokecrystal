@@ -9,7 +9,7 @@ _NameRater:
 	call PrintText
 	farcall SelectMonFromParty
 	jr c, .cancel
-; He can't rename an egg...
+; she can't rename an egg...
 	ld a, [wCurPartySpecies]
 	cp EGG
 	jr z, .egg

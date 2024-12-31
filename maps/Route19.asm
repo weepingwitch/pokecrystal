@@ -160,7 +160,7 @@ SwimmerfDawnAfterBattleText:
 	line "LANDS…"
 
 	para "Sheesh, some big"
-	line "man my boyfriend"
+	line "lady my girlfriend"
 
 	para "is! What a wimp!"
 	done

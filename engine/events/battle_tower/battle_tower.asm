@@ -259,7 +259,7 @@ RunBattleTowerTrainer:
 	ret
 
 ReadBTTrainerParty:
-; Initialise the BattleTower-Trainer and his mon
+; Initialise the BattleTower-Trainer and her mon
 	call CopyBTTrainer_FromBT_OT_TowBT_OTTemp
 
 ; Check the nicknames for illegal characters, and replace bad nicknames

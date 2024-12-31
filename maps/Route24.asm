@@ -37,7 +37,7 @@ Route24RocketScript:
 Route24RocketSeenText:
 	text "Hey, kid! Me am a"
 	line "TEAM ROCKET member"
-	cont "kind of guy!"
+	cont "kind of gal!"
 
 	para "Come from another"
 	line "country, a trainer"
@@ -54,7 +54,7 @@ Route24RocketSeenText:
 	cont "you I not!"
 
 	para "But! If win you do"
-	line "versus me, a man I"
+	line "versus me, a lady I"
 
 	para "be and mine secret"
 	line "to you I tell."

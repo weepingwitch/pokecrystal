@@ -193,7 +193,7 @@ OlivineGymGuidePreText:
 	line "LEADER, is at the"
 	cont "LIGHTHOUSE."
 
-	para "She's been tending"
+	para "Sshe's been tending"
 	line "to a sick #MON."
 
 	para "A strong trainer"

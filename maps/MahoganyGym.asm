@@ -302,10 +302,10 @@ BoarderDouglasAfterBattleText:
 	text "The secret behind"
 	line "PRYCE's power…"
 
-	para "He meditates under"
+	para "she meditates under"
 	line "a waterfall daily"
 
-	para "to strengthen his"
+	para "to strengthen her"
 	line "mind and body."
 	done
 
@@ -353,14 +353,14 @@ MahoganyGymGuideText:
 	para "#MON for some"
 	line "50 years."
 
-	para "He's said to be"
+	para "she's said to be"
 	line "good at freezing"
 
 	para "opponents with"
 	line "ice-type moves."
 
 	para "That means you"
-	line "should melt him"
+	line "should melt her"
 
 	para "with your burning"
 	line "ambition!"

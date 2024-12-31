@@ -219,7 +219,7 @@ FakeDirectorTextBefore2:
 
 FakeDirectorWinText:
 	text "OK, OK. I'll tell"
-	line "you where he is."
+	line "you where she is."
 	done
 
 FakeDirectorTextAfter:
@@ -285,7 +285,7 @@ RadioTower5FRocketBossBeforeText:
 	para "That should bring"
 	line "our boss GIOVANNI"
 
-	para "back from his solo"
+	para "back from her solo"
 	line "training."
 
 	para "We are going to"

@@ -230,7 +230,7 @@ MrPokemonsHouse_OakText1:
 
 	para "I was just visit-"
 	line "ing my old friend"
-	cont "MR.#MON."
+	cont "MRS.#MON."
 
 	para "I heard you were"
 	line "running an errand"

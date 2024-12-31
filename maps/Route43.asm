@@ -343,7 +343,7 @@ PokemaniacBenAfterBattleText:
 	cont "#MON?"
 
 	para "MARY on the radio."
-	line "I bet she's cute!"
+	line "I bet sshe's cute!"
 	done
 
 PokemaniacBrentSeenText:
@@ -366,7 +366,7 @@ PokemaniacRonSeenText:
 	text "Would you get"
 	line "this?"
 
-	para "Some <RIVAL> guy"
+	para "Some <RIVAL> gal"
 	line "made fun of my"
 	cont "#MON!"
 

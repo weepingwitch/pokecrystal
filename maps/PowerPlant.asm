@@ -286,7 +286,7 @@ PowerPlantOfficer2ManagerHasBeenSadAndFuriousText:
 
 	para "But since someone"
 	line "wrecked the gener-"
-	cont "ator, he's been"
+	cont "ator, she's been"
 	cont "both sad and"
 	cont "furious…"
 	done
@@ -328,8 +328,8 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 	para "I spent so much"
 	line "time on it!"
 
-	para "If I catch him,"
-	line "he's going to get"
+	para "If I catch her,"
+	line "she's going to get"
 
 	para "a taste of my ZAP"
 	line "CANNON!"

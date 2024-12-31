@@ -181,7 +181,7 @@ GruntM29SeenText:
 	para "when some old coot"
 	line "tripped and fell."
 
-	para "He startled me so"
+	para "she startled me so"
 	line "much that I fell"
 	cont "down here too."
 

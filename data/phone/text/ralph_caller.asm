@@ -18,12 +18,12 @@ RalphDefeatedMonText:
 	text "."
 
 	para "I told my kid, but"
-	line "he scoffed that he"
+	line "she scoffed that she"
 
 	para "could do the same"
 	line "thing easily."
 
-	para "Boy, has he gotten"
+	para "Boy, has she gotten"
 	line "cocky…"
 	done
 
@@ -37,9 +37,9 @@ RalphLostAMonText:
 	line "front of my kid."
 
 	para "I was feeling down"
-	line "about it until he"
+	line "about it until she"
 
-	para "shared his #"
+	para "shared her #"
 	line "BALLS with me."
 
 	para "Hahah, that sure"

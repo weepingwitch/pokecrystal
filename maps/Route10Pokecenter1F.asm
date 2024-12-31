@@ -49,7 +49,7 @@ Route10Pokecenter1FGymGuideText:
 	para "for a strong #-"
 	line "MON trainer."
 
-	para "He needs help"
+	para "she needs help"
 	line "getting back"
 
 	para "something that"

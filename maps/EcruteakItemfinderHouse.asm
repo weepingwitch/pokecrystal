@@ -81,7 +81,7 @@ ItemfinderExplanationText:
 	done
 
 EcruteakItemfinderToEachHisOwnText:
-	text "Oh… To each his"
+	text "Oh… To each her"
 	line "own, I suppose…"
 	done
 

@@ -96,14 +96,14 @@ Route35GoldenrodGateFisherScript:
 
 Route35GoldenrodGateRandyAskTakeThisMonToMyFriendText:
 	text "Excuse me, kid!"
-	line "Can you do a guy"
+	line "Can you do a gal"
 	cont "a favor?"
 
 	para "Can you take this"
 	line "#MON with MAIL"
 	cont "to my friend?"
 
-	para "He's on ROUTE 31."
+	para "she's on ROUTE 31."
 	done
 
 Route35GoldenrodGateRandyThanksText:
@@ -111,11 +111,11 @@ Route35GoldenrodGateRandyThanksText:
 	line "Thanks, kid!"
 
 	para "My pal's a chubby"
-	line "guy who snoozes"
+	line "gal who snoozes"
 	cont "all the time."
 
 	para "You'll recognize"
-	line "him right away!"
+	line "her right away!"
 	done
 
 Route35GoldenrodGatePlayerReceivedAMonWithMailText:

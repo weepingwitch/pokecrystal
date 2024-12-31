@@ -223,12 +223,12 @@ FastShipB1FOnDutySailorText:
 	line "get you to look"
 	cont "for my buddy?"
 
-	para "He's goofing off"
+	para "she's goofing off"
 	line "somewhere, that"
 	cont "lazy bum!"
 
 	para "I want to go find"
-	line "him, but I'm on"
+	line "her, but I'm on"
 	cont "duty right now."
 	done
 
@@ -241,7 +241,7 @@ FastShipB1FOnDutySailorRefusedText:
 
 FastShipB1FOnDutySailorThanksText:
 	text "Thanks, kid!"
-	line "I chewed him out"
+	line "I chewed her out"
 
 	para "good so he'll quit"
 	line "slacking off!"
@@ -371,7 +371,7 @@ BlackbeltWaiAfterBattleText:
 	line "the KARATE KING in"
 	cont "JOHTO."
 
-	para "He's supposed to"
+	para "she's supposed to"
 	line "be training in a"
 	cont "cave somewhere."
 	done

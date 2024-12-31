@@ -407,7 +407,7 @@ RadioTower1FLassText:
 	text "BEN is a fabulous"
 	line "DJ."
 
-	para "His sweet voice"
+	para "her sweet voice"
 	line "makes me melt!"
 	done
 

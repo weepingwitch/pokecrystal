@@ -334,15 +334,15 @@ CooltrainerfBeth1SeenText:
 	text "I lost to a train-"
 	line "er named <RIVAL>."
 
-	para "He was really"
+	para "she was really"
 	line "strong, but…"
 
-	para "It was as if he"
+	para "It was as if she"
 	line "absolutely had to"
 	cont "win at any cost."
 
 	para "I felt sorry for"
-	line "his #MON."
+	line "her #MON."
 	done
 
 CooltrainerfBeth1BeatenText:

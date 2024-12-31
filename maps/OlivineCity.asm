@@ -225,7 +225,7 @@ OlivineCitySailor2Text:
 
 	text "Sing with me! "
 	line "Yo-ho! Blow the"
-	cont "man down!…"
+	cont "lady down!…"
 	done
 
 OlivineCitySignText:

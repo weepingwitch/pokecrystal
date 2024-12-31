@@ -250,7 +250,7 @@ BurnedTower1FMortyText:
 	line "I've decided to"
 
 	para "investigate the"
-	line "TOWER with him."
+	line "TOWER with her."
 	done
 
 BurnedTower1F_MapEvents:

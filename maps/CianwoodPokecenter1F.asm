@@ -39,8 +39,8 @@ CianwoodPokecenter1FLassText:
 	text "Did you meet the"
 	line "#MANIAC?"
 
-	para "He's always brag-"
-	line "ging about his"
+	para "she's always brag-"
+	line "ging about her"
 	cont "rare #MON."
 	done
 
@@ -60,10 +60,10 @@ CianwoodGymGuideText:
 	line "fighting-type."
 
 	para "So you should"
-	line "confound him with"
+	line "confound her with"
 	cont "psychic #MON."
 
-	para "Wipe out his #-"
+	para "Wipe out her #-"
 	line "MON before they"
 
 	para "can use their"
@@ -111,7 +111,7 @@ CianwoodPokecenter1FUnusedText2: ; unreferenced
 	line "ADAPTER link."
 
 	para "I'm down 5-7"
-	line "against him. I've"
+	line "against her. I've"
 	cont "gotta crank it up!"
 	done
 

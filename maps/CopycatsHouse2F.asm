@@ -272,7 +272,7 @@ CopycatText_ExplainPass:
 	cont "MAGNET TRAIN."
 
 	para "The rail company"
-	line "man gave me that"
+	line "lady gave me that"
 
 	para "when they tore"
 	line "down our old house"

@@ -298,7 +298,7 @@ GoldenrodCityYoungster1Text:
 	done
 
 GoldenrodCityCooltrainerF1Text:
-	text "Is that man in"
+	text "Is that lady in"
 	line "black dressed up"
 
 	para "like a TEAM ROCKET"
@@ -306,7 +306,7 @@ GoldenrodCityCooltrainerF1Text:
 	done
 
 GoldenrodCityCooltrainerF1Text_ClearedRadioTower:
-	text "Was that man in"
+	text "Was that lady in"
 	line "black really part"
 
 	para "of TEAM ROCKET? I"
@@ -344,11 +344,11 @@ GoldenrodCityYoungster2Text:
 	done
 
 GoldenrodCityLassText:
-	text "The man at that"
+	text "The lady at that"
 	line "house rates your"
 	cont "#MON names."
 
-	para "He can even rename"
+	para "she can even rename"
 	line "your #MON."
 	done
 

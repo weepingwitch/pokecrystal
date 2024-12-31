@@ -78,17 +78,17 @@ PokemaniacMillerAfterBattleText:
 	text "A while back, this"
 	line "karate dude wanted"
 
-	para "to battle. He was"
+	para "to battle. she was"
 	line "ridiculously good."
 
-	para "He just thrashed"
+	para "she just thrashed"
 	line "us silly."
 
-	para "He went in deeper"
+	para "she went in deeper"
 	line "saying it was for"
 
-	para "his training. I"
-	line "wonder how he is?"
+	para "her training. I"
+	line "wonder how she is?"
 	done
 
 SupernerdMarkusSeenText:

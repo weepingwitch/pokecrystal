@@ -30,11 +30,11 @@ OlivineMartCooltrainerFText:
 
 OlivineMartLassText:
 	text "My BUTTERFREE came"
-	line "from my boyfriend"
+	line "from my girlfriend"
 	cont "overseas."
 
 	para "It carried some"
-	line "MAIL from him."
+	line "MAIL from her."
 
 	para "Want to know what"
 	line "it says?"

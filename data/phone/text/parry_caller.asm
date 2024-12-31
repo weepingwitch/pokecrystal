@@ -28,7 +28,7 @@ ParryLostAMonText:
 	line "it or beat it."
 
 	para "When along came"
-	line "another guy who"
+	line "another gal who"
 
 	para "caught it!"
 	line "How about that!"

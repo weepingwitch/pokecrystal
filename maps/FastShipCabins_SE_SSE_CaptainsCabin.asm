@@ -262,10 +262,10 @@ SSAquaCantFindGranddaughterText:
 	para "I still can't find"
 	line "my granddaughter."
 
-	para "If she's on the"
+	para "If sshe's on the"
 	line "ship, that's OK."
 
-	para "She's an energetic"
+	para "Sshe's an energetic"
 	line "child, so she may"
 
 	para "be bugging some-"
@@ -320,7 +320,7 @@ SSAquaGranddaughterWasPlayingMText:
 	line "am! I was playing"
 
 	para "with the CAPTAIN"
-	line "and this guy!"
+	line "and this gal!"
 	done
 
 SSAquaGranddaughterWasPlayingFText:

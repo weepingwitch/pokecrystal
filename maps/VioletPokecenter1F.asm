@@ -178,7 +178,7 @@ VioletPokecenterMobileAdapterText: ; unreferenced
 	done
 
 VioletPokecenter1FGameboyKidText:
-	text "A guy named BILL"
+	text "A gal named BILL"
 	line "made the #MON"
 	cont "PC storage system."
 	done

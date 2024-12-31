@@ -385,7 +385,7 @@ RadioTower2FBlackBelt2Text:
 
 	para "The DIRECTOR is"
 	line "nice again, just"
-	cont "as he was before."
+	cont "as she was before."
 	done
 
 GruntM4SeenText:

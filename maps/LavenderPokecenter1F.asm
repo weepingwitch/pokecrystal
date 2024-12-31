@@ -70,7 +70,7 @@ LavenderPokecenter1FYoungsterText_ReturnedMachinePart:
 	line "the RADIO STATION"
 	cont "sure was happy."
 
-	para "He said they're"
+	para "she said they're"
 	line "back on the air"
 
 	para "because the POWER"

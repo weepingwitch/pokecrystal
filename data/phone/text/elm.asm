@@ -42,7 +42,7 @@ ElmPhoneAssistantText:
 	text "Hello, <PLAY_G>?"
 
 	para "Did you see my"
-	line "assistant? He's at"
+	line "assistant? she's at"
 
 	para "the #MON CENTER"
 	line "in VIOLET CITY."
@@ -155,7 +155,7 @@ ElmPhoneEggAssistantText:
 
 	para "in VIOLET CITY. "
 	line "Could you talk to"
-	cont "him?"
+	cont "her?"
 	done
 
 ElmPhoneRadioTowerRocketTakeoverText:

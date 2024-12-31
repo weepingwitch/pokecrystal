@@ -210,7 +210,7 @@ EcruteakPokecenter1FCooltrainerFText:
 	line "LEADER, is soooo"
 	cont "hot."
 
-	para "His #MON are"
+	para "her #MON are"
 	line "really tough too."
 	done
 

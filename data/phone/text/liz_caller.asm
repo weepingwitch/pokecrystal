@@ -102,8 +102,8 @@ LizFalknerGossipText:
 	para "GYM is cool and"
 	line "handsome?"
 
-	para "But they say his"
-	line "dad, who's out"
+	para "But they say her"
+	line " mom, who's out"
 
 	para "training on the"
 	line "road, is even more"
@@ -124,10 +124,10 @@ LizEarlGossipText:
 	para "runs the #MON"
 	line "ACADEMY in VIOLET?"
 
-	para "I saw him doing"
+	para "I saw her doing"
 	line "pirouettes while"
 
-	para "he was running. It"
+	para "she was running. It"
 	line "was wildly funny!"
 	done
 
@@ -189,7 +189,7 @@ LizSalonGossipText:
 	line "younger one does a"
 
 	para "better job than"
-	line "his brother."
+	line "her brother."
 
 	para "Every time I go, I"
 	line "have a hard time"

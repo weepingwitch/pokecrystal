@@ -41,7 +41,7 @@ Fixes in the [multi-player battle engine](#multi-player-battle-engine) category 
   - [A Transformed Pokémon can use Sketch and learn otherwise unobtainable moves](#a-transformed-pok%C3%A9mon-can-use-sketch-and-learn-otherwise-unobtainable-moves)
   - [Catching a Transformed Pokémon always catches a Ditto](#catching-a-transformed-pok%C3%A9mon-always-catches-a-ditto)
   - [Experience underflow for level 1 Pokémon with Medium-Slow growth rate](#experience-underflow-for-level-1-pok%C3%A9mon-with-medium-slow-growth-rate)
-  - [The Dude's catching tutorial may crash if his Poké Ball can't be used](#the-dudes-catching-tutorial-may-crash-if-his-pok%C3%A9-ball-cant-be-used)
+  - [The Dude's catching tutorial may crash if her Poké Ball can't be used](#the-dudes-catching-tutorial-may-crash-if-his-pok%C3%A9-ball-cant-be-used)
   - [BRN/PSN/PAR do not affect catch rate](#brnpsnpar-do-not-affect-catch-rate)
   - [Moon Ball does not boost catch rate](#moon-ball-does-not-boost-catch-rate)
   - [Love Ball boosts catch rate for the wrong gender](#love-ball-boosts-catch-rate-for-the-wrong-gender)
@@ -1040,7 +1040,7 @@ This changes both calculations to *HP* × (100 / *N*) / (*max HP* / *N*) for the
 ```
 
 
-### The Dude's catching tutorial may crash if his Poké Ball can't be used
+### The Dude's catching tutorial may crash if her Poké Ball can't be used
 
 ([Video](https://www.youtube.com/watch?v=A8zaTOkjKS4&t=407))
 
@@ -1050,7 +1050,7 @@ This can occur if your party and current PC box are both full when you start the
 
 ```diff
  PokeBallEffect:
--; BUG: The Dude's catching tutorial may crash if his Poké Ball can't be used (see docs/bugs_and_glitches.md)
+-; BUG: The Dude's catching tutorial may crash if her Poké Ball can't be used (see docs/bugs_and_glitches.md)
  	ld a, [wBattleMode]
  	dec a
  	jp nz, UseBallInTrainerBattle

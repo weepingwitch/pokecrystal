@@ -207,7 +207,7 @@ CeruleanCityFisherText:
 
 CeruleanCityFisherRocketTipText:
 	text "I saw this shady"
-	line "guy go off toward"
+	line "gal go off toward"
 	cont "CERULEAN's CAPE."
 	done
 

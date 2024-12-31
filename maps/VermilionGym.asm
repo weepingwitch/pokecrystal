@@ -231,7 +231,7 @@ VermilionGymGuideText:
 	line "this time."
 
 	para "LT.SURGE is very"
-	line "cautious. He has"
+	line "cautious. she has"
 
 	para "traps set all over"
 	line "the GYM."

@@ -397,7 +397,7 @@ CooltrainermAaronSeenText:
 	text "If a trainer spots"
 	line "another trainer,"
 
-	para "he has to make a"
+	para "she has to make a"
 	line "challenge."
 
 	para "That is our"

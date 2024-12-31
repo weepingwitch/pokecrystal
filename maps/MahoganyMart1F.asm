@@ -185,7 +185,7 @@ MahoganyMart1FBlackBeltText:
 MahoganyMart1FBlackBeltText_LanceEntered:
 	text "Urrgh…"
 
-	para "That guy's dragon"
+	para "That gal's dragon"
 	line "#MON are tough…"
 	done
 

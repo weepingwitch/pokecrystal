@@ -36,15 +36,15 @@ WardensGranddaughterText1:
 	line "SAFARI ZONE WAR-"
 	cont "DEN."
 
-	para "At least he was…"
+	para "At least she was…"
 
-	para "He decided to go"
+	para "she decided to go"
 	line "on a vacation and"
 
 	para "took off overseas"
 	line "all by himself."
 
-	para "He quit running"
+	para "she quit running"
 	line "SAFARI ZONE just"
 	cont "like that."
 	done

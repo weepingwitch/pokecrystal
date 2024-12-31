@@ -748,10 +748,10 @@ AI_Smart_MirrorMove:
 	call IsInArray
 	pop hl
 
-; ...do nothing if he didn't use a useful move.
+; ...do nothing if she didn't use a useful move.
 	ret nc
 
-; If he did, 50% chance to encourage this move...
+; If she did, 50% chance to encourage this move...
 	call AI_50_50
 	ret c
 

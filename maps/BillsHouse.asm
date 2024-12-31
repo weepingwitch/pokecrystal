@@ -211,9 +211,9 @@ BillsGrandpa:
 
 BillsGrandpaIntroText:
 	text "Hm? You know BILL?"
-	line "He's my grandson."
+	line "she's my grandson."
 
-	para "He's in JOHTO. He"
+	para "she's in JOHTO. she"
 	line "does something"
 
 	para "with PCs, so I'm"

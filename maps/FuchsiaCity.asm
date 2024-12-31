@@ -60,10 +60,10 @@ FuchsiaCityYoungsterText:
 
 FuchsiaCityPokefanMText:
 	text "KOGA's daughter"
-	line "succeeded him as"
+	line "succeeded her as"
 
 	para "the GYM LEADER"
-	line "after he joined"
+	line "after she joined"
 	cont "the ELITE FOUR."
 	done
 

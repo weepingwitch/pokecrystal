@@ -171,7 +171,7 @@ CamperJerryAfterBattleText:
 	para "is tough. He'll"
 	line "punish you if you"
 
-	para "don't take him"
+	para "don't take her"
 	line "seriously."
 	done
 

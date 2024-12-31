@@ -9,10 +9,10 @@ BrentAskNumber1Text:
 	line "is shallow still!"
 
 	para "Do you know BILL?"
-	line "He's an incredible"
+	line "she's an incredible"
 
 	para "#MANIAC."
-	line "I revere him."
+	line "I revere her."
 
 	para "I'll teach you all"
 	line "I know about BILL,"
@@ -30,11 +30,11 @@ BrentAskNumber2Text:
 	done
 
 BrentNumberAcceptedText:
-	text "BILL--he's more"
+	text "BILL--she's more"
 	line "than amazing!"
 
 	para "To be a #MANIAC"
-	line "like him someday…"
+	line "like her someday…"
 
 	para "That's my dream."
 	done

@@ -69,7 +69,7 @@ LassConnie1BeatenText:
 LassConnie1AfterBattleText:
 	text "Right. Anybody"
 	line "would be worried"
-	cont "if his or her own"
+	cont "if her or her own"
 	cont "#MON were hurt."
 
 	para "I'll pray for the"

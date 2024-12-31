@@ -310,9 +310,9 @@ CamperElliotAfterBattleText:
 	done
 
 PicnickerBrookeSeenText:
-	text "My boyfriend's"
+	text "My girlfriend's"
 	line "weak, so I can't"
-	cont "rely on him."
+	cont "rely on her."
 	done
 
 PicnickerBrookeBeatenText:
@@ -323,7 +323,7 @@ PicnickerBrookeBeatenText:
 PicnickerBrookeAfterBattleText:
 	text "I can count on my"
 	line "#MON more than"
-	cont "my boyfriend."
+	cont "my girlfriend."
 	done
 
 PicnickerKimSeenText:

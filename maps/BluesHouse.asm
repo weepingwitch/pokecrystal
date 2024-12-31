@@ -70,7 +70,7 @@ DaisyHelloText:
 	para "LEADER in VIRIDIAN"
 	line "CITY."
 
-	para "But he goes out"
+	para "But she goes out"
 	line "of town so often,"
 
 	para "it causes problems"

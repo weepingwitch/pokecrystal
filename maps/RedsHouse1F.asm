@@ -38,30 +38,30 @@ RedsMomText1:
 	para "RED's been away"
 	line "for a long time."
 
-	para "He hasn't called"
+	para "she hasn't called"
 	line "either, so I have"
 
-	para "no idea where he"
-	line "is or what he's"
+	para "no idea where she"
+	line "is or what she's"
 	cont "been doing."
 
 	para "They say that no"
 	line "word is proof that"
 
-	para "he's doing fine,"
+	para "she's doing fine,"
 	line "but I do worry"
-	cont "about him."
+	cont "about her."
 	done
 
 RedsMomText2:
 	text "I worry about RED"
 	line "getting hurt or"
 
-	para "sick, but he's a"
+	para "sick, but she's a"
 	line "boy. I'm proud"
 
-	para "that he is doing"
-	line "what he wants to"
+	para "that she is doing"
+	line "what she wants to"
 
 	para "do."
 	done

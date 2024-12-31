@@ -1003,7 +1003,7 @@ _RocketRadioText10::
 	text_start
 	line "@"
 	text_pause
-	text "Is he listening?"
+	text "Is she listening?"
 	done
 
 _BuenaRadioText1::

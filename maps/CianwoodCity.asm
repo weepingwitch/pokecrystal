@@ -227,11 +227,11 @@ ChucksWifeFlySpeechText:
 
 ChucksWifeChubbyText:
 	text "My husband lost to"
-	line "you, so he needs"
+	line "you, so she needs"
 	cont "to train harder."
 
 	para "That's good, since"
-	line "he was getting a"
+	line "she was getting a"
 	cont "little chubby."
 	done
 
@@ -260,7 +260,7 @@ CianwoodCityLassText:
 	text "CHUCK, the GYM"
 	line "LEADER, spars with"
 
-	para "his fighting #-"
+	para "her fighting #-"
 	line "MON."
 	done
 
@@ -349,7 +349,7 @@ CianwoodGymSignText:
 
 	para "LEADER: CHUCK"
 
-	para "His Roaring Fists"
+	para "her Roaring Fists"
 	line "Do the Talking"
 	done
 

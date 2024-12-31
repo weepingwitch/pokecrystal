@@ -39,7 +39,7 @@ ViridianPokecenter1FCooltrainerMText:
 	line "is VIRIDIAN's GYM"
 
 	para "LEADER? I wanted"
-	line "to challenge him."
+	line "to challenge her."
 	done
 
 ViridianPokecenter1FCooltrainerMText_BlueReturned:
@@ -48,7 +48,7 @@ ViridianPokecenter1FCooltrainerMText_BlueReturned:
 	cont "VIRIDIAN GYM."
 
 	para "The LEADER claims"
-	line "his policy is to"
+	line "her policy is to"
 
 	para "win without having"
 	line "any underlings."

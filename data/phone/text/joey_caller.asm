@@ -8,7 +8,7 @@ JoeyMonLookingSharperText:
 	para "I doubt there's a"
 	line "#MON as cool as"
 
-	para "this guy in your"
+	para "this gal in your"
 	line "party!"
 	done
 

@@ -458,43 +458,30 @@ KurtsHouseKurtMakingBallsMustWaitText:
 	para "Sorry, but that'll"
 	line "have to wait."
 
-	para "Do you know TEAM"
-	line "ROCKET? Ah, don't"
-
-	para "worry. I'll tell"
-	line "you anyhow."
 
 	para "TEAM ROCKET's an"
 	line "evil gang that"
 
-	para "uses #MON for"
-	line "their dirty work."
+	para "has terrible"
+	line "taste."
 
-	para "They're supposed"
-	line "to have disbanded"
-	cont "three years ago."
 
 	para "Anyway, they're at"
 	line "the WELL, cutting"
 
 	para "off SLOWPOKETAILS"
-	line "for sale!"
+	line "for frying!"
 
 	para "So I'm going to"
 	line "go give them a"
-	cont "lesson in pain!"
+	cont "lesson in flavor!"
 
-	para "Hang on, SLOWPOKE!"
-	line "Old KURT is on his"
-	cont "way!"
+	
 	done
 
 KurtsHouseKurtHonoredToMakeBallsText:
 	text "KURT: Hi, <PLAYER>!"
 
-	para "You handled your-"
-	line "self like a real"
-	cont "hero at the WELL."
 
 	para "I like your style!"
 
@@ -556,8 +543,6 @@ KurtsHouseKurtTurnedOutGreatText:
 	text "KURT: That turned"
 	line "out great."
 
-	para "Try catching"
-	line "#MON with it."
 	done
 
 KurtsHouseKurtGranddaughterHelpingWorkFasterText:
@@ -614,31 +599,31 @@ KurtsGranddaughterSlowpokeGoneText:
 	done
 
 KurtsGranddaughterLonelyText:
-	text "Grandpa's gone…"
+	text "Grandma's gone…"
 	line "I'm so lonely…"
 	done
 
 KurtsGranddaughterSlowpokeBackText:
 	text "The SLOWPOKE my"
-	line "dad gave me came"
+	line "mom gave me came"
 
 	para "back! Its TAIL is"
 	line "growing back too!"
 	done
 
 KurtsGranddaughterDadText:
-	text "Dad works at SILPH"
-	line "where he studies"
+	text "Mom works at SILPH"
+	line "where she studies"
 	cont "# BALLS."
 
 	para "I have to stay"
-	line "home with Grandpa"
+	line "home with Grandma"
 	cont "and SLOWPOKE."
 	done
 
 KurtsGranddaughterHelpText:
 	text "I get to help"
-	line "Grandpa now!"
+	line "Grandma now!"
 
 	para "We'll make good"
 	line "BALLS for you, so"
@@ -651,11 +636,11 @@ KurtsGranddaughterFunText:
 	done
 
 KurtsGranddaughterGSBallText:
-	text "Grandpa's checking"
+	text "Grandma's checking"
 	line "a BALL right now."
 
 	para "So I'm waiting"
-	line "till he's done."
+	line "till sshe's done."
 	done
 
 KurtsHouseSlowpokeText:

@@ -24,9 +24,9 @@ ElmsWifeText:
 	line "wife's always"
 
 	para "so busy--I hope"
-	line "she's OK."
+	line "sshe's OK."
 
-	para "When she's caught"
+	para "When sshe's caught"
 	line "up in her #MON"
 
 	para "research, she even"

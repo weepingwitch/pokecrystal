@@ -101,19 +101,19 @@ ManiasHouseUnusedBookshelf: ; unreferenced
 ManiaText_AskLookAfterShuckle:
 	text "I, I'm in shock!"
 
-	para "A guy about your"
+	para "A gal about your"
 	line "age with piercing"
 
 	para "eyes and long hair"
 	line "came in."
 
-	para "He scared me into"
-	line "giving him my"
+	para "she scared me into"
+	line "giving her my"
 	cont "prized #MON!"
 
 	para "I still have one"
 	line "left, but what if"
-	cont "he comes back?"
+	cont "she comes back?"
 
 	para "You look strong."
 	line "Could you look"
@@ -141,7 +141,7 @@ ManiaText_PartyFull:
 
 ManiaText_IfHeComesBack:
 	text "Oh, no… What'll"
-	line "I do if he comes"
+	line "I do if she comes"
 	cont "back?"
 	done
 

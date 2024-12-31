@@ -192,12 +192,12 @@ RadioTower3FGymGuideText:
 RadioTower3FCooltrainerFPleaseSaveDirectorText:
 	text "The TEAM ROCKET"
 	line "boss has locked"
-	cont "himself in."
+	cont "herself in."
 
 	para "But the DIRECTOR"
 	line "can open it."
 
-	para "He's up on the"
+	para "she's up on the"
 	line "fifth floor."
 
 	para "Please save him!"

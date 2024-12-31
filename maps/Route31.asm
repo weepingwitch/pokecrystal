@@ -337,7 +337,7 @@ Text_Route31ReadingMail:
 	line "ing this to me."
 
 	para "My friend's a good"
-	line "guy, and you're"
+	line "gal, and you're"
 	cont "swell too!"
 
 	para "I'd like to do"
@@ -399,7 +399,7 @@ Route31YoungsterText:
 	line "it to take on"
 	cont "FALKNER."
 
-	para "He's the leader of"
+	para "she's the leader of"
 	line "VIOLET CITY's GYM."
 	done
 

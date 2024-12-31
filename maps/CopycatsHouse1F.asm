@@ -58,11 +58,11 @@ CopycatsHouse1FPokefanFText_ReturnedMachinePart:
 	text "She recently lost"
 	line "the # DOLL that"
 
-	para "a boy gave her"
+	para "a girl gave her"
 	line "three years ago."
 
 	para "Ever since then,"
-	line "she's gotten even"
+	line "sshe's gotten even"
 	cont "better at mimicry…"
 	done
 

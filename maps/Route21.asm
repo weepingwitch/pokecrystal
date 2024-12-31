@@ -51,7 +51,7 @@ SwimmermSethBeatenText:
 	done
 
 SwimmermSethAfterBattleText:
-	text "This arrogant guy"
+	text "This arrogant gal"
 	line "was at CINNABAR's"
 	cont "volcano."
 	done

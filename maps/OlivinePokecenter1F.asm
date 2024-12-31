@@ -28,7 +28,7 @@ OlivinePokecenter1FFisherText:
 	para "door is really"
 	line "generous."
 
-	para "He taught my"
+	para "she taught my"
 	line "#MON STRENGTH."
 
 	para "Now it can move"
@@ -40,8 +40,8 @@ OlivinePokecenter1FTeacherText:
 	line "in CIANWOOD CITY"
 	cont "across the sea."
 
-	para "I heard him brag-"
-	line "ging about his"
+	para "I heard her brag-"
+	line "ging about her"
 	cont "rare #MON."
 	done
 

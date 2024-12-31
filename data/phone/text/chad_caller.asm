@@ -72,13 +72,13 @@ ChadHangUpText:
 ChadBlueGossipText:
 	text "Do you know BLUE?"
 
-	para "He's PROF.OAK's"
+	para "she's PROF.OAK's"
 	line "grandson and a"
 
 	para "former #MON"
 	line "LEAGUE CHAMPION!"
 
-	para "He's one super"
+	para "she's one super"
 	line "#MON trainer!"
 	done
 
@@ -87,7 +87,7 @@ ChadDaisyGossipText:
 	line "granddaughter"
 	cont "named DAISY."
 
-	para "When she's around,"
+	para "When sshe's around,"
 	line "even the most"
 
 	para "ferocious #MON"
@@ -98,7 +98,7 @@ ChadProfElmGossipText:
 	text "Everyone's talking"
 	line "about PROF.ELM."
 
-	para "He used to be an"
+	para "she used to be an"
 	line "assistant to the"
 	cont "great PROF.OAK!"
 
@@ -122,7 +122,7 @@ ChadKurtGossipText:
 	text "Do you know KURT,"
 	line "the BALL creator?"
 
-	para "He and PROF.OAK go"
+	para "she and PROF.OAK go"
 	line "back a long way."
 
 	para "I guess great"
@@ -144,8 +144,8 @@ ChadLeagueGossipText:
 	para "#MON LEAGUE's"
 	line "headquarters."
 
-	para "He really is a"
-	line "great man."
+	para "she really is a"
+	line "great lady."
 	done
 
 ChadPokemonTalkGossipText:
@@ -154,14 +154,14 @@ ChadPokemonTalkGossipText:
 	cont "radio show, right?"
 
 	para "Did you know that"
-	line "he was going to"
+	line "she was going to"
 
 	para "turn down the show"
 	line "at first?"
 
 	para "But MARY's energy"
 	line "and persistence"
-	cont "wore him down."
+	cont "wore her down."
 
 	para "So we have MARY to"
 	line "thank for it!"
@@ -173,13 +173,13 @@ ChadProfOakTrainerGossipText:
 	cont "long time ago."
 
 	para "But rather than"
-	line "battling, he found"
+	line "battling, she found"
 
 	para "#MON themselves"
 	line "to be interesting."
 
-	para "So he abandoned"
-	line "his training to"
+	para "So she abandoned"
+	line "her training to"
 
 	para "focus on becoming"
 	line "a researcher."
@@ -208,10 +208,10 @@ ChadProfOakTravelingGossipText:
 	line "PROF.OAK traveled"
 
 	para "all over the world"
-	line "when he was young."
+	line "when she was young."
 
 	para "While traveling,"
-	line "he must've learned"
+	line "she must've learned"
 
 	para "about #MON"
 	line "naturally."
@@ -227,7 +227,7 @@ ChadGoingToStudyHardText:
 	text "I'm going to study"
 	line "hard so PROF.OAK"
 
-	para "will make me his"
+	para "will make me her"
 	line "assistant!"
 	done
 

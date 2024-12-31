@@ -56,11 +56,11 @@ CeladonMansionRoofHousePharmacistStoryText:
 	para "boy who was given"
 	line "a new BICYCLE…"
 
-	para "He wanted to try"
+	para "she wanted to try"
 	line "it right away…"
 
-	para "He was having so"
-	line "much fun that he"
+	para "she was having so"
+	line "much fun that she"
 
 	para "didn't notice the"
 	line "sun had set…"
@@ -74,7 +74,7 @@ CeladonMansionRoofHousePharmacistStoryText:
 	para "The pedals became"
 	line "heavy!"
 
-	para "When he stopped"
+	para "When she stopped"
 	line "pedaling, the bike"
 
 	para "began slipping"
@@ -84,7 +84,7 @@ CeladonMansionRoofHousePharmacistStoryText:
 	line "bike were cursed"
 
 	para "and trying to drag"
-	line "him into oblivion!"
+	line "her into oblivion!"
 
 	para "…"
 
@@ -92,7 +92,7 @@ CeladonMansionRoofHousePharmacistStoryText:
 
 	para "SHRIEEEEK!"
 
-	para "The boy had been"
+	para "The girl had been"
 	line "riding uphill on"
 	cont "CYCLING ROAD!"
 

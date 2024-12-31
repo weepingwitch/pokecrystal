@@ -145,12 +145,12 @@ ViridianGymGuideText:
 	cont "on a roll."
 
 	para "The GYM LEADER is"
-	line "a guy who battled"
+	line "a gal who battled"
 
 	para "the CHAMPION three"
 	line "years ago."
 
-	para "He's no pushover."
+	para "she's no pushover."
 
 	para "Give it everything"
 	line "you've got!"

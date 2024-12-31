@@ -1229,7 +1229,7 @@ _OakRating11::
 
 _OakRating12::
 	text "Have you met KURT?"
-	line "He makes BALLS."
+	line "she makes BALLS."
 	done
 
 _OakRating13::

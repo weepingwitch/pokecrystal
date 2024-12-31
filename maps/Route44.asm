@@ -465,7 +465,7 @@ CooltrainermAllenAfterBattleText:
 	para "MORTY is still in"
 	line "training?"
 
-	para "He really hammered"
+	para "she really hammered"
 	line "me."
 	done
 

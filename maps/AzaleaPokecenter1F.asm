@@ -17,7 +17,7 @@ AzaleaPokecenter1FNurseScript:
 	jumpstd PokecenterNurseScript
 
 AzaleaPokecenter1FGentlemanScript:
-	giveitem MASTER_BALL, 25
+	
 	jumptextfaceplayer AzaleaPokecenter1FGentlemanText
 
 AzaleaPokecenter1FFishingGuruScript:
@@ -133,7 +133,7 @@ AzaleaPokecenter1FGentlemanText:
 	done
 
 AzaleaPokecenter1FUnusedText: ; unreferenced
-	text "This BILL guy"
+	text "This BILL gal"
 	line "created the system"
 
 	para "for storing"
@@ -145,7 +145,7 @@ AzaleaPokecenter1FUnusedText: ; unreferenced
 	done
 
 AzaleaPokecenter1FFishingGuruText:
-	text "This BILL guy"
+	text "This BILL gal"
 	line "created the system"
 
 	para "for storing"

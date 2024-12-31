@@ -33,10 +33,10 @@ PewterMartYoungsterText:
 
 PewterMartSuperNerdText:
 	text "There once was a"
-	line "weird old man who"
+	line "weird old lady who"
 	cont "sold MAGIKARP."
 
-	para "He was saying the"
+	para "she was saying the"
 	line "MAGIKARP from the"
 
 	para "LAKE OF RAGE were"

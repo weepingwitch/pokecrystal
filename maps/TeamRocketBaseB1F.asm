@@ -569,7 +569,7 @@ SecurityCameraMovement3:
 	step_end
 
 SecurityCameraMovement4:
-; he jumps over a trap
+; she jumps over a trap
 	jump_step UP
 	big_step RIGHT
 	big_step UP
