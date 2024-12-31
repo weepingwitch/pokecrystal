@@ -27,7 +27,37 @@ OlivineCafeFishingGuruScript:
 	jumptextfaceplayer OlivineCafeFishingGuruText
 
 OlivineCafeSailorScript:
-	jumptextfaceplayer OlivineCafeSailorText
+	opentext
+	writetext OFisher1Text_Snarfle
+	waitbutton
+	closetext
+	faceplayer
+	opentext
+	writetext OFisher1Text_Concentration
+	waitbutton
+	yesorno
+	iffalse .NOHOTSAUCE
+	takeitem HOT_SAUCE
+	iffalse .NOHOTSAUCE
+	clearevent EVENT_GOT_HOTSAUCE
+	writetext OFisher1Text_Yummy
+	waitbutton
+	closetext
+	loadtrainer FIREBREATHER, DICK
+	startbattle
+	reloadmapafterbattle
+	opentext
+	writetext OFisher1Text_Beaten
+	waitbutton
+	closetext
+	turnobject OLIVINECAFE_SAILOR2, UP
+	end
+.NOHOTSAUCE:
+	writetext OFisher1_Disappointed
+	waitbutton
+	closetext
+	turnobject OLIVINECAFE_SAILOR2, UP
+	end
 
 OlivineCafeStrengthSailorText:
 	text "Hah! Your #MON"
@@ -64,18 +94,33 @@ OlivineCafeFishingGuruText:
 	cont "good!"
 	done
 
-OlivineCafeSailorText:
-	text "Whenever I roll"
-	line "into this town, I"
+OFisher1Text_Snarfle:
+	text "…Snarfle, chew…"
+	
+	para "I wish I had some"
+	line "HOT SAUCE..."
+	done
 
-	para "always visit the"
-	line "OLIVINE CAFE."
+OFisher1Text_Concentration:
+	text "Can you give me"
+	line "some?"
 
-	para "Everything on the"
-	line "menu makes me feel"
+	done
 
-	para "stronger. I can't"
-	line "stop eating!"
+OFisher1Text_Yummy:
+	text "Delicious!"
+
+	para "I'm all fired up"
+	line "for battle!"
+	done
+
+OFisher1_Disappointed:
+	text "Aww, come on..."
+	done
+
+OFisher1Text_Beaten:
+	text "What a delicious"
+	line "battle!"
 	done
 
 OlivineCafe_MapEvents:

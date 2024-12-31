@@ -178,40 +178,37 @@ VioletCitySpinningEarl_MovementData:
 	step_end
 
 Text_EarlAsksIfYouBeatFalkner:
-	text "Hello!"
-	line "You are trainer?"
-
-	para "Battle GYM LEADER,"
-	line "win you did?"
+	text "Have you beaten"
+	line "the GYM LEADER?"
+	
 	done
 
 Text_VeryNiceIndeed:
 	text "Ooh, la la!"
-	line "Very indeed nice!"
+	line "Very nice indeed!"
 	done
 
 Text_FollowEarl:
 	text "Is that so? Then"
-	line "study shall you!"
+	line "study you shall!"
 	cont "Follow me!"
 	done
 
 Text_HereTeacherIAm:
-	text "Here, teacher I"
-	line "am. Good it is"
-	cont "you study here!"
+	text "Here, time for"
+	line "school!"
 	done
 
 VioletCityLassText:
-	text "Ghosts are rumored"
-	line "to appear in"
-	cont "SPROUT TOWER."
 
-	para "They said normal-"
+	text "They say normal-"
 	line "type #MON moves"
 
-	para "had no effect on"
+	para "have no effect on"
 	line "ghosts."
+
+	para "That's really"
+	line "annoyoing."
 	done
 
 VioletCitySuperNerdText:
@@ -250,6 +247,11 @@ VioletCitySignText:
 
 	para "The City of"
 	line "Nostalgic Scents"
+
+	para "..."
+
+	para "What the fuck"
+	line "does that mean?"
 	done
 
 VioletGymSignText:
@@ -259,13 +261,18 @@ VioletGymSignText:
 
 	para "The Baby Master"
 	line "of Baby #MON"
+
+	para "Goo goo"
+	line "gaa gaa"
 	done
 
 SproutTowerSignText:
 	text "SPROUT TOWER"
 
-	para "Experience the"
-	line "Way of #MON"
+	para "There is a cute"
+	line "drawing of a"
+	cont "BELLSPROUT."
+
 	done
 
 EarlsPokemonAcademySignText:

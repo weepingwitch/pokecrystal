@@ -193,7 +193,7 @@ AcademyEarlTeachHowToRaiseWellText:
 AcademyEarlNoMoreToTeachText:
 	text "Oh! Smart student"
 	line "you are! Nothing"
-	cont "more do I teach!"
+	cont "more to teach!"
 
 	done
 

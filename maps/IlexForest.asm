@@ -737,8 +737,8 @@ IlexForestPlayerStepsDownMovement:
 
 IlexForestApprenticeIntroText:
 	text "Oh, man… My boss"
-	line "is going to be"
-	cont "steaming…"
+	line "is going to kill"
+	cont "me…"
 
 	para "The FARFETCH'D"
 	line "that CUTS trees"
@@ -746,12 +746,10 @@ IlexForestApprenticeIntroText:
 	para "for charcoal took"
 	line "off on me."
 
-	para "I can't go looking"
-	line "for it here in the"
-	cont "ILEX FOREST."
 
 	para "It's too big, dark"
-	line "and scary for me…"
+	line "and scary here for"
+	cont "me to find her..."
 	done
 
 IlexForestApprenticeAfterText:
@@ -776,30 +774,21 @@ Text_Kwaaaa:
 Text_CharcoalMasterIntro:
 	text "Ah! My FARFETCH'D!"
 
-	para "You found it for"
+	para "You found her for"
 	line "us, kid?"
-
-	para "Without it, we"
-	line "wouldn't be able"
-
-	para "to CUT trees for"
-	line "charcoal."
 
 	para "Thanks, kid!"
 
 	para "Now, how can I"
 	line "thank you…"
 
-	para "I know! Here, take"
-	line "this."
+	para "Here, take this."
 	done
 
 Text_CharcoalMasterOutro:
 	text "That's the CUT HM."
-	line "Teach that to a"
-
-	para "#MON to clear"
-	line "small trees."
+	line "#MON can clear"
+	cont "small trees now."
 
 	para "Of course, you"
 	line "have to have the"

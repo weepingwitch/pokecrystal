@@ -289,7 +289,7 @@ RhydonText:
 	done
 
 DanceTheaterCooltrainerMText:
-	text "That man's always"
+	text "That GIRL's always"
 	line "with her RHYDON."
 
 	para "Says she wants a"

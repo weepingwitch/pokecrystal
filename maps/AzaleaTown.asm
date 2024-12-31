@@ -298,6 +298,8 @@ AzaleaTownGrampsTextBefore:
 	para "I heard their"
 	line "TAILS are being"
 	cont "fried somewhere."
+
+	para "Yum!"
 	done
 
 AzaleaTownGrampsTextAfter:
@@ -309,15 +311,16 @@ AzaleaTownGrampsTextAfter:
 
 	para "goofing off some-"
 	line "where."
+
+	para "I'm still hungry,"
+	line "though…"
 	done
 
 AzaleaTownTeacherText:
 	text "Did you come to"
 	line "get KURT to make"
-	cont "some BALLS?"
+	cont "you some BALLS?"
 
-	para "A lot of people do"
-	line "just that."
 	done
 
 AzaleaTownYoungsterText:
@@ -327,12 +330,10 @@ AzaleaTownYoungsterText:
 
 	para "But these skinny"
 	line "trees make it"
+	cont "impossible."
 
-	para "impossible to get"
-	line "through."
-
-	para "The CHARCOAL MAN's"
-	line "#MON can CUT"
+	para "The CHARCOAL GIRL"
+	line "has #MON who CUT"
 	cont "down trees."
 	done
 
@@ -377,6 +378,10 @@ AzaleaTownSignText:
 
 	para "#MON Live in"
 	line "Happy Harmony"
+
+	para "A flyer for fried"
+	line "SLOWPOKETAILS is"
+	cont "pasted on top."
 	done
 
 KurtsHouseSignText:
@@ -391,6 +396,9 @@ AzaleaGymSignText:
 	para "The Walking"
 	line "Bug #MON"
 	cont "Encyclopedia"
+
+	para "What a HUGE"
+	line "NERD!"
 	done
 
 SlowpokeWellSignText:
@@ -409,7 +417,7 @@ AzaleaTownIlexForestSignText:
 	text "ILEX FOREST"
 
 	para "Enter through the"
-	line "gate."
+	line "gate. Obviously."
 	done
 
 AzaleaTown_MapEvents:
