@@ -860,8 +860,8 @@ RocketBaseB2FTransmitterText:
 	para "sending the"
 	line "sinister signal."
 
-	para "It's working at"
-	line "full capacity."
+	para "It's broadcasting"
+	line "SMOOTH JAZZ."
 	done
 
 RocketBaseB2FDeactivateTransmitterText:
