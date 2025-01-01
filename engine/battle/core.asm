@@ -7065,7 +7065,7 @@ GiveExperiencePoints:
 	ld a, [wEnemyMonLevel]
 	ldh [hMultiplier], a
 	call Multiply
-	ld a, 20
+	ld a, 21
 	ldh [hDivisor], a
 	ld b, 4
 	call Divide
