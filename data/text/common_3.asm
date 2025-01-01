@@ -1199,9 +1199,9 @@ _BallSentToPCText::
 	prompt
 
 _NewDexDataText::
-	text "data was newly"
-	line "added to the #DEX.@"
-	sound_slot_machine_start
+	text "data was added"
+	line "to the #DEX.@"
+
 	
 	text_end
 
