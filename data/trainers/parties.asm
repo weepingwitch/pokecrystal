@@ -3930,13 +3930,13 @@ BlueGroup:
 OfficerGroup:
 	; OFFICER (1)
 	db "KEITH@", TRAINERTYPE_NORMAL
-	db 5, SWINUB
+	db 4, SWINUB
 	db -1 ; end
 
 	; OFFICER (2)
 	db "DIRK@", TRAINERTYPE_NORMAL
-	db 5, SWINUB
-	db 5, SWINUB
+	db 4, SWINUB
+	db 4, SWINUB
 	db -1 ; end
 
 GruntFGroup:

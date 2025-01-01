@@ -1,7 +1,7 @@
 ; MailGFXPointers indexes
 ; LoadMailPalettes.MailPals indexes (see gfx/mail/mail.pal)
 	const_def
-	const FLOWER_MAIL_INDEX  ; 0
+	
 	
 DEF NUM_MAIL EQU const_value 
 
@@ -126,9 +126,9 @@ endc
 MailGFXPointers:
 ; entries correspond to *MAIL_INDEX constants
 	table_width 3, MailGFXPointers
-	dbw FLOWER_MAIL,  LoadFlowerMailGFX
 	
-	assert_table_length 1
+	
+	assert_table_length 0
 	db -1 ; end
 
 LoadSurfMailGFX:
