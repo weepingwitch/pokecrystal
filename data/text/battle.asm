@@ -611,7 +611,7 @@ OneHitKOText:
 
 SuperEffectiveText:
 	text "It's super-"
-	line "effective!@"
+	line "effective!"
 	prompt
 
 NotVeryEffectiveText:

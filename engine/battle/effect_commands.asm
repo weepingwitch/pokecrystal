@@ -2298,7 +2298,7 @@ BattleCommand_CriticalText:
 	ld [wCriticalHit], a
 
 .wait
-	ld c, 20
+	ld c, 2
 	jp DelayFrames
 
 .texts
