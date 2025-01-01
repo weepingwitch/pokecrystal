@@ -192,7 +192,7 @@
 	const ZELDA4  ; b8 - zelda4
 	const ZELDA5     ; b9 - zelda5
 	const ZELDA6   ; ba - zelda6
-	const BLUESKY_MAIL ; bb
+	const DARK_SOULS ; bb - darksouls
 	const MUSIC_MAIL   ; bc
 	const MIRAGE_MAIL  ; bd
 	const ITEM_BE      ; be

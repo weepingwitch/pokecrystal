@@ -975,8 +975,8 @@ MorphMailDesc: ;zelda6
 	next "crunchy pickles.@"
 
 BlueSkyMailDesc:
-	db   "Sky-print MAIL."
-	next "(HOLD)@"
+	db   "Praise the sun."
+	next "Prepare to die.@"
 
 MusicMailDesc:
 	db   "NATU-print MAIL."

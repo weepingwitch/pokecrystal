@@ -612,7 +612,7 @@ OneHitKOText:
 SuperEffectiveText:
 	text "It's super-"
 	line "effective!@"
-	text_end
+	prompt
 
 NotVeryEffectiveText:
 	text "It's not very"

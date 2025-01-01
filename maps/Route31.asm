@@ -194,14 +194,10 @@ Route31MailRecipientScript:
 .TryGiveKenya:
 	writetext Text_Route31SleepyManGotMail
 	promptbutton
-	checkpokemail ReceivedSpearowMailText
-	ifequal POKEMAIL_WRONG_MAIL, .WrongMail
-	ifequal POKEMAIL_REFUSED, .Refused
-	ifequal POKEMAIL_NO_MAIL, .NoMail
-	ifequal POKEMAIL_LAST_MON, .LastMon
-	; POKEMAIL_CORRECT
-	writetext Text_Route31HandOverMailMon
-	promptbutton
+	
+
+	takeitem DARK_SOULS
+	iffalse .Refused
 	writetext Text_Route31ReadingMail
 	promptbutton
 	setevent EVENT_GAVE_KENYA
@@ -239,9 +235,6 @@ Route31MailRecipientScript:
 	closetext
 	end
 
-ReceivedSpearowMailText:
-	db   "DARK CAVE leads"
-	next "to another road@"
 
 Route31YoungsterScript:
 	jumptextfaceplayer Route31YoungsterText
@@ -315,7 +308,7 @@ Text_Route31SleepyManGotMail:
 	text "…Zzzz… Huh?"
 
 	para "What's that? You"
-	line "have MAIL for me?"
+	line "have for me?"
 	done
 
 Text_Route31HandOverMailMon:
@@ -327,11 +320,7 @@ Text_Route31HandOverMailMon:
 Text_Route31ReadingMail:
 	text "Let's see…"
 
-	para "…DARK CAVE leads"
-	line "to another road…"
-
-	para "That's good to"
-	line "know."
+	
 
 	para "Thanks for bring-"
 	line "ing this to me."
@@ -357,11 +346,7 @@ Text_Route31DescribeNightmare:
 	para "the HP of a sleep-"
 	line "ing enemy."
 
-	para "Ooooh…"
-	line "That's scary…"
-
-	para "I don't want to"
-	line "have bad dreams."
+	
 	done
 
 Text_Route31WrongMail:

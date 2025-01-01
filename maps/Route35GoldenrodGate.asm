@@ -22,13 +22,8 @@ RandyScript:
 	iffalse .refused
 	writetext Route35GoldenrodGateRandyThanksText
 	promptbutton
-	waitsfx
-	readvar VAR_PARTYCOUNT
-	ifequal PARTY_LENGTH, .partyfull
-	writetext Route35GoldenrodGatePlayerReceivedAMonWithMailText
+	giveitem DARK_SOULS
 	playsound SFX_KEY_ITEM
-	waitsfx
-	givepoke SPEAROW, 10, NO_ITEM, GiftSpearowName, GiftSpearowOTName
 	;givepokemail GiftSpearowMail
 	setevent EVENT_GOT_KENYA
 .alreadyhavekenya
@@ -37,11 +32,6 @@ RandyScript:
 	closetext
 	end
 
-.partyfull
-	writetext Route35GoldenrodGateRandyCantCarryAnotherMonText
-	waitbutton
-	closetext
-	end
 
 .refused
 	writetext Route35GoldenrodGateRandyOhNeverMindThenText
@@ -62,18 +52,6 @@ RandyScript:
 	closetext
 	end
 
-GiftSpearowMail:
-	db FLOWER_MAIL
-	db   "DARK CAVE leads"
-	next "to another road@"
-
-GiftSpearowName:
-	db "KENYA@"
-
-GiftSpearowOTName:
-	db "RANDY@"
-
-	db 0 ; unused
 
 Route35GoldenrodGatePokefanFScript:
 	faceplayer
@@ -100,10 +78,10 @@ Route35GoldenrodGateRandyAskTakeThisMonToMyFriendText:
 	cont "a favor?"
 
 	para "Can you take this"
-	line "#MON with MAIL"
+	line "video game"
 	cont "to my friend?"
 
-	para "she's on ROUTE 31."
+	para "She's on ROUTE 31."
 	done
 
 Route35GoldenrodGateRandyThanksText:
@@ -119,12 +97,12 @@ Route35GoldenrodGateRandyThanksText:
 	done
 
 Route35GoldenrodGatePlayerReceivedAMonWithMailText:
-	text "<PLAYER> received a"
-	line "#MON with MAIL."
+	text "<PLAYER> received "
+	line "DARK SOULS."
 	done
 
 Route35GoldenrodGateRandyWeirdTreeBlockingRoadText:
-	text "You can read it,"
+	text "You can play it,"
 	line "but don't lose it!"
 	cont "ROUTE 31!"
 
@@ -134,11 +112,6 @@ Route35GoldenrodGateRandyWeirdTreeBlockingRoadText:
 
 	para "I wonder if it's"
 	line "been cleared?"
-	done
-
-Route35GoldenrodGateRandyCantCarryAnotherMonText:
-	text "You can't carry"
-	line "another #MON…"
 	done
 
 Route35GoldenrodGateRandyOhNeverMindThenText:
@@ -193,6 +166,9 @@ Route35GoldenrodGateFisherText:
 
 	para "there were 150"
 	line "different kinds."
+
+	para "That's why I don't"
+	line "trust scientists."
 	done
 
 Route35GoldenrodGate_MapEvents:

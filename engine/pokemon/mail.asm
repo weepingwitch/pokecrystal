@@ -127,45 +127,14 @@ CheckPokeMail::
 	ld a, POKEMAIL_REFUSED
 	jr c, .pop_return
 
-	ld a, [wCurPartyMon]
-	ld hl, wPartyMon1Item
-	ld bc, PARTYMON_STRUCT_LENGTH
-	call AddNTimes
-	ld d, [hl]
-	farcall ItemIsMail
-	ld a, POKEMAIL_NO_MAIL
-	jr nc, .pop_return
+	
 
-	ld a, BANK(sPartyMail)
-	call OpenSRAM
-	ld a, [wCurPartyMon]
-	ld hl, sPartyMail
-	ld bc, MAIL_STRUCT_LENGTH
-	call AddNTimes
-	ld d, h
-	ld e, l
+	
 	pop hl
 	pop bc
 
 ; Compare the mail message, byte for byte, with the expected message.
-	ld a, MAIL_MSG_LENGTH
-	ld [wTempByteValue], a
-.loop
-	ld a, [de]
-	ld c, a
-	ld a, b
-	call GetFarByte
-	cp "@"
-	jr z, .done
-	cp c
-	ld a, POKEMAIL_WRONG_MAIL
-	jr nz, .close_sram_return
-	inc hl
-	inc de
-	ld a, [wTempByteValue]
-	dec a
-	ld [wTempByteValue], a
-	jr nz, .loop
+	
 
 .done
 	farcall CheckCurPartyMonFainted

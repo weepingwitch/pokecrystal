@@ -178,10 +178,10 @@ GruntM29SeenText:
 	text "Darn! I was stand-"
 	line "ing guard up top"
 
-	para "when some old coot"
+	para "when some old lady"
 	line "tripped and fell."
 
-	para "she startled me so"
+	para "She startled me so"
 	line "much that I fell"
 	cont "down here too."
 
