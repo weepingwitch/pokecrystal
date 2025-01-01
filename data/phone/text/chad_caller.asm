@@ -87,7 +87,7 @@ ChadDaisyGossipText:
 	line "granddaughter"
 	cont "named DAISY."
 
-	para "When sshe's around,"
+	para "When she's around,"
 	line "even the most"
 
 	para "ferocious #MON"

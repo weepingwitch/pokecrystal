@@ -262,10 +262,10 @@ SSAquaCantFindGranddaughterText:
 	para "I still can't find"
 	line "my granddaughter."
 
-	para "If sshe's on the"
+	para "If she's on the"
 	line "ship, that's OK."
 
-	para "Sshe's an energetic"
+	para "she's an energetic"
 	line "child, so she may"
 
 	para "be bugging some-"

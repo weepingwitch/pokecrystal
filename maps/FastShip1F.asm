@@ -264,7 +264,7 @@ FastShip1FGrandpaText:
 	para "My granddaughter"
 	line "is missing!"
 
-	para "Sshe's just a wee"
+	para "she's just a wee"
 	line "girl. If you see"
 
 	para "her, please let me"

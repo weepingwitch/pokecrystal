@@ -62,7 +62,7 @@ CopycatsHouse1FPokefanFText_ReturnedMachinePart:
 	line "three years ago."
 
 	para "Ever since then,"
-	line "sshe's gotten even"
+	line "she's gotten even"
 	cont "better at mimicry…"
 	done
 

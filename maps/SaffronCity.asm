@@ -113,7 +113,7 @@ SaffronCityLass1Text:
 	line "lives here."
 
 	para "She even mimics"
-	line "the people sshe's"
+	line "the people she's"
 
 	para "conversing with."
 	line "It's confusing."

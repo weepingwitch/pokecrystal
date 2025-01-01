@@ -640,7 +640,7 @@ KurtsGranddaughterGSBallText:
 	line "a BALL right now."
 
 	para "So I'm waiting"
-	line "till sshe's done."
+	line "till she's done."
 	done
 
 KurtsHouseSlowpokeText:

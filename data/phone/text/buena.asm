@@ -125,7 +125,7 @@ BuenaPhoneReceptionistText:
 	para "'Welcome,' is all"
 	line "she ever says."
 
-	para "But sshe's really"
+	para "But she's really"
 	line "the chattiest"
 
 	para "person at the"

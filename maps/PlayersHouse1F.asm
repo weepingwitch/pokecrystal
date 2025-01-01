@@ -305,8 +305,7 @@ NeighborNiteIntroText:
 	done
 
 NeighborText:
-	text "<PLAY_G>, have you"
-	line "heard?"
+	
 
 	text "My daughter is"
 	line "not interested in"
