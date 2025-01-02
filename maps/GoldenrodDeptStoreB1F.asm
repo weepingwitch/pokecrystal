@@ -61,8 +61,9 @@ GoldenrodDeptStoreB1FBlackBelt4Script:
 	opentext
 	writetext GiveBlahaj
 	waitbutton
-	closetext
+	
 	verbosegiveitem ZELDA1
+	closetext
 	setevent EVENT_ZELDA0
 	end
 .alreadygiven
