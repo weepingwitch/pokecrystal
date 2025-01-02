@@ -424,7 +424,7 @@ _MayPassWhirlpoolText::
 	done
 
 _AskWhirlpoolText::
-	
+	text
 	text "Want to use"
 	line "WHIRLPOOL?"
 	done
@@ -442,7 +442,7 @@ _HeadbuttNothingText::
 	done
 
 _AskHeadbuttText::
-	para "Want to HEADBUTT"
+	text "Want to HEADBUTT"
 	line "this tree?"
 	done
 
@@ -1176,13 +1176,13 @@ _OakRating03::
 	done
 
 _OakRating04::
-	para "Catch different"
+	text "Catch different"
 	line "kinds of #MON!"
 	done
 
 _OakRating05::
 
-	para "Your #DEX is"
+	text "Your #DEX is"
 	line "coming together."
 	done
 
