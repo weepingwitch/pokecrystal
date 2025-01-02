@@ -118,6 +118,7 @@ TrainerType2:
 	push bc
 	ld b, a
 	ld a, [wUnusedScriptByte]
+	add a
 	add b
 	pop bc
 	ld [wCurPartyLevel], a
@@ -198,6 +199,7 @@ TrainerType3:
 	push bc
 	ld b, a
 	ld a, [wUnusedScriptByte]
+	add a
 	add b
 	pop bc
 	ld [wCurPartyLevel], a
@@ -230,6 +232,7 @@ TrainerType4:
 	push bc
 	ld b, a
 	ld a, [wUnusedScriptByte]
+	add a
 	add b
 	pop bc
 
