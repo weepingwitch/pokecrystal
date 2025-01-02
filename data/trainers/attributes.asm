@@ -388,7 +388,7 @@ TrainerClassAttributes:
 
 ; Officer
 	db NO_ITEM, NO_ITEM ; items
-	db 82 ; base reward
+	db 41 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 

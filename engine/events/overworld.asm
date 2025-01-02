@@ -1979,6 +1979,8 @@ TryCutOW::
 	call CheckItem
 	jr z, .cant_cut
 
+	;jr .yes
+
 ; Step 3
 	ld d, CUT
 	call CheckPartyCanLearnMove

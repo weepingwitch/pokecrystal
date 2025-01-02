@@ -3,9 +3,7 @@ ReadTrainerParty:
 	bit IN_BATTLE_TOWER_BATTLE_F, a
 	ret nz
 
-	ld a, [wLinkMode]
-	and a
-	ret nz
+
 
 	ld hl, wOTPartyCount
 	xor a
@@ -74,18 +72,9 @@ ReadTrainerParty:
 	jp ComputeTrainerReward
 
 .cal1
-	ld a, BANK(sMysteryGiftTrainerHouseFlag)
-	call OpenSRAM
-	ld a, [sMysteryGiftTrainerHouseFlag]
-	and a
-	call CloseSRAM
-	jr z, .no_mystery_gift_trainer
-	ld a, BANK(sMysteryGiftTrainer)
-	call OpenSRAM
-	ld de, sMysteryGiftTrainer
-	call TrainerType2
-	call CloseSRAM
-	jr .done
+	
+	jr  .no_mystery_gift_trainer
+	
 
 TrainerTypes:
 ; entries correspond to TRAINERTYPE_* constants
@@ -102,7 +91,12 @@ TrainerType1:
 	ld a, [hli]
 	cp $ff
 	ret z
-
+	push bc
+	ld b, a
+	ld a, [wUnusedScriptByte]
+	add a
+	add b
+	pop bc
 	ld [wCurPartyLevel], a
 	ld a, [hli]
 	ld [wCurPartySpecies], a
@@ -121,7 +115,11 @@ TrainerType2:
 	ld a, [hli]
 	cp $ff
 	ret z
-
+	push bc
+	ld b, a
+	ld a, [wUnusedScriptByte]
+	add b
+	pop bc
 	ld [wCurPartyLevel], a
 	ld a, [hli]
 	ld [wCurPartySpecies], a
@@ -197,7 +195,11 @@ TrainerType3:
 	ld a, [hli]
 	cp $ff
 	ret z
-
+	push bc
+	ld b, a
+	ld a, [wUnusedScriptByte]
+	add b
+	pop bc
 	ld [wCurPartyLevel], a
 	ld a, [hli]
 	ld [wCurPartySpecies], a
@@ -225,6 +227,11 @@ TrainerType4:
 	ld a, [hli]
 	cp $ff
 	ret z
+	push bc
+	ld b, a
+	ld a, [wUnusedScriptByte]
+	add b
+	pop bc
 
 	ld [wCurPartyLevel], a
 	ld a, [hli]
@@ -306,7 +313,7 @@ TrainerType4:
 .copied_pp
 
 	pop hl
-	jr .loop
+	jp .loop
 
 ComputeTrainerReward:
 	ld hl, hProduct
