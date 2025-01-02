@@ -1781,7 +1781,7 @@ ReceiveTogepiEggScript:
 	waitsfx
 	farwritetext ReceivedItemText
 	playsound SFX_GET_EGG
-	waitsfx
+	;waitsfx
 	end
 
 GameCornerCoinVendorScript:

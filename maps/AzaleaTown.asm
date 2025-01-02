@@ -333,8 +333,8 @@ AzaleaTownYoungsterText:
 	cont "impossible."
 
 	para "The CHARCOAL GIRL"
-	line "has #MON who CUT"
-	cont "down trees."
+	line "can CUT down"
+	cont "trees."
 	done
 
 AzaleaTownSlowpokeText1:

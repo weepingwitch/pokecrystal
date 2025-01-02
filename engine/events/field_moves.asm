@@ -6,7 +6,7 @@ PlayWhirlpoolSound:
 	call WaitSFX
 	ld de, SFX_SURF
 	call PlaySFX
-	call WaitSFX
+	;call WaitSFX
 	ret
 
 BlindingFlash:

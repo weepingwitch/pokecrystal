@@ -109,7 +109,7 @@ ChooseMonToLearnTMHM_NoRefresh:
 	push af
 	ld de, SFX_WRONG
 	call PlaySFX
-	call WaitSFX
+	;call WaitSFX
 	pop af
 	pop bc
 	pop de

@@ -185,7 +185,7 @@ PC_PlayBootSound:
 PC_PlayShutdownSound:
 	ld de, SFX_SHUT_DOWN_PC
 	call PC_WaitPlaySFX
-	call WaitSFX
+	;call WaitSFX
 	ret
 
 PC_PlayChoosePCSound:

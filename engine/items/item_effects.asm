@@ -2125,7 +2125,7 @@ XItemEffect:
 	ld [wAttackMissed], a
 	ld [wEffectFailed], a
 	farcall RaiseStat
-	call WaitSFX
+	;call WaitSFX
 
 	farcall BattleCommand_StatUpMessage
 	farcall BattleCommand_StatUpFailText
@@ -2222,7 +2222,7 @@ PokeFluteEffect:
 	push de
 	ld de, SFX_POKEFLUTE
 	call WaitPlaySFX
-	call WaitSFX
+	;call WaitSFX
 	pop de
 
 .battle

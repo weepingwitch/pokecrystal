@@ -89,7 +89,7 @@ BattleAnimRunScript:
 	ld [wFXAnimID + 1], a
 
 .hi_byte
-	call WaitSFX
+	;call WaitSFX
 	call PlayHitSound
 	call RunBattleAnimScript
 

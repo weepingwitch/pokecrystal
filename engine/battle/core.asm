@@ -2269,7 +2269,7 @@ FaintYourPokemon:
 	jp StdBattleTextbox
 
 FaintEnemyPokemon:
-	call WaitSFX
+	;call WaitSFX
 	ld de, SFX_KINESIS
 	call PlaySFX
 	call EnemyMonFaintedAnimation
@@ -2416,6 +2416,7 @@ WinTrainerBattle:
 	ret
 
 .give_money
+	call .DoubleReward
 	ld a, [wAmuletCoin]
 	and a
 	call nz, .DoubleReward
@@ -7525,7 +7526,7 @@ AnimateExpBar:
 	call WaitSFX
 	ld de, SFX_EXP_BAR
 	call PlaySFX
-	ld c, 10
+	ld c, 1
 	;call delayframes
 	pop bc
 	ret

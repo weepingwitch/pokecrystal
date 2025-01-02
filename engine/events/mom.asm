@@ -163,7 +163,7 @@ BankOfMom:
 	call CopyBytes
 	ld de, SFX_TRANSACTION
 	call PlaySFX
-	call WaitSFX
+	;call WaitSFX
 	ld hl, MomStoredMoneyText
 	call PrintText
 	ld a, $8
@@ -229,7 +229,7 @@ BankOfMom:
 	call CopyBytes
 	ld de, SFX_TRANSACTION
 	call PlaySFX
-	call WaitSFX
+	;call WaitSFX
 	ld hl, MomTakenMoneyText
 	call PrintText
 	ld a, $8

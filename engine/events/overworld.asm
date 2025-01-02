@@ -740,7 +740,7 @@ FlyFunction:
 	loadvar VAR_MOVEMENT, PLAYER_NORMAL
 	newloadmap MAPSETUP_FLY
 	callasm FlyToAnim
-	special WaitSFX
+	;special WaitSFX
 	callasm .ReturnFromFly
 	end
 

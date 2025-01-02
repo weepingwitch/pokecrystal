@@ -885,7 +885,7 @@ _SpaceSpaceColonText:: ; unreferenced
 
 _PasswordAskResetText::
 	text "Select CONTINUE &"
-	cont "reset settings."
+	line "reset settings."
 	prompt
 
 
