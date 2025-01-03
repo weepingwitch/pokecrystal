@@ -465,8 +465,8 @@ CooltrainermAllenAfterBattleText:
 	para "MORTY is still in"
 	line "training?"
 
-	para "she really hammered"
-	line "me."
+	para "she really"
+	line "hammered me."
 	done
 
 CooltrainerfCybilSeenText:

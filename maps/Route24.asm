@@ -54,10 +54,10 @@ Route24RocketSeenText:
 	cont "you I not!"
 
 	para "But! If win you do"
-	line "versus me, a lady I"
+	line "versus me, my"
 
-	para "be and mine secret"
-	line "to you I tell."
+	cont "secret I tell."
+	
 
 	para "Hey, kid! Battle"
 	line "begin we do!"

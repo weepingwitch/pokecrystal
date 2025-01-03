@@ -302,7 +302,7 @@ BoarderDouglasAfterBattleText:
 	text "The secret behind"
 	line "PRYCE's power…"
 
-	para "she meditates under"
+	para "she meditates by"
 	line "a waterfall daily"
 
 	para "to strengthen her"
@@ -353,7 +353,7 @@ MahoganyGymGuideText:
 	para "#MON for some"
 	line "50 years."
 
-	para "she's said to be"
+	para "She's said to be"
 	line "good at freezing"
 
 	para "opponents with"

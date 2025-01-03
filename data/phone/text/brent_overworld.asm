@@ -9,10 +9,10 @@ BrentAskNumber1Text:
 	line "is shallow still!"
 
 	para "Do you know BILL?"
-	line "she's an incredible"
+	line "she's incredible."
 
-	para "#MANIAC."
-	line "I revere her."
+	
+	para "I revere her."
 
 	para "I'll teach you all"
 	line "I know about BILL,"

@@ -127,7 +127,7 @@ LizEarlGossipText:
 	para "I saw her doing"
 	line "pirouettes while"
 
-	para "she was running. It"
+	para "she ran! It"
 	line "was wildly funny!"
 	done
 

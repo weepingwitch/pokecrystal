@@ -94,7 +94,7 @@ MartCianwood:
 	db -1 ; end
 
 MartGoldenrod2F1:
-	db 7 ; # items
+	db 10 ; # items
 	db POTION
 	db SUPER_POTION
 	db ANTIDOTE
@@ -102,6 +102,9 @@ MartGoldenrod2F1:
 	db AWAKENING
 	db BURN_HEAL
 	db ICE_HEAL
+	db FRESH_WATER
+	db SODA_POP
+	db LEMONADE
 	db -1 ; end
 
 MartGoldenrod2F2:

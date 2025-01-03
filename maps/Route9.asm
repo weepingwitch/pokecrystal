@@ -89,7 +89,7 @@ CamperDeanSeenText:
 	done
 
 CamperDeanBeatenText:
-	text "Whoa! Danger, lady."
+	text "Whoa! Danger!"
 	done
 
 CamperDeanAfterBattleText:

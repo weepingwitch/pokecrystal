@@ -112,7 +112,7 @@ BillTakeThisEeveeText:
 	cont "take this MEW."
 
 	para "It came over when"
-	line "I was adjusting"
+	line "I was closing"
 	cont "the TIME CAPSULE."
 
 	para "Someone has to"
@@ -161,28 +161,30 @@ BillNoEeveeText:
 	done
 
 BillPopWontWorkText:
-	text "willow: My pop, she"
-	line "won't work. All she"
+	text "willow: My mom,"
+	line "she won't work."
+	cont "All she"
 
 	para "does is goof off"
 	line "all day long."
 
-	para "she's getting to be"
+	para "she's becoming"
 	line "a real headache…"
 	done
 
 BillsMomText_BeforeEcruteak:
 	text "Oh, you collect"
-	line "#MON? My son"
-	cont "BILL is an expert."
+	line "#MON? My daughter"
+	cont "willow is an"
+	cont "expert."
 
-	para "she just got called"
+	para "She got called"
 	line "to the #MON"
 
 	para "CENTER in ECRUTEAK"
 	line "CITY."
 
-	para "My husband went"
+	para "My wife went"
 	line "off to the GAME"
 
 	para "CORNER without"
@@ -190,14 +192,14 @@ BillsMomText_BeforeEcruteak:
 	done
 
 BillsMomText_AfterEcruteak:
-	text "My husband was"
+	text "My wife was"
 	line "once known as a"
 
 	para "#MANIAC."
-	line "BILL must have"
+	line "willow must have"
 
 	para "taken after her"
-	line "father."
+	line "mother."
 	done
 
 BillsYoungerSisterUsefulNumberText:
@@ -214,12 +216,12 @@ RecordedBillsNumberText:
 	done
 
 BillsYoungerSisterRefusedNumberText:
-	text "My brother made"
+	text "My sister made"
 	line "the PC #MON"
 	cont "storage system."
 
 	para "I was going to"
-	line "give you BILL's"
+	line "give you her"
 	cont "number…"
 	done
 
@@ -229,8 +231,8 @@ BillsYoungerSisterPhoneFullText:
 	done
 
 BillsYoungerSisterStorageSystemText:
-	text "My big brother"
-	line "BILL made the PC"
+	text "My big sister"
+	line "willow made the"
 
 	para "#MON storage"
 	line "system."

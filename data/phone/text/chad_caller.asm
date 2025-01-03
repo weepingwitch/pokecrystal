@@ -122,8 +122,8 @@ ChadKurtGossipText:
 	text "Do you know KURT,"
 	line "the BALL creator?"
 
-	para "she and PROF.OAK go"
-	line "back a long way."
+	para "she and PROF.OAK"
+	line "go way back."
 
 	para "I guess great"
 	line "people attract one"
@@ -173,7 +173,7 @@ ChadProfOakTrainerGossipText:
 	cont "long time ago."
 
 	para "But rather than"
-	line "battling, she found"
+	line "battles, she found"
 
 	para "#MON themselves"
 	line "to be interesting."
@@ -208,15 +208,15 @@ ChadProfOakTravelingGossipText:
 	line "PROF.OAK traveled"
 
 	para "all over the world"
-	line "when she was young."
+	line "as a youngster."
 
 	para "While traveling,"
-	line "she must've learned"
+	line "she learned all"
 
 	para "about #MON"
 	line "naturally."
 
-	para "I envy him…"
+	para "I envy her…"
 	line "I'd like to travel"
 
 	para "and learn about"

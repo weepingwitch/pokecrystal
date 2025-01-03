@@ -45,11 +45,11 @@ MrFujisHouseBookshelf:
 
 MrFujisHouseSuperNerdText:
 	text "MRS.FUJI does live"
-	line "here, but she's not"
+	line "here, but she's"
 
-	para "home now."
+	cont "not home now."
 
-	para "she should be at"
+	para "She should be at"
 	line "the SOUL HOUSE."
 	done
 

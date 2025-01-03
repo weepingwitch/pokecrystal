@@ -148,7 +148,7 @@ BuenaPhoneLuckyNumberShowText:
 	line "LUCKY NUMBER SHOW?"
 
 	para "REED moans that"
-	line "she's never won, so"
+	line "she never won, so"
 
 	para "she vows to keep"
 	line "the show on the"

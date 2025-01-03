@@ -42,8 +42,8 @@ UnusedSweetHoneyAfterText1: ; unreferenced
 	para "and goes somewhere"
 	line "with it."
 
-	para "I wonder what she's"
-	line "up to?"
+	para "I wonder what"
+	line "she's up to?"
 	done
 
 UnusedSweetHoneyAfterText2: ; unreferenced

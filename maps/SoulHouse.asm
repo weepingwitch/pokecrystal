@@ -53,7 +53,7 @@ SoulHouseTeacherText:
 
 	para "There are many"
 	line "chambers that only"
-	cont "MRS.FUJI may enter."
+	cont "MRS.FUJI enters."
 	done
 
 SoulHouseLassText:

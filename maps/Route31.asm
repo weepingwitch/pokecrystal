@@ -384,8 +384,9 @@ Route31YoungsterText:
 	line "it to take on"
 	cont "FALKNER."
 
-	para "she's the leader of"
-	line "VIOLET CITY's GYM."
+	para "she's the leader"
+	line "of VIOLET CITY's"
+	cont "GYM."
 	done
 
 Route31SignText:

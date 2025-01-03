@@ -957,8 +957,9 @@ ElmAideHasEggText:
 	line "Didn't you meet my"
 	cont "assistant?"
 
-	para "She should have met"
-	line "you with the EGG"
+	para "She should have"
+	line "met you with"
+	cont "the EGG"
 
 	para "at VIOLET CITY's"
 	line "#MON CENTER."

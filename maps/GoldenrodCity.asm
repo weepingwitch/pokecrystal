@@ -351,8 +351,8 @@ GoldenrodCityLassText:
 	line "house rates your"
 	cont "#MON names."
 
-	para "She can even rename"
-	line "your #MON."
+	para "She can even re-"
+	line "name your #MON."
 	done
 
 GoldenrodCityGrampsText:

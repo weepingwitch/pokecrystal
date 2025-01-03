@@ -26,9 +26,9 @@ MahoganyPokecenter1FPokefanMText:
 	line "ROCKET has come"
 	cont "back?"
 
-	para "I saw some girls in"
-	line "black at LAKE OF"
-	cont "RAGE…"
+	para "I saw some girls "
+	line "in black at LAKE"
+	cont "OF RAGE…"
 	done
 
 MahoganyPokecenter1FYoungsterText:

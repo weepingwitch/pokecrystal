@@ -42,9 +42,10 @@ ElmPhoneAssistantText:
 	text "Hello, <PLAY_G>?"
 
 	para "Did you see my"
-	line "assistant? she's at"
+	line "assistant? she's"
+	cont "at the"
 
-	para "the #MON CENTER"
+	para "#MON CENTER"
 	line "in VIOLET CITY."
 	done
 

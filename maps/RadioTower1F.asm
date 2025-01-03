@@ -428,7 +428,7 @@ GruntM3SeenText:
 	para "Now everyone will"
 	line "get to experience"
 
-	para "the true delight of"
+	para "the true joy of"
 	line "SMOOTH JAZZ!"
 	done
 

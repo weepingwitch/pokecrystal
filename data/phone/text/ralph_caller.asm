@@ -18,12 +18,12 @@ RalphDefeatedMonText:
 	text "."
 
 	para "I told my kid, but"
-	line "she scoffed that she"
+	line "she scoffed she"
 
 	para "could do the same"
 	line "thing easily."
 
-	para "Boy, has she gotten"
+	para "Boy, is she"
 	line "cocky…"
 	done
 
