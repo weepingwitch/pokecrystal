@@ -119,7 +119,7 @@ EcruteakCityGramps1Text:
 EcruteakCityGramps2Text:
 
 
-	para "If you go to their"
+	text "If you go to their"
 	line "DANCE THEATER, an"
 
 	para "odd old lady will"

@@ -18,8 +18,6 @@ MahoganyPokecenter1FPokefanMScript:
 MahoganyPokecenter1FYoungsterScript:
 	jumptextfaceplayer MahoganyPokecenter1FYoungsterText
 
-MahoganyPokecenter1FCooltrainerFScript:
-	jumptextfaceplayer MahoganyPokecenter1FCooltrainerFText
 
 MahoganyPokecenter1FPokefanMText:
 	text "What's this? TEAM"
@@ -42,12 +40,15 @@ MahoganyPokecenter1FYoungsterText:
 	cont "evolve."
 	done
 
-MahoganyPokecenter1FCooltrainerFText:
+
+MahoganyPokecenter1FCooltrainerFScript:
 	faceplayer
 	opentext
+	
 	checkevent EVENT_ZELDA4
 	iftrue .AlreadyGiven
-	writetext ZeldaTrade4DoYouHaveEonMailText
+	writetext ZeldaTrade4DoYouHaveitemText
+	;writetext Zelda4AlreadyGivenText
 	waitbutton
 	writetext ZeldaTrade4AskGiveAwayAnEonMailText
 	yesorno
@@ -93,14 +94,14 @@ Zelda4AlreadyGivenText:
 	done
 
 
-ZeldaTrade4DoYouHaveEonMailText:
+ZeldaTrade4DoYouHaveitemText:
 	text "Oh my, your pack"
 	line "looks so heavy!"
 
 	para "Oh! Do you happen"
 	line "to have EYELINER?"
 
-	para "My daughter is"
+	para "My lil sis is"
 	line "after a stick."
 
 	para "You can part with"
@@ -121,7 +122,7 @@ ZeldaTrade4ThisIsForYouText:
 	done
 
 ZeldaTrade4DaughterWillBeDelightedText:
-	text "My daughter will"
+	text "My lil sis will"
 	line "be delighted!"
 	done
 
