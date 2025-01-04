@@ -226,7 +226,7 @@ ChucksWifeFlySpeechText:
 	done
 
 ChucksWifeChubbyText:
-	text "My husband lost to"
+	text "My wife lost to"
 	line "you, so she needs"
 	cont "to train harder."
 

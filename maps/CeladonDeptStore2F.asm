@@ -39,7 +39,7 @@ CeladonDeptStore2FPokefanMText:
 	text "I just recently"
 	line "became a trainer."
 
-	para "My son encouraged"
+	para "My sis encouraged"
 	line "me to do it."
 
 	para "I'm impressed by"

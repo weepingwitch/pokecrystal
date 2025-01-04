@@ -6129,8 +6129,8 @@ PrintDidntAffect:
 
 PrintDidntAffect2:
 	call AnimateFailedMove
-	ld hl, DidntAffect1Text ; 'it didn't affect'
-	ld de, DidntAffect2Text ; 'it didn't affect'
+	ld hl, ButItFailedText ; 'but it failed!'
+	ld de, ItFailedText    ; 'it failed!'
 	jp FailText_CheckOpponentProtect
 
 PrintParalyze:

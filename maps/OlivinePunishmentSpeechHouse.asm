@@ -33,8 +33,12 @@ OlivinePunishmentSpeechHouseDadText:
 
 OlivinePunishmentSpeechHouseDaughterText:
 	text "Whenever I get in"
-	line "trouble, Daddy"
+	line "trouble, Mommy"
 	cont "always scares me."
+
+	para "She says I'll"
+	line "be left on the"
+	cont "islands!"
 	done
 
 OlivinePunishmentSpeechHouse_MapEvents:

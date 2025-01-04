@@ -873,7 +873,7 @@ _MonNumberText:: ; unreferenced
 _WasSentToBillsPCText::
 	text_ram wStringBuffer1
 	text " was"
-	line "sent to BILL's PC."
+	line "sent to PC box."
 	prompt
 
 _PCGottaHavePokemonText::

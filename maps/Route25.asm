@@ -420,11 +420,11 @@ CooltrainermKevinAfterBattleText:
 
 BillsHouseSignText:
 	text "SEA COTTAGE"
-	line "BILL'S HOUSE"
+	line "willow'S HOUSE"
 	done
 
 UnusedBillsHouseSignText: ; unreferenced
-	text "BILL'S HOUSE"
+	text "willow'S HOUSE"
 	done
 
 Route25_MapEvents:

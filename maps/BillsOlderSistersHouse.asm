@@ -14,8 +14,8 @@ BillsOlderSistersHouseYoungsterScript:
 	jumptextfaceplayer BillsOlderSistersHouseYoungsterText
 
 BillsOlderSisterText:
-	text "My grandpa is at "
-	line "my brother BILL's"
+	text "My grandma is at "
+	line "my sis willow's"
 	cont "on CERULEAN CAPE."
 	done
 

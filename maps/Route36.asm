@@ -607,7 +607,7 @@ ArthurThursdayText:
 	text "ARTHUR: I'm ARTHUR"
 	line "of Thursday. I'm"
 
-	para "the second son out"
+	para "the second sis out"
 	line "of seven children."
 	done
 
