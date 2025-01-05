@@ -33,8 +33,48 @@ CianwoodGymGuideScript:
 	end
 
 CianwoodPokecenter1FSuperNerdScript:
-	jumptextfaceplayer CianwoodPokecenter1FSuperNerdText
+	faceplayer
+	opentext
+	checkevent EVENT_ZELDA6
+	iftrue .AlreadyGiven
+	writetext ZeldaTrade6DoYouHaveEonMailText
+	waitbutton
+	writetext ZeldaTrade6AskGiveAwayAnEonMailText
+	yesorno
+	iffalse .NoEonMail
+	takeitem ZELDA6
+	iffalse .NoEonMail
+	writetext ZeldaTrade6PlayerGaveAwayTheEonMailText
+	waitbutton
+	writetext ZeldaTrade6ThisIsForYouText
+	waitbutton
+	verbosegiveitem MASTER_BALL
+	iffalse .NoRoom
+	writetext ZeldaTrade6DaughterWillBeDelightedText
+	setevent EVENT_ZELDA6
+	waitbutton
+	closetext
+	end
 
+.NoEonMail:
+	writetext ZeldaTrade6TooBadText
+	waitbutton
+	closetext
+	end
+
+.NoRoom:
+	giveitem ZELDA6
+	writetext ZeldaTrade6AnotherTimeThenText
+	waitbutton
+	closetext
+	end
+
+.AlreadyGiven:
+	writetext Zelda6AlreadyGivenText
+	waitbutton
+	closetext
+	end
+	
 CianwoodPokecenter1FLassText:
 	text "Did you meet the"
 	line "#MANIAC?"
@@ -116,47 +156,7 @@ CianwoodPokecenter1FUnusedText2: ; unreferenced
 	done
 
 CianwoodPokecenter1FSuperNerdText:
-	faceplayer
-	opentext
-	checkevent EVENT_ZELDA6
-	iftrue .AlreadyGiven
-	writetext ZeldaTrade6DoYouHaveEonMailText
-	waitbutton
-	writetext ZeldaTrade6AskGiveAwayAnEonMailText
-	yesorno
-	iffalse .NoEonMail
-	takeitem ZELDA6
-	iffalse .NoEonMail
-	writetext ZeldaTrade6PlayerGaveAwayTheEonMailText
-	waitbutton
-	writetext ZeldaTrade6ThisIsForYouText
-	waitbutton
-	verbosegiveitem MASTER_BALL
-	iffalse .NoRoom
-	writetext ZeldaTrade6DaughterWillBeDelightedText
-	setevent EVENT_ZELDA6
-	waitbutton
-	closetext
-	end
-
-.NoEonMail:
-	writetext ZeldaTrade6TooBadText
-	waitbutton
-	closetext
-	end
-
-.NoRoom:
-	giveitem ZELDA6
-	writetext ZeldaTrade6AnotherTimeThenText
-	waitbutton
-	closetext
-	end
-
-.AlreadyGiven:
-	writetext Zelda6AlreadyGivenText
-	waitbutton
-	closetext
-	end
+	
 
 Zelda6AlreadyGivenText:
 	text "Thank you!! My"
