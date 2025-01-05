@@ -3738,6 +3738,7 @@ BattleCommand_Poison:
 	push hl
 	call AnimateFailedMove
 	pop hl
+	ld hl, ButItFailedText
 	jp StdBattleTextbox
 
 .apply_poison
