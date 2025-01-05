@@ -6,56 +6,56 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 63, STEELIX
-	db 64, SANDSLASH
-	db 65, NINETALES
+	db 63, SANDSLASH
+	db 63, NINETALES
 	db 63, POLIWRATH
-	db 66, GENGAR
-	db 65, TYRANITAR
+	db 63, GENGAR
+	db 63, TYRANITAR
 	db 63, DRAGONITE
 	; day
 	db 63, MUK
-	db 64, DUGTRIO
-	db 65, ARCANINE
+	db 63, DUGTRIO
+	db 63, ARCANINE
 	db 63, NIDOQUEEN
-	db 66, ALAKAZAM
-	db 65, TYRANITAR
+	db 63, ALAKAZAM
+	db 63, TYRANITAR
 	db 63, DRAGONITE
 	; nite
 	db 63, WEEZING
-	db 64, RHYDON
-	db 65, HOUNDOOM
+	db 63, RHYDON
+	db 63, HOUNDOOM
 	db 63, NIDOKING
-	db 66, MACHAMP
-	db 65, TYRANITAR
-	db 65, DRAGONITE
+	db 63, MACHAMP
+	db 63, TYRANITAR
+	db 63, DRAGONITE
 	end_grass_wildmons
 
 	def_grass_wildmons UNDER_PATH_2F
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 73, RHYDON
-	db 74, ARTICUNO
-	db 75, TYPHLOSION
-	db 73, CHARIZARD
-	db 76, AERODACTYL
-	db 75, CELEBI
-	db 73, ENTEI
+	db 63, RHYDON
+	db 63, ARTICUNO
+	db 63, TYPHLOSION
+	db 63, CHARIZARD
+	db 63, AERODACTYL
+	db 63, CELEBI
+	db 63, ENTEI
 	; day
-	db 73, GOLEM
-	db 74, ZAPDOS
-	db 75, MEGANIUM
-	db 73, VENUSAUR
-	db 76, TYRANITAR
-	db 75, MEW
-	db 73, RAIKOU
+	db 63, GOLEM
+	db 63, ZAPDOS
+	db 63, MEGANIUM
+	db 63, VENUSAUR
+	db 63, TYRANITAR
+	db 63, MEW
+	db 63, RAIKOU
 	; nite
-	db 73, ALAKAZAM
-	db 74, MOLTRES
-	db 75, FERALIGATR
-	db 73, BLASTOISE
-	db 76, DRAGONITE
-	db 75, MEWTWO
-	db 75, SUICUNE
+	db 63, ALAKAZAM
+	db 63, MOLTRES
+	db 63, FERALIGATR
+	db 63, BLASTOISE
+	db 63, DRAGONITE
+	db 63, MEWTWO
+	db 63, SUICUNE
 	end_grass_wildmons
 
 	def_grass_wildmons VIRIDIAN_FOREST
