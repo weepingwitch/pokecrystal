@@ -177,9 +177,9 @@ LizSalonGossipText:
 	line "SALON in GOLDENROD"
 
 	para "that's run by two"
-	line "brothers."
+	line "sisters."
 
-	para "The older brother"
+	para "The older sister"
 	line "is good, but the"
 
 	para "younger one really"
@@ -189,7 +189,7 @@ LizSalonGossipText:
 	line "younger one does a"
 
 	para "better job than"
-	line "her brother."
+	line "her sister."
 
 	para "Every time I go, I"
 	line "have a hard time"

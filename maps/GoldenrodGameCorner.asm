@@ -152,9 +152,9 @@ GoldenrodGameCornerTMVendorMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "TM25    5500@"
-	db "TM14    5500@"
-	db "TM38    5500@"
+	db "THUNDER  5500@"
+	db "BLIZZARD 5500@"
+	db "FIREBLAST5500@"
 	db "CANCEL@"
 
 GoldenrodGameCornerPrizeMonVendorScript:

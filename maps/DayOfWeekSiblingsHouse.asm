@@ -28,8 +28,7 @@ DayOfWeekSiblingsHousePokedexText1:
 	done
 
 DayOfWeekSiblingsHousePokedexText2:
-	text "To my brothers and"
-	line "sisters:"
+	text "To my sisters:"
 
 	para "We take pride in"
 	line "serving #MON"

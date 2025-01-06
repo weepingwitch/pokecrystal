@@ -36,7 +36,7 @@ UnusedGotSweetHoneyText: ; unreferenced
 	done
 
 UnusedSweetHoneyAfterText1: ; unreferenced
-	text "My little brother"
+	text "My little sister"
 	line "takes SWEET HONEY"
 
 	para "and goes somewhere"

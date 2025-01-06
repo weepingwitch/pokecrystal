@@ -500,7 +500,7 @@ PokemaniacDonaldAfterBattleText:
 	line "33, ANTHONY, is a"
 	cont "good gal."
 
-	para "He'll phone you if"
+	para "She'll call you if"
 	line "she sees any rare"
 	cont "#MON."
 	done
@@ -526,7 +526,7 @@ GoldenrodUndergroundOlderHaircutBrotherOfferHaircutText:
 
 	para "I'm the older and"
 	line "better of the two"
-	cont "HAIRCUT BROTHERS."
+	cont "HAIRCUT SISTERS."
 
 	para "I can make your"
 	line "#MON beautiful"
@@ -573,7 +573,7 @@ GoldenrodUndergroundYoungerHaircutBrotherOfferHaircutText:
 	para "I'm the younger"
 	line "and less expen-"
 	cont "sive of the two"
-	cont "HAIRCUT BROTHERS."
+	cont "HAIRCUT SISTERS."
 
 	para "I'll spiff up your"
 	line "#MON for just"
