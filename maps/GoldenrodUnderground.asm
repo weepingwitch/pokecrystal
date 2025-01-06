@@ -526,7 +526,7 @@ GoldenrodUndergroundOlderHaircutBrotherOfferHaircutText:
 
 	para "I'm the older and"
 	line "better of the two"
-	cont "HAIRCUT SISTERS."
+	cont "SCISSOR SISTERS."
 
 	para "I can make your"
 	line "#MON beautiful"
@@ -573,7 +573,7 @@ GoldenrodUndergroundYoungerHaircutBrotherOfferHaircutText:
 	para "I'm the younger"
 	line "and less expen-"
 	cont "sive of the two"
-	cont "HAIRCUT SISTERS."
+	cont "SCISSOR SISTERS."
 
 	para "I'll spiff up your"
 	line "#MON for just"
