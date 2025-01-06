@@ -139,7 +139,7 @@ BillImCountingOnYouText:
 
 ReceivedEeveeText:
 	text "<PLAYER> received"
-	line "EEVEE!"
+	line "MEW!"
 	done
 
 BillEeveeMayEvolveText:

@@ -210,10 +210,11 @@ BillsGrandpa:
 	end
 
 BillsGrandpaIntroText:
-	text "Hm? You know BILL?"
-	line "she's my grandson."
+	text "You know willow?"
+	line "She's my grand-"
+	cont "daughter."
 
-	para "she's in JOHTO. she"
+	para "She's in JOHTO. She"
 	line "does something"
 
 	para "with PCs, so I'm"
@@ -280,7 +281,7 @@ BillsGrandpaWrongPokemonText:
 	done
 
 BillsGrandpaLickitungText:
-	text "My grandson BILL"
+	text "My granddaughter"
 	line "told me about a"
 
 	para "#MON that has a"
@@ -288,7 +289,7 @@ BillsGrandpaLickitungText:
 	done
 
 BillsGrandpaOddishText:
-	text "Ah, my grandson"
+	text "My granddaughter"
 	line "mentioned a round,"
 
 	para "green #MON that"
@@ -315,8 +316,9 @@ BillsGrandpaStaryuText:
 	done
 
 BillsGrandpaGrowlitheText:
-	text "BILL told me about"
-	line "a #MON that is"
+	text "willow told me"
+	line "about a #MON"
+	cont "that is"
 
 	para "very loyal to its"
 	line "trainer."

@@ -36,7 +36,7 @@ BrentLostAMonText:
 	para "didn't have any"
 	line "# BALLS…"
 
-	para "Would BILL laugh"
+	para "Would willow laugh"
 	line "at my mistakes?"
 	done
 
@@ -65,79 +65,81 @@ BrentHangUpText:
 
 BrentFatherGossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "willow made this"
 
-	para "seen in years..."
+	cont "romhack..."
 	done
 
 BrentGrandpaGossipText:
 	text "Did you know…?"
-	line "BILL always picks"
+	line "willow always"
+	cont "picks a girl"
 
-	para "a girl character"
-	line "in games…"
+	para "character in"
+	line "video games…"
 	done
 
 BrentGoldenrodGossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "willow made this"
 
-	para "seen in years..."
+	cont "romhack..."
 	done
 
 BrentRoute25GossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "willow made this"
 
-	para "seen in years..."
+	cont "romhack..."
 	done
 
 BrentAbraGossipText:
 	text "Did you know…?"
 	line "ABRA was the first"
 
-	para "#MON that BILL"
-	line "ostensibly caught."
+	para "#MON that"
+	line "willow caught."
 	done
 
 BrentSisterGossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "willow made this"
 
-	para "seen in years..."
+	cont "romhack..."
 	done
 
 BrentMilkGossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "willow made this"
 
-	para "seen in years..."
+	cont "romhack..."
 	done
 
 BrentBattlingGossipText:
 	text "Did you know…?"
-	line "BILL really likes"
+	line "willow really"
+	cont "like eating"
 
-	para "eating pickles…"
+	para "pickles…"
 	done
 
 BrentFlowerShopGossipText:
 	text "Did you know…?"
-	line "BILL hasn't been"
+	line "willow made this"
 
-	para "seen in years..."
+	cont "romhack..."
 	done
 
 BrentKimonoGirlGossipText:
 	text "Did you know…?"
-	line "BILL always wears"
+	line "willow always"
 
-	para "a hoodie…"
+	para "wears a hoodie…"
 	done
 
 BrentSorryImTooBusyText:
 	text "You wanted to hear"
-	line "about BILL?"
+	line "about willow?"
 
 	para "Sorry, but I'm too"
 	line "busy for you."
