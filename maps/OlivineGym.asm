@@ -24,7 +24,7 @@ OlivineGymJasmineScript:
 	opentext
 	writetext Text_ReceivedMineralBadge
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_MINERALBADGE
 	readvar VAR_BADGES
 	scall OlivineGymActivateRockets

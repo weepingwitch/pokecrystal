@@ -75,7 +75,7 @@ CeruleanGymMistyScript:
 	opentext
 	writetext ReceivedCascadeBadgeText
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_CASCADEBADGE
 .FightDone:
 	writetext MistyFightDoneText

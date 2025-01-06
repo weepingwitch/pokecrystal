@@ -148,7 +148,7 @@ PokeAnim_SetupCommands:
 	add_setup_command PokeAnim_StereoCry
 
 PokeAnim_SetWait:
-	ld a, 18
+	ld a, 9
 	ld [wPokeAnimWaitCounter], a
 	ld a, [wPokeAnimSceneIndex]
 	inc a

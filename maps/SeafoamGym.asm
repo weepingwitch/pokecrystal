@@ -30,7 +30,7 @@ SeafoamGymBlaineScript:
 	opentext
 	writetext ReceivedVolcanoBadgeText
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_VOLCANOBADGE
 	writetext BlaineAfterBattleText
 	waitbutton

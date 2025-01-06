@@ -46,7 +46,7 @@ CianwoodGymChuckScript:
 	opentext
 	writetext GetStormBadgeText
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_STORMBADGE
 	readvar VAR_BADGES
 	scall CianwoodGymActivateRockets

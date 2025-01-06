@@ -23,7 +23,7 @@ ViridianGymBlueScript:
 	opentext
 	writetext Text_ReceivedEarthBadge
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_EARTHBADGE
 	writetext LeaderBlueAfterText
 	waitbutton

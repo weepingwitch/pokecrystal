@@ -37,7 +37,7 @@ FuchsiaGymJanineScript:
 	opentext
 	writetext Text_ReceivedSoulBadge
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_SOULBADGE
 	sjump .AfterBattle
 .FightDone:

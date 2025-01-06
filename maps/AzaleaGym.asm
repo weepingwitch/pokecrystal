@@ -29,7 +29,7 @@ AzaleaGymBugsyScript:
 	opentext
 	writetext Text_ReceivedHiveBadge
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_HIVEBADGE
 	readvar VAR_BADGES
 	scall AzaleaGymActivateRockets

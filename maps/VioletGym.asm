@@ -26,7 +26,7 @@ VioletGymFalknerScript:
 	opentext
 	writetext ReceivedZephyrBadgeText
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_ZEPHYRBADGE
 	readvar VAR_BADGES
 	scall VioletGymActivateRockets

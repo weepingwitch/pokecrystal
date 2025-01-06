@@ -31,7 +31,7 @@ SaffronGymSabrinaScript:
 	opentext
 	writetext ReceivedMarshBadgeText
 	playsound SFX_GET_BADGE
-	waitsfx
+	waitbutton
 	setflag ENGINE_MARSHBADGE
 	writetext SabrinaMarshBadgeText
 	waitbutton
