@@ -60,6 +60,8 @@ VioletCityLassScript:
 	jumptextfaceplayer VioletCityLassText
 
 VioletCitySuperNerdScript:
+	checkevent EVENT_BEAT_FALKNER
+	iffalse .regular
 	checkevent EVENT_GIVEN_SUMMONCHARM
 	iftrue .regular
 	faceplayer
