@@ -1460,7 +1460,7 @@ _AboutText1::
 	line "  pure flying type"
 
 	para "- more diverse"
-	line "  wild <PKMN> spawns"
+	line "  wild <PKMN> spawn"
 
 	para "- trainers have"
 	line "  more <PKMN>"

@@ -220,7 +220,7 @@ VioletCityLassText:
 	line "ghosts."
 
 	para "That's really"
-	line "annoyoing."
+	line "annoying."
 	done
 
 VioletCitySuperNerdText:
