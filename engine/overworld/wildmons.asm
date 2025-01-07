@@ -298,16 +298,9 @@ ChooseWildEncounter:
 	ld a, [wBattleType]
 	cp BATTLETYPE_SUICUNE
 	jr z, .ok
-	call Random
-	cp 50 percent
-	jr c, .doubleit
-	cp 74 percent
-	jr c, .contasusual
-.dontdouble ; add current gym badges to level
-	ld a, [wUnusedScriptByte]
-	add b 
-	ld b, a
-	jr .contasusual
+	ld a, [wWildScaleToggle]
+	and a
+	jr z, .contasusual
 ; add current gym badges, doubled, to level
 .doubleit
 	ld a, [wUnusedScriptByte]

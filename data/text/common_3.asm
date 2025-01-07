@@ -1366,21 +1366,23 @@ _ItemUsedText::
 	text "."
 	done
 
-_ItemGotOnText::
-	text "<PLAYER> got on the@"
-	text_low
-	text_ram wStringBuffer2
-	text "."
+_ScaleToggleOn::
+	text "The SUMMONCHARM"
+	line "was turned on."
+
+	para "Wild pkmn are now"
+	line "higher lvl, based"
+	cont "on your badges."
 	prompt
 
-_ItemGotOffText::
-	text "<PLAYER> got off@"
-	text_low
-	text "the @"
-	text_ram wStringBuffer2
-	text "."
-	prompt
+_ScaleToggleOff::
+	text "The SUMMONCHARM"
+	line "was turned off."
 
+	para "Wild pkmn will be"
+	line "the regular lvl."
+
+	prompt
 _KnowsMoveText::
 	text_ram wStringBuffer1
 	text " knows"

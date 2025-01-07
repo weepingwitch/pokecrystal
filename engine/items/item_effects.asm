@@ -70,7 +70,7 @@ ItemEffects:
 	dw CoinCaseEffect      ; COIN_CASE
 	dw ItemfinderEffect    ; ITEMFINDER
 	dw PokeFluteEffect     ; POKE_FLUTE
-	dw NoEffect            ; EXP_SHARE
+	dw ToggleScaleEffect            ; EXP_SHARE
 	dw OldRodEffect        ; OLD_ROD
 	dw GoodRodEffect       ; GOOD_ROD
 	dw NoEffect            ; SILVER_LEAF
@@ -2624,17 +2624,24 @@ WontHaveAnyEffectMessage:
 	ld hl, ItemWontHaveEffectText
 	jr CantUseItemMessage
 
-BelongsToSomeoneElseMessage: ; unreferenced
-	ld hl, ItemBelongsToSomeoneElseText
-	jr CantUseItemMessage
+ToggleScaleEffect:
+	ld a, [wWildScaleToggle]
+	xor 1
+	ld [wWildScaleToggle], a
+	and a
+	ld hl, ExpShareToggleOn
+	jp nz, PrintText
 
-CyclingIsntAllowedMessage: ; unreferenced
-	ld hl, NoCyclingText
-	jr CantUseItemMessage
+	ld hl, ExpShareToggleOff
+	jp PrintText
 
-CantGetOnYourBikeMessage: ; unreferenced
-	ld hl, ItemCantGetOnText
-	; fallthrough
+ExpShareToggleOff:
+	text_far _ScaleToggleOff
+	text_end
+ 
+ExpShareToggleOn:
+	text_far _ScaleToggleOn
+	text_end
 
 CantUseItemMessage:
 ; Item couldn't be used.
@@ -2686,13 +2693,7 @@ ItemUsedText:
 	text_far _ItemUsedText
 	text_end
 
-ItemGotOnText: ; unreferenced
-	text_far _ItemGotOnText
-	text_end
 
-ItemGotOffText: ; unreferenced
-	text_far _ItemGotOffText
-	text_end
 
 ApplyPPUp:
 	ld a, MON_MOVES

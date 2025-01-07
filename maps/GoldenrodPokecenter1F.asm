@@ -80,6 +80,7 @@ GoldenrodPokecenter1FGameboyKidScript:
 	jumptextfaceplayer GoldenrodPokecenter1FGameboyKidText
 
 GoldenrodPokecenter1FLassScript:
+	
 	jumptextfaceplayer GoldenrodPokecenter1FLassText
 
 GoldenrodPokecenter1FPokefanF:

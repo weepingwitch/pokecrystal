@@ -479,8 +479,8 @@ TeruSama5Desc:
 	db   "?@"
 
 ExpShareDesc:
-	db   "Shares battle EXP."
-	next "Points. (HOLD)@"
+	db   "Summons higher lvl"
+	next "wild #MON.@"
 
 OldRodDesc:
 	db   "Use by water to"

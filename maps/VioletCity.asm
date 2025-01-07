@@ -60,7 +60,19 @@ VioletCityLassScript:
 	jumptextfaceplayer VioletCityLassText
 
 VioletCitySuperNerdScript:
+	checkevent EVENT_GIVEN_SUMMONCHARM
+	iftrue .regular
+	faceplayer
+	opentext
+	verbosegiveitem EXP_SHARE
+	waitbutton
+	writetext SummonToggleText
+	closetext
+	setevent EVENT_GIVEN_SUMMONCHARM
+	end
+.regular
 	jumptextfaceplayer VioletCitySuperNerdText
+
 
 VioletCityGrampsScript:
 	jumptextfaceplayer VioletCityGrampsText
@@ -274,6 +286,20 @@ SproutTowerSignText:
 	cont "BELLSPROUT."
 
 	done
+
+SummonToggleText:
+	text "You can use this"
+	line "item to change"
+	cont "the lvl of"
+
+	para "wild #MON!"
+
+	para "The more gym"
+	line "badges you have,"
+	cont "the stronger"
+
+	para "they will be!"
+	prompt
 
 EarlsPokemonAcademySignText:
 	text "EARL'S #MON"
