@@ -1514,3 +1514,12 @@ _OakText4::
 _OakText5::
 	text "Anyway…"
 	prompt
+
+
+_SomeKidVioletText::
+	
+
+_SummonOnText::
+	
+
+_SummonOffText::

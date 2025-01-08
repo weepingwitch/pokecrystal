@@ -90,7 +90,50 @@ OlivineCityStandingYoungsterScript:
 	end
 
 OlivineCitySailor2Script:
-	jumptextfaceplayer OlivineCitySailor2Text
+	checkevent EVENT_GIVEN_SUMMONCHARM
+	iftrue .osummonstatus
+	faceplayer
+    opentext
+    writetext oGetSummonText
+    closetext
+    end 
+.osummonstatus
+    readmem wWildScaleToggle
+	iffalse .osummonstatoff
+.staton
+	jumptextfaceplayer oSummonOnText
+    end
+.osummonstatoff
+	jumptextfaceplayer oSummonOffText
+    end
+
+oGetSummonText:
+    text "I heard some"
+	line "kid in VIOLET CITY"
+	cont "is giving away"
+
+	para "a SUMMONCHARM!"
+	prompt
+
+oSummonOnText:
+    text "Your SUMMONCHARM"
+	line "is on, so wild"
+	cont "#MON will have"
+
+	para "higher levels,"
+	line "based on how"
+	cont "many badges"
+
+	para "you've earned."
+	done
+
+oSummonOffText:
+	text "Your SUMMONCHARM"
+	line "is off, so wild"
+	cont "#MON will have"
+
+	para "regular levels."
+	done
 
 OlivineCitySign:
 	jumptext OlivineCitySignText

@@ -156,7 +156,50 @@ MoveTutorScript:
 	end
 
 GoldenrodCityPokefanMScript:
-	jumptextfaceplayer GoldenrodCityPokefanMText
+    checkevent EVENT_GIVEN_SUMMONCHARM
+	iftrue .summonstatus
+	faceplayer
+    opentext
+    writetext GetSummonText
+    closetext
+    end 
+.summonstatus
+    readmem wWildScaleToggle
+	iffalse .summonstatoff
+.staton
+	jumptextfaceplayer SummonOnText
+    end
+.summonstatoff
+	jumptextfaceplayer SummonOffText
+    end
+
+GetSummonText:
+    text "I heard some"
+	line "kid in VIOLET CITY"
+	cont "is giving away"
+
+	para "a SUMMONCHARM!"
+	prompt
+
+SummonOnText:
+    text "Your SUMMONCHARM"
+	line "is on, so wild"
+	cont "#MON will have"
+
+	para "higher levels,"
+	line "based on how"
+	cont "many badges"
+
+	para "you've earned."
+	done
+
+SummonOffText:
+	text "Your SUMMONCHARM"
+	line "is off, so wild"
+	cont "#MON will have"
+
+	para "regular levels."
+	done
 
 GoldenrodCityYoungster1Script:
 	jumptextfaceplayer GoldenrodCityYoungster1Text
