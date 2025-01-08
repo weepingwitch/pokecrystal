@@ -5,19 +5,19 @@ TrainerEncounterMusic::
 	table_width 1, TrainerEncounterMusic
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; none
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; falkner
-	db MUSIC_YOUNGSTER_ENCOUNTER     ; whitney
+	db MUSIC_LASS_ENCOUNTER     ; whitney
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bugsy
 	db MUSIC_YOUNGSTER_ENCOUNTER    ; morty
 	db MUSIC_YOUNGSTER_ENCOUNTER    ; pryce
-	db MUSIC_YOUNGSTER_ENCOUNTER     ; jasmine
+	db MUSIC_LASS_ENCOUNTER     ; jasmine
 	db MUSIC_YOUNGSTER_ENCOUNTER    ; chuck
-	db MUSIC_YOUNGSTER_ENCOUNTER      ; clair
+	db MUSIC_LASS_ENCOUNTER      ; clair
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; rival1
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; pokemon_prof
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; will
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; cal
 	db MUSIC_YOUNGSTER_ENCOUNTER    ; bruno
-	db MUSIC_YOUNGSTER_ENCOUNTER       ; karen
+	db MUSIC_LASS_ENCOUNTER       ; karen
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; koga
 	db MUSIC_YOUNGSTER_ENCOUNTER    ; champion
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; brock
@@ -28,10 +28,10 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; youngster
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolboy
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
-	db MUSIC_YOUNGSTER_ENCOUNTER     ; lass
+	db MUSIC_LASS_ENCOUNTER     ; lass
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; janine
-	db MUSIC_YOUNGSTER_ENCOUNTER       ; cooltrainerm
-	db MUSIC_YOUNGSTER_ENCOUNTER      ; cooltrainerf
+	db MUSIC_LASS_ENCOUNTER       ; cooltrainerm
+	db MUSIC_LASS_ENCOUNTER     ; cooltrainerf
 	db MUSIC_YOUNGSTER_ENCOUNTER      ; beauty
 	db MUSIC_YOUNGSTER_ENCOUNTER  ; pokemaniac
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntm
@@ -41,8 +41,8 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER      ; sabrina
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bug_catcher
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; fisher
-	db MUSIC_YOUNGSTER_ENCOUNTER       ; swimmerm
-	db MUSIC_YOUNGSTER_ENCOUNTER      ; swimmerf
+	db MUSIC_LASS_ENCOUNTER       ; swimmerm
+	db MUSIC_LASS_ENCOUNTER     ; swimmerf
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; sailor
 	db MUSIC_YOUNGSTER_ENCOUNTER  ; super_nerd
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; rival2
@@ -59,11 +59,11 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; picnicker
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; camper
 	db MUSIC_ROCKET_ENCOUNTER      ; executivef
-	db MUSIC_YOUNGSTER_ENCOUNTER        ; sage
+	db MUSIC_LASS_ENCOUNTER        ; sage
 	db MUSIC_YOUNGSTER_ENCOUNTER        ; medium
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; boarder
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; pokefanm
-	db MUSIC_YOUNGSTER_ENCOUNTER     ; kimono_girl
+	db MUSIC_LASS_ENCOUNTER     ; kimono_girl
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; twins
 	db MUSIC_YOUNGSTER_ENCOUNTER      ; pokefanf
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; red
