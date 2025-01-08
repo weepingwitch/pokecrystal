@@ -7,61 +7,61 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; falkner
 	db MUSIC_LASS_ENCOUNTER     ; whitney
 	db MUSIC_HIKER_ENCOUNTER   ; bugsy
-	db MUSIC_YOUNGSTER_ENCOUNTER    ; morty
+	db MUSIC_BEAUTY_ENCOUNTER    ; morty
 	db MUSIC_YOUNGSTER_ENCOUNTER    ; pryce
 	db MUSIC_LASS_ENCOUNTER     ; jasmine
-	db MUSIC_YOUNGSTER_ENCOUNTER    ; chuck
+	db MUSIC_BEAUTY_ENCOUNTER    ; chuck
 	db MUSIC_LASS_ENCOUNTER      ; clair
 	db MUSIC_HIKER_ENCOUNTER     ; rival1
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; pokemon_prof
-	db MUSIC_YOUNGSTER_ENCOUNTER       ; will
-	db MUSIC_YOUNGSTER_ENCOUNTER       ; cal
+	db MUSIC_BEAUTY_ENCOUNTER       ; will
+	db MUSIC_BEAUTY_ENCOUNTER       ; cal
 	db MUSIC_HIKER_ENCOUNTER    ; bruno
 	db MUSIC_LASS_ENCOUNTER       ; karen
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; koga
 	db MUSIC_HIKER_ENCOUNTER    ; champion
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; brock
-	db MUSIC_YOUNGSTER_ENCOUNTER     ; misty
+	db MUSIC_BEAUTY_ENCOUNTER     ; misty
 	db MUSIC_YOUNGSTER_ENCOUNTER    ; lt_surge
 	db MUSIC_ROCKET_ENCOUNTER      ; scientist
-	db MUSIC_YOUNGSTER_ENCOUNTER    ; erika
+	db MUSIC_BEAUTY_ENCOUNTER    ; erika
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; youngster
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolboy
+	db MUSIC_HIKER_ENCOUNTER   ; schoolboy
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
 	db MUSIC_LASS_ENCOUNTER     ; lass
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; janine
 	db MUSIC_LASS_ENCOUNTER       ; cooltrainerm
 	db MUSIC_LASS_ENCOUNTER     ; cooltrainerf
 	db MUSIC_YOUNGSTER_ENCOUNTER      ; beauty
-	db MUSIC_YOUNGSTER_ENCOUNTER  ; pokemaniac
+	db MUSIC_BEAUTY_ENCOUNTER  ; pokemaniac
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntm
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; gentleman
-	db MUSIC_YOUNGSTER_ENCOUNTER      ; skier
+	db MUSIC_HIKER_ENCOUNTER      ; skier
 	db MUSIC_YOUNGSTER_ENCOUNTER      ; teacher
-	db MUSIC_YOUNGSTER_ENCOUNTER      ; sabrina
+	db MUSIC_BEAUTY_ENCOUNTER      ; sabrina
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bug_catcher
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; fisher
 	db MUSIC_LASS_ENCOUNTER       ; swimmerm
 	db MUSIC_LASS_ENCOUNTER     ; swimmerf
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; sailor
-	db MUSIC_YOUNGSTER_ENCOUNTER  ; super_nerd
+	db MUSIC_HIKER_ENCOUNTER  ; super_nerd
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; rival2
 	db MUSIC_HIKER_ENCOUNTER       ; guitarist
 	db MUSIC_HIKER_ENCOUNTER       ; hiker
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; biker
 	db MUSIC_YOUNGSTER_ENCOUNTER    ; blaine
 	db MUSIC_YOUNGSTER_ENCOUNTER  ; burglar
-	db MUSIC_YOUNGSTER_ENCOUNTER       ; firebreather
-	db MUSIC_YOUNGSTER_ENCOUNTER  ; juggler
+	db MUSIC_BEAUTY_ENCOUNTER       ; firebreather
+	db MUSIC_BEAUTY_ENCOUNTER  ; juggler
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; blackbelt_t
 	db MUSIC_ROCKET_ENCOUNTER      ; executivem
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychic_t
+	db MUSIC_BEAUTY_ENCOUNTER  ; psychic_t
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; picnicker
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; camper
 	db MUSIC_ROCKET_ENCOUNTER      ; executivef
 	db MUSIC_LASS_ENCOUNTER        ; sage
-	db MUSIC_YOUNGSTER_ENCOUNTER        ; medium
-	db MUSIC_YOUNGSTER_ENCOUNTER       ; boarder
+	db MUSIC_BEAUTY_ENCOUNTER        ; medium
+	db MUSIC_HIKER_ENCOUNTER       ; boarder
 	db MUSIC_YOUNGSTER_ENCOUNTER       ; pokefanm
 	db MUSIC_LASS_ENCOUNTER     ; kimono_girl
 	db MUSIC_YOUNGSTER_ENCOUNTER     ; twins

@@ -159,12 +159,17 @@ Music_TitleScreen_Ch4:
 	drum_speed 12
 	
 .loop1
-	drum_note 2, 4
 	drum_note 10, 2
-	rest 2
-	drum_note 5, 4
-	drum_note 10, 2
+	drum_note 5, 2
+	drum_note 2, 2
+	drum_note 10, 1
+	rest 1
+	drum_note 5, 2
+	drum_note 10, 1
+	rest 1
+	drum_note 5, 2
 	drum_note 2, 1
 	drum_note 2, 1
+	
 	sound_loop 0, .loop1
 	sound_ret
