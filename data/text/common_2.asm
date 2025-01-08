@@ -1453,8 +1453,6 @@ _AboutText1::
 	para "- player is always"
 	line "  a girl"
 
-	para "- different"
-	line "  starter <PKMN>"
 
 	para "- pidgey line are"
 	line "  pure flying type"
@@ -1470,6 +1468,10 @@ _AboutText1::
 
 	para "- single-player"
 	line "  completable dex"
+
+	para "- fem art: willow"
+	line "  and eliza"
+
 	prompt
 
 _AboutText2::
