@@ -1155,7 +1155,7 @@ TitleScreenEntrance:
 
 ; Play the title screen music.
 	ld de, MUSIC_TITLE
-	;ld de, MUSIC_LASS_ENCOUNTER 
+	;ld de, MUSIC_HIKER_ENCOUNTER 
 	call PlayMusic
 
 	ld a, $88
