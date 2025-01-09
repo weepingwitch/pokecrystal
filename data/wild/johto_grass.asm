@@ -598,7 +598,7 @@ JohtoGrassWildMons:
 	db 5, WEEDLE
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 7, CHIKORITA
+	db 7, BULBASAUR
 	db 6, PARAS
 	db 6, TANGELA
 	; day
@@ -606,7 +606,7 @@ JohtoGrassWildMons:
 	db 5, WEEDLE
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 7, BULBASAUR
+	db 7, CHIKORITA
 	db 6, PARAS
 	db 6, BELLSPROUT
 	; nite
@@ -707,28 +707,28 @@ JohtoGrassWildMons:
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	db 15, ZUBAT
-	db 17, ZUBAT
 	db 17, GOLBAT
 	db 16, MACHOP
 	db 16, GEODUDE
 	db 18, RATICATE
 	db 18, DIGLETT
+	db 5, CYNDAQUIL
 	; day
-	db 15, ZUBAT
 	db 17, ZUBAT
 	db 17, GOLBAT
 	db 16, MACHOP
 	db 16, GEODUDE
 	db 18, RATICATE
 	db 18, RHYHORN
+	db 5, CHARMANDER
 	; nite
-	db 15, ZUBAT
 	db 17, ZUBAT
 	db 17, GOLBAT
 	db 16, MARILL
 	db 16, GEODUDE
 	db 18, RATICATE
 	db 18, SANDSHREW
+	db 15, GASTLY
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_1F
@@ -740,7 +740,7 @@ JohtoGrassWildMons:
 	db 23, SWINUB
 	db 24, GOLBAT
 	db 22, GOLBAT
-	db 22, GOLBAT
+	db 22, DRATINI
 	; day
 	db 21, SWINUB
 	db 22, ZUBAT
@@ -748,14 +748,14 @@ JohtoGrassWildMons:
 	db 23, SWINUB
 	db 24, GOLBAT
 	db 22, GOLBAT
-	db 22, GOLBAT
+	db 22, DRATINI
 	; nite
 	db 21, DELIBIRD
 	db 22, ZUBAT
 	db 22, GOLBAT
 	db 23, DELIBIRD
 	db 24, GOLBAT
-	db 22, GOLBAT
+	db 22, DRATINI
 	db 22, SMOOCHUM
 	end_grass_wildmons
 
@@ -851,7 +851,7 @@ JohtoGrassWildMons:
 	db 25, GOLBAT
 	db 26, SWINUB
 	db 22, JYNX
-	db 24, JYNX
+	db 24, REMORAID
 	db 26, JYNX
 	; day
 	db 24, SWINUB
@@ -859,7 +859,7 @@ JohtoGrassWildMons:
 	db 25, GOLBAT
 	db 26, SWINUB
 	db 22, JYNX
-	db 24, JYNX
+	db 24, CORSOLA
 	db 26, JYNX
 	; nite
 	db 24, DELIBIRD
@@ -877,25 +877,25 @@ JohtoGrassWildMons:
 	db 22, KRABBY
 	db 23, ZUBAT
 	db 22, SEEL
-	db 24, KRABBY
+	db 24, CORSOLA
 	db 25, GOLBAT
 	db 24, SEEL
-	db 24, SEEL
+	db 24, QUAGSIRE
 	; day
 	db 22, KRABBY
 	db 23, ZUBAT
 	db 22, SEEL
-	db 24, KRABBY
+	db 24, REMORAID
 	db 25, GOLBAT
 	db 24, SEEL
-	db 24, SEEL
+	db 24, LANTURN
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, KRABBY
+	db 22, SHELLDER
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, GOLBAT
+	db 24, CLOYSTER
 	db 24, GOLBAT
 	end_grass_wildmons
 
@@ -1019,7 +1019,7 @@ JohtoGrassWildMons:
 	db 23, SEEL
 	db 25, KRABBY
 	db 26, GOLBAT
-	db 25, SEEL
+	db 5, TOTODILE
 	db 25, SEEL
 	; day
 	db 23, KRABBY
@@ -1027,14 +1027,14 @@ JohtoGrassWildMons:
 	db 23, SEEL
 	db 25, KRABBY
 	db 26, GOLBAT
-	db 25, SEEL
+	db 5, TOTODILE
 	db 25, SEEL
 	; nite
 	db 23, KRABBY
 	db 24, ZUBAT
 	db 23, KRABBY
 	db 25, KRABBY
-	db 26, GOLBAT
+	db 5, SQUIRTLE
 	db 25, GOLBAT
 	db 25, JYNX
 	end_grass_wildmons
@@ -1047,23 +1047,23 @@ JohtoGrassWildMons:
 	db 24, SEEL
 	db 26, KRABBY
 	db 27, GOLBAT
-	db 26, SEEL
-	db 26, SEEL
+	db 5, SQUIRTLE
+	db 26, VAPOREON
 	; day
 	db 24, KRABBY
 	db 25, ZUBAT
 	db 24, SEEL
 	db 26, KRABBY
 	db 27, GOLBAT
-	db 26, SEEL
-	db 26, SEEL
+	db 5, SQUIRTLE
+	db 26, VAPOREON
 	; nite
 	db 24, KRABBY
 	db 25, ZUBAT
-	db 24, KRABBY
+	db 24, REMORAID
 	db 26, KRABBY
 	db 27, GOLBAT
-	db 26, GOLBAT
+	db 5, TOTODILE
 	db 26, VAPOREON
 	end_grass_wildmons
 
@@ -1244,20 +1244,20 @@ JohtoGrassWildMons:
 	db 25, URSARING
 	db 20, TEDDIURSA
 	db 23, GOLBAT
-	db 23, GOLBAT
+	db 23, TYROGUE
 	; day
 	db 23, GEODUDE
 	db 23, ZUBAT
 	db 25, GRAVELER
 	db 25, URSARING
-	db 30, URSARING
+	db 30, TYROGUE
 	db 23, GOLBAT
 	db 23, GOLBAT
 	; nite
 	db 23, GEODUDE
 	db 23, ZUBAT
 	db 25, GRAVELER
-	db 20, WOBBUFFET
+	db 20, TYROGUE
 	db 25, WOBBUFFET
 	db 23, GOLBAT
 	db 23, GOLBAT
