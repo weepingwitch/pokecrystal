@@ -590,7 +590,6 @@ MrMimeBackpic:       INCBIN "gfx/pokemon/mr__mime/back.2bpp.lz"
 CaterpieBackpic:     INCBIN "gfx/pokemon/caterpie/back.2bpp.lz"
 VoltorbFrontpic:     INCBIN "gfx/pokemon/voltorb/front.animated.2bpp.lz"
 LugiaBackpic:        INCBIN "gfx/pokemon/lugia/back.2bpp.lz"
-PrycePic:            INCBIN "gfx/trainers/pryce.2bpp.lz"
 BrockPic:            INCBIN "gfx/trainers/brock.2bpp.lz"
 UnownGFrontpic:      INCBIN "gfx/pokemon/unown_g/front.animated.2bpp.lz"
 ArbokBackpic:        INCBIN "gfx/pokemon/arbok/back.2bpp.lz"
@@ -712,7 +711,7 @@ MagnemiteBackpic:    INCBIN "gfx/pokemon/magnemite/back.2bpp.lz"
 CooltrainermPic:     INCBIN "gfx/trainers/cooltrainer_f.2bpp.lz"
 GentlemanPic:        INCBIN "gfx/trainers/teacher.2bpp.lz"
 ExecutivemPic:       INCBIN "gfx/trainers/executive_f.2bpp.lz"
-
+PrycePic:            INCBIN "gfx/trainers/pryce.2bpp.lz"
 
 
 ; Sections "Pics 20" to "Pics 24" are not used for any graphics,
