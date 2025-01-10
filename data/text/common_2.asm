@@ -1492,6 +1492,10 @@ _AboutText2::
 	para "- various bug"
 	line "  fixes"
 	
+	para "Art and QA by"
+	line "Eliza"
+
+	para "QA by Reis"
 
 	prompt
 

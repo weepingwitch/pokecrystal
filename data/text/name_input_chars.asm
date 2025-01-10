@@ -27,5 +27,5 @@ BoxNameInputUpper:
 	db "J K L M N O P Q R"
 	db "S T U V W X Y Z  "
 	db "× ( ) : ; [ ] <PK> <MN>"
-	db "- ? ! ♂ ♀ / . , &"
+	db "- ? ! ♀ ♀ / . , &"
 	db "lower  DEL   END "

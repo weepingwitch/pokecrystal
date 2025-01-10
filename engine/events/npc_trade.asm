@@ -375,7 +375,7 @@ GetTradeMonNames:
 	and a ; TRADE_GENDER_EITHER
 	ret z
 	cp TRADE_GENDER_MALE
-	ld a, "♂"
+	ld a, "♀"
 	jr z, .done
 	; TRADE_GENDER_FEMALE
 	ld a, "♀"

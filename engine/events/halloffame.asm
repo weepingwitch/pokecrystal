@@ -487,9 +487,9 @@ DisplayHOFMon:
 	ld a, TEMPMON
 	ld [wMonType], a
 	farcall GetGender
-	ld a, " "
+	ld a, "♀"
 	jr c, .got_gender
-	ld a, "♂"
+	ld a, "♀"
 	jr nz, .got_gender
 	ld a, "♀"
 

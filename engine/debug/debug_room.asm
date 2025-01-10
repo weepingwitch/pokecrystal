@@ -429,7 +429,7 @@ DebugRoom_PrintGender:
 	ld a, [sCrystalData + (wPlayerGender - wCrystalData)]
 	call CloseSRAM
 	or a
-	ld a, "♂"
+	ld a, "♀"
 	jr z, .ok
 	ld a, "♀"
 .ok
