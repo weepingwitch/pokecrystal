@@ -22,6 +22,8 @@ VioletGymFalknerScript:
 	loadtrainer FALKNER, FALKNER1
 	startbattle
 	reloadmapafterbattle
+	checkevent EVENT_BEAT_FALKNER
+	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_FALKNER
 	opentext
 	writetext ReceivedZephyrBadgeText

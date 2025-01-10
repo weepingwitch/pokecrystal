@@ -42,6 +42,8 @@ CianwoodGymChuckScript:
 	loadtrainer CHUCK, CHUCK1
 	startbattle
 	reloadmapafterbattle
+	checkevent EVENT_BEAT_CHUCK
+	iftrue .AlreadyGotTM
 	setevent EVENT_BEAT_CHUCK
 	opentext
 	writetext GetStormBadgeText

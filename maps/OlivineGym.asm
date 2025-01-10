@@ -20,6 +20,8 @@ OlivineGymJasmineScript:
 	loadtrainer JASMINE, JASMINE1
 	startbattle
 	reloadmapafterbattle
+	checkevent EVENT_BEAT_JASMINE
+	iftrue .GotIronTail
 	setevent EVENT_BEAT_JASMINE
 	opentext
 	writetext Text_ReceivedMineralBadge

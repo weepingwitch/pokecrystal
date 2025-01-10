@@ -34,6 +34,8 @@ EcruteakGymMortyScript:
 	loadtrainer MORTY, MORTY1
 	startbattle
 	reloadmapafterbattle
+	checkevent EVENT_BEAT_MORTY
+	iftrue .GotShadowBall
 	setevent EVENT_BEAT_MORTY
 	opentext
 	writetext Text_ReceivedFogBadge

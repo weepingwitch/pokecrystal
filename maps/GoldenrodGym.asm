@@ -32,6 +32,8 @@ GoldenrodGymWhitneyScript:
 	loadtrainer WHITNEY, WHITNEY1
 	startbattle
 	reloadmapafterbattle
+	checkevent EVENT_BEAT_WHITNEY
+	iftrue .GotAttract
 	setevent EVENT_BEAT_WHITNEY
 	setevent EVENT_MADE_WHITNEY_CRY
 	setscene SCENE_GOLDENRODGYM_WHITNEY_STOPS_CRYING

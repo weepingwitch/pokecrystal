@@ -25,6 +25,8 @@ AzaleaGymBugsyScript:
 	loadtrainer BUGSY, BUGSY1
 	startbattle
 	reloadmapafterbattle
+	checkevent EVENT_BEAT_BUGSY
+	iftrue .GotFuryCutter
 	setevent EVENT_BEAT_BUGSY
 	opentext
 	writetext Text_ReceivedHiveBadge

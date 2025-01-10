@@ -25,6 +25,8 @@ MahoganyGymPryceScript:
 	loadtrainer PRYCE, PRYCE1
 	startbattle
 	reloadmapafterbattle
+	checkevent EVENT_BEAT_PRYCE
+	iftrue .alldone
 	setevent EVENT_BEAT_PRYCE
 	opentext
 	writetext Text_ReceivedGlacierBadge
@@ -48,6 +50,7 @@ MahoganyGymPryceScript:
 	setevent EVENT_GOT_TM16_ICY_WIND
 	writetext PryceText_IcyWindSpeech
 	waitbutton
+.alldone
 	closetext
 	end
 
