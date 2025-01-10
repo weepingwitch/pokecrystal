@@ -235,7 +235,7 @@ BlackbeltTPic:       INCBIN "gfx/trainers/blackbelt_t.2bpp.lz"
 BikerPic:            INCBIN "gfx/trainers/biker.2bpp.lz"
 NidoranMFrontpic:    INCBIN "gfx/pokemon/nidoran_m/front.animated.2bpp.lz"
 PorygonFrontpic:     INCBIN "gfx/pokemon/porygon/front.animated.2bpp.lz"
-BrunoPic:            INCBIN "gfx/trainers/bruno.2bpp.lz"
+
 GrimerFrontpic:      INCBIN "gfx/pokemon/grimer/front.animated.2bpp.lz"
 StaryuFrontpic:      INCBIN "gfx/pokemon/staryu/front.animated.2bpp.lz"
 HikerPic:            INCBIN "gfx/trainers/hiker.2bpp.lz"
@@ -408,7 +408,7 @@ KarenPic:            INCBIN "gfx/trainers/karen.2bpp.lz"
 NidorinaBackpic:     INCBIN "gfx/pokemon/nidorina/back.2bpp.lz"
 TentacruelBackpic:   INCBIN "gfx/pokemon/tentacruel/back.2bpp.lz"
 GrowlitheBackpic:    INCBIN "gfx/pokemon/growlithe/back.2bpp.lz"
-KogaPic:             INCBIN "gfx/trainers/koga.2bpp.lz"
+
 MachokeBackpic:      INCBIN "gfx/pokemon/machoke/back.2bpp.lz"
 RaichuBackpic:       INCBIN "gfx/pokemon/raichu/back.2bpp.lz"
 PoliwrathBackpic:    INCBIN "gfx/pokemon/poliwrath/back.2bpp.lz"
@@ -712,12 +712,15 @@ CooltrainermPic:     INCBIN "gfx/trainers/cooltrainer_f.2bpp.lz"
 GentlemanPic:        INCBIN "gfx/trainers/teacher.2bpp.lz"
 ExecutivemPic:       INCBIN "gfx/trainers/executive_f.2bpp.lz"
 PrycePic:            INCBIN "gfx/trainers/pryce.2bpp.lz"
+KogaPic:             INCBIN "gfx/trainers/koga.2bpp.lz"
 
 
 ; Sections "Pics 20" to "Pics 24" are not used for any graphics,
 ; but entries for their banks exist in FixPicBank (see engine/gfx/load_pics.asm).
 
 SECTION "Pics 20", ROMX
+
+BrunoPic:            INCBIN "gfx/trainers/bruno.2bpp.lz"
 
 SECTION "Pics 21", ROMX
 
