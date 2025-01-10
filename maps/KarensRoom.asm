@@ -94,7 +94,7 @@ KarenScript_KarenBeatenText:
 
 KarenScript_KarenDefeatText:
 
-	para "I like your style."
+	text "I like your style."
 	line "You understand"
 	cont "what's important."
 

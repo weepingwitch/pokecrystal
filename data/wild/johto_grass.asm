@@ -1212,7 +1212,7 @@ JohtoGrassWildMons:
 	; morn
 	db 3, GEODUDE
 	db 2, ZUBAT
-	db 2, GEODUDE
+	db 2, DUNSPARCE
 	db 4, GEODUDE
 	db 2, TEDDIURSA
 	db 4, ZUBAT
@@ -1220,7 +1220,7 @@ JohtoGrassWildMons:
 	; day
 	db 3, GEODUDE
 	db 2, ZUBAT
-	db 2, GEODUDE
+	db 2, DUNSPARCE
 	db 4, GEODUDE
 	db 2, ZUBAT
 	db 4, ZUBAT
@@ -1228,7 +1228,7 @@ JohtoGrassWildMons:
 	; nite
 	db 3, GEODUDE
 	db 2, ZUBAT
-	db 2, GEODUDE
+	db 2, DUNSPARCE
 	db 4, GEODUDE
 	db 2, ZUBAT
 	db 4, ZUBAT
@@ -1689,26 +1689,26 @@ JohtoGrassWildMons:
 	; morn
 	db 2, GEODUDE
 	db 2, SPEAROW
-	db 3, GEODUDE
+	db 3, LICKITUNG
 	db 3, RATTATA
 	db 2, PHANPY
-	db 2, RATTATA
+	db 2, EEVEE
 	db 2, HOPPIP
 	; day
 	db 2, GEODUDE
 	db 2, SPEAROW
 	db 3, GEODUDE
-	db 3, RATTATA
+	db 3, EXEGGCUTE
 	db 2, RATTATA
-	db 2, RATTATA
+	db 2, EEVEE
 	db 2, BELLSPROUT
 	; nite
 	db 2, GEODUDE
 	db 2, RATTATA
 	db 3, GEODUDE
-	db 3, RATTATA
+	db 3, ODDISH
 	db 2, RATTATA
-	db 2, RATTATA
+	db 2, EEVEE
 	db 2, EKANS
 	end_grass_wildmons
 
