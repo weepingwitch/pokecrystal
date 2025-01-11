@@ -339,7 +339,7 @@ HikerMichaelSeenText:
 
 	para "When it comes to"
 	line "sheer spunkiness,"
-	cont "I'm the man!"
+	cont "I'm the girl!"
 	done
 
 HikerMichaelBeatenText:

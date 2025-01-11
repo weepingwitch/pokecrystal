@@ -103,7 +103,7 @@ LizFalknerGossipText:
 	line "handsome?"
 
 	para "But they say her"
-	line " mom, who's out"
+	line "mom, who's out"
 
 	para "training on the"
 	line "road, is even more"
@@ -112,7 +112,7 @@ LizFalknerGossipText:
 	line "than FALKNER."
 
 	para "I wish I could"
-	line "meet him!"
+	line "meet her!"
 	done
 
 LizEarlGossipText:

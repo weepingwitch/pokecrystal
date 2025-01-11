@@ -103,7 +103,7 @@ ChadProfElmGossipText:
 	cont "great PROF.OAK!"
 
 	para "That is so cool!"
-	line "I envy him!"
+	line "I envy her!"
 	done
 
 ChadProfOaksDreamGossipText:

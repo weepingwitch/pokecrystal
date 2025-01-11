@@ -119,7 +119,7 @@ PokemonFanClubBraggingSign:
 	jumptext PokemonFanClubBraggingSignText
 
 PokemonFanClubChairmanDidYouVisitToHearAboutMyMonText:
-	text "I'm the CHAIRMAN"
+	text "I'm the CHAIR"
 	line "of the #MON FAN"
 	cont "CLUB."
 

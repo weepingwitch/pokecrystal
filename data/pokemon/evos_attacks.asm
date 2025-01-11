@@ -2693,6 +2693,7 @@ EspeonEvosAttacks:
 	db 42, PSYCH_UP
 	db 47, PSYCHIC_M
 	db 52, MORNING_SUN
+	db 69, DRAININGKISS
 	db 0 ; no more level-up moves
 
 UmbreonEvosAttacks:

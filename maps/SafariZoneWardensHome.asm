@@ -60,7 +60,7 @@ WardensGranddaughterText2:
 
 WardenPhotoText:
 	text "It's a photo of a"
-	line "grinning old man"
+	line "grinning lady"
 
 	para "who's surrounded"
 	line "by #MON."

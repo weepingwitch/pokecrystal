@@ -98,7 +98,7 @@ PewterCityGrampsText:
 	line "much of what I was"
 
 	para "like as a young"
-	line "man."
+	line "girl."
 
 	para "Here. I want you"
 	line "to have this item"

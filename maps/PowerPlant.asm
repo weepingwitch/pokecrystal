@@ -337,13 +337,13 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 
 PowerPlantManagerIWontForgiveCulpritText:
 	text "MANAGER: I won't"
-	line "forgive him!"
+	line "forgive her!"
 
 	para "The culprit can"
 	line "cry and apologize,"
 
 	para "but I'll still"
-	line "hammer him!"
+	line "hammer her!"
 
 	para "Gahahahah!"
 	done

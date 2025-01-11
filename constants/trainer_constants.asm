@@ -60,6 +60,7 @@ DEF KRIS EQU __trainer_class__
 	const RIVAL1_5
 
 	trainerclass POKEMON_PROF ; a
+	const ELM
 
 	trainerclass WILL ; b
 	const WILL1
