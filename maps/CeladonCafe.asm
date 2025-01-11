@@ -36,13 +36,10 @@ CeladonCafeFisher1:
 	writetext Fisher1Text_Yummy
 	waitbutton
 	closetext
+	winlosstext Fisher1Text_Beaten, 0
 	loadtrainer FIREBREATHER, DICK
 	startbattle
 	reloadmapafterbattle
-	opentext
-	writetext Fisher1Text_Beaten
-	waitbutton
-	closetext
 	turnobject CELADONCAFE_FISHER1, LEFT
 	end
 .NOHOTSAUCE:

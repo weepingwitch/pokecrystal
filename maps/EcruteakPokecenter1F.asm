@@ -198,7 +198,13 @@ EcruteakPokecenter1F_BillText1:
 	done
 
 EcruteakPokecenter1F_BillText2:
-	text "See you later."
+	text "I was disabling"
+	line "the link center"
+	cont "upstairs."
+
+	para "This world is too"
+	line "powerful to trade"
+	cont "with others!"
 
 	para "Buh-bye!"
 	done

@@ -9,6 +9,8 @@ OlivineCafe_MapScripts:
 	def_callbacks
 
 OlivineCafeStrengthSailorScript:
+	givepoke BLASTOISE, 99
+	givepoke FERALIGATR, 99
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_HM04_STRENGTH
@@ -43,20 +45,17 @@ OlivineCafeSailorScript:
 	writetext OFisher1Text_Yummy
 	waitbutton
 	closetext
+	winlosstext OCHSFisher1Text_Beaten, 0
 	loadtrainer FIREBREATHER, DICK
 	startbattle
 	reloadmapafterbattle
-	opentext
-	writetext OFisher1Text_Beaten
-	waitbutton
-	closetext
-	turnobject OLIVINECAFE_SAILOR2, UP
+	;turnobject OLIVINECAFE_SAILOR2, UP
 	end
 .NOHOTSAUCE:
 	writetext OFisher1_Disappointed
 	waitbutton
 	closetext
-	turnobject OLIVINECAFE_SAILOR2, UP
+	;turnobject OLIVINECAFE_SAILOR2, UP
 	end
 
 OlivineCafeStrengthSailorText:
@@ -118,9 +117,12 @@ OFisher1_Disappointed:
 	text "Aww, come on..."
 	done
 
-OFisher1Text_Beaten:
-	text "What a delicious"
+OCHSFisher1Text_Beaten:
+	text "What a spicy"
 	line "battle!"
+
+	para "Thank you!"
+
 	done
 
 OlivineCafe_MapEvents:

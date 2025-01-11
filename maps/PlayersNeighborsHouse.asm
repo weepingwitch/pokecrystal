@@ -23,13 +23,11 @@ PlayersNeighborsDaughterScript:
 	writetext SaraSeenText
 	waitbutton
 	closetext
+	winlosstext SaraBeatenText, 0
 	loadtrainer PICNICKER, SARA
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_PICNICKER_SARA
-	opentext
-	writetext SaraBeatenText
-	closetext
 	end
 
 PlayersNeighborScript:
@@ -48,13 +46,11 @@ PlayersNeighborScript:
 	writetext MILFSeenText
 	waitbutton
 	closetext
+	winlosstext MILFBeatenText, 0
 	loadtrainer POKEFANF, MILF
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_POKEFANF_MILF
-	opentext
-	writetext MILFBeatenText
-	closetext
 	end
 
 
@@ -120,6 +116,7 @@ SaraSeenText:
 
 SaraBeatenText:
 	text "Bummer!"
+	done
 
 MILFSeenText:
 	text "Ok, I'll battle"

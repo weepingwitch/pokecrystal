@@ -527,13 +527,11 @@ ElmsAideScript:
 .doBattle:
 	writetext ElmAstSeenText
 	closetext
+	winlosstext ElmAstBeatenText, 0
 	loadtrainer SCIENTIST, ELMAST
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_SCIENTIST_ELM
-	opentext
-	writetext ElmAstBeatenText
-	closetext
 	end
 
 AideScript_TheftTestimony:

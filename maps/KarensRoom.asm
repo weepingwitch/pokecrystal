@@ -83,6 +83,13 @@ KarenScript_KarenBeforeText:
 	line "time for us to"
 	cont "battle..."
 
+	para "Just because I"
+	line "made this world,"
+	cont "doesn't mean I"
+
+	para "will go easy on"
+	line "you!"
+
 	para "..."
 	line "..."
 	cont "Let's go."
