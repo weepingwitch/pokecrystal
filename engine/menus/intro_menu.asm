@@ -608,7 +608,7 @@ Continue_DisplayGameTime:
 
 AboutSpeech:
 	call ClearTilemap
-	ld de, MUSIC_TITLE
+	ld de, MUSIC_BEAUTY_ENCOUNTER 
 	call PlayMusic
 
 	call RotateThreePalettesRight
@@ -632,6 +632,8 @@ AboutSpeech:
 	call PrintText
 	
 	call ClearTilemap
+	ld de, MUSIC_LASS_ENCOUNTER 
+	call PlayMusic
 
 	ld a, TOGEPI
 	ld [wCurSpecies], a
