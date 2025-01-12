@@ -2,7 +2,7 @@ Intro_MainMenu:
 	ld de, MUSIC_NONE
 	call PlayMusic
 	call DelayFrame
-	ld de, MUSIC_MAIN_MENU
+	ld de, MUSIC_HIKER_ENCOUNTER
 	ld a, e
 	ld [wMapMusic], a
 	call PlayMusic
@@ -608,6 +608,9 @@ Continue_DisplayGameTime:
 
 AboutSpeech:
 	call ClearTilemap
+	ld de, MUSIC_NONE
+	call PlayMusic
+	call DelayFrame
 	ld de, MUSIC_BEAUTY_ENCOUNTER 
 	call PlayMusic
 
@@ -632,6 +635,9 @@ AboutSpeech:
 	call PrintText
 	
 	call ClearTilemap
+	ld de, MUSIC_NONE
+	call PlayMusic
+	call DelayFrame
 	ld de, MUSIC_LASS_ENCOUNTER 
 	call PlayMusic
 
@@ -662,7 +668,7 @@ OakSpeech:
 	call RotateFourPalettesLeft
 	call ClearTilemap
 	readvar VAR_BADGES
-	ld de, MUSIC_ROUTE_30
+	ld de, MUSIC_BEAUTY_ENCOUNTER
 	call PlayMusic
 
 	call RotateFourPalettesRight

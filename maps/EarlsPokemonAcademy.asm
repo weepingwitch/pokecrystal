@@ -336,7 +336,7 @@ AcademyNotebookText3:
 	para "The next page"
 	line "is… Blank!"
 
-	para "Boy: E-he-he…"
+	para "Girl: E-he-he…"
 
 	para "I haven't written"
 	line "anymore…"

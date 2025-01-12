@@ -9,8 +9,8 @@ OlivineCafe_MapScripts:
 	def_callbacks
 
 OlivineCafeStrengthSailorScript:
-	givepoke BLASTOISE, 99
-	givepoke FERALIGATR, 99
+	;givepoke BLASTOISE, 99
+	;givepoke FERALIGATR, 99
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_HM04_STRENGTH

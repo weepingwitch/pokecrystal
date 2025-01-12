@@ -15,7 +15,30 @@ Music_LookHiker_Ch1:
 	note_type 12, 6, 8
 	rest 16
 	rest 16
+	sound_call .sub1
 .mainloop:
+	
+	
+	;;ret 1
+	octave 3
+	note A_, 8
+	note B_, 8
+	octave 4
+	note C_, 8
+	octave 3
+	note B_, 8
+	rest 4
+	note A_, 4
+	note B_, 2
+	note A_, 4
+	note B_, 4
+	note A_, 4
+	octave 4
+	note E_, 10
+
+	sound_loop 0, .mainloop
+
+.sub1:
 	octave 2
 	note A_, 2
 	octave 3
@@ -44,7 +67,7 @@ Music_LookHiker_Ch1:
 	note A_, 2
 	note E_, 2
 	note A_, 2
-	sound_loop 0, .mainloop
+	sound_ret
 
 Music_LookHiker_Ch2:
 	duty_cycle 0
