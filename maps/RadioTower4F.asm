@@ -121,7 +121,8 @@ RadioTower4FDJMaryText:
 	line "and loving god"
 	cont "allow such pain?"
 
-	para "MEOWTH, help me!"
+	para "GROWLITHE, help"
+	line "me!"
 	done
 
 RadioTower4FDJMaryText_ClearedRockets:
@@ -149,7 +150,7 @@ RadioTower4FDJMaryText_After:
 	done
 
 RadioTowerMeowthText:
-	text "MEOWTH: Meowth…"
+	text "GROWLITHE: growl…"
 	done
 
 GruntM10SeenText:
