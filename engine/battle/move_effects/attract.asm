@@ -2,7 +2,8 @@ BattleCommand_Attract:
 	ld a, [wAttackMissed]
 	and a
 	jr nz, .failed
-	call CheckOppositeGender
+	call Random
+	cp 50 percent
 	jr c, .failed
 	call CheckHiddenOpponent
 	jr nz, .failed
