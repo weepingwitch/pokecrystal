@@ -30,8 +30,8 @@ KarensRoomDoorsCallback:
 KarensRoomDoorLocksBehindYouScript:
 	applymovement PLAYER, KarensRoom_EnterMovement
 	reanchormap $86
-	playsound SFX_STRENGTH
-	earthquake 20
+	playsound SFX_PSYBEAM
+	earthquake 5
 	changeblock 4, 14, $2a ; wall
 	refreshmap
 	closetext
@@ -56,13 +56,14 @@ KarenScript_Battle:
 	opentext
 	writetext KarenScript_KarenDefeatText
 	waitbutton
+	verbosegiveitem HYPER_POTION
+	verbosegiveitem MAX_REVIVE
 	closetext
-	playsound SFX_ENTER_DOOR
+	playsound SFX_PSYBEAM
+	earthquake 5
 	changeblock 4, 2, $16 ; open door
 	refreshmap
-	closetext
 	setevent EVENT_KARENS_ROOM_EXIT_OPEN
-	waitsfx
 	end
 
 KarenScript_AfterBattle:
@@ -107,6 +108,10 @@ KarenScript_KarenDefeatText:
 
 	para "Go on--the CHAM-"
 	line "PION is waiting."
+
+	para "But your journey"
+	line "doesn't end here"
+	cont "in Johto..."
 	done
 
 KarensRoom_MapEvents:

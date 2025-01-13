@@ -120,6 +120,9 @@ BrunoScript_BrunoDefeatText:
 
 	para "Go face your next"
 	line "challenge!"
+
+	para "I'm warning you,"
+	line "she's really hot. "
 	done
 
 BrunosRoom_MapEvents:

@@ -210,30 +210,11 @@ LanceBattleIntroText:
 
 	para "<PLAY_G>!"
 
-	para "I knew that you,"
-	line "with your skills,"
-
-	para "would eventually"
-	line "reach me here."
-
+	
 	para "There's no need"
 	line "for words now."
 
-	para "We will battle to"
-	line "determine who is"
-
-	para "the stronger of"
-	line "the two of us."
-
-	para "As the most power-"
-	line "ful trainer and as"
-
-	para "the #MON LEAGUE"
-	line "CHAMPION…"
-
-	para "I, LANCE the drag-"
-	line "on master, accept"
-	cont "your challenge!"
+	
 	done
 
 LanceBattleWinText:
@@ -285,31 +266,15 @@ LancesRoomOakCongratulationsText:
 	text "PROF.OAK: Ah,"
 	line "<PLAY_G>!"
 
-	para "It's been a long"
-	line "while."
 
 	para "You certainly look"
 	line "more impressive."
 
-	para "Your conquest of"
-	line "the LEAGUE is just"
-	cont "fantastic!"
-
-	para "Your dedication,"
-	line "trust and love for"
-
-	para "your #MON made"
-	line "this happen."
-
+	
 	para "Your #MON were"
 	line "outstanding too."
 
-	para "Because they be-"
-	line "lieved in you as a"
-
-	para "trainer, they per-"
-	line "severed."
-
+	
 	para "Congratulations,"
 	line "<PLAY_G>!"
 	done
@@ -333,6 +298,22 @@ LancesRoomMaryNoInterviewText:
 	text "MARY: Oh, wait!"
 	line "We haven't done"
 	cont "the interview!"
+
+	para "My viewers need"
+	line "to know all her"
+	cont "secrets!!"
+
+	para "I'll get so many"
+	line "LIKES and SUBSC-"
+	cont "RIBES!"
+
+	para "The algorithm"
+	line "will finally smile"
+	cont "upon me!"
+
+	para "You can't take"
+	line "this away from me!"
+
 	done
 
 LancesRoom_MapEvents:
