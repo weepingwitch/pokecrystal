@@ -940,6 +940,10 @@ ElmAfterTheftText6:
 	para "Before you leave,"
 	line "make sure that you"
 	cont "talk to your mom."
+
+	para "I know I would,"
+	line "if you know what"
+	cont "I mean!"
 	done
 
 ElmStudyingEggText:
@@ -998,9 +1002,16 @@ ShowElmTogepiText3:
 	para "No, perhaps not"
 	line "all #MON are."
 
-	para "Wow, there's still"
-	line "a lot of research"
-	cont "to be done."
+	para "Wow, there are"
+	line "still expiriments"
+	cont "to run,"
+
+	para "And research to"
+	line "be done,"
+
+	para "on the #MON"
+	line "who are"
+	cont "still alive!"
 	done
 
 ElmGiveEverstoneText1:
@@ -1023,12 +1034,18 @@ ElmGiveEverstoneText2:
 	para "Give it to a #-"
 	line "MON you don't want"
 	cont "to evolve."
+
+	para "If you're some"
+	line "kind of freak."
 	done
 
 ElmText_CallYou:
 	text "ELM: <PLAY_G>, I'll"
 	line "call you if any-"
 	cont "thing comes up."
+
+	para "Or if I feel a"
+	line "little bored!"
 	done
 
 AideText_AfterTheft:
@@ -1091,6 +1108,8 @@ ElmGiveTicketText1:
 
 	para "Now you can catch"
 	line "#MON in KANTO."
+
+	
 	done
 
 ElmGiveTicketText2:
@@ -1127,6 +1146,9 @@ AideText_AlwaysBusy:
 	text "There are only two"
 	line "of us, so we're"
 	cont "always busy."
+
+	para "Mostly breeding"
+	line "EEVEEs."
 	done
 
 AideText_TheftTestimony:
@@ -1192,8 +1214,9 @@ ElmsLabTravelTip1Text:
 
 	para "Travel Tip 1:"
 
-	para "Press START to"
-	line "open the MENU."
+	para "Come back to"
+	line "New Bark town"
+	cont "with 16 badges!"
 	done
 
 ElmsLabTravelTip2Text:
@@ -1223,25 +1246,26 @@ ElmsLabTravelTip4Text:
 
 	para "Travel Tip 4:"
 
-	para "Check your #MON"
-	line "moves. Press the"
-
-	para "A Button to switch"
-	line "moves."
+	para "Smoke Weed"
+	line "Every Day"
 	done
 
 ElmsLabTrashcanText:
 	text "The wrapper from"
 	line "the snack PROF.ELM"
 	cont "ate is in there…"
+
+	para "It's HOT CHEETOS."
 	done
 
 ElmsLabPCText:
 	text "OBSERVATIONS ON"
-	line "#MON EVOLUTION"
+	line "#MON BREEDING"
+
 
 	para "…It says on the"
 	line "screen…"
+	
 	done
 
 ElmsLab_MapEvents:

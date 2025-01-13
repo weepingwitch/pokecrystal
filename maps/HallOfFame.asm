@@ -68,44 +68,25 @@ HallOfFame_LanceText:
 	cont "last came here."
 
 	para "This is where we"
-	line "honor the LEAGUE"
+	line "entomb the LEAGUE"
 
 	para "CHAMPIONS for all"
 	line "eternity."
 
 	para "Their courageous"
 	line "#MON are also"
-	cont "inducted."
+	cont "buried."
 
-	para "Here today, we"
-	line "witnessed the rise"
+	para "..."
+	
 
-	para "of a new LEAGUE"
-	line "CHAMPION--a"
+	para "Haha just kidding"
+	line "can you imagine?"
 
-	para "trainer who feels"
-	line "compassion for,"
+	para "lol"
+	
 
-	para "and trust toward,"
-	line "all #MON."
-
-	para "A trainer who"
-	line "succeeded through"
-
-	para "perseverance and"
-	line "determination."
-
-	para "The new LEAGUE"
-	line "CHAMPION who has"
-
-	para "all the makings"
-	line "of greatness!"
-
-	para "<PLAY_G>, allow me"
-	line "to register you"
-
-	para "and your partners"
-	line "as CHAMPIONS!"
+	
 	done
 
 HallOfFame_MapEvents:
