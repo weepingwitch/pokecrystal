@@ -1190,6 +1190,9 @@ Script_reloadmapafterbattle:
 .notblackedout
 	bit BATTLESCRIPT_WILD_F, d
 	jr z, .was_wild
+	call Random
+	cp 50 percent
+	jr c, .done
 	farcall MomTriesToBuySomething
 	jr .done
 
