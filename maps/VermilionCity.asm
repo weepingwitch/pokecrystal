@@ -286,7 +286,7 @@ VermilionCity_MapEvents:
 	bg_event 25,  3, BGEVENT_READ, VermilionCitySign
 	bg_event  5, 19, BGEVENT_READ, VermilionGymSign
 	bg_event  5, 13, BGEVENT_READ, PokemonFanClubSign
-	bg_event 33,  9, BGEVENT_READ, VermilionCityDiglettsCaveSign
+	bg_event 37,  9, BGEVENT_READ, VermilionCityDiglettsCaveSign
 	bg_event 27, 15, BGEVENT_READ, VermilionCityPortSign
 	bg_event 10,  5, BGEVENT_READ, VermilionCityPokecenterSign
 	bg_event 22, 13, BGEVENT_READ, VermilionCityMartSign

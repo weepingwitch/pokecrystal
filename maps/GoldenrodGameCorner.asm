@@ -473,7 +473,7 @@ GoldenrodGameCornerLeftTheirDrinkText:
 	text "Someone left their"
 	line "drink."
 
-	para "It smells sweet."
+	para "It smells strong."
 	done
 
 GoldenrodGameCorner_MapEvents:
