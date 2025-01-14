@@ -152,7 +152,7 @@ TrainerSailorHuey:
 	end
 
 SailorHueySeenText:
-	text "Men of the sea are"
+	text "We of the sea are"
 	line "always spoiling"
 	cont "for a good fight!"
 	done
@@ -173,6 +173,10 @@ SailorHueyUnusedText: ; unreferenced
 GentlemanAlfredSeenText:
 	text "Hm? This is no"
 	line "place for playing."
+
+	para "A child like you"
+	line "shouldn't be out"
+	cont "alone!"
 	done
 
 GentlemanAlfredBeatenText:

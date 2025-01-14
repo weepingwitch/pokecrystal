@@ -20,6 +20,9 @@ OlivineLighthouse1FSailorText:
 	para "It's not easy to"
 	line "climb because of"
 	cont "all the trainers."
+
+	para "And all of the"
+	line "stairs!"
 	done
 
 OlivineLighthouse1FPokefanFText:

@@ -118,6 +118,12 @@ BrunoScript_BrunoDefeatText:
 	line "have no right to"
 	cont "say anything…"
 
+	para " "
+
+	para " "
+
+	para "Anyway."
+
 	para "Go face your next"
 	line "challenge!"
 
