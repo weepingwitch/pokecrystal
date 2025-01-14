@@ -257,8 +257,14 @@ TeleportGuyText1:
 	para "It can TELEPORT"
 	line "you home."
 
+	para "What? It's a"
+	line "JYNX?"
+
+	para "Shut the fuck up"
+	line "right now."
+
 	para "Would you like to"
-	line "go home now?"
+	line "go home or not?"
 	done
 
 TeleportGuyYesText:
@@ -273,7 +279,10 @@ TeleportGuyNoText:
 	done
 
 AbraText:
-	text "ABRA: Aabra…"
+	text "JYNX: Aabra…"
+
+	para "It seems to be"
+	line "confused."
 	done
 
 IndigoPlateauPokecenter1F_MapEvents:
