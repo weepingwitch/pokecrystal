@@ -58,12 +58,10 @@ RedsMomText2:
 	line "getting hurt or"
 
 	para "sick, but she's a"
-	line "boy. I'm proud"
+	line "big girl. I'm"
+	cont "proud of her."
 
-	para "that she is doing"
-	line "what she wants to"
-
-	para "do."
+	
 	done
 
 RedsHouse1FTVText:
