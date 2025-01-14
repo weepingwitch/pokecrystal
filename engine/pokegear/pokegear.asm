@@ -2294,7 +2294,8 @@ FlyMap:
 	ld c, SPAWN_INDIGO
 	call HasVisitedSpawn
 	and a
-	jr z, .NoKanto
+	jr z, .MaybeNoKanto
+.YesKanto
 ; Kanto's map is only loaded if we've visited Indigo Plateau
 	ld a, KANTO_FLYPOINT ; first Kanto flypoint
 	ld [wStartFlypoint], a
@@ -2307,6 +2308,14 @@ FlyMap:
 	pop af
 	call TownMapPlayerIcon
 	ret
+
+.MaybeNoKanto
+	ld c, SPAWN_PEWTER
+	call HasVisitedSpawn
+	and a
+	jr z, .NoKanto
+	jr .YesKanto
+
 
 .NoKanto:
 ; If Indigo Plateau hasn't been visited, we use Johto's map instead
