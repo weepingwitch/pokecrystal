@@ -82,10 +82,36 @@ NamingScreen:
 	dw .Tomodachi
 	dw .Pokemon
 	dw .Pokemon
+	dw .Password
 
 .Pokemon:
 	ld a, [wCurPartySpecies]
 	ld [wTempIconSpecies], a
+
+	; Is it a PartyMon or a BoxMon?
+	ld a, [wMonType]
+	and a
+	jr z, .party_mon
+
+	ld hl, sBoxMon1DVs
+	ld a, BANK(sBox)
+	call OpenSRAM
+	jr .start
+
+.party_mon
+	ld a, MON_DVS
+	call GetPartyParamLocation
+.start
+	ld de, wTempMonDVs
+	ld a, [hli]
+	ld [de], a
+	inc de
+	ld a, [hl]
+	ld [de], a
+	ld a, [wMonType]
+	cp BOXMON
+	call z, CloseSRAM
+
 	ld hl, LoadMenuMonIcon
 	ld a, BANK(LoadMenuMonIcon)
 	ld e, MONICON_NAMINGSCREEN
@@ -104,7 +130,7 @@ NamingScreen:
 	call PlaceString
 	farcall GetGender
 	jr c, .genderless
-	ld a, "♀"
+	ld a, "♂"
 	jr nz, .place_gender
 	ld a, "♀"
 .place_gender
@@ -189,6 +215,16 @@ NamingScreen:
 
 .oTomodachi_no_namae_sutoringu
 	db "おともだち　の　なまえは？@"
+
+.Password:
+	hlcoord 5, 2
+	ld de, .PasswordString
+	call PlaceString
+	call .StoreMonIconParams
+	ret
+
+.PasswordString:
+	db "PASSWORD?@"
 
 .LoadSprite:
 	push de
@@ -322,7 +358,7 @@ NamingScreen_ApplyTextInputMode:
 NamingScreenJoypadLoop:
 	call JoyTextDelay
 	ld a, [wJumptableIndex]
-	bit JUMPTABLE_EXIT_F, a
+	bit 7, a
 	jr nz, .quit
 	call .RunJumptable
 	farcall PlaySpriteAnimationsAndDelayFrame
@@ -444,7 +480,7 @@ NamingScreenJoypadLoop:
 .end
 	call NamingScreen_StoreEntry
 	ld hl, wJumptableIndex
-	set JUMPTABLE_EXIT_F, [hl]
+	set 7, [hl]
 	ret
 
 .select
@@ -1008,7 +1044,7 @@ INCBIN "gfx/naming_screen/mail.2bpp"
 .DoMailEntry:
 	call JoyTextDelay
 	ld a, [wJumptableIndex]
-	bit JUMPTABLE_EXIT_F, a
+	bit 7, a
 	jr nz, .exit_mail
 	call .DoJumptable
 	farcall PlaySpriteAnimationsAndDelayFrame
@@ -1134,7 +1170,7 @@ INCBIN "gfx/naming_screen/mail.2bpp"
 .finished
 	call NamingScreen_StoreEntry
 	ld hl, wJumptableIndex
-	set JUMPTABLE_EXIT_F, [hl]
+	set 7, [hl]
 	ret
 
 .select

@@ -221,7 +221,7 @@ RunTradeAnimScript:
 
 DoTradeAnimation:
 	ld a, [wJumptableIndex]
-	bit JUMPTABLE_EXIT_F, a
+	bit 7, a
 	jr nz, .finished
 	call .DoTradeAnimCommand
 	callfar PlaySpriteAnimations
@@ -309,7 +309,7 @@ TradeAnim_AdvanceScriptPointer:
 
 TradeAnim_End:
 	ld hl, wJumptableIndex
-	set JUMPTABLE_EXIT_F, [hl]
+	set 7, [hl]
 	ret
 
 TradeAnim_TubeToOT1:
@@ -317,6 +317,16 @@ TradeAnim_TubeToOT1:
 	call TradeAnim_PlaceTrademonStatsOnTubeAnim
 	ld a, [wLinkTradeSendmonSpecies]
 	ld [wTempIconSpecies], a
+	ld hl, wOTTrademonDVs
+	ldh a, [hSerialConnectionStatus]
+	cp USING_EXTERNAL_CLOCK
+	jr z, .player_2
+	ld hl, wPlayerTrademonDVs
+.player_2
+	ld a, [hli]
+	ld [wTempMonDVs], a
+	ld a, [hl]
+	ld [wTempMonDVs + 1], a
 	xor a
 	depixel 5, 11, 4, 0
 	ld b, $0
@@ -327,6 +337,16 @@ TradeAnim_TubeToPlayer1:
 	call TradeAnim_PlaceTrademonStatsOnTubeAnim
 	ld a, [wLinkTradeGetmonSpecies]
 	ld [wTempIconSpecies], a
+	ld hl, wPlayerTrademonDVs
+	ldh a, [hSerialConnectionStatus]
+	cp USING_EXTERNAL_CLOCK
+	jr z, .player_2
+	ld hl, wOTTrademonDVs
+.player_2
+	ld a, [hli]
+	ld [wTempMonDVs], a
+	ld a, [hl]
+	ld [wTempMonDVs + 1], a
 	ld a, TRADEANIMSTATE_2
 	depixel 9, 18, 4, 4
 	ld b, $4
@@ -1000,7 +1020,7 @@ TrademonStats_PrintOTName:
 	ret
 
 .Gender:
-	db " ", "♀", "♀"
+	db " ", "♂", "♀"
 
 TrademonStats_PrintTrademonID:
 	hlcoord 7, 6

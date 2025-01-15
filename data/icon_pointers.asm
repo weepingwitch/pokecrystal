@@ -202,7 +202,7 @@ IconPointers:
 	dw MurkrowIcon
 	dw SlowkingIcon
 	dw MisdreavusIcon
-	dw UnownIcon
+	dw UnownAIcon
 	dw WobbuffetIcon
 	dw GirafarigIcon
 	dw PinecoIcon
@@ -255,3 +255,29 @@ IconPointers:
 	dw CelebiIcon
 	dw EggIcon
 	assert_table_length NUM_ICONS + 1
+
+	dw UnownBIcon
+	dw UnownCIcon
+	dw UnownDIcon
+	dw UnownEIcon
+	dw UnownFIcon
+	dw UnownGIcon
+	dw UnownHIcon
+	dw UnownIIcon
+	dw UnownJIcon
+	dw UnownKIcon
+	dw UnownLIcon
+	dw UnownMIcon
+	dw UnownNIcon
+	dw UnownOIcon
+	dw UnownPIcon
+	dw UnownQIcon
+	dw UnownRIcon
+	dw UnownSIcon
+	dw UnownTIcon
+	dw UnownUIcon
+	dw UnownVIcon
+	dw UnownWIcon
+	dw UnownXIcon
+	dw UnownYIcon
+	dw UnownZIcon

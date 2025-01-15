@@ -6,6 +6,46 @@ DEF SHINY_SPD_DV EQU 10
 DEF SHINY_SPC_DV EQU 10
 
 CheckShininess:
+    ; Load the address of the DVs (HL = [BC])
+    ld l, c
+    ld h, b
+
+    ; Attack (High nibble of the first byte)
+    ld a, [hl]
+    and $F0                   ; Mask to isolate the high nibble (ATK DV)
+    cp SHINY_DEF_DV           ; Compare with SHINY_DEF_DV (ATK DV >= 10)
+    jr c, .not_shiny          ; Jump if ATK < SHINY_DEF_DV
+
+    ; Defense (Low nibble of the first byte)
+    ld a, [hl]
+    and $0F                   ; Mask to isolate the low nibble (DEF DV)
+    cp SHINY_DEF_DV           ; Compare with SHINY_DEF_DV (DEF DV >= 10)
+    jr c, .not_shiny          ; Jump if DEF < SHINY_DEF_DV
+
+    ; Speed (High nibble of the second byte)
+    inc hl                    ; Move to the second byte (SPD is high nibble here)
+    ld a, [hl]
+    and $F0                   ; Mask to isolate the high nibble (SPD DV)
+    cp SHINY_SPD_DV           ; Compare with SHINY_SPD_DV (SPD DV >= 10)
+    jr c, .not_shiny          ; Jump if SPD < SHINY_SPD_DV
+
+    ; Special (Low nibble of the second byte)
+    ld a, [hl]
+    and $0F                   ; Mask to isolate the low nibble (SPC DV)
+    cp SHINY_SPC_DV           ; Compare with SHINY_SPC_DV (SPC DV >= 10)
+    jr c, .not_shiny          ; Jump if SPC < SHINY_SPC_DV
+
+    ; All DVs are >= 10, so it's shiny
+    scf                        ; Set the carry flag (indicating shiny)
+    ret
+
+.not_shiny:
+    and a                      ; Clear the carry flag (indicating not shiny)
+    ret
+
+
+
+CheckShininess2: ; CheckShininess:
 ; Check if a mon is shiny by DVs at bc.
 ; Return carry if shiny.
 
@@ -43,7 +83,7 @@ CheckShininess:
 	and a
 	ret
 
-Unused_CheckShininess:
+Unused_CheckShininess: ; Unused_CheckShininess:
 ; Return carry if the DVs at hl are all 10 or higher.
 
 ; Attack
@@ -320,13 +360,6 @@ ApplyMonOrTrainerPals:
 	call ApplyPals
 	ret
 
-ApplyMonPalsTest:
-	call GetMonPalettePointer
-	ld a, [wCurPartySpecies]
-	ld de, wBGPals1
-	call ApplyPals
-	ret
-
 ApplyHPBarPals:
 	ld a, [wWhichHPBar]
 	and a
@@ -382,7 +415,6 @@ LoadStatsScreenPals:
 	ret z
 	ld hl, StatsScreenPals
 	ld b, 0
-	dec c
 	add hl, bc
 	add hl, bc
 	ldh a, [rSVBK]
@@ -662,7 +694,7 @@ CGB_ApplyPartyMenuHPPals:
 InitPartyMenuOBPals:
 	ld hl, PartyMenuOBPals
 	ld de, wOBPals1
-	ld bc, 2 palettes
+	ld bc, 8 palettes
 	ld a, BANK(wOBPals1)
 	call FarCopyWRAM
 	ret
@@ -1298,20 +1330,73 @@ endr
 	ld bc, 4
 	ld a, BANK(wBGPals1)
 	call FarCopyWRAM
+	
+	; Day Care outdoor palettes
+	ld a, [wMapGroup]
+	cp GROUP_ROUTE_34
+	ret nz
+
+	ld a, [wMapNumber]
+	cp MAP_ROUTE_34
+	ret nz
+
+	ld a, BANK(wBreedMon1Species)
+	ld hl, wBreedMon1Species
+	call GetFarWRAMByte
+	and a
+	jr z, .day_care_mon_2
+	ld [wCurPartySpecies], a
+
+	ld hl, wBreedMon1DVs ; HL now points to the params of the wBreedMon1, which is needed by GetMenuMonIconPalette to determine if it's shiny.
+	ld de, GetMenuMonIconPalette
+	ld a, BANK(GetMenuMonIconPalette)
+	call FarCall_de
+	ld a, e
+	add a
+	add a
+	add a
+	ld e, a
+	ld d, 0
+	ld hl, PartyMenuOBPals
+	add hl, de
+
+	inc hl
+	inc hl
+
+	ld de, wOBPals1 palette PAL_OW_PINK + 2
+	ld bc, 1 palettes - 2
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
+
+.day_care_mon_2
+	ld a, BANK(wBreedMon2Species)
+	ld hl, wBreedMon2Species
+	call GetFarWRAMByte
+	and a
+	ret z
+	ld [wCurPartySpecies], a
+
+	ld hl, wBreedMon2DVs ; HL now points to the params of the wBreedMon2, which is needed by GetMenuMonIconPalette to determine if it's shiny.
+	ld de, GetMenuMonIconPalette
+	ld a, BANK(GetMenuMonIconPalette)
+	call FarCall_de
+	ld a, e
+	add a
+	add a
+	add a
+	ld e, a
+	ld d, 0
+	ld hl, PartyMenuOBPals
+	add hl, de
+
+	inc hl
+	inc hl
+
+	ld de, wOBPals1 palette PAL_OW_ROCK + 2
+	ld bc, 1 palettes - 2
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM	
 	ret
-
-LoadPokemonPalette:
-	ld a, [wCurPartySpecies]
-; hl = palette
-	call GetMonPalettePointer
-; load palette into de (set by caller)
-	;call ApplyPals
-	ld bc, PAL_COLOR_SIZE * 2
-	ld a, BANK(wBGPals1)
-	;ld de, wBGPals1 palette 7 + 2
-	;ld bc, 4
-	jp FarCopyWRAM		
-
 
 INCLUDE "data/maps/environment_colors.asm"
 
@@ -1358,3 +1443,26 @@ INCLUDE "gfx/beta_poker/beta_poker.pal"
 
 SlotMachinePals:
 INCLUDE "gfx/slots/slots.pal"
+
+;custom color overworld
+LoadPokemonPalette:
+	ld a, [wCurPartySpecies]
+	; hl = palette
+	call GetMonPalettePointer
+	; load palette into de (set by caller)
+	ld bc, PAL_COLOR_SIZE * 2
+	ld a, BANK(wBGPals1)
+	jp FarCopyWRAM
+
+; Input: E must contain the offset of the selected palette from PartyMenuOBPals.
+SetFirstOBJPalette::
+	ld hl, PartyMenuOBPals
+	ld d, 0
+	add hl, de
+ 	ld de, wOBPals1
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
+	ld a, TRUE
+ 	ldh [hCGBPalUpdate], a
+ 	jp ApplyPals
