@@ -39,6 +39,7 @@ EcruteakPokcenter1FBillActivatesTimeCapsuleScript:
 	opentext
 	writetext EcruteakPokecenter1F_BillText1
 	promptbutton
+	verbosegiveitem LAPTOP
 	sjump .PointlessJump
 
 .PointlessJump:
@@ -160,6 +161,12 @@ EcruteakPokecenter1FCooltrainerFScript:
 	jumptextfaceplayer EcruteakPokecenter1FCooltrainerFText
 
 EcruteakPokecenter1FGymGuideScript:
+	checkflag ENGINE_TIME_CAPSULE
+	iffalse .justext
+	checkitem LAPTOP
+	iftrue .justext
+	verbosegiveitem LAPTOP
+.justext
 	jumptextfaceplayer EcruteakPokecenter1FGymGuideText
 
 EcruteakPokecenter1FBillMovement1:
@@ -195,6 +202,9 @@ EcruteakPokecenter1F_BillText1:
 
 	para "Hmm, <PLAYER>, huh?"
 	line "Nice to meet you."
+
+	para "Here, have this"
+	line "LAPTOP!"
 	done
 
 EcruteakPokecenter1F_BillText2:
@@ -205,6 +215,7 @@ EcruteakPokecenter1F_BillText2:
 	para "This world is too"
 	line "powerful to trade"
 	cont "with others!"
+	
 
 	para "Buh-bye!"
 	done
