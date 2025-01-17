@@ -183,8 +183,8 @@ CreditsStringsPointers:
 .Staff:               db "      #MON"                 ; "ポケットモンスター"
                     next "  CRYSTAL VERSION"          ; "　　クりスタル　バージョン"
                     next "       STAFF@"              ; "　　　　スタッフ@"
-.Director:            db " HACKED BY WILLOW @"            ; "エグゼクティブ　ディレクター@"
-.CoDirector:          db "    CO-DIRECTOR@"           ; "ディレクター@"
+.Director:            db " HACKED BY WILLOW@"            ; "エグゼクティブ　ディレクター@"
+.CoDirector:          db "  ART&QA BY ELIZA@"           ; "ディレクター@"
 .Programmers:         db "    PROGRAMMERS@"           ; "プログラム@"
 .GraphicsDirector:    db " GRAPHICS DIRECTOR@"        ; "グラフィック　ディレクター@"
 .MonsterDesign:       db "   MONSTER DESIGN@"         ; "#　デザイン@"
@@ -211,7 +211,7 @@ CreditsStringsPointers:
 .UsVersionStaff:      db "  US VERSION STAFF@"
 .UsCoordination:      db "  US COORDINATION@"
 .TextTranslation:     db "  TEXT TRANSLATION@"
-.PaadTesting:         db "    PAAD TESTING@"
+.PaadTesting:         db "    QA BY REIS@"
 
 .Copyright:
 	;    (C) 1  9  9  5 - 2  0  0  1     N  i  n  t  e  n  d  o

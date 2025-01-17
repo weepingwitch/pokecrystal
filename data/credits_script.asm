@@ -19,11 +19,12 @@ CreditsScript:
 	db CREDITS_SCENE, 0 ; Pichu
 
 	db             DIRECTOR, 1
-	db       SATOSHI_TAJIRI, 2
+	db      		CODIRECTOR, 2
+	db 				PAAD_TESTING, 3
 
 	db CREDITS_WAIT, 12
 
-	db           CODIRECTOR, 1
+	db       SATOSHI_TAJIRI, 1
 	db       JUNICHI_MASUDA, 2
 
 	db CREDITS_WAIT, 12
@@ -223,9 +224,9 @@ CreditsScript:
 
 	db CREDITS_WAIT, 12
 
-	db         PAAD_TESTING, 1
-	db       THOMAS_HERTZOG, 2
-	db         ERIK_JOHNSON, 3
+	
+	db       THOMAS_HERTZOG, 1
+	db         ERIK_JOHNSON, 2
 
 	db CREDITS_WAIT, 12
 
