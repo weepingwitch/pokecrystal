@@ -163,7 +163,9 @@ EcruteakPokecenter1FCooltrainerFScript:
 EcruteakPokecenter1FGymGuideScript:
 	checkitem LAPTOP
 	iftrue .justext
+	opentext
 	verbosegiveitem LAPTOP
+	closetext
 .justext
 	jumptextfaceplayer EcruteakPokecenter1FGymGuideText
 
