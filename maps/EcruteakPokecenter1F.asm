@@ -161,8 +161,6 @@ EcruteakPokecenter1FCooltrainerFScript:
 	jumptextfaceplayer EcruteakPokecenter1FCooltrainerFText
 
 EcruteakPokecenter1FGymGuideScript:
-	checkflag ENGINE_TIME_CAPSULE
-	iffalse .justext
 	checkitem LAPTOP
 	iftrue .justext
 	verbosegiveitem LAPTOP

@@ -178,7 +178,7 @@ VioletPokecenterMobileAdapterText: ; unreferenced
 	done
 
 VioletPokecenter1FGameboyKidText:
-	text "A gal named BILL"
+	text "This willow gal"
 	line "made the #MON"
 	cont "PC storage system."
 	done
@@ -193,7 +193,7 @@ VioletPokecenter1FGentlemanText:
 
 	para "But justice pre-"
 	line "vailed--a young"
-	cont "kid broke 'em up."
+	cont "kid beat 'em up."
 	done
 
 VioletPokecenter1FYoungsterText:
