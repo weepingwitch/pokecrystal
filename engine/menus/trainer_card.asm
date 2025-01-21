@@ -165,8 +165,8 @@ TrainerCard_Page2_Joypad:
 	jr nz, .pressed_left
 	ld a, [wKantoBadges]
 	and a
-	;jr nz, .has_kanto_badges
-	jr .has_kanto_badges
+	jr nz, .has_kanto_badges
+	;jr .has_kanto_badges
 	ld a, [hl]
 	and A_BUTTON
 	jr nz, .Quit
