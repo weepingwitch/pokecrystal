@@ -3718,6 +3718,7 @@ PokefanMGroup:
 	db "REX@", TRAINERTYPE_ITEM
 	db 35, VAPOREON,     BERRY
 	db 35, JYNX,     BERRY
+	db 38, PHANPY, LEFTOVERS
 	db -1 ; end
 
 	; POKEFANM (14)
